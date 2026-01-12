@@ -1,0 +1,71 @@
+{
+  "mod_elements": [
+    {
+      "name": "Coco",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coco",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "QuickCoco",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quick_coco",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/coco/block/QuickCocoBlock.java",
+          "src/main/resources/assets/coco/models/block/quick_coco.json",
+          "src/main/resources/assets/coco/blockstates/quick_coco.json",
+          "src/main/resources/assets/coco/models/item/quick_coco.json",
+          "src/main/resources/data/coco/loot_table/blocks/quick_coco.json",
+          "src/main/resources/assets/coco/items/quick_coco.json"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {},
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "item_group.coco.coco": "Coco",
+      "item.coco.quick_coco": "TOASTERMONSTER"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/net/mcreator/coco/init/CocoModBlocks.java",
+      "src/main/java/net/mcreator/coco/init/CocoModItems.java",
+      "src/main/java/net/mcreator/coco/init/CocoModTabs.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/coco/CocoMod.java",
+      "src/main/resources/pack.mcmeta"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "coco",
+    "modName": "coco",
+    "version": "1.0.0",
+    "author": "MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.21.8",
+    "modElementsPackage": "net.mcreator.coco"
+  },
+  "mcreatorVersion": 202500345720
+}

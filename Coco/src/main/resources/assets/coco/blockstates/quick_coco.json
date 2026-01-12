@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "coco:block/quick_coco"
+    }
+  }
+}

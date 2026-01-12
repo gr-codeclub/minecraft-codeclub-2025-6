@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "coco:blocks/quick_coco",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "coco:quick_coco"
+        }
+      ]
+    }
+  ]
+}

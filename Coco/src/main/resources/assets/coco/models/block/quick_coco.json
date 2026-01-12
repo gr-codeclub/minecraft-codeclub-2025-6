@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "coco:block/toasterblock",
+    "particle": "coco:block/toasterblock"
+  },
+  "render_type": "solid"
+}
