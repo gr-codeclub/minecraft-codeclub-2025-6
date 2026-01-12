@@ -1,0 +1,71 @@
+{
+  "mod_elements": [
+    {
+      "name": "Ilovefootball",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ilovefootball",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "Footballblock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "footballblock",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ilovefootball/block/FootballblockBlock.java",
+          "src/main/resources/assets/ilovefootball/blockstates/footballblock.json",
+          "src/main/resources/assets/ilovefootball/models/item/footballblock.json",
+          "src/main/resources/assets/ilovefootball/items/footballblock.json",
+          "src/main/resources/data/ilovefootball/loot_table/blocks/footballblock.json",
+          "src/main/resources/assets/ilovefootball/models/block/footballblock.json"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {},
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "item_group.ilovefootball.ilovefootball": "Ilovefootball",
+      "item.ilovefootball.footballblock": "Footballblock"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/net/mcreator/ilovefootball/init/IlovefootballModBlocks.java",
+      "src/main/java/net/mcreator/ilovefootball/init/IlovefootballModItems.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/ilovefootball/IlovefootballMod.java",
+      "src/main/java/net/mcreator/ilovefootball/init/IlovefootballModTabs.java"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "ilovefootball",
+    "modName": "ilovefootball",
+    "version": "1.0.0",
+    "author": "MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.21.8",
+    "modElementsPackage": "net.mcreator.ilovefootball"
+  },
+  "mcreatorVersion": 202500345720
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "ilovefootball:block/something",
+    "particle": "ilovefootball:block/something"
+  },
+  "render_type": "solid"
+}
