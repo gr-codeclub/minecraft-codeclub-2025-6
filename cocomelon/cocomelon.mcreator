@@ -1,0 +1,71 @@
+{
+  "mod_elements": [
+    {
+      "name": "Cocomelon1",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cocomelon_1",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "Cocomelon2",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cocomelon_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cocomelon/block/Cocomelon2Block.java",
+          "src/main/resources/assets/cocomelon/blockstates/cocomelon_2.json",
+          "src/main/resources/assets/cocomelon/items/cocomelon_2.json",
+          "src/main/resources/assets/cocomelon/models/block/cocomelon_2.json",
+          "src/main/resources/data/cocomelon/loot_table/blocks/cocomelon_2.json",
+          "src/main/resources/assets/cocomelon/models/item/cocomelon_2.json"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {},
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "item_group.cocomelon.cocomelon_1": "Cocomelon 1",
+      "item.cocomelon.cocomelon_2": "Cocomelon 2"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/net/mcreator/cocomelon/init/CocomelonModBlocks.java",
+      "src/main/java/net/mcreator/cocomelon/init/CocomelonModItems.java",
+      "src/main/java/net/mcreator/cocomelon/CocomelonMod.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/cocomelon/init/CocomelonModTabs.java"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "cocomelon",
+    "modName": "cocomelon",
+    "version": "1.0.0",
+    "author": "MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.21.8",
+    "modElementsPackage": "net.mcreator.cocomelon"
+  },
+  "mcreatorVersion": 202500345720
+}
