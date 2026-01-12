@@ -1,0 +1,71 @@
+{
+  "mod_elements": [
+    {
+      "name": "Eleazar",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eleazar",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "Kpopsucks",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kpopsucks",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/eleazar/block/KpopsucksBlock.java",
+          "src/main/resources/assets/eleazar/models/block/kpopsucks.json",
+          "src/main/resources/data/eleazar/loot_table/blocks/kpopsucks.json",
+          "src/main/resources/assets/eleazar/models/item/kpopsucks.json",
+          "src/main/resources/assets/eleazar/items/kpopsucks.json",
+          "src/main/resources/assets/eleazar/blockstates/kpopsucks.json"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {},
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "item_group.eleazar.eleazar": "Eleazar",
+      "item.eleazar.kpopsucks": "Kpopsucks"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/net/mcreator/eleazar/init/EleazarModBlocks.java",
+      "src/main/java/net/mcreator/eleazar/init/EleazarModItems.java",
+      "src/main/java/net/mcreator/eleazar/EleazarMod.java",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/eleazar/init/EleazarModTabs.java",
+      "src/main/resources/META-INF/neoforge.mods.toml"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "eleazar",
+    "modName": "eleazar",
+    "version": "1.0.0",
+    "author": "MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.21.8",
+    "modElementsPackage": "net.mcreator.eleazar"
+  },
+  "mcreatorVersion": 202500345720
+}
