@@ -1,0 +1,97 @@
+{
+  "mod_elements": [
+    {
+      "name": "Bigboigoober",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bigboigoober",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "BlockThingy",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "block_thingy",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bigboigoober/block/BlockThingyBlock.java",
+          "src/main/resources/assets/bigboigoober/models/item/block_thingy.json",
+          "src/main/resources/assets/bigboigoober/items/block_thingy.json",
+          "src/main/resources/assets/bigboigoober/blockstates/block_thingy.json",
+          "src/main/resources/data/bigboigoober/loot_table/blocks/block_thingy.json",
+          "src/main/resources/assets/bigboigoober/models/block/block_thingy.json"
+        ]
+      }
+    },
+    {
+      "name": "BlockThingyEntityWalksOnTheBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "block_thingy_entity_walks_on_the_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/bigboigoober/procedures/BlockThingyEntityWalksOnTheBlockProcedure.java"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {},
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "item_group.bigboigoober.bigboigoober": "Bigboigoober",
+      "item.bigboigoober.block_thingy": "Block Thingy"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/net/mcreator/bigboigoober/init/BigboigooberModBlocks.java",
+      "src/main/java/net/mcreator/bigboigoober/init/BigboigooberModItems.java",
+      "src/main/java/net/mcreator/bigboigoober/init/BigboigooberModTabs.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/bigboigoober/BigboigooberMod.java"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "bigboigoober",
+    "modName": "bigboigoober",
+    "version": "1.0.0",
+    "author": "MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.21.8",
+    "modElementsPackage": "net.mcreator.bigboigoober"
+  },
+  "mcreatorVersion": 202500345720
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "bigboigoober:block/block5",
+    "up": "bigboigoober:block/block2",
+    "north": "bigboigoober:block/block1",
+    "east": "bigboigoober:block/block3",
+    "south": "bigboigoober:block/block1",
+    "west": "bigboigoober:block/block4",
+    "particle": "bigboigoober:block/block5"
+  },
+  "render_type": "cutout"
+}
