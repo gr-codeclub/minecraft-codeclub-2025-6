@@ -1,0 +1,71 @@
+{
+  "mod_elements": [
+    {
+      "name": "DexterMod",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dexter_mod",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "DexterBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dexter_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/dextermod/items/dexter_block.json",
+          "src/main/resources/assets/dextermod/blockstates/dexter_block.json",
+          "src/main/resources/assets/dextermod/models/block/dexter_block.json",
+          "src/main/resources/data/dextermod/loot_table/blocks/dexter_block.json",
+          "src/main/resources/assets/dextermod/models/item/dexter_block.json",
+          "src/main/java/net/mcreator/dextermod/block/DexterBlockBlock.java"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {},
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "item_group.dextermod.dexter_mod": "Dexter Mod",
+      "item.dextermod.dexter_block": "Dexter Block"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/net/mcreator/dextermod/init/DextermodModBlocks.java",
+      "src/main/java/net/mcreator/dextermod/init/DextermodModItems.java",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/dextermod/DextermodMod.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/dextermod/init/DextermodModTabs.java"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "dextermod",
+    "modName": "dextermod",
+    "version": "1.0.0",
+    "author": "MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.21.8",
+    "modElementsPackage": "net.mcreator.dextermod"
+  },
+  "mcreatorVersion": 202500345720
+}
