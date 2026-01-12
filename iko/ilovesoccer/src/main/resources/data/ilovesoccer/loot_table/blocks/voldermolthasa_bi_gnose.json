@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "ilovesoccer:blocks/voldermolthasa_bi_gnose",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "ilovesoccer:voldermolthasa_bi_gnose"
+        }
+      ]
+    }
+  ]
+}

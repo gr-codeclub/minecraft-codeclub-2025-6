@@ -1,0 +1,82 @@
+{
+  "mod_elements": [
+    {
+      "name": "Voldermoltstolemyshampoo",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "voldermoltstolemyshampoo",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "Voldermoltstolemyshampo",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "voldermoltstolemyshampo",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "VoldermolthasaBIGnose",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "voldermolthasa_bi_gnose",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ilovesoccer/models/block/voldermolthasa_bi_gnose.json",
+          "src/main/resources/data/ilovesoccer/loot_table/blocks/voldermolthasa_bi_gnose.json",
+          "src/main/java/net/mcreator/ilovesoccer/block/VoldermolthasaBIGnoseBlock.java",
+          "src/main/resources/assets/ilovesoccer/models/item/voldermolthasa_bi_gnose.json",
+          "src/main/resources/assets/ilovesoccer/blockstates/voldermolthasa_bi_gnose.json",
+          "src/main/resources/assets/ilovesoccer/items/voldermolthasa_bi_gnose.json"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {},
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "item_group.ilovesoccer.voldermoltstolemyshampoo": "Voldermoltstolemyshampoo",
+      "item_group.ilovesoccer.voldermoltstolemyshampo": "Voldermoltstolemyshampo",
+      "item.ilovesoccer.voldermolthasa_bi_gnose": "Voldermolthasa BI Gnose"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/net/mcreator/ilovesoccer/init/IlovesoccerModBlocks.java",
+      "src/main/java/net/mcreator/ilovesoccer/init/IlovesoccerModItems.java",
+      "src/main/java/net/mcreator/ilovesoccer/IlovesoccerMod.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/ilovesoccer/init/IlovesoccerModTabs.java",
+      "src/main/resources/pack.mcmeta"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "ilovesoccer",
+    "modName": "ilovesoccer",
+    "version": "1.0.0",
+    "author": "MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.21.8",
+    "modElementsPackage": "net.mcreator.ilovesoccer"
+  },
+  "mcreatorVersion": 202500345720
+}
