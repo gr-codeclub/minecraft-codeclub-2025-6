@@ -1,0 +1,71 @@
+{
+  "mod_elements": [
+    {
+      "name": "Joemama",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "joemama",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "Balthzar",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "balthzar",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/balthzar/models/block/balthzar.json",
+          "src/main/resources/assets/balthzar/items/balthzar.json",
+          "src/main/java/net/mcreator/balthzar/block/BalthzarBlock.java",
+          "src/main/resources/data/balthzar/loot_table/blocks/balthzar.json",
+          "src/main/resources/assets/balthzar/blockstates/balthzar.json",
+          "src/main/resources/assets/balthzar/models/item/balthzar.json"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {},
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "item_group.balthzar.joemama": "Joemama",
+      "item.balthzar.balthzar": "Balthzar"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/net/mcreator/balthzar/init/BalthzarModBlocks.java",
+      "src/main/java/net/mcreator/balthzar/init/BalthzarModItems.java",
+      "src/main/java/net/mcreator/balthzar/BalthzarMod.java",
+      "src/main/java/net/mcreator/balthzar/init/BalthzarModTabs.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/resources/pack.mcmeta"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "balthzar",
+    "modName": "balthzar",
+    "version": "1.0.0",
+    "author": "MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.21.8",
+    "modElementsPackage": "net.mcreator.balthzar"
+  },
+  "mcreatorVersion": 202500345720
+}
