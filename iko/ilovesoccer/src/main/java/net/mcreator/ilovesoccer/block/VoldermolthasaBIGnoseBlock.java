@@ -12,7 +12,7 @@ import net.minecraft.core.BlockPos;
 
 public class VoldermolthasaBIGnoseBlock extends Block {
 	public VoldermolthasaBIGnoseBlock(BlockBehaviour.Properties properties) {
-		super(properties.sound(SoundType.GRAVEL).strength(1f, 10f).speedFactor(4.4f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		super(properties.sound(SoundType.GRAVEL).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 	}
 
 	@Override

@@ -36,6 +36,40 @@
           "src/main/resources/assets/ilovesoccer/items/voldermolthasa_bi_gnose.json"
         ]
       }
+    },
+    {
+      "name": "VoldermolthasaBIGnoseEntityWalksOnTheBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "voldermolthasa_bi_gnose_entity_walks_on_the_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/ilovesoccer/procedures/VoldermolthasaBIGnoseEntityWalksOnTheBlockProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
