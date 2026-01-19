@@ -12,7 +12,7 @@ import net.mcreator.balthzar.procedures.BalthzarEntityWalksOnTheBlockProcedure;
 
 public class BalthzarBlock extends Block {
 	public BalthzarBlock(BlockBehaviour.Properties properties) {
-		super(properties.sound(SoundType.GRAVEL).strength(1f, 10f).friction(3.49f).speedFactor(20f).jumpFactor(67.5f));
+		super(properties.sound(SoundType.GRAVEL).strength(1f, 10f).friction(1.5f).speedFactor(2f).jumpFactor(67.5f));
 	}
 
 	@Override
