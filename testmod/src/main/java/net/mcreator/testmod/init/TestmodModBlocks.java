@@ -9,6 +9,7 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.testmod.block.DexterBlockBlock;
 import net.mcreator.testmod.TestmodMod;
 
 import java.util.function.Function;

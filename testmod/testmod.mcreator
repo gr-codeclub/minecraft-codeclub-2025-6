@@ -9,6 +9,57 @@
       "metadata": {
         "files": []
       }
+    },
+    {
+      "name": "DexterBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dexter_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/testmod/block/DexterBlockBlock.java",
+          "src/main/resources/assets/testmod/models/item/dexter_block.json",
+          "src/main/resources/data/testmod/loot_table/blocks/dexter_block.json",
+          "src/main/resources/assets/testmod/models/block/dexter_block.json",
+          "src/main/resources/assets/testmod/items/dexter_block.json",
+          "src/main/resources/assets/testmod/blockstates/dexter_block.json"
+        ]
+      }
+    },
+    {
+      "name": "DexterBlockEntityWalksOnTheBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dexter_block_entity_walks_on_the_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/testmod/procedures/DexterBlockEntityWalksOnTheBlockProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -17,11 +68,15 @@
   "tab_element_order": {},
   "language_map": {
     "en_us": {
-      "item_group.testmod.test_tab": "Test Tab"
+      "item_group.testmod.test_tab": "Test Tab",
+      "item.testmod.dexter_block": "Dexter Block"
     }
   },
   "metadata": {
     "files": [
+      "src/main/java/net/mcreator/testmod/init/TestmodModBlocks.java",
+      "src/main/java/net/mcreator/testmod/init/TestmodModItems.java",
+      "src/main/java/net/mcreator/testmod/init/TestmodModTabs.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/resources/pack.mcmeta",
       "src/main/java/net/mcreator/testmod/TestmodMod.java"
