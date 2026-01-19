@@ -9,6 +9,7 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.cheesy.block.ChezBlock;
 import net.mcreator.cheesy.CheesyMod;
 
 import java.util.function.Function;
