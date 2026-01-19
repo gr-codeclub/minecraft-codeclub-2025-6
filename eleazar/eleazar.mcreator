@@ -26,6 +26,40 @@
           "src/main/resources/assets/eleazar/blockstates/kpopsucks.json"
         ]
       }
+    },
+    {
+      "name": "KpopsucksEntityWalksOnTheBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kpopsucks_entity_walks_on_the_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/eleazar/procedures/KpopsucksEntityWalksOnTheBlockProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],

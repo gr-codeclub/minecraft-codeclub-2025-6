@@ -91,7 +91,7 @@
     "fireSpreadSpeed": 0,
     "isLadder": false,
     "slipperiness": 0.6,
-    "speedFactor": 67.0,
+    "speedFactor": 3.0,
     "jumpFactor": 10.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
@@ -139,6 +139,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onEntityWalksOn": {
+      "name": "KpopsucksEntityWalksOnTheBlock"
+    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [
