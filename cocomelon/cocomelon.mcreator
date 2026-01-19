@@ -26,6 +26,40 @@
           "src/main/resources/assets/cocomelon/models/item/cocomelon_2.json"
         ]
       }
+    },
+    {
+      "name": "Cocomelon2BlockDestroyedByPlayer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cocomelon_2_block_destroyed_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/cocomelon/procedures/Cocomelon2BlockDestroyedByPlayerProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
