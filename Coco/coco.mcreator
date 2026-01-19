@@ -26,6 +26,40 @@
           "src/main/resources/assets/coco/items/quick_coco.json"
         ]
       }
+    },
+    {
+      "name": "QuickCocoEntityWalksOnTheBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quick_coco_entity_walks_on_the_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/coco/procedures/QuickCocoEntityWalksOnTheBlockProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],

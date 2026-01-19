@@ -66,7 +66,7 @@
     "useLootTableForDrops": false,
     "requiresCorrectTool": false,
     "enchantPowerBonus": 0.0,
-    "plantsGrowOn": false,
+    "plantsGrowOn": true,
     "canRedstoneConnect": false,
     "lightOpacity": 15,
     "tickRate": 0,
@@ -91,7 +91,7 @@
     "fireSpreadSpeed": 0,
     "isLadder": false,
     "slipperiness": 0.6,
-    "speedFactor": 10.0,
+    "speedFactor": 1.0,
     "jumpFactor": 1000.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
@@ -139,6 +139,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onEntityWalksOn": {
+      "name": "QuickCocoEntityWalksOnTheBlock"
+    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [
