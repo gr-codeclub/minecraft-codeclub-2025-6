@@ -60,6 +60,50 @@
           "src/main/java/net/mcreator/cheesy/procedures/ChezEntityWalksOnTheBlockProcedure.java"
         ]
       }
+    },
+    {
+      "name": "CheeseHunk",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cheese_hunk",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cheesy/items/cheese_hunk.json",
+          "src/main/resources/assets/cheesy/models/item/cheese_hunk.json",
+          "src/main/java/net/mcreator/cheesy/item/CheeseHunkItem.java"
+        ]
+      }
+    },
+    {
+      "name": "ChezBlockDestroyedByPlayer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chez_block_destroyed_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/cheesy/procedures/ChezBlockDestroyedByPlayerProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -69,7 +113,8 @@
   "language_map": {
     "en_us": {
       "item_group.cheesy.cheese": "Cheese",
-      "item.cheesy.chez": "Chez"
+      "item.cheesy.chez": "Chez",
+      "item.cheesy.cheese_hunk": "Cheese Hunk"
     }
   },
   "metadata": {

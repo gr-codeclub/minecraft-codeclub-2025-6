@@ -11,6 +11,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.cheesy.item.CheeseHunkItem;
 import net.mcreator.cheesy.CheesyMod;
 
 import java.util.function.Function;
@@ -18,8 +19,10 @@ import java.util.function.Function;
 public class CheesyModItems {
 	public static final DeferredRegister.Items REGISTRY = DeferredRegister.createItems(CheesyMod.MODID);
 	public static final DeferredItem<Item> CHEZ;
+	public static final DeferredItem<Item> CHEESE_HUNK;
 	static {
 		CHEZ = block(CheesyModBlocks.CHEZ);
+		CHEESE_HUNK = register("cheese_hunk", CheeseHunkItem::new);
 	}
 
 	// Start of user code block custom items
