@@ -26,6 +26,40 @@
           "src/main/resources/assets/balthzar/models/item/balthzar.json"
         ]
       }
+    },
+    {
+      "name": "BalthzarEntityWalksOnTheBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "balthzar_entity_walks_on_the_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/balthzar/procedures/BalthzarEntityWalksOnTheBlockProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
