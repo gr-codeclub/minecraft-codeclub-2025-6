@@ -1,0 +1,71 @@
+{
+  "mod_elements": [
+    {
+      "name": "Cheese",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cheese",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "Chez",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chez",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cheesy/blockstates/chez.json",
+          "src/main/resources/assets/cheesy/models/item/chez.json",
+          "src/main/resources/data/cheesy/loot_table/blocks/chez.json",
+          "src/main/java/net/mcreator/cheesy/block/ChezBlock.java",
+          "src/main/resources/assets/cheesy/models/block/chez.json",
+          "src/main/resources/assets/cheesy/items/chez.json"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {},
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "item_group.cheesy.cheese": "Cheese",
+      "item.cheesy.chez": "Chez"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/net/mcreator/cheesy/init/CheesyModBlocks.java",
+      "src/main/java/net/mcreator/cheesy/init/CheesyModItems.java",
+      "src/main/java/net/mcreator/cheesy/init/CheesyModTabs.java",
+      "src/main/java/net/mcreator/cheesy/CheesyMod.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/resources/pack.mcmeta"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "cheesy",
+    "modName": "cheesy",
+    "version": "1.0.0",
+    "author": "MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.21.8",
+    "modElementsPackage": "net.mcreator.cheesy"
+  },
+  "mcreatorVersion": 202500345720
+}

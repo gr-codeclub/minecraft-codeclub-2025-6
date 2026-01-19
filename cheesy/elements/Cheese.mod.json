@@ -1,0 +1,11 @@
+{
+  "_fv": 79,
+  "_type": "tab",
+  "definition": {
+    "name": "Cheese",
+    "icon": {
+      "value": "Blocks.RAW_GOLD_BLOCK"
+    },
+    "showSearch": true
+  }
+}
