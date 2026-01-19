@@ -16,7 +16,7 @@ import net.mcreator.bigboigoober.procedures.BlockThingyEntityWalksOnTheBlockProc
 
 public class BlockThingyBlock extends Block {
 	public BlockThingyBlock(BlockBehaviour.Properties properties) {
-		super(properties.sound(SoundType.GRAVEL).strength(1f, 10f).friction(0.35f).speedFactor(2.5f).jumpFactor(2f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		super(properties.sound(SoundType.GRAVEL).strength(1f, 10f).friction(1.01f).jumpFactor(2f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 	}
 
 	@Override
@@ -37,6 +37,6 @@ public class BlockThingyBlock extends Block {
 	@Override
 	public void stepOn(Level world, BlockPos pos, BlockState blockstate, Entity entity) {
 		super.stepOn(world, pos, blockstate, entity);
-		BlockThingyEntityWalksOnTheBlockProcedure.execute(world, pos.getY(), entity);
+		BlockThingyEntityWalksOnTheBlockProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), entity);
 	}
 }

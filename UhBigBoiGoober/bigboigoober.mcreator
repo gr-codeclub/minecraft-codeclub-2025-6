@@ -40,7 +40,15 @@
             "type": "entity"
           },
           {
+            "name": "x",
+            "type": "number"
+          },
+          {
             "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
             "type": "number"
           },
           {
@@ -52,20 +60,100 @@
           "src/main/java/net/mcreator/bigboigoober/procedures/BlockThingyEntityWalksOnTheBlockProcedure.java"
         ]
       }
+    },
+    {
+      "name": "FlowerPattern",
+      "type": "bannerpattern",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flower_pattern",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/bigboigoober/banner_pattern/flower_pattern.json"
+        ]
+      }
+    },
+    {
+      "name": "FakeWaterMobplayerCollidesBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fake_water_mobplayer_collides_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/bigboigoober/procedures/FakeWaterMobplayerCollidesBlockProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "FakeWater",
+      "type": "fluid",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fake_water",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bigboigoober/fluid/types/FakeWaterFluidType.java",
+          "src/main/java/net/mcreator/bigboigoober/fluid/FakeWaterFluid.java",
+          "src/main/resources/assets/bigboigoober/blockstates/fake_water.json",
+          "src/main/resources/assets/bigboigoober/models/block/fake_water.json",
+          "src/main/java/net/mcreator/bigboigoober/block/FakeWaterBlock.java",
+          "src/main/java/net/mcreator/bigboigoober/client/fluid/FakeWaterFluidExtension.java",
+          "src/main/java/net/mcreator/bigboigoober/item/FakeWaterItem.java",
+          "src/main/resources/assets/bigboigoober/items/fake_water_bucket.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
-  "tag_elements": {},
+  "tag_elements": {
+    "BLOCKS:minecraft:replaceable": [
+      "~CUSTOM:FakeWater"
+    ]
+  },
   "tab_element_order": {},
   "language_map": {
     "en_us": {
       "item_group.bigboigoober.bigboigoober": "Bigboigoober",
-      "item.bigboigoober.block_thingy": "Block Thingy"
+      "item.bigboigoober.block_thingy": "Block Thingy",
+      "block.bigboigoober.banner.flower_pattern.red": "Red Flower Pattern",
+      "block.bigboigoober.banner.flower_pattern.white": "White Flower Pattern",
+      "block.bigboigoober.banner.flower_pattern.purple": "Purple Flower Pattern",
+      "block.bigboigoober.banner.flower_pattern.gray": "Gray Flower Pattern",
+      "block.bigboigoober.banner.flower_pattern.brown": "Brown Flower Pattern",
+      "block.bigboigoober.banner.flower_pattern.light_gray": "Light Gray Flower Pattern",
+      "block.bigboigoober.banner.flower_pattern.orange": "Orange Flower Pattern",
+      "block.bigboigoober.banner.flower_pattern.cyan": "Cyan Flower Pattern",
+      "block.bigboigoober.banner.flower_pattern.green": "Green Flower Pattern",
+      "block.bigboigoober.banner.flower_pattern.black": "Black Flower Pattern",
+      "block.bigboigoober.banner.flower_pattern.magenta": "Magenta Flower Pattern",
+      "block.bigboigoober.banner.flower_pattern.yellow": "Yellow Flower Pattern",
+      "block.bigboigoober.banner.flower_pattern.pink": "Pink Flower Pattern",
+      "block.bigboigoober.banner.flower_pattern.light_blue": "Light Blue Flower Pattern",
+      "block.bigboigoober.banner.flower_pattern.lime": "Lime Flower Pattern",
+      "block.bigboigoober.banner.flower_pattern.blue": "Blue Flower Pattern",
+      "fluid.bigboigoober.fake_water": "Fake Water",
+      "fluid_type.bigboigoober.fake_water": "Fake Water",
+      "item.bigboigoober.fake_water_bucket": "Fake Water Bucket",
+      "block.bigboigoober.fake_water": "Fake Water"
     }
   },
   "metadata": {
     "files": [
+      "src/main/resources/data/minecraft/tags/banner_pattern/no_item_required.json",
+      "src/main/java/net/mcreator/bigboigoober/init/BigboigooberModFluids.java",
+      "src/main/java/net/mcreator/bigboigoober/init/BigboigooberModFluidTypes.java",
       "src/main/java/net/mcreator/bigboigoober/init/BigboigooberModBlocks.java",
       "src/main/java/net/mcreator/bigboigoober/init/BigboigooberModItems.java",
       "src/main/java/net/mcreator/bigboigoober/init/BigboigooberModTabs.java",

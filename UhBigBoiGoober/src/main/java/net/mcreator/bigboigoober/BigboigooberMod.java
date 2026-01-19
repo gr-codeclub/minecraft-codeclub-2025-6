@@ -22,6 +22,8 @@ import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.bigboigoober.init.BigboigooberModTabs;
 import net.mcreator.bigboigoober.init.BigboigooberModItems;
+import net.mcreator.bigboigoober.init.BigboigooberModFluids;
+import net.mcreator.bigboigoober.init.BigboigooberModFluidTypes;
 import net.mcreator.bigboigoober.init.BigboigooberModBlocks;
 
 import javax.annotation.Nullable;
@@ -50,6 +52,8 @@ public class BigboigooberMod {
 		BigboigooberModBlocks.REGISTRY.register(modEventBus);
 		BigboigooberModItems.REGISTRY.register(modEventBus);
 		BigboigooberModTabs.REGISTRY.register(modEventBus);
+		BigboigooberModFluids.REGISTRY.register(modEventBus);
+		BigboigooberModFluidTypes.REGISTRY.register(modEventBus);
 		// Start of user code block mod init
 		// End of user code block mod init
 	}

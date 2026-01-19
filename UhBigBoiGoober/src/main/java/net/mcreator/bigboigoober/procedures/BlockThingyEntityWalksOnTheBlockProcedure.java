@@ -7,11 +7,9 @@ import net.minecraft.core.BlockPos;
 import net.mcreator.bigboigoober.init.BigboigooberModBlocks;
 
 public class BlockThingyEntityWalksOnTheBlockProcedure {
-	public static void execute(LevelAccessor world, double y, Entity entity) {
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if (true) {
-			world.setBlock(BlockPos.containing(entity.getDeltaMovement().x() + 1, y, entity.getDeltaMovement().z() + 1), BigboigooberModBlocks.BLOCK_THINGY.get().defaultBlockState(), 3);
-		}
+		world.setBlock(BlockPos.containing((entity.getDirection()).getStepX() + x, y, (entity.getDirection()).getStepZ() + z), BigboigooberModBlocks.BLOCK_THINGY.get().defaultBlockState(), 3);
 	}
 }

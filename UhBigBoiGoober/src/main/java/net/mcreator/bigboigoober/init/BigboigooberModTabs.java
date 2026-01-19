@@ -19,5 +19,6 @@ public class BigboigooberModTabs {
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> BIGBOIGOOBER = REGISTRY.register("bigboigoober",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.bigboigoober.bigboigoober")).icon(() -> new ItemStack(Items.POISONOUS_POTATO)).displayItems((parameters, tabData) -> {
 				tabData.accept(BigboigooberModBlocks.BLOCK_THINGY.get().asItem());
+				tabData.accept(BigboigooberModItems.FAKE_WATER_BUCKET.get());
 			}).withSearchBar().build());
 }

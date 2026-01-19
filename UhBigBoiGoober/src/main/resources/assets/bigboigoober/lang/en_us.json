@@ -1,4 +1,24 @@
 {
   "item_group.bigboigoober.bigboigoober": "Bigboigoober",
-  "item.bigboigoober.block_thingy": "Block Thingy"
+  "item.bigboigoober.block_thingy": "Block Thingy",
+  "block.bigboigoober.banner.flower_pattern.red": "Red Flower Pattern",
+  "block.bigboigoober.banner.flower_pattern.white": "White Flower Pattern",
+  "block.bigboigoober.banner.flower_pattern.purple": "Purple Flower Pattern",
+  "block.bigboigoober.banner.flower_pattern.gray": "Gray Flower Pattern",
+  "block.bigboigoober.banner.flower_pattern.brown": "Brown Flower Pattern",
+  "block.bigboigoober.banner.flower_pattern.light_gray": "Light Gray Flower Pattern",
+  "block.bigboigoober.banner.flower_pattern.orange": "Orange Flower Pattern",
+  "block.bigboigoober.banner.flower_pattern.cyan": "Cyan Flower Pattern",
+  "block.bigboigoober.banner.flower_pattern.green": "Green Flower Pattern",
+  "block.bigboigoober.banner.flower_pattern.black": "Black Flower Pattern",
+  "block.bigboigoober.banner.flower_pattern.magenta": "Magenta Flower Pattern",
+  "block.bigboigoober.banner.flower_pattern.yellow": "Yellow Flower Pattern",
+  "block.bigboigoober.banner.flower_pattern.pink": "Pink Flower Pattern",
+  "block.bigboigoober.banner.flower_pattern.light_blue": "Light Blue Flower Pattern",
+  "block.bigboigoober.banner.flower_pattern.lime": "Lime Flower Pattern",
+  "block.bigboigoober.banner.flower_pattern.blue": "Blue Flower Pattern",
+  "fluid.bigboigoober.fake_water": "Fake Water",
+  "fluid_type.bigboigoober.fake_water": "Fake Water",
+  "item.bigboigoober.fake_water_bucket": "Fake Water Bucket",
+  "block.bigboigoober.fake_water": "Fake Water"
 }
