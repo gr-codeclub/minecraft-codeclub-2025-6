@@ -26,6 +26,36 @@
           "src/main/java/net/mcreator/dextermod/block/DexterBlockBlock.java"
         ]
       }
+    },
+    {
+      "name": "DexterBlockEntityWalksOnTheBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dexter_block_entity_walks_on_the_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/dextermod/procedures/DexterBlockEntityWalksOnTheBlockProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],

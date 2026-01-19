@@ -139,6 +139,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onEntityWalksOn": {
+      "name": "DexterBlockEntityWalksOnTheBlock"
+    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [
