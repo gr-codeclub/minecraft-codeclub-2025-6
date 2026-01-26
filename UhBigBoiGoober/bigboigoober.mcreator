@@ -62,18 +62,6 @@
       }
     },
     {
-      "name": "FlowerPattern",
-      "type": "bannerpattern",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "flower_pattern",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/bigboigoober/banner_pattern/flower_pattern.json"
-        ]
-      }
-    },
-    {
       "name": "FakeWaterMobplayerCollidesBlock",
       "type": "procedure",
       "compiles": true,
@@ -113,6 +101,108 @@
           "src/main/resources/assets/bigboigoober/items/fake_water_bucket.json"
         ]
       }
+    },
+    {
+      "name": "BlockWandRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "block_wand_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/bigboigoober/procedures/BlockWandRightclickedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "BlockWand",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "block_wand",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/bigboigoober/models/item/block_wand.json",
+          "src/main/resources/assets/bigboigoober/items/block_wand.json",
+          "src/main/java/net/mcreator/bigboigoober/item/BlockWandItem.java"
+        ]
+      }
+    },
+    {
+      "name": "TestPlayerEntersDimension",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_player_enters_dimension",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/bigboigoober/procedures/TestPlayerEntersDimensionProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "DimensionFillerBcMcreatorSucks",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dimension_filler_bc_mcreator_sucks",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/bigboigoober/worldgen/configured_feature/dimension_filler_bc_mcreator_sucks_tree.json",
+          "src/main/java/net/mcreator/bigboigoober/world/features/treedecorators/DimensionFillerBcMcreatorSucksFruitDecorator.java",
+          "src/main/resources/data/bigboigoober/worldgen/placed_feature/dimension_filler_bc_mcreator_sucks_tree.json",
+          "src/main/java/net/mcreator/bigboigoober/world/features/treedecorators/DimensionFillerBcMcreatorSucksLeaveDecorator.java",
+          "src/main/resources/data/bigboigoober/worldgen/biome/dimension_filler_bc_mcreator_sucks.json",
+          "src/main/java/net/mcreator/bigboigoober/world/features/treedecorators/DimensionFillerBcMcreatorSucksTrunkDecorator.java"
+        ]
+      }
+    },
+    {
+      "name": "Test",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/bigboigoober/dimension_type/test.json",
+          "src/main/resources/assets/bigboigoober/models/item/test.json",
+          "src/main/java/net/mcreator/bigboigoober/world/teleporter/TestPortalShape.java",
+          "src/main/resources/assets/bigboigoober/models/block/test_portal_ew.json",
+          "src/main/java/net/mcreator/bigboigoober/item/TestItem.java",
+          "src/main/java/net/mcreator/bigboigoober/world/teleporter/TestTeleporter.java",
+          "src/main/java/net/mcreator/bigboigoober/world/dimension/TestDimension.java",
+          "src/main/java/net/mcreator/bigboigoober/block/TestPortalBlock.java",
+          "src/main/resources/assets/bigboigoober/blockstates/test_portal.json",
+          "src/main/resources/assets/bigboigoober/models/block/test_portal_ns.json",
+          "src/main/resources/assets/bigboigoober/items/test.json",
+          "src/main/resources/data/bigboigoober/dimension/test.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -120,6 +210,34 @@
   "tag_elements": {
     "BLOCKS:minecraft:replaceable": [
       "~CUSTOM:FakeWater"
+    ],
+    "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:BlockWand"
+    ],
+    "BIOMES:minecraft:has_structure/igloo": [
+      "~CUSTOM:DimensionFillerBcMcreatorSucks"
+    ],
+    "BIOMES:minecraft:has_structure/stronghold": [
+      "~CUSTOM:DimensionFillerBcMcreatorSucks"
+    ],
+    "BIOMES:minecraft:has_structure/pillager_outpost": [
+      "~CUSTOM:DimensionFillerBcMcreatorSucks"
+    ],
+    "BIOMES:minecraft:has_structure/desert_pyramid": [
+      "~CUSTOM:DimensionFillerBcMcreatorSucks"
+    ],
+    "BIOMES:minecraft:has_structure/buried_treasure": [
+      "~CUSTOM:DimensionFillerBcMcreatorSucks"
+    ],
+    "BIOMES:minecraft:has_structure/end_city": [
+      "~CUSTOM:DimensionFillerBcMcreatorSucks"
+    ],
+    "BIOMES:minecraft:has_structure/village_plains": [
+      "~CUSTOM:DimensionFillerBcMcreatorSucks"
+    ],
+    "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~Blocks.PACKED_MUD",
+      "~Blocks.FLOWERING_AZALEA_LEAVES"
     ]
   },
   "tab_element_order": {},
@@ -127,38 +245,28 @@
     "en_us": {
       "item_group.bigboigoober.bigboigoober": "Bigboigoober",
       "item.bigboigoober.block_thingy": "Block Thingy",
-      "block.bigboigoober.banner.flower_pattern.red": "Red Flower Pattern",
-      "block.bigboigoober.banner.flower_pattern.white": "White Flower Pattern",
-      "block.bigboigoober.banner.flower_pattern.purple": "Purple Flower Pattern",
-      "block.bigboigoober.banner.flower_pattern.gray": "Gray Flower Pattern",
-      "block.bigboigoober.banner.flower_pattern.brown": "Brown Flower Pattern",
-      "block.bigboigoober.banner.flower_pattern.light_gray": "Light Gray Flower Pattern",
-      "block.bigboigoober.banner.flower_pattern.orange": "Orange Flower Pattern",
-      "block.bigboigoober.banner.flower_pattern.cyan": "Cyan Flower Pattern",
-      "block.bigboigoober.banner.flower_pattern.green": "Green Flower Pattern",
-      "block.bigboigoober.banner.flower_pattern.black": "Black Flower Pattern",
-      "block.bigboigoober.banner.flower_pattern.magenta": "Magenta Flower Pattern",
-      "block.bigboigoober.banner.flower_pattern.yellow": "Yellow Flower Pattern",
-      "block.bigboigoober.banner.flower_pattern.pink": "Pink Flower Pattern",
-      "block.bigboigoober.banner.flower_pattern.light_blue": "Light Blue Flower Pattern",
-      "block.bigboigoober.banner.flower_pattern.lime": "Lime Flower Pattern",
-      "block.bigboigoober.banner.flower_pattern.blue": "Blue Flower Pattern",
       "fluid.bigboigoober.fake_water": "Fake Water",
       "fluid_type.bigboigoober.fake_water": "Fake Water",
       "item.bigboigoober.fake_water_bucket": "Fake Water Bucket",
-      "block.bigboigoober.fake_water": "Fake Water"
+      "block.bigboigoober.fake_water": "Fake Water",
+      "item.bigboigoober.block_wand": "Block Wand",
+      "biome.bigboigoober.dimension_filler_bc_mcreator_sucks": "Dimension Filler Bc Mcreator Sucks",
+      "item.bigboigoober.test": "Water Bucket (definitely)"
     }
   },
   "metadata": {
     "files": [
-      "src/main/resources/data/minecraft/tags/banner_pattern/no_item_required.json",
+      "src/main/java/net/mcreator/bigboigoober/mixin/NoiseGeneratorSettingsMixin.java",
+      "src/main/java/net/mcreator/bigboigoober/init/BigboigooberModBiomes.java",
       "src/main/java/net/mcreator/bigboigoober/init/BigboigooberModFluids.java",
       "src/main/java/net/mcreator/bigboigoober/init/BigboigooberModFluidTypes.java",
       "src/main/java/net/mcreator/bigboigoober/init/BigboigooberModBlocks.java",
       "src/main/java/net/mcreator/bigboigoober/init/BigboigooberModItems.java",
       "src/main/java/net/mcreator/bigboigoober/init/BigboigooberModTabs.java",
+      "src/main/resources/bigboigoober.mixins.json",
       "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/resources/pack.mcmeta",
+      "src/main/resources/META-INF/accesstransformer.cfg",
       "src/main/java/net/mcreator/bigboigoober/BigboigooberMod.java"
     ]
   },

@@ -22,8 +22,8 @@ public class FakeWaterFluidExtension {
 	@SubscribeEvent
 	public static void registerFluidTypeExtensions(RegisterClientExtensionsEvent event) {
 		event.registerFluidType(new IClientFluidTypeExtensions() {
-			private static final ResourceLocation STILL_TEXTURE = ResourceLocation.parse("minecraft:block/water_still");
-			private static final ResourceLocation FLOWING_TEXTURE = ResourceLocation.parse("minecraft:block/water_still");
+			private static final ResourceLocation STILL_TEXTURE = ResourceLocation.parse("minecraft:block/frosted_ice_0");
+			private static final ResourceLocation FLOWING_TEXTURE = ResourceLocation.parse("minecraft:block/frosted_ice_0");
 
 			@Override
 			public ResourceLocation getStillTexture() {

@@ -9,6 +9,7 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.bigboigoober.block.TestPortalBlock;
 import net.mcreator.bigboigoober.block.FakeWaterBlock;
 import net.mcreator.bigboigoober.block.BlockThingyBlock;
 import net.mcreator.bigboigoober.BigboigooberMod;
@@ -19,9 +20,11 @@ public class BigboigooberModBlocks {
 	public static final DeferredRegister.Blocks REGISTRY = DeferredRegister.createBlocks(BigboigooberMod.MODID);
 	public static final DeferredBlock<Block> BLOCK_THINGY;
 	public static final DeferredBlock<Block> FAKE_WATER;
+	public static final DeferredBlock<Block> TEST_PORTAL;
 	static {
 		BLOCK_THINGY = register("block_thingy", BlockThingyBlock::new);
 		FAKE_WATER = register("fake_water", FakeWaterBlock::new);
+		TEST_PORTAL = register("test_portal", TestPortalBlock::new);
 	}
 
 	// Start of user code block custom blocks

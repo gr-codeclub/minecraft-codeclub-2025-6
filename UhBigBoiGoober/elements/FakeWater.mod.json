@@ -4,8 +4,8 @@
   "definition": {
     "name": "Fake Water",
     "bucketName": "Fake Water Bucket",
-    "textureStill": "minecraft:water_still",
-    "textureFlowing": "minecraft:water_still",
+    "textureStill": "minecraft:frosted_ice_0",
+    "textureFlowing": "minecraft:frosted_ice_0",
     "textureRenderOverlay": "",
     "hasFog": true,
     "fogStartDistance": {

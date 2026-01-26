@@ -16,7 +16,9 @@ import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.bigboigoober.item.TestItem;
 import net.mcreator.bigboigoober.item.FakeWaterItem;
+import net.mcreator.bigboigoober.item.BlockWandItem;
 import net.mcreator.bigboigoober.BigboigooberMod;
 
 import java.util.function.Function;
@@ -25,9 +27,13 @@ public class BigboigooberModItems {
 	public static final DeferredRegister.Items REGISTRY = DeferredRegister.createItems(BigboigooberMod.MODID);
 	public static final DeferredItem<Item> BLOCK_THINGY;
 	public static final DeferredItem<Item> FAKE_WATER_BUCKET;
+	public static final DeferredItem<Item> BLOCK_WAND;
+	public static final DeferredItem<Item> TEST;
 	static {
 		BLOCK_THINGY = block(BigboigooberModBlocks.BLOCK_THINGY, new Item.Properties().stacksTo(99).rarity(Rarity.EPIC).fireResistant());
 		FAKE_WATER_BUCKET = register("fake_water_bucket", FakeWaterItem::new);
+		BLOCK_WAND = register("block_wand", BlockWandItem::new);
+		TEST = register("test", TestItem::new);
 	}
 
 	// Start of user code block custom items

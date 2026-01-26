@@ -1,0 +1,58 @@
+{
+  "has_precipitation": true,
+  "temperature": -1,
+  "downfall": 1,
+  "effects": {
+    "foliage_color": -6060643,
+    "grass_color": -10062785,
+    "sky_color": -2630989,
+    "fog_color": -2630989,
+    "water_color": -5720369,
+    "water_fog_color": -5982529
+  },
+  "spawners": {
+    "monster": [
+      {
+        "type": "chicken",
+        "weight": 20,
+        "minCount": 5,
+        "maxCount": 10
+      }
+    ],
+    "creature": [],
+    "ambient": [],
+    "axolotls": [],
+    "underground_water_creature": [],
+    "water_creature": [],
+    "water_ambient": [],
+    "misc": []
+  },
+  "spawn_costs": {},
+  "carvers": [],
+  "features": [
+    [],
+    [],
+    [
+      "minecraft:amethyst_geode"
+    ],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "bigboigoober:dimension_filler_bc_mcreator_sucks_tree",
+      "minecraft:forest_flowers",
+      "minecraft:patch_grass_forest",
+      "minecraft:lush_caves_ceiling_vegetation",
+      "minecraft:cave_vines",
+      "minecraft:lush_caves_clay",
+      "minecraft:lush_caves_vegetation",
+      "minecraft:rooted_azalea_tree",
+      "minecraft:spore_blossom",
+      "minecraft:classic_vines_cave_feature"
+    ],
+    []
+  ]
+}

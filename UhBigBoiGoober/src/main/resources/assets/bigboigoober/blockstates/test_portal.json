@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "bigboigoober:block/test_portal_ew"
+    },
+    "axis=x": {
+      "model": "bigboigoober:block/test_portal_ns"
+    }
+  }
+}
