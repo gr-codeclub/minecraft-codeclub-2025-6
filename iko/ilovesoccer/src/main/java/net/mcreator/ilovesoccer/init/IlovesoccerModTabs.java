@@ -18,5 +18,6 @@ public class IlovesoccerModTabs {
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> VOLDERMOLTSTOLEMYSHAMPOO = REGISTRY.register("voldermoltstolemyshampoo",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.ilovesoccer.voldermoltstolemyshampoo")).icon(() -> new ItemStack(IlovesoccerModBlocks.VOLDERMOLTHASA_BI_GNOSE.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(IlovesoccerModBlocks.VOLDERMOLTHASA_BI_GNOSE.get().asItem());
+				tabData.accept(IlovesoccerModItems.VOLDERMOLTBWOAANBD.get());
 			}).withSearchBar().build());
 }

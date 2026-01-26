@@ -70,17 +70,66 @@
           "src/main/java/net/mcreator/ilovesoccer/procedures/VoldermolthasaBIGnoseEntityWalksOnTheBlockProcedure.java"
         ]
       }
+    },
+    {
+      "name": "VoldermoltbwoaanbdRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "voldermoltbwoaanbd_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/ilovesoccer/procedures/VoldermoltbwoaanbdRightclickedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Voldermoltbwoaanbd",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "voldermoltbwoaanbd",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ilovesoccer/item/VoldermoltbwoaanbdItem.java",
+          "src/main/resources/assets/ilovesoccer/models/item/voldermoltbwoaanbd.json",
+          "src/main/resources/assets/ilovesoccer/items/voldermoltbwoaanbd.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
-  "tag_elements": {},
+  "tag_elements": {
+    "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:Voldermoltbwoaanbd"
+    ]
+  },
   "tab_element_order": {},
   "language_map": {
     "en_us": {
       "item_group.ilovesoccer.voldermoltstolemyshampoo": "Voldermoltstolemyshampoo",
       "item_group.ilovesoccer.voldermoltstolemyshampo": "Voldermoltstolemyshampo",
-      "item.ilovesoccer.voldermolthasa_bi_gnose": "Voldermolthasa BI Gnose"
+      "item.ilovesoccer.voldermolthasa_bi_gnose": "Voldermolthasa BI Gnose",
+      "item.ilovesoccer.voldermoltbwoaanbd": "Voldermoltbwoaanbd"
     }
   },
   "metadata": {

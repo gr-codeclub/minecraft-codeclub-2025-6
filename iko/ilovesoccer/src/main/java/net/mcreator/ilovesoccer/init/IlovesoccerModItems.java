@@ -11,6 +11,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.ilovesoccer.item.VoldermoltbwoaanbdItem;
 import net.mcreator.ilovesoccer.IlovesoccerMod;
 
 import java.util.function.Function;
@@ -18,8 +19,10 @@ import java.util.function.Function;
 public class IlovesoccerModItems {
 	public static final DeferredRegister.Items REGISTRY = DeferredRegister.createItems(IlovesoccerMod.MODID);
 	public static final DeferredItem<Item> VOLDERMOLTHASA_BI_GNOSE;
+	public static final DeferredItem<Item> VOLDERMOLTBWOAANBD;
 	static {
 		VOLDERMOLTHASA_BI_GNOSE = block(IlovesoccerModBlocks.VOLDERMOLTHASA_BI_GNOSE);
+		VOLDERMOLTBWOAANBD = register("voldermoltbwoaanbd", VoldermoltbwoaanbdItem::new);
 	}
 
 	// Start of user code block custom items
