@@ -15,7 +15,7 @@ import net.mcreator.eleazar.procedures.KpopsucksEntityWalksOnTheBlockProcedure;
 
 public class KpopsucksBlock extends Block {
 	public KpopsucksBlock(BlockBehaviour.Properties properties) {
-		super(properties.sound(SoundType.GRAVEL).strength(1f, 10f).speedFactor(3f).jumpFactor(10f));
+		super(properties.sound(SoundType.GRAVEL).strength(1f, 10f).jumpFactor(10f));
 	}
 
 	@Override
