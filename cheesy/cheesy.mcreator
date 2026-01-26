@@ -104,17 +104,63 @@
           "src/main/java/net/mcreator/cheesy/procedures/ChezBlockDestroyedByPlayerProcedure.java"
         ]
       }
+    },
+    {
+      "name": "Da",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "da",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cheesy/models/item/da.json",
+          "src/main/resources/assets/cheesy/models/item/da_gui.json",
+          "src/main/resources/assets/cheesy/items/da.json",
+          "src/main/java/net/mcreator/cheesy/item/DaItem.java"
+        ]
+      }
+    },
+    {
+      "name": "DaRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "da_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/cheesy/procedures/DaRightclickedProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
-  "tag_elements": {},
+  "tag_elements": {
+    "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:Da"
+    ]
+  },
   "tab_element_order": {},
   "language_map": {
     "en_us": {
       "item_group.cheesy.cheese": "Cheese",
       "item.cheesy.chez": "Chez",
-      "item.cheesy.cheese_hunk": "Cheese Hunk"
+      "item.cheesy.cheese_hunk": "Cheese Hunk",
+      "item.cheesy.da": "Da"
     }
   },
   "metadata": {
