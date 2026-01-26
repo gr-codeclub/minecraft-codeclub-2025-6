@@ -60,16 +60,65 @@
           "src/main/java/net/mcreator/coco/procedures/QuickCocoEntityWalksOnTheBlockProcedure.java"
         ]
       }
+    },
+    {
+      "name": "WandRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wand_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/coco/procedures/WandRightclickedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Wand",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wand",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/coco/item/WandItem.java",
+          "src/main/resources/assets/coco/items/wand.json",
+          "src/main/resources/assets/coco/models/item/wand.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
-  "tag_elements": {},
+  "tag_elements": {
+    "ITEMS:minecraft:shovels": [
+      "~CUSTOM:Wand"
+    ]
+  },
   "tab_element_order": {},
   "language_map": {
     "en_us": {
       "item_group.coco.coco": "Coco",
-      "item.coco.quick_coco": "TOASTERMONSTER"
+      "item.coco.quick_coco": "TOASTERMONSTER",
+      "item.coco.wand": "Wand"
     }
   },
   "metadata": {

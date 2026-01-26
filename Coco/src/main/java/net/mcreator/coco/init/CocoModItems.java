@@ -11,6 +11,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.coco.item.WandItem;
 import net.mcreator.coco.CocoMod;
 
 import java.util.function.Function;
@@ -18,8 +19,10 @@ import java.util.function.Function;
 public class CocoModItems {
 	public static final DeferredRegister.Items REGISTRY = DeferredRegister.createItems(CocoMod.MODID);
 	public static final DeferredItem<Item> QUICK_COCO;
+	public static final DeferredItem<Item> WAND;
 	static {
 		QUICK_COCO = block(CocoModBlocks.QUICK_COCO);
+		WAND = register("wand", WandItem::new);
 	}
 
 	// Start of user code block custom items
