@@ -60,16 +60,83 @@
           "src/main/java/net/mcreator/cocomelon/procedures/Cocomelon2BlockDestroyedByPlayerProcedure.java"
         ]
       }
+    },
+    {
+      "name": "COCOMELON3",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cocomelon_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cocomelon/item/COCOMELON3Item.java",
+          "src/main/resources/assets/cocomelon/models/item/cocomelon_3.json",
+          "src/main/resources/assets/cocomelon/models/item/cocomelon_3_gui.json",
+          "src/main/resources/assets/cocomelon/items/cocomelon_3.json"
+        ]
+      }
+    },
+    {
+      "name": "COCOMELON676676767",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cocomelon_676676767",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cocomelon/models/item/cocomelon_676676767_gui.json",
+          "src/main/java/net/mcreator/cocomelon/item/COCOMELON676676767Item.java",
+          "src/main/resources/assets/cocomelon/models/item/cocomelon_676676767.json",
+          "src/main/resources/assets/cocomelon/items/cocomelon_676676767.json"
+        ]
+      }
+    },
+    {
+      "name": "COCOMELON676676767Rightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cocomelon_676676767_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/cocomelon/procedures/COCOMELON676676767RightclickedProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
-  "tag_elements": {},
+  "tag_elements": {
+    "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:COCOMELON676676767",
+      "~CUSTOM:COCOMELON3"
+    ]
+  },
   "tab_element_order": {},
   "language_map": {
     "en_us": {
       "item_group.cocomelon.cocomelon_1": "Cocomelon 1",
-      "item.cocomelon.cocomelon_2": "Cocomelon 2"
+      "item.cocomelon.cocomelon_2": "Cocomelon 2",
+      "item.cocomelon.cocomelon_3": "COCOMELON 3",
+      "item.cocomelon.cocomelon_676676767": "COCOMELON 6 7 6 6 7 6 7 6 7"
     }
   },
   "metadata": {

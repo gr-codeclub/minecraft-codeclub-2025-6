@@ -11,6 +11,8 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.cocomelon.item.COCOMELON676676767Item;
+import net.mcreator.cocomelon.item.COCOMELON3Item;
 import net.mcreator.cocomelon.CocomelonMod;
 
 import java.util.function.Function;
@@ -18,8 +20,12 @@ import java.util.function.Function;
 public class CocomelonModItems {
 	public static final DeferredRegister.Items REGISTRY = DeferredRegister.createItems(CocomelonMod.MODID);
 	public static final DeferredItem<Item> COCOMELON_2;
+	public static final DeferredItem<Item> COCOMELON_3;
+	public static final DeferredItem<Item> COCOMELON_676676767;
 	static {
 		COCOMELON_2 = block(CocomelonModBlocks.COCOMELON_2);
+		COCOMELON_3 = register("cocomelon_3", COCOMELON3Item::new);
+		COCOMELON_676676767 = register("cocomelon_676676767", COCOMELON676676767Item::new);
 	}
 
 	// Start of user code block custom items
