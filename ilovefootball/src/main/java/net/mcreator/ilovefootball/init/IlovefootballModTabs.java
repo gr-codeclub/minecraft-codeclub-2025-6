@@ -19,5 +19,6 @@ public class IlovefootballModTabs {
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ILOVEFOOTBALL = REGISTRY.register("ilovefootball",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.ilovefootball.ilovefootball")).icon(() -> new ItemStack(Blocks.DIAMOND_ORE)).displayItems((parameters, tabData) -> {
 				tabData.accept(IlovefootballModBlocks.FOOTBALLBLOCK.get().asItem());
+				tabData.accept(IlovefootballModItems.FOOTBALLSOMETHING.get());
 			}).withSearchBar().build());
 }

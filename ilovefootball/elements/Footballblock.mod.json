@@ -91,7 +91,7 @@
     "fireSpreadSpeed": 0,
     "isLadder": false,
     "slipperiness": 0.8,
-    "speedFactor": 20.0,
+    "speedFactor": 1.0,
     "jumpFactor": 5.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
@@ -139,6 +139,12 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onRightClicked": {
+      "name": "FootballblockOnBlockRightclicked"
+    },
+    "onEntityWalksOn": {
+      "name": "FootballblockEntityWalksOnTheBlock"
+    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

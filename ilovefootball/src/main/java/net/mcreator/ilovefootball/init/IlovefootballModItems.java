@@ -11,6 +11,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.ilovefootball.item.FootballsomethingItem;
 import net.mcreator.ilovefootball.IlovefootballMod;
 
 import java.util.function.Function;
@@ -18,8 +19,10 @@ import java.util.function.Function;
 public class IlovefootballModItems {
 	public static final DeferredRegister.Items REGISTRY = DeferredRegister.createItems(IlovefootballMod.MODID);
 	public static final DeferredItem<Item> FOOTBALLBLOCK;
+	public static final DeferredItem<Item> FOOTBALLSOMETHING;
 	static {
 		FOOTBALLBLOCK = block(IlovefootballModBlocks.FOOTBALLBLOCK);
+		FOOTBALLSOMETHING = register("footballsomething", FootballsomethingItem::new);
 	}
 
 	// Start of user code block custom items

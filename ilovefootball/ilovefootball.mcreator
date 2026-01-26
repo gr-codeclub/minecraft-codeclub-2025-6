@@ -26,16 +26,99 @@
           "src/main/resources/assets/ilovefootball/models/block/footballblock.json"
         ]
       }
+    },
+    {
+      "name": "FootballblockEntityWalksOnTheBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "footballblock_entity_walks_on_the_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/ilovefootball/procedures/FootballblockEntityWalksOnTheBlockProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "FootballblockOnBlockRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "footballblock_on_block_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/ilovefootball/procedures/FootballblockOnBlockRightclickedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Footballsomething",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "footballsomething",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ilovefootball/item/FootballsomethingItem.java",
+          "src/main/resources/assets/ilovefootball/models/item/footballsomething.json",
+          "src/main/resources/assets/ilovefootball/items/footballsomething.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
-  "tag_elements": {},
+  "tag_elements": {
+    "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:Footballsomething"
+    ]
+  },
   "tab_element_order": {},
   "language_map": {
     "en_us": {
       "item_group.ilovefootball.ilovefootball": "Ilovefootball",
-      "item.ilovefootball.footballblock": "Footballblock"
+      "item.ilovefootball.footballblock": "Footballblock",
+      "item.ilovefootball.footballsomething": "Footballsomething"
     }
   },
   "metadata": {
