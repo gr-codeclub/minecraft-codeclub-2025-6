@@ -11,6 +11,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.balthzar.item.TsbItem;
 import net.mcreator.balthzar.BalthzarMod;
 
 import java.util.function.Function;
@@ -18,8 +19,10 @@ import java.util.function.Function;
 public class BalthzarModItems {
 	public static final DeferredRegister.Items REGISTRY = DeferredRegister.createItems(BalthzarMod.MODID);
 	public static final DeferredItem<Item> BALTHZAR;
+	public static final DeferredItem<Item> TSB;
 	static {
 		BALTHZAR = block(BalthzarModBlocks.BALTHZAR);
+		TSB = register("tsb", TsbItem::new);
 	}
 
 	// Start of user code block custom items

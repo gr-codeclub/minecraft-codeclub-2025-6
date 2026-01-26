@@ -60,16 +60,57 @@
           "src/main/java/net/mcreator/balthzar/procedures/BalthzarEntityWalksOnTheBlockProcedure.java"
         ]
       }
+    },
+    {
+      "name": "Tsb",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tsb",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/balthzar/models/item/tsb.json",
+          "src/main/resources/assets/balthzar/items/tsb.json",
+          "src/main/java/net/mcreator/balthzar/item/TsbItem.java"
+        ]
+      }
+    },
+    {
+      "name": "TsbRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tsb_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/balthzar/procedures/TsbRightclickedProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
-  "tag_elements": {},
+  "tag_elements": {
+    "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:Tsb"
+    ]
+  },
   "tab_element_order": {},
   "language_map": {
     "en_us": {
       "item_group.balthzar.joemama": "Joemama",
-      "item.balthzar.balthzar": "Balthzar"
+      "item.balthzar.balthzar": "Balthzar",
+      "item.balthzar.tsb": "Tsb"
     }
   },
   "metadata": {
