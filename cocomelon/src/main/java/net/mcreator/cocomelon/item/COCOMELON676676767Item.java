@@ -14,10 +14,10 @@ import net.minecraft.core.registries.Registries;
 import net.mcreator.cocomelon.procedures.COCOMELON676676767RightclickedProcedure;
 
 public class COCOMELON676676767Item extends Item {
-	private static final ToolMaterial TOOL_MATERIAL = new ToolMaterial(BlockTags.INCORRECT_FOR_WOODEN_TOOL, 100, 4f, 0, 2, TagKey.create(Registries.ITEM, ResourceLocation.parse("cocomelon:cocomelon_676676767_repair_items")));
+	private static final ToolMaterial TOOL_MATERIAL = new ToolMaterial(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 100, 100f, 0, 100, TagKey.create(Registries.ITEM, ResourceLocation.parse("cocomelon:cocomelon_676676767_repair_items")));
 
 	public COCOMELON676676767Item(Item.Properties properties) {
-		super(properties.pickaxe(TOOL_MATERIAL, 3f, -3f));
+		super(properties.pickaxe(TOOL_MATERIAL, 99f, 96f));
 	}
 
 	@Override
