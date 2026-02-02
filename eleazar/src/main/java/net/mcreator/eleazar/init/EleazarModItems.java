@@ -11,6 +11,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.eleazar.item.SixsevensixsevensixsevenItem;
 import net.mcreator.eleazar.item.SixsevenItem;
 import net.mcreator.eleazar.EleazarMod;
 
@@ -20,9 +21,11 @@ public class EleazarModItems {
 	public static final DeferredRegister.Items REGISTRY = DeferredRegister.createItems(EleazarMod.MODID);
 	public static final DeferredItem<Item> KPOPSUCKS;
 	public static final DeferredItem<Item> SIXSEVEN;
+	public static final DeferredItem<Item> SIXSEVENSIXSEVENSIXSEVEN;
 	static {
 		KPOPSUCKS = block(EleazarModBlocks.KPOPSUCKS);
 		SIXSEVEN = register("sixseven", SixsevenItem::new);
+		SIXSEVENSIXSEVENSIXSEVEN = register("sixsevensixsevensixseven", SixsevensixsevensixsevenItem::new);
 	}
 
 	// Start of user code block custom items

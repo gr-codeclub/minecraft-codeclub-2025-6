@@ -30,6 +30,7 @@ public class EleazarModTabs {
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 		if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(EleazarModItems.SIXSEVEN.get());
+			tabData.accept(EleazarModItems.SIXSEVENSIXSEVENSIXSEVEN.get());
 		}
 	}
 }

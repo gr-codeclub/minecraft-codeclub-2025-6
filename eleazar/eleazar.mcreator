@@ -100,12 +100,27 @@
           "src/main/java/net/mcreator/eleazar/procedures/SixsevenRightclickedProcedure.java"
         ]
       }
+    },
+    {
+      "name": "Sixsevensixsevensixseven",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sixsevensixsevensixseven",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/eleazar/item/SixsevensixsevensixsevenItem.java",
+          "src/main/resources/assets/eleazar/items/sixsevensixsevensixseven.json",
+          "src/main/resources/assets/eleazar/models/item/sixsevensixsevensixseven.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {
     "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:Sixsevensixsevensixseven",
       "~CUSTOM:Sixseven"
     ]
   },
@@ -114,7 +129,8 @@
     "en_us": {
       "item_group.eleazar.eleazar": "Eleazar",
       "item.eleazar.kpopsucks": "Kpopsucks",
-      "item.eleazar.sixseven": "Sixseven"
+      "item.eleazar.sixseven": "Sixseven",
+      "item.eleazar.sixsevensixsevensixseven": "Sixsevensixsevensixseven"
     }
   },
   "metadata": {
