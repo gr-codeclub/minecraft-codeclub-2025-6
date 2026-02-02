@@ -30,6 +30,7 @@ public class BalthzarModTabs {
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 		if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(BalthzarModItems.TSB.get());
+			tabData.accept(BalthzarModItems.HERMAN.get());
 		}
 	}
 }

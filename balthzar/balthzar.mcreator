@@ -96,12 +96,61 @@
           "src/main/java/net/mcreator/balthzar/procedures/TsbRightclickedProcedure.java"
         ]
       }
+    },
+    {
+      "name": "Herman",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "herman",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/balthzar/items/herman.json",
+          "src/main/java/net/mcreator/balthzar/item/HermanItem.java",
+          "src/main/resources/assets/balthzar/models/item/herman.json"
+        ]
+      }
+    },
+    {
+      "name": "BalthzarBlockDestroyedByPlayer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "balthzar_block_destroyed_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/balthzar/procedures/BalthzarBlockDestroyedByPlayerProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {
     "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:Herman",
       "~CUSTOM:Tsb"
     ]
   },
@@ -110,7 +159,8 @@
     "en_us": {
       "item_group.balthzar.joemama": "Joemama",
       "item.balthzar.balthzar": "Balthzar",
-      "item.balthzar.tsb": "Tsb"
+      "item.balthzar.tsb": "Tsb",
+      "item.balthzar.herman": "Herman"
     }
   },
   "metadata": {
