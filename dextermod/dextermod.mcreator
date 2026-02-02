@@ -36,6 +36,10 @@
       "metadata": {
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -56,6 +60,50 @@
           "src/main/java/net/mcreator/dextermod/procedures/DexterBlockEntityWalksOnTheBlockProcedure.java"
         ]
       }
+    },
+    {
+      "name": "PlatformWandRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "platform_wand_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/dextermod/procedures/PlatformWandRightclickedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "PlatformWand",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "platform_wand",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/dextermod/models/item/platform_wand.json",
+          "src/main/java/net/mcreator/dextermod/item/PlatformWandItem.java",
+          "src/main/resources/assets/dextermod/items/platform_wand.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -65,7 +113,8 @@
   "language_map": {
     "en_us": {
       "item_group.dextermod.dexter_mod": "Dexter Mod",
-      "item.dextermod.dexter_block": "Dexter Block"
+      "item.dextermod.dexter_block": "Dexter Block",
+      "item.dextermod.platform_wand": "Platform Wand"
     }
   },
   "metadata": {
