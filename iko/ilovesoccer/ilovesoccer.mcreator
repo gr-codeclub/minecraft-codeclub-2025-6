@@ -114,12 +114,74 @@
           "src/main/resources/assets/ilovesoccer/items/voldermoltbwoaanbd.json"
         ]
       }
+    },
+    {
+      "name": "VeinminerRightclickedOnBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "veinminer_rightclicked_on_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/ilovesoccer/procedures/VeinminerRightclickedOnBlockProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Veinminer",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "veinminer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ilovesoccer/item/VeinminerItem.java",
+          "src/main/resources/assets/ilovesoccer/models/item/veinminer.json",
+          "src/main/resources/assets/ilovesoccer/items/veinminer.json"
+        ]
+      }
+    },
+    {
+      "name": "VeinminerBlockDestroyedWithTool",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "veinminer_block_destroyed_with_tool",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/ilovesoccer/procedures/VeinminerBlockDestroyedWithToolProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {
     "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:Veinminer",
       "~CUSTOM:Voldermoltbwoaanbd"
     ]
   },
@@ -129,7 +191,8 @@
       "item_group.ilovesoccer.voldermoltstolemyshampoo": "Voldermoltstolemyshampoo",
       "item_group.ilovesoccer.voldermoltstolemyshampo": "Voldermoltstolemyshampo",
       "item.ilovesoccer.voldermolthasa_bi_gnose": "Voldermolthasa BI Gnose",
-      "item.ilovesoccer.voldermoltbwoaanbd": "Voldermoltbwoaanbd"
+      "item.ilovesoccer.voldermoltbwoaanbd": "Voldermoltbwoaanbd",
+      "item.ilovesoccer.veinminer": "Veinminer"
     }
   },
   "metadata": {

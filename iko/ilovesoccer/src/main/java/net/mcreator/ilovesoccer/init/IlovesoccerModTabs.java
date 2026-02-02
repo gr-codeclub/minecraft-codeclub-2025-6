@@ -19,5 +19,6 @@ public class IlovesoccerModTabs {
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.ilovesoccer.voldermoltstolemyshampoo")).icon(() -> new ItemStack(IlovesoccerModBlocks.VOLDERMOLTHASA_BI_GNOSE.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(IlovesoccerModBlocks.VOLDERMOLTHASA_BI_GNOSE.get().asItem());
 				tabData.accept(IlovesoccerModItems.VOLDERMOLTBWOAANBD.get());
+				tabData.accept(IlovesoccerModItems.VEINMINER.get());
 			}).withSearchBar().build());
 }
