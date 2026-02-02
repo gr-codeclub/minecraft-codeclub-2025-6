@@ -104,12 +104,61 @@
           "src/main/resources/assets/ilovefootball/items/footballsomething.json"
         ]
       }
+    },
+    {
+      "name": "FootRightclickedOnBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "foot_rightclicked_on_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/ilovefootball/procedures/FootRightclickedOnBlockProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Foot",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "foot",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ilovefootball/models/item/foot.json",
+          "src/main/resources/assets/ilovefootball/items/foot.json",
+          "src/main/java/net/mcreator/ilovefootball/item/FootItem.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {
     "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:Foot",
       "~CUSTOM:Footballsomething"
     ]
   },
@@ -118,7 +167,8 @@
     "en_us": {
       "item_group.ilovefootball.ilovefootball": "Ilovefootball",
       "item.ilovefootball.footballblock": "Footballblock",
-      "item.ilovefootball.footballsomething": "Footballsomething"
+      "item.ilovefootball.footballsomething": "Footballsomething",
+      "item.ilovefootball.foot": "Foot"
     }
   },
   "metadata": {
