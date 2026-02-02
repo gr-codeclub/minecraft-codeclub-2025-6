@@ -145,12 +145,62 @@
           "src/main/java/net/mcreator/cheesy/procedures/DaRightclickedProcedure.java"
         ]
       }
+    },
+    {
+      "name": "Shhh",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shhh",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cheesy/models/item/shhh_gui.json",
+          "src/main/resources/assets/cheesy/items/shhh.json",
+          "src/main/resources/assets/cheesy/models/item/shhh.json",
+          "src/main/java/net/mcreator/cheesy/item/ShhhItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Rightchez",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rightchez",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/cheesy/procedures/RightchezProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {
     "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:Shhh",
       "~CUSTOM:Da"
     ]
   },
@@ -160,7 +210,8 @@
       "item_group.cheesy.cheese": "Cheese",
       "item.cheesy.chez": "Chez",
       "item.cheesy.cheese_hunk": "Cheese Hunk",
-      "item.cheesy.da": "Da"
+      "item.cheesy.da": "Da",
+      "item.cheesy.shhh": "Shhh"
     }
   },
   "metadata": {

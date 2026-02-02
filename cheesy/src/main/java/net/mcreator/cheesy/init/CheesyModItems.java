@@ -11,6 +11,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.cheesy.item.ShhhItem;
 import net.mcreator.cheesy.item.DaItem;
 import net.mcreator.cheesy.item.CheeseHunkItem;
 import net.mcreator.cheesy.CheesyMod;
@@ -22,10 +23,12 @@ public class CheesyModItems {
 	public static final DeferredItem<Item> CHEZ;
 	public static final DeferredItem<Item> CHEESE_HUNK;
 	public static final DeferredItem<Item> DA;
+	public static final DeferredItem<Item> SHHH;
 	static {
 		CHEZ = block(CheesyModBlocks.CHEZ);
 		CHEESE_HUNK = register("cheese_hunk", CheeseHunkItem::new);
 		DA = register("da", DaItem::new);
+		SHHH = register("shhh", ShhhItem::new);
 	}
 
 	// Start of user code block custom items

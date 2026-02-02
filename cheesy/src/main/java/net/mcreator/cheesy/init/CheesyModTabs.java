@@ -30,6 +30,7 @@ public class CheesyModTabs {
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 		if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(CheesyModItems.DA.get());
+			tabData.accept(CheesyModItems.SHHH.get());
 		}
 	}
 }
