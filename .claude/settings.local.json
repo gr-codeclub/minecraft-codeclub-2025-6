@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3:*)",
+      "Bash(dir:*)",
+      "Bash(echo:*)",
+      "Bash(xmllint:*)",
+      "Bash(findstr:*)",
+      "Bash(powershell -Command:*)",
+      "Bash(node skill.mjs test:*)",
+      "Bash(where:*)",
+      "Bash(python:*)"
+    ]
+  }
+}
