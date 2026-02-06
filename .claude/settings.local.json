@@ -9,7 +9,8 @@
       "Bash(powershell -Command:*)",
       "Bash(node skill.mjs test:*)",
       "Bash(where:*)",
-      "Bash(python:*)"
+      "Bash(python:*)",
+      "Bash(ls:*)"
     ]
   }
 }
