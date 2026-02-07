@@ -18,11 +18,11 @@
       "registry_name": "dexter_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/dextermod/items/dexter_block.json",
-          "src/main/resources/assets/dextermod/blockstates/dexter_block.json",
-          "src/main/resources/assets/dextermod/models/block/dexter_block.json",
-          "src/main/resources/data/dextermod/loot_table/blocks/dexter_block.json",
           "src/main/resources/assets/dextermod/models/item/dexter_block.json",
+          "src/main/resources/assets/dextermod/models/block/dexter_block.json",
+          "src/main/resources/assets/dextermod/items/dexter_block.json",
+          "src/main/resources/data/dextermod/loot_table/blocks/dexter_block.json",
+          "src/main/resources/assets/dextermod/blockstates/dexter_block.json",
           "src/main/java/net/mcreator/dextermod/block/DexterBlockBlock.java"
         ]
       }
@@ -56,26 +56,79 @@
           "src/main/java/net/mcreator/dextermod/procedures/DexterBlockEntityWalksOnTheBlockProcedure.java"
         ]
       }
+    },
+    {
+      "name": "VeinMinerBlockDestroyedWithTool",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vein_miner_block_destroyed_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/dextermod/procedures/VeinMinerBlockDestroyedWithToolProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "VeinMiner",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vein_miner",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dextermod/item/VeinMinerItem.java",
+          "src/main/resources/assets/dextermod/models/item/vein_miner.json",
+          "src/main/resources/assets/dextermod/items/vein_miner.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
-  "tag_elements": {},
+  "tag_elements": {
+    "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:VeinMiner"
+    ]
+  },
   "tab_element_order": {},
   "language_map": {
     "en_us": {
       "item_group.dextermod.dexter_mod": "Dexter Mod",
-      "item.dextermod.dexter_block": "Dexter Block"
+      "item.dextermod.dexter_block": "Dexter Block",
+      "item.dextermod.vein_miner": "Vein Miner"
     }
   },
   "metadata": {
     "files": [
       "src/main/java/net/mcreator/dextermod/init/DextermodModBlocks.java",
       "src/main/java/net/mcreator/dextermod/init/DextermodModItems.java",
-      "src/main/resources/pack.mcmeta",
-      "src/main/java/net/mcreator/dextermod/DextermodMod.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/java/net/mcreator/dextermod/init/DextermodModTabs.java"
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/dextermod/init/DextermodModTabs.java",
+      "src/main/java/net/mcreator/dextermod/DextermodMod.java"
     ]
   },
   "foldersRoot": {
