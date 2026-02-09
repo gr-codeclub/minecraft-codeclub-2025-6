@@ -10,9 +10,18 @@ public class RightchezProcedure {
 		double xPos = 0;
 		double yPos = 0;
 		double zPos = 0;
-		xPos = x;
+		xPos = x + 1;
 		yPos = y;
 		zPos = z;
+		while ((world.getBlockState(BlockPos.containing(xPos, yPos, zPos))).getBlock() == blockstate.getBlock()) {
+			{
+				BlockPos _pos = BlockPos.containing(xPos, yPos, zPos);
+				Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x, y, z), null);
+				world.destroyBlock(_pos, false);
+			}
+			xPos = xPos + 1;
+		}
+		xPos = x - (-1);
 		while ((world.getBlockState(BlockPos.containing(xPos, yPos, zPos))).getBlock() == blockstate.getBlock()) {
 			{
 				BlockPos _pos = BlockPos.containing(xPos, yPos, zPos);

@@ -137,8 +137,8 @@
             "type": "number"
           },
           {
-            "name": "world",
-            "type": "world"
+            "name": "z",
+            "type": "number"
           }
         ],
         "files": [
