@@ -113,6 +113,54 @@
           "src/main/resources/assets/bigboigoober/items/fake_water_bucket.json"
         ]
       }
+    },
+    {
+      "name": "SecondTryOfBlockDisappearingThingRightclickedOnBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "second_try_of_block_disappearing_thing_rightclicked_on_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/bigboigoober/procedures/SecondTryOfBlockDisappearingThingRightclickedOnBlockProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SecondTryOfBlockDisappearingThing",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "second_try_of_block_disappearing_thing",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/bigboigoober/items/second_try_of_block_disappearing_thing.json",
+          "src/main/java/net/mcreator/bigboigoober/item/SecondTryOfBlockDisappearingThingItem.java",
+          "src/main/resources/assets/bigboigoober/models/item/second_try_of_block_disappearing_thing.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -120,6 +168,9 @@
   "tag_elements": {
     "BLOCKS:minecraft:replaceable": [
       "~CUSTOM:FakeWater"
+    ],
+    "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:SecondTryOfBlockDisappearingThing"
     ]
   },
   "tab_element_order": {},
@@ -146,7 +197,8 @@
       "fluid.bigboigoober.fake_water": "Fake Water",
       "fluid_type.bigboigoober.fake_water": "Fake Water",
       "item.bigboigoober.fake_water_bucket": "Fake Water Bucket",
-      "block.bigboigoober.fake_water": "Fake Water"
+      "block.bigboigoober.fake_water": "Fake Water",
+      "item.bigboigoober.second_try_of_block_disappearing_thing": "Second Try Of Block Disappearing Thing"
     }
   },
   "metadata": {

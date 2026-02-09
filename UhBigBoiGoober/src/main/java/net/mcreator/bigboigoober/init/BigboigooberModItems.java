@@ -16,6 +16,7 @@ import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.bigboigoober.item.SecondTryOfBlockDisappearingThingItem;
 import net.mcreator.bigboigoober.item.FakeWaterItem;
 import net.mcreator.bigboigoober.BigboigooberMod;
 
@@ -25,9 +26,11 @@ public class BigboigooberModItems {
 	public static final DeferredRegister.Items REGISTRY = DeferredRegister.createItems(BigboigooberMod.MODID);
 	public static final DeferredItem<Item> BLOCK_THINGY;
 	public static final DeferredItem<Item> FAKE_WATER_BUCKET;
+	public static final DeferredItem<Item> SECOND_TRY_OF_BLOCK_DISAPPEARING_THING;
 	static {
 		BLOCK_THINGY = block(BigboigooberModBlocks.BLOCK_THINGY, new Item.Properties().stacksTo(99).rarity(Rarity.EPIC).fireResistant());
 		FAKE_WATER_BUCKET = register("fake_water_bucket", FakeWaterItem::new);
+		SECOND_TRY_OF_BLOCK_DISAPPEARING_THING = register("second_try_of_block_disappearing_thing", SecondTryOfBlockDisappearingThingItem::new);
 	}
 
 	// Start of user code block custom items

@@ -20,5 +20,6 @@
   "fluid.bigboigoober.fake_water": "Fake Water",
   "fluid_type.bigboigoober.fake_water": "Fake Water",
   "item.bigboigoober.fake_water_bucket": "Fake Water Bucket",
-  "block.bigboigoober.fake_water": "Fake Water"
+  "block.bigboigoober.fake_water": "Fake Water",
+  "item.bigboigoober.second_try_of_block_disappearing_thing": "Second Try Of Block Disappearing Thing"
 }
