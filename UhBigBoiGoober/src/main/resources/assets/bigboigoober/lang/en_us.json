@@ -1,25 +1,16 @@
 {
   "item_group.bigboigoober.bigboigoober": "Bigboigoober",
   "item.bigboigoober.block_thingy": "Block Thingy",
-  "block.bigboigoober.banner.flower_pattern.red": "Red Flower Pattern",
-  "block.bigboigoober.banner.flower_pattern.white": "White Flower Pattern",
-  "block.bigboigoober.banner.flower_pattern.purple": "Purple Flower Pattern",
-  "block.bigboigoober.banner.flower_pattern.gray": "Gray Flower Pattern",
-  "block.bigboigoober.banner.flower_pattern.brown": "Brown Flower Pattern",
-  "block.bigboigoober.banner.flower_pattern.light_gray": "Light Gray Flower Pattern",
-  "block.bigboigoober.banner.flower_pattern.orange": "Orange Flower Pattern",
-  "block.bigboigoober.banner.flower_pattern.cyan": "Cyan Flower Pattern",
-  "block.bigboigoober.banner.flower_pattern.green": "Green Flower Pattern",
-  "block.bigboigoober.banner.flower_pattern.black": "Black Flower Pattern",
-  "block.bigboigoober.banner.flower_pattern.magenta": "Magenta Flower Pattern",
-  "block.bigboigoober.banner.flower_pattern.yellow": "Yellow Flower Pattern",
-  "block.bigboigoober.banner.flower_pattern.pink": "Pink Flower Pattern",
-  "block.bigboigoober.banner.flower_pattern.light_blue": "Light Blue Flower Pattern",
-  "block.bigboigoober.banner.flower_pattern.lime": "Lime Flower Pattern",
-  "block.bigboigoober.banner.flower_pattern.blue": "Blue Flower Pattern",
   "fluid.bigboigoober.fake_water": "Fake Water",
   "fluid_type.bigboigoober.fake_water": "Fake Water",
   "item.bigboigoober.fake_water_bucket": "Fake Water Bucket",
   "block.bigboigoober.fake_water": "Fake Water",
+<<<<<<< HEAD
   "item.bigboigoober.second_try_of_block_disappearing_thing": "Second Try Of Block Disappearing Thing"
+=======
+  "item.bigboigoober.block_wand": "Block Wand",
+  "biome.bigboigoober.dimension_filler_bc_mcreator_sucks": "Dimension Filler Bc Mcreator Sucks",
+  "item.bigboigoober.test": "Water Bucket (definitely)",
+  "item.bigboigoober.vein_miner": "Vein Miner"
+>>>>>>> a95563d2b58cd31b09fe253d81845cf950018eb4
 }

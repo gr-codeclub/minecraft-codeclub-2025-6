@@ -25,13 +25,25 @@ public class BigboigooberModTabs {
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.bigboigoober.bigboigoober")).icon(() -> new ItemStack(Items.POISONOUS_POTATO)).displayItems((parameters, tabData) -> {
 				tabData.accept(BigboigooberModBlocks.BLOCK_THINGY.get().asItem());
 				tabData.accept(BigboigooberModItems.FAKE_WATER_BUCKET.get());
+<<<<<<< HEAD
 				tabData.accept(BigboigooberModItems.SECOND_TRY_OF_BLOCK_DISAPPEARING_THING.get());
+=======
+				tabData.accept(BigboigooberModItems.BLOCK_WAND.get());
+				tabData.accept(BigboigooberModItems.TEST.get());
+				tabData.accept(BigboigooberModItems.VEIN_MINER.get());
+>>>>>>> a95563d2b58cd31b09fe253d81845cf950018eb4
 			}).withSearchBar().build());
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 		if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+<<<<<<< HEAD
 			tabData.accept(BigboigooberModItems.SECOND_TRY_OF_BLOCK_DISAPPEARING_THING.get());
+=======
+			tabData.accept(BigboigooberModItems.BLOCK_WAND.get());
+			tabData.accept(BigboigooberModItems.TEST.get());
+			tabData.accept(BigboigooberModItems.VEIN_MINER.get());
+>>>>>>> a95563d2b58cd31b09fe253d81845cf950018eb4
 		}
 	}
 }

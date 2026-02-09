@@ -1,6 +1,11 @@
 {
   "replace": false,
   "values": [
+<<<<<<< HEAD
     "bigboigoober:second_try_of_block_disappearing_thing"
+=======
+    "bigboigoober:vein_miner",
+    "bigboigoober:block_wand"
+>>>>>>> a95563d2b58cd31b09fe253d81845cf950018eb4
   ]
 }

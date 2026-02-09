@@ -16,8 +16,14 @@ import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
+<<<<<<< HEAD
 import net.mcreator.bigboigoober.item.SecondTryOfBlockDisappearingThingItem;
+=======
+import net.mcreator.bigboigoober.item.VeinMinerItem;
+import net.mcreator.bigboigoober.item.TestItem;
+>>>>>>> a95563d2b58cd31b09fe253d81845cf950018eb4
 import net.mcreator.bigboigoober.item.FakeWaterItem;
+import net.mcreator.bigboigoober.item.BlockWandItem;
 import net.mcreator.bigboigoober.BigboigooberMod;
 
 import java.util.function.Function;
@@ -26,11 +32,23 @@ public class BigboigooberModItems {
 	public static final DeferredRegister.Items REGISTRY = DeferredRegister.createItems(BigboigooberMod.MODID);
 	public static final DeferredItem<Item> BLOCK_THINGY;
 	public static final DeferredItem<Item> FAKE_WATER_BUCKET;
+<<<<<<< HEAD
 	public static final DeferredItem<Item> SECOND_TRY_OF_BLOCK_DISAPPEARING_THING;
 	static {
 		BLOCK_THINGY = block(BigboigooberModBlocks.BLOCK_THINGY, new Item.Properties().stacksTo(99).rarity(Rarity.EPIC).fireResistant());
 		FAKE_WATER_BUCKET = register("fake_water_bucket", FakeWaterItem::new);
 		SECOND_TRY_OF_BLOCK_DISAPPEARING_THING = register("second_try_of_block_disappearing_thing", SecondTryOfBlockDisappearingThingItem::new);
+=======
+	public static final DeferredItem<Item> BLOCK_WAND;
+	public static final DeferredItem<Item> TEST;
+	public static final DeferredItem<Item> VEIN_MINER;
+	static {
+		BLOCK_THINGY = block(BigboigooberModBlocks.BLOCK_THINGY, new Item.Properties().stacksTo(99).rarity(Rarity.EPIC).fireResistant());
+		FAKE_WATER_BUCKET = register("fake_water_bucket", FakeWaterItem::new);
+		BLOCK_WAND = register("block_wand", BlockWandItem::new);
+		TEST = register("test", TestItem::new);
+		VEIN_MINER = register("vein_miner", VeinMinerItem::new);
+>>>>>>> a95563d2b58cd31b09fe253d81845cf950018eb4
 	}
 
 	// Start of user code block custom items
