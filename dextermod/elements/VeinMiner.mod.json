@@ -35,6 +35,9 @@
     "blocksAffected": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
+    "onRightClickedOnBlock": {
+      "name": "VeinMiner3D"
+    },
     "onBlockDestroyedWithTool": {
       "name": "VeinMinerBlockDestroyedWithTool"
     }

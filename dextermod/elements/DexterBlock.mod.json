@@ -139,6 +139,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onRightClicked": {
+      "name": "VeinMiner3D"
+    },
     "onEntityWalksOn": {
       "name": "DexterBlockEntityWalksOnTheBlock"
     },

@@ -10,7 +10,9 @@
       "Bash(node skill.mjs test:*)",
       "Bash(where:*)",
       "Bash(python:*)",
-      "Bash(ls:*)"
+      "Bash(ls:*)",
+      "Bash(./gradlew build:*)",
+      "Bash(./gradlew tasks:*)"
     ]
   }
 }

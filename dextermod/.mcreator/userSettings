@@ -5,7 +5,12 @@
   "projectBrowserSplitPos": 280,
   "projectBrowserState": {
     "expandedPaths": [
-      "[, dextermod]"
+      "[, dextermod]",
+      "[, dextermod, Source (Gradle)]",
+      "[, dextermod, Source (Gradle), C:\\minecraft-codeclub-2025-6\\dextermod\\src\\main\\java\\net]",
+      "[, dextermod, Source (Gradle), C:\\minecraft-codeclub-2025-6\\dextermod\\src\\main\\java\\net, C:\\minecraft-codeclub-2025-6\\dextermod\\src\\main\\java\\net\\mcreator]",
+      "[, dextermod, Source (Gradle), C:\\minecraft-codeclub-2025-6\\dextermod\\src\\main\\java\\net, C:\\minecraft-codeclub-2025-6\\dextermod\\src\\main\\java\\net\\mcreator, C:\\minecraft-codeclub-2025-6\\dextermod\\src\\main\\java\\net\\mcreator\\dextermod]",
+      "[, dextermod, Source (Gradle), C:\\minecraft-codeclub-2025-6\\dextermod\\src\\main\\java\\net, C:\\minecraft-codeclub-2025-6\\dextermod\\src\\main\\java\\net\\mcreator, C:\\minecraft-codeclub-2025-6\\dextermod\\src\\main\\java\\net\\mcreator\\dextermod, C:\\minecraft-codeclub-2025-6\\dextermod\\src\\main\\java\\net\\mcreator\\dextermod\\procedures]"
     ]
   }
 }
