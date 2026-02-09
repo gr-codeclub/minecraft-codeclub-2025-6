@@ -2,11 +2,7 @@
   "workspacePanelIconSize": "TILES",
   "workspacePanelSortType": "CREATED",
   "workspacePanelSortAscending": true,
-<<<<<<< Updated upstream
   "projectBrowserSplitPos": 6,
-=======
-  "projectBrowserSplitPos": 0,
->>>>>>> Stashed changes
   "projectBrowserState": {
     "expandedPaths": [
       "[, ilovesoccer]"
