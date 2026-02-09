@@ -35,7 +35,7 @@ public class VeinminerRightclickedOnBlockProcedure {
 					world.destroyBlock(_pos, false);
 				}
 			}
-			zPos = z;
+			zPos = zPos - 1;
 			xPos = xPos + 1;
 		}
 	}
