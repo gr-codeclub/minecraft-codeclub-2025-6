@@ -20,18 +20,13 @@ public class VeinminerRightclickedOnBlockProcedure {
 				world.destroyBlock(_pos, false);
 			}
 			xPos = xPos + 1;
-			xPos = x;
-			xPos = xPos - 1;
-			while ((world.getBlockState(BlockPos.containing(xPos, yPos, zPos))).getBlock() == blockstate.getBlock()) {
-				zPos = zPos + 1;
-				{
-					BlockPos _pos = BlockPos.containing(xPos, yPos, zPos);
-					Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x, y, z), null);
-					world.destroyBlock(_pos, false);
-				}
-				zPos = x;
-				zPos = zPos - 1;
+			zPos = zPos + 1;
+			{
+				BlockPos _pos = BlockPos.containing(xPos, yPos, zPos);
+				Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x, y, z), null);
+				world.destroyBlock(_pos, false);
 			}
+			zPos = zPos - 1;
 			while ((world.getBlockState(BlockPos.containing(xPos, yPos, zPos))).getBlock() == blockstate.getBlock()) {
 				zPos = zPos - 1;
 				{
