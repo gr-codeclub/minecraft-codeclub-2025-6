@@ -10,6 +10,10 @@ public class VeinminerRightclickedOnBlockProcedure {
 		double xPos = 0;
 		double yPos = 0;
 		double zPos = 0;
+		double limit = 0;
+		double deleted = 0;
+		deleted = 0;
+		limit = 500;
 		xPos = x;
 		yPos = y;
 		zPos = z;
@@ -19,6 +23,7 @@ public class VeinminerRightclickedOnBlockProcedure {
 				Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x, y, z), null);
 				world.destroyBlock(_pos, false);
 			}
+			deleted = deleted + 1;
 			xPos = xPos + 1;
 			zPos = zPos + 1;
 			{
@@ -26,7 +31,11 @@ public class VeinminerRightclickedOnBlockProcedure {
 				Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x, y, z), null);
 				world.destroyBlock(_pos, false);
 			}
+			deleted = deleted + 1;
 			zPos = zPos - 1;
+			if (deleted >= limit) {
+				break;
+			}
 			while ((world.getBlockState(BlockPos.containing(xPos, yPos, zPos))).getBlock() == blockstate.getBlock()) {
 				zPos = zPos - 1;
 				{
@@ -34,9 +43,16 @@ public class VeinminerRightclickedOnBlockProcedure {
 					Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x, y, z), null);
 					world.destroyBlock(_pos, false);
 				}
+				if (deleted >= limit) {
+					break;
+				}
+				deleted = deleted + 1;
 			}
 			zPos = zPos - 1;
 			xPos = xPos + 1;
+			if (deleted >= limit) {
+				break;
+			}
 		}
 	}
 }
