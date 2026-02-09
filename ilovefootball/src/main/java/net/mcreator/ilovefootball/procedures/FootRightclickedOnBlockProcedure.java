@@ -12,14 +12,27 @@ public class FootRightclickedOnBlockProcedure {
 		double yPos = 0;
 		xPos = x;
 		yPos = y;
-		zPos = z;
-		while ((world.getBlockState(BlockPos.containing(xPos, yPos, zPos))).getBlock() == blockstate.getBlock()) {
-			{
-				BlockPos _pos = BlockPos.containing(xPos, yPos, zPos);
-				Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x, y, z), null);
-				world.destroyBlock(_pos, false);
+		zPos = z - 5;
+		for (int index0 = 0; index0 < 10; index0++) {
+			while ((world.getBlockState(BlockPos.containing(xPos, yPos, zPos))).getBlock() == blockstate.getBlock()) {
+				{
+					BlockPos _pos = BlockPos.containing(xPos, yPos, zPos);
+					Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x, y, z), null);
+					world.destroyBlock(_pos, false);
+				}
+				xPos = xPos + 1;
 			}
-			xPos = xPos + 1;
+			xPos = x - 1;
+			while ((world.getBlockState(BlockPos.containing(xPos, yPos, zPos))).getBlock() == blockstate.getBlock()) {
+				{
+					BlockPos _pos = BlockPos.containing(xPos, yPos, zPos);
+					Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x, y, z), null);
+					world.destroyBlock(_pos, false);
+				}
+				xPos = xPos - 1;
+			}
+			zPos = zPos + 1;
+			xPos = x;
 		}
 	}
 }

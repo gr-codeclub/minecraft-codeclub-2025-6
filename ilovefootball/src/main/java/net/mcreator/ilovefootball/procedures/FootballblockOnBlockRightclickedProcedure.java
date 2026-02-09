@@ -7,8 +7,12 @@ import net.mcreator.ilovefootball.init.IlovefootballModBlocks;
 
 public class FootballblockOnBlockRightclickedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
+		boolean deletedthisrow = false;
 		double xOffset = 0;
 		double zOffset = 0;
+		double minedcount = 0;
+		double xPos = 0;
+		double xMas = 0;
 		xOffset = -1;
 		zOffset = -1;
 		for (int index0 = 0; index0 < 3; index0++) {
