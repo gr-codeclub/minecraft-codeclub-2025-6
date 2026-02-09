@@ -12,6 +12,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.coco.item.WandItem;
+import net.mcreator.coco.item.BlockDissapearererItem;
 import net.mcreator.coco.CocoMod;
 
 import java.util.function.Function;
@@ -20,9 +21,11 @@ public class CocoModItems {
 	public static final DeferredRegister.Items REGISTRY = DeferredRegister.createItems(CocoMod.MODID);
 	public static final DeferredItem<Item> QUICK_COCO;
 	public static final DeferredItem<Item> WAND;
+	public static final DeferredItem<Item> BLOCK_DISSAPEARERER;
 	static {
 		QUICK_COCO = block(CocoModBlocks.QUICK_COCO);
 		WAND = register("wand", WandItem::new);
+		BLOCK_DISSAPEARERER = register("block_dissapearerer", BlockDissapearererItem::new);
 	}
 
 	// Start of user code block custom items

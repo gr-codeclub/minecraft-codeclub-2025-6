@@ -104,6 +104,54 @@
           "src/main/resources/assets/coco/models/item/wand.json"
         ]
       }
+    },
+    {
+      "name": "BlockDissapearererRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "block_dissapearerer_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/coco/procedures/BlockDissapearererRightclickedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "BlockDissapearerer",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "block_dissapearerer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/coco/item/BlockDissapearererItem.java",
+          "src/main/resources/assets/coco/items/block_dissapearerer.json",
+          "src/main/resources/assets/coco/models/item/block_dissapearerer.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -111,6 +159,9 @@
   "tag_elements": {
     "ITEMS:minecraft:shovels": [
       "~CUSTOM:Wand"
+    ],
+    "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:BlockDissapearerer"
     ]
   },
   "tab_element_order": {},
@@ -118,7 +169,8 @@
     "en_us": {
       "item_group.coco.coco": "Coco",
       "item.coco.quick_coco": "TOASTERMONSTER",
-      "item.coco.wand": "Wand"
+      "item.coco.wand": "Wand",
+      "item.coco.block_dissapearerer": "Block Dissapearerer"
     }
   },
   "metadata": {

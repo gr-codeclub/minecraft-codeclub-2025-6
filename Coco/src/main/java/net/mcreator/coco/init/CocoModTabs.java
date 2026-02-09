@@ -25,12 +25,14 @@ public class CocoModTabs {
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.coco.coco")).icon(() -> new ItemStack(Items.SALMON)).displayItems((parameters, tabData) -> {
 				tabData.accept(CocoModBlocks.QUICK_COCO.get().asItem());
 				tabData.accept(CocoModItems.WAND.get());
+				tabData.accept(CocoModItems.BLOCK_DISSAPEARERER.get());
 			}).build());
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 		if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(CocoModItems.WAND.get());
+			tabData.accept(CocoModItems.BLOCK_DISSAPEARERER.get());
 		}
 	}
 }
