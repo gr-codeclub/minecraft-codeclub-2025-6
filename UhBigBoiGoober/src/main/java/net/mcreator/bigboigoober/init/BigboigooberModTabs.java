@@ -27,6 +27,7 @@ public class BigboigooberModTabs {
 				tabData.accept(BigboigooberModItems.FAKE_WATER_BUCKET.get());
 				tabData.accept(BigboigooberModItems.BLOCK_WAND.get());
 				tabData.accept(BigboigooberModItems.TEST.get());
+				tabData.accept(BigboigooberModItems.VEIN_MINER.get());
 			}).withSearchBar().build());
 
 	@SubscribeEvent
@@ -34,6 +35,7 @@ public class BigboigooberModTabs {
 		if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(BigboigooberModItems.BLOCK_WAND.get());
 			tabData.accept(BigboigooberModItems.TEST.get());
+			tabData.accept(BigboigooberModItems.VEIN_MINER.get());
 		}
 	}
 }

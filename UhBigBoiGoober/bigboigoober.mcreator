@@ -203,6 +203,54 @@
           "src/main/resources/data/bigboigoober/dimension/test.json"
         ]
       }
+    },
+    {
+      "name": "VeinMinerBlockDestroyedWithTool",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vein_miner_block_destroyed_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/bigboigoober/procedures/VeinMinerBlockDestroyedWithToolProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "VeinMiner",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vein_miner",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bigboigoober/item/VeinMinerItem.java",
+          "src/main/resources/assets/bigboigoober/models/item/vein_miner.json",
+          "src/main/resources/assets/bigboigoober/items/vein_miner.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -212,6 +260,7 @@
       "~CUSTOM:FakeWater"
     ],
     "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:VeinMiner",
       "~CUSTOM:BlockWand"
     ],
     "BIOMES:minecraft:has_structure/igloo": [
@@ -251,7 +300,8 @@
       "block.bigboigoober.fake_water": "Fake Water",
       "item.bigboigoober.block_wand": "Block Wand",
       "biome.bigboigoober.dimension_filler_bc_mcreator_sucks": "Dimension Filler Bc Mcreator Sucks",
-      "item.bigboigoober.test": "Water Bucket (definitely)"
+      "item.bigboigoober.test": "Water Bucket (definitely)",
+      "item.bigboigoober.vein_miner": "Vein Miner"
     }
   },
   "metadata": {
