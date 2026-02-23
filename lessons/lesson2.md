@@ -83,9 +83,11 @@ Only if we ask it to — it's stored silently in the background for now. We just
 ## Step-by-Step: MCreator
 
 > **Quick reference card** for today:
-> - Scoreboard add → **Player** category → "add to scoreboard score"
-> - Scoreboard read → **Player** category → "get scoreboard score"
-> - Trigger: mob killed → **When a living entity is killed** (set trigger when creating procedure)
+> - Scoreboard add → **World procedures → Scoreboard** → *"Set score [name] to [value] on the scoreboard of [entity]"*
+> - Scoreboard read → **World procedures → Scoreboard** → *"Get [entity] scoreboard score for [score]"*
+> - Trigger for mob killed → **"Entity dies"** (global trigger — selected when creating the procedure)
+> - The mob that died → **"Event/target entity"** block (in Minecraft Components at top of toolbox)
+> - The player who killed it → **"Source entity"** block (also in Minecraft Components)
 
 ---
 
@@ -93,23 +95,31 @@ Only if we ask it to — it's stored silently in the background for now. We just
 
 1. **+ New Element → Procedure**
 2. Name it `OnMobKilled`
-3. For the **trigger**, choose **"When a living entity is killed"**
-4. Make sure `entity` (the killer/player) is a dependency
+3. For the **global trigger**, choose **"Entity dies"**
+4. No manual dependencies needed — the trigger provides them automatically
 
 In the procedure canvas:
 
-**First, filter to monsters only** — we don't want skill XP for killing a chicken.
+**First, filter to monsters only** — we don't want skill XP for killing a chicken, and we need to confirm the killer is a player.
 
-Drag out an **if** block. Inside the condition: **"entity is of type: Monster"** (check Entity category for entity type checks). Put everything below inside this if.
+Drag out an **if** block with two conditions joined by AND:
+- Condition 1: **"Source entity"** is a player (use an entity-type check block)
+- Condition 2: **"Event/target entity"** is a monster (same entity-type check on the mob)
+
+Both of these entity blocks live in **Minecraft Components** at the top of the procedure toolbox.
+
+Put everything below inside this if.
 
 **Inside the if:**
 
-Drag out **"add to scoreboard score"**:
+From **World procedures → Scoreboard**, drag **"Set score [name] to [value] on the scoreboard of [entity]"**:
 - Score name: `warrior`
-- Amount: `1`
-- For entity: the **player/entity** dependency
+- Value: existing score + 1 (nest a **"Get [entity] scoreboard score for [score]"** block + 1 inside the value slot)
+- Entity: **"Source entity"** block (the player who did the killing)
 
-> **Dependency wiring — common sticking point:** The scoreboard block needs to know *which player* to add the score to. Look for a slot labelled "entity" or "player" on the block. You need to drag in the **"event/source entity"** dependency block (from the procedure's dependency list at the top) into that slot. Without this, MCreator doesn't know whose score to update. If you see an empty slot and nothing happens in-game, this is almost always why.
+> **Source entity vs Event/target entity:** In the "Entity dies" trigger, **"Event/target entity"** is the mob that died, and **"Source entity"** is whatever caused the death (in our case, the player). Always use **Source entity** for the scoreboard — that's who gets the warrior skill credit.
+
+> **Dependency wiring:** The scoreboard blocks have an entity slot. Drag a **"Source entity"** block from Minecraft Components into that slot. Without this wired in, MCreator doesn't know whose score to update.
 
 That's the whole procedure. Save it — MCreator automatically creates the `warrior` scoreboard objective the first time it's used.
 
@@ -132,8 +142,10 @@ That's the whole procedure. Save it — MCreator automatically creates the `warr
 Open the `CheckSkills` procedure. This reads the score and prints the rank.
 
 **Step A — Read the warrior score:**
-- Drag **"get scoreboard score"** → name: `warrior`, for: entity
-- Store the result in a new variable called `warriorScore`
+- From **World procedures → Scoreboard**, drag **"Get [entity] scoreboard score for [score]"**
+- Score name slot: type `warrior`
+- Entity slot: drag **"Event/target entity"** from Minecraft Components (this is the player who right-clicked)
+- Store the whole block as a new variable called `warriorScore`
 
 **Step B — The else-if chain (discover the ordering rule, don't just tell it):**
 
@@ -201,7 +213,8 @@ Find the **roll == 1** branch (the lightning). Currently it always strikes. We'l
 Replace the lightning action with:
 
 ```
-Set variable warriorLevel = [get scoreboard "warrior" for entity]
+Set variable warriorLevel =
+    [World procedures → Scoreboard → "Get [Event/target entity] scoreboard score for 'warrior'"]
 
 if warriorLevel >= 10
     → send chat "Your warrior skill deflects the strike!"

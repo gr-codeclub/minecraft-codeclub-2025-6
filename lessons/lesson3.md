@@ -57,10 +57,11 @@ Think of it like: a plain wooden crate vs a chest. Same basic shape, but the che
 ## Step-by-Step: MCreator
 
 > **Quick reference card** for today:
-> - Enable block memory → Block settings → **"Has block entity"** checkbox
-> - Read NBT integer → **Block** category → "get NBT tag from block entity" (type: integer)
-> - Write NBT integer → **Block** category → "set NBT tag on block entity" (type: integer)
-> - Block coordinates → use `blockX`, `blockY`, `blockZ` from the procedure context (not player X/Y/Z)
+> - Enable block memory → Block element settings → **"Has block entity?"** checkbox
+> - Read NBT number → **Block procedures → Actions** → *"Get NBT number tag [name] of block at x y z if it has block entity"*
+> - Write NBT number → **Block procedures → Actions** → *"Set NBT number tag [name] of block at x y z to [value] if it has block entity"*
+> - Get world tick time → **World procedures → Actions** → *"Get current world time"*
+> - Block coordinates → use `x`, `y`, `z` from the procedure context — these are the block's coordinates when triggered from the block's right-click event
 
 ---
 
@@ -83,16 +84,13 @@ Open `DiceBlockRightClicked`. We're adding code at the **very top**, before the 
 
 **Part A — Read the current count:**
 
-```
-Set variable rollCount = [get NBT integer "rollCount" from block at blockX, blockY, blockZ]
-```
+From **Block procedures → Actions**, drag:
 
-In MCreator blocks:
-- **Block → "get NBT tag from block entity"**
-- Tag name: `rollCount`
-- Type: **integer**
-- Coordinates: `blockX`, `blockY`, `blockZ`
-- Store in variable: `rollCount`
+*"Get NBT number tag [name] of block at x: [x] y: [y] z: [z] if it has block entity"*
+
+- Tag name field: type `rollCount`
+- x/y/z slots: drag `x`, `y`, `z` coordinate blocks from **Minecraft Components**
+- Store the whole block result as a new variable: `rollCount`
 
 > If the tag has never been set, it returns 0. Perfect for a fresh block.
 
@@ -106,16 +104,13 @@ Use a **Math → add** block: `rollCount` + `1`.
 
 **Part C — Save it back:**
 
-```
-[Set NBT integer "rollCount" on block at blockX, blockY, blockZ] = rollCount
-```
+From **Block procedures → Actions**, drag:
 
-In MCreator blocks:
-- **Block → "set NBT tag on block entity"**
-- Tag name: `rollCount`
-- Type: **integer**
-- Coordinates: `blockX`, `blockY`, `blockZ`
-- Value: `rollCount`
+*"Set NBT number tag [name] of block at x: [x] y: [y] z: [z] to [value] if it has block entity"*
+
+- Tag name field: type `rollCount`
+- x/y/z slots: drag `x`, `y`, `z` from **Minecraft Components**
+- Value slot: drag in the `rollCount` variable
 
 **Part D — Tell the player:**
 
@@ -156,20 +151,24 @@ Now that the counter works, we know how to read/write NBT. The cooldown uses the
 Add a **second** NBT value to the procedure. Insert this at the very top (before the roll counter code):
 
 ```
-Set variable lastTime  = [get NBT long "lastRolledTime" from block at blockX, blockY, blockZ]
-Set variable nowTime   = [get world game time]
-Set variable elapsed   = nowTime - lastTime
+Set variable lastTime = [Block procedures → Actions →
+    "Get NBT number tag 'lastRolledTime' of block at x y z if it has block entity"]
+
+Set variable nowTime  = [World procedures → Actions → "Get current world time"]
+
+Set variable elapsed  = nowTime - lastTime
 
 if elapsed < 1200
     → send chat "This dice needs more time! Try again soon."
-    → STOP (return/exit procedure)
+    → STOP (Logic/Loops → "break out of loop" or use "return" if available)
 
 else
-    → [set NBT long "lastRolledTime" on block at blockX, blockY, blockZ] = nowTime
+    → [Block procedures → Actions →
+       "Set NBT number tag 'lastRolledTime' of block at x y z to [nowTime] if it has block entity"]
     → (continue with the rest of the procedure below)
 ```
 
-> **Note on types:** Use **long** (not integer) for game time — the number can get very large in long-running worlds. Use **integer** for the roll counter (it'll never exceed a few thousand).
+> **Note on block type:** MCreator's NBT number tag blocks store a Java `double` internally, which is fine for both our counter (small integer) and the world time (large integer — world time fits comfortably in a double for game durations). Just use the same "NBT number" block for both.
 
 > **The stop block:** In MCreator, look for a **"return"** or **"exit procedure"** block in the Procedures/Control category. This makes the procedure stop immediately — nothing below it runs.
 

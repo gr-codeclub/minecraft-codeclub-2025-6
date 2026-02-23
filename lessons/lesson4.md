@@ -166,21 +166,21 @@ After that line (but before the else-if chain), add two things:
 [Set block property "face" at block's x, y, z] = roll - 1
 ```
 
-In MCreator:
-- Find **"set block state property"** or **"set block property"** in the Block category
-- Set the property name: `face`
-- Set the value: a **Math → subtract** block with `roll` minus `1`
-- Feed in the block's coordinates (x, y, z from the procedure's context)
+In MCreator — from **Block procedures → Actions**:
+
+*"Set integer property [face] of block at x: [x] y: [y] z: [z] to [roll - 1]"*
+
+- Property name field: `face`
+- Value slot: a **Math → subtract** block with `roll` minus `1`
+- x/y/z slots: drag `x`, `y`, `z` from **Minecraft Components** — these are the block's own coordinates
 
 **B — Add a visual pop (one extra block):**
 
-Directly after the property update, add a **spawn particle** action at the block's position:
+Directly after the property update, add a particle from **World procedures → Actions**:
 
-```
-[Spawn particle "SMOKE_NORMAL"] at blockX, blockY+1, blockZ
-```
+*"Spawn [3] server-side particles at x: [x] y: [y+1] z: [z] in area dx:0 dy:0 dz:0 with speed 0.1 type: SMOKE_NORMAL"*
 
-This gives a visible "puff" when the face changes — so the roll feels like something happening, not just a texture swap. For roll 6, you can optionally spawn a different particle (TOTEM_OF_UNDYING or FIREWORK_SPARK) inside the else branch to make jackpots visually distinct.
+This gives a visible "puff" when the face changes. For roll 6, swap `SMOKE_NORMAL` for `TOTEM_OF_UNDYING` inside the `else` branch to make jackpots visually distinct.
 
 That's it. When the dice rolls, the procedure updates the face property, and Minecraft automatically swaps the texture.
 

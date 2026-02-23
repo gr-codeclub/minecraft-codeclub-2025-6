@@ -75,11 +75,11 @@ Same technique as Lesson 1. Name the variable `monsterRoll` so it's clear this i
 
 #### Part B — Read the player's warrior score (5 min)
 
-```
-Set variable playerWarrior = [get scoreboard "warrior" for entity]
-```
+From **World procedures → Scoreboard**:
 
-Same as Lesson 2's CheckSkills procedure. Remember to wire the entity dependency into the scoreboard block's player slot.
+*"Get [Event/target entity] scoreboard score for ['warrior']"*
+
+Store the result as variable `playerWarrior`. The entity slot gets the **"Event/target entity"** block from Minecraft Components — that's the player who right-clicked the item.
 
 #### Part C — The DC Check (10 min)
 
@@ -88,12 +88,12 @@ This is the heart of the encounter. In MCreator:
 ```
 if playerWarrior >= monsterRoll
     → [give entity experience] 30 points
-    → [spawn particle "TOTEM_OF_UNDYING"] at player x, y+1, z   ← victory burst!
+    → [World procedures → Actions → "Spawn [5] server-side particles at x y z+1 ... type: TOTEM_OF_UNDYING"]
     → [send chat message] "You prevailed! Warrior: " + playerWarrior + " vs Monster: " + monsterRoll
 
 else
     → [damage entity] 2 hearts (use "deal damage to entity" block)
-    → [spawn particle "SMOKE_NORMAL"] at player x, y+1, z        ← defeat puff
+    → [World procedures → Actions → "Spawn [5] server-side particles at x y z+1 ... type: SMOKE_NORMAL"]
     → [send chat message] "The monster overwhelms you! Warrior: " + playerWarrior + " vs Monster: " + monsterRoll
 ```
 
@@ -107,9 +107,11 @@ else
 
 **Outside and below the if/else block** (this runs regardless of outcome):
 
-```
-[add 1 to scoreboard "warrior" for entity]
-```
+From **World procedures → Scoreboard**:
+
+*"Set score ['warrior'] to [current score + 1] on the scoreboard of [Event/target entity]"*
+
+For the value, nest a **"Get [Event/target entity] scoreboard score for ['warrior']"** block and add 1 to it.
 
 > *"Why is this outside the if/else?"*
 
@@ -120,7 +122,8 @@ Because you always learn from a fight, win or lose. Losing to a monster teaches 
 After the scoreboard add, check if the player just hit a milestone:
 
 ```
-Set variable newScore = [get scoreboard "warrior" for entity]
+Set variable newScore = [World procedures → Scoreboard →
+    "Get [Event/target entity] scoreboard score for ['warrior']"]
 
 if newScore == 10
     → [send chat message] "*** You have become a WARRIOR! ***"
