@@ -26,12 +26,15 @@ public class BigboigooberModTabs {
 				tabData.accept(BigboigooberModBlocks.BLOCK_THINGY.get().asItem());
 				tabData.accept(BigboigooberModItems.FAKE_WATER_BUCKET.get());
 				tabData.accept(BigboigooberModItems.SECOND_TRY_OF_BLOCK_DISAPPEARING_THING.get());
+				tabData.accept(BigboigooberModBlocks.DICE_THING.get().asItem());
 			}).withSearchBar().build());
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 		if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(BigboigooberModItems.SECOND_TRY_OF_BLOCK_DISAPPEARING_THING.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.COLORED_BLOCKS) {
+			tabData.accept(BigboigooberModBlocks.DICE_THING.get().asItem());
 		}
 	}
 }

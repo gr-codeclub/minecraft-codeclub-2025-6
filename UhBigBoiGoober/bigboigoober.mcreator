@@ -161,6 +161,57 @@
           "src/main/resources/assets/bigboigoober/models/item/second_try_of_block_disappearing_thing.json"
         ]
       }
+    },
+    {
+      "name": "DiceThing",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dice_thing",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/bigboigoober/items/dice_thing.json",
+          "src/main/resources/assets/bigboigoober/models/item/dice_thing.json",
+          "src/main/resources/data/bigboigoober/loot_table/blocks/dice_thing.json",
+          "src/main/resources/assets/bigboigoober/blockstates/dice_thing.json",
+          "src/main/resources/assets/bigboigoober/models/block/dice_thing.json",
+          "src/main/java/net/mcreator/bigboigoober/block/DiceThingBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "DiceThingOnBlockRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dice_thing_on_block_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/bigboigoober/procedures/DiceThingOnBlockRightclickedProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -198,7 +249,8 @@
       "fluid_type.bigboigoober.fake_water": "Fake Water",
       "item.bigboigoober.fake_water_bucket": "Fake Water Bucket",
       "block.bigboigoober.fake_water": "Fake Water",
-      "item.bigboigoober.second_try_of_block_disappearing_thing": "Second Try Of Block Disappearing Thing"
+      "item.bigboigoober.second_try_of_block_disappearing_thing": "Second Try Of Block Disappearing Thing",
+      "item.bigboigoober.dice_thing": "Dice Thing"
     }
   },
   "metadata": {
