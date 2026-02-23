@@ -152,6 +152,41 @@
           "src/main/java/net/mcreator/ilovefootball/item/FootItem.java"
         ]
       }
+    },
+    {
+      "name": "DiceblockOnBlockRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diceblock_on_block_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/ilovefootball/procedures/DiceblockOnBlockRightclickedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Diceblock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diceblock",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ilovefootball/block/DiceblockBlock.java",
+          "src/main/resources/assets/ilovefootball/models/block/diceblock.json",
+          "src/main/resources/assets/ilovefootball/models/item/diceblock.json",
+          "src/main/resources/data/ilovefootball/loot_table/blocks/diceblock.json",
+          "src/main/resources/assets/ilovefootball/blockstates/diceblock.json",
+          "src/main/resources/assets/ilovefootball/items/diceblock.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -168,7 +203,8 @@
       "item_group.ilovefootball.ilovefootball": "Ilovefootball",
       "item.ilovefootball.footballblock": "Footballblock",
       "item.ilovefootball.footballsomething": "Footballsomething",
-      "item.ilovefootball.foot": "Foot"
+      "item.ilovefootball.foot": "Foot",
+      "item.ilovefootball.diceblock": "Diceblock"
     }
   },
   "metadata": {

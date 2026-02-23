@@ -17,8 +17,10 @@ import java.util.function.Function;
 public class IlovefootballModBlocks {
 	public static final DeferredRegister.Blocks REGISTRY = DeferredRegister.createBlocks(IlovefootballMod.MODID);
 	public static final DeferredBlock<Block> FOOTBALLBLOCK;
+	public static final DeferredBlock<Block> DICEBLOCK;
 	static {
 		FOOTBALLBLOCK = register("footballblock", FootballblockBlock::new);
+		DICEBLOCK = register("diceblock", DiceblockBlock::new);
 	}
 
 	// Start of user code block custom blocks
