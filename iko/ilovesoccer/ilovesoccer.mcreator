@@ -209,6 +209,23 @@
           "src/main/java/net/mcreator/ilovesoccer/procedures/DiceBlockOnBlockRightclickedProcedure.java"
         ]
       }
+    },
+    {
+      "name": "DiceBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dice_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ilovesoccer/items/dice_block.json",
+          "src/main/resources/assets/ilovesoccer/models/item/dice_block.json",
+          "src/main/resources/assets/ilovesoccer/blockstates/dice_block.json",
+          "src/main/resources/assets/ilovesoccer/models/block/dice_block.json",
+          "src/main/java/net/mcreator/ilovesoccer/block/DiceBlockBlock.java",
+          "src/main/resources/data/ilovesoccer/loot_table/blocks/dice_block.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -226,7 +243,8 @@
       "item_group.ilovesoccer.voldermoltstolemyshampo": "Voldermoltstolemyshampo",
       "item.ilovesoccer.voldermolthasa_bi_gnose": "Voldermolthasa BI Gnose",
       "item.ilovesoccer.voldermoltbwoaanbd": "Voldermoltbwoaanbd",
-      "item.ilovesoccer.veinminer": "Veinminer"
+      "item.ilovesoccer.veinminer": "Veinminer",
+      "item.ilovesoccer.dice_block": "Dice Block"
     }
   },
   "metadata": {

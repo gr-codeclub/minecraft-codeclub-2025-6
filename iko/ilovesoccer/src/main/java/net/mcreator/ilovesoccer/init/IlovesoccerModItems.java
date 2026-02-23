@@ -22,10 +22,12 @@ public class IlovesoccerModItems {
 	public static final DeferredItem<Item> VOLDERMOLTHASA_BI_GNOSE;
 	public static final DeferredItem<Item> VOLDERMOLTBWOAANBD;
 	public static final DeferredItem<Item> VEINMINER;
+	public static final DeferredItem<Item> DICE_BLOCK;
 	static {
 		VOLDERMOLTHASA_BI_GNOSE = block(IlovesoccerModBlocks.VOLDERMOLTHASA_BI_GNOSE);
 		VOLDERMOLTBWOAANBD = register("voldermoltbwoaanbd", VoldermoltbwoaanbdItem::new);
 		VEINMINER = register("veinminer", VeinminerItem::new);
+		DICE_BLOCK = block(IlovesoccerModBlocks.DICE_BLOCK);
 	}
 
 	// Start of user code block custom items

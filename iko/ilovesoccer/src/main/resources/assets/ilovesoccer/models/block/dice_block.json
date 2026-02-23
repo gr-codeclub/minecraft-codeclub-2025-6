@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "minecraft:block/comparator_on",
+    "particle": "minecraft:block/comparator_on"
+  },
+  "render_type": "solid"
+}
