@@ -42,6 +42,9 @@
     "onRightClickedInAir": {
       "name": "PlatformWandRightclicked"
     },
+    "onEntitySwing": {
+      "name": "PlatformWandRightclicked"
+    },
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,

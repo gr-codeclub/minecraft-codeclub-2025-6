@@ -12,6 +12,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.dextermod.item.VeinMinerItem;
+import net.mcreator.dextermod.item.PlatformWandItem;
 import net.mcreator.dextermod.DextermodMod;
 
 import java.util.function.Function;
@@ -19,9 +20,11 @@ import java.util.function.Function;
 public class DextermodModItems {
 	public static final DeferredRegister.Items REGISTRY = DeferredRegister.createItems(DextermodMod.MODID);
 	public static final DeferredItem<Item> DEXTER_BLOCK;
+	public static final DeferredItem<Item> PLATFORM_WAND;
 	public static final DeferredItem<Item> VEIN_MINER;
 	static {
 		DEXTER_BLOCK = block(DextermodModBlocks.DEXTER_BLOCK);
+		PLATFORM_WAND = register("platform_wand", PlatformWandItem::new);
 		VEIN_MINER = register("vein_miner", VeinMinerItem::new);
 	}
 

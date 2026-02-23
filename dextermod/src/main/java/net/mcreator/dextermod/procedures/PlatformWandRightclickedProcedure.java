@@ -13,7 +13,7 @@ public class PlatformWandRightclickedProcedure {
 		zPos = z - 1;
 		for (int index0 = 0; index0 < 3; index0++) {
 			for (int index1 = 0; index1 < 3; index1++) {
-				world.setBlock(BlockPos.containing(x + xPos, y, z + zPos), DextermodModBlocks.DEXTER_BLOCK.get().defaultBlockState(), 3);
+				world.setBlock(BlockPos.containing(x + xPos, y - 2, z + zPos), DextermodModBlocks.DEXTER_BLOCK.get().defaultBlockState(), 3);
 				zPos = zPos + 1;
 			}
 			xPos = xPos + 1;

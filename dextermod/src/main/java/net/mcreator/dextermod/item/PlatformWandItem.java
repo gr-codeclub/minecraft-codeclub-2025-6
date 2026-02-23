@@ -1,8 +1,10 @@
 package net.mcreator.dextermod.item;
 
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 
@@ -18,5 +20,12 @@ public class PlatformWandItem extends Item {
 		InteractionResult ar = super.use(world, entity, hand);
 		PlatformWandRightclickedProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ());
 		return ar;
+	}
+
+	@Override
+	public boolean onEntitySwing(ItemStack itemstack, LivingEntity entity, InteractionHand hand) {
+		boolean retval = super.onEntitySwing(itemstack, entity, hand);
+		PlatformWandRightclickedProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ());
+		return retval;
 	}
 }
