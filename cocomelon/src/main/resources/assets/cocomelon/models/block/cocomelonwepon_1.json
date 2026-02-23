@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "cocomelon:block/cocomelonwepon2",
+    "up": "cocomelon:block/cocomelonwepon2",
+    "north": "cocomelon:block/cocomelonwepon2",
+    "east": "cocomelon:block/cocomelonwepon2",
+    "south": "cocomelon:block/cocomelonwepon2",
+    "west": "cocomelon:block/cocomelonwepon2",
+    "particle": "cocomelon:block/cocomelonwepon2"
+  },
+  "render_type": "solid"
+}

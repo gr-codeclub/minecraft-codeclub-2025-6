@@ -24,6 +24,7 @@ public class CocomelonModTabs {
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> COCOMELON_1 = REGISTRY.register("cocomelon_1",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.cocomelon.cocomelon_1")).icon(() -> new ItemStack(Blocks.TNT)).displayItems((parameters, tabData) -> {
 				tabData.accept(CocomelonModBlocks.COCOMELON_2.get().asItem());
+				tabData.accept(CocomelonModBlocks.COCOMELONWEPON_1.get().asItem());
 			}).build());
 
 	@SubscribeEvent

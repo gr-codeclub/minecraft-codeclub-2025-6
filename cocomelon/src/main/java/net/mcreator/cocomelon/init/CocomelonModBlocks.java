@@ -9,6 +9,7 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.cocomelon.block.Cocomelonwepon1Block;
 import net.mcreator.cocomelon.block.Cocomelon2Block;
 import net.mcreator.cocomelon.CocomelonMod;
 
@@ -17,8 +18,10 @@ import java.util.function.Function;
 public class CocomelonModBlocks {
 	public static final DeferredRegister.Blocks REGISTRY = DeferredRegister.createBlocks(CocomelonMod.MODID);
 	public static final DeferredBlock<Block> COCOMELON_2;
+	public static final DeferredBlock<Block> COCOMELONWEPON_1;
 	static {
 		COCOMELON_2 = register("cocomelon_2", Cocomelon2Block::new);
+		COCOMELONWEPON_1 = register("cocomelonwepon_1", Cocomelonwepon1Block::new);
 	}
 
 	// Start of user code block custom blocks

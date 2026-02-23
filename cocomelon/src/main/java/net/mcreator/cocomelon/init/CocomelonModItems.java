@@ -22,10 +22,12 @@ public class CocomelonModItems {
 	public static final DeferredItem<Item> COCOMELON_2;
 	public static final DeferredItem<Item> COCOMELON_3;
 	public static final DeferredItem<Item> COCOMELON_676676767;
+	public static final DeferredItem<Item> COCOMELONWEPON_1;
 	static {
 		COCOMELON_2 = block(CocomelonModBlocks.COCOMELON_2);
 		COCOMELON_3 = register("cocomelon_3", COCOMELON3Item::new);
 		COCOMELON_676676767 = register("cocomelon_676676767", COCOMELON676676767Item::new);
+		COCOMELONWEPON_1 = block(CocomelonModBlocks.COCOMELONWEPON_1);
 	}
 
 	// Start of user code block custom items
