@@ -41,6 +41,11 @@ public class DiceBlockOnBlockRightclickedProcedure {
 					entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
 				}
 			}
+		} else if (roll == 3) {
+			for (int index0 = 0; index0 < 10; index0++) {
+				if (entity instanceof Player _player)
+					_player.giveExperienceLevels(5);
+			}
 		} else if (roll == 4) {
 			entity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.DRAGON_BREATH)), entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1);
 		} else if (roll == 5) {
@@ -55,7 +60,7 @@ public class DiceBlockOnBlockRightclickedProcedure {
 				}
 			}
 		} else {
-			for (int index0 = 0; index0 < 10; index0++) {
+			for (int index1 = 0; index1 < 10; index1++) {
 				if (entity instanceof Player _player)
 					_player.giveExperienceLevels(5);
 			}
