@@ -9,6 +9,7 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.cheesy.block.DiceBloxBlock;
 import net.mcreator.cheesy.block.ChezBlock;
 import net.mcreator.cheesy.CheesyMod;
 
@@ -17,8 +18,10 @@ import java.util.function.Function;
 public class CheesyModBlocks {
 	public static final DeferredRegister.Blocks REGISTRY = DeferredRegister.createBlocks(CheesyMod.MODID);
 	public static final DeferredBlock<Block> CHEZ;
+	public static final DeferredBlock<Block> DICE_BLOX;
 	static {
 		CHEZ = register("chez", ChezBlock::new);
+		DICE_BLOX = register("dice_blox", DiceBloxBlock::new);
 	}
 
 	// Start of user code block custom blocks

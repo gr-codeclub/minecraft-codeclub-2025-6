@@ -24,11 +24,13 @@ public class CheesyModItems {
 	public static final DeferredItem<Item> CHEESE_HUNK;
 	public static final DeferredItem<Item> DA;
 	public static final DeferredItem<Item> SHHH;
+	public static final DeferredItem<Item> DICE_BLOX;
 	static {
 		CHEZ = block(CheesyModBlocks.CHEZ);
 		CHEESE_HUNK = register("cheese_hunk", CheeseHunkItem::new);
 		DA = register("da", DaItem::new);
 		SHHH = register("shhh", ShhhItem::new);
+		DICE_BLOX = block(CheesyModBlocks.DICE_BLOX);
 	}
 
 	// Start of user code block custom items

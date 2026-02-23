@@ -24,6 +24,7 @@ public class CheesyModTabs {
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> CHEESE = REGISTRY.register("cheese",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.cheesy.cheese")).icon(() -> new ItemStack(Blocks.RAW_GOLD_BLOCK)).displayItems((parameters, tabData) -> {
 				tabData.accept(CheesyModBlocks.CHEZ.get().asItem());
+				tabData.accept(CheesyModBlocks.DICE_BLOX.get().asItem());
 			}).withSearchBar().build());
 
 	@SubscribeEvent
@@ -31,6 +32,8 @@ public class CheesyModTabs {
 		if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(CheesyModItems.DA.get());
 			tabData.accept(CheesyModItems.SHHH.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+			tabData.accept(CheesyModBlocks.DICE_BLOX.get().asItem());
 		}
 	}
 }
