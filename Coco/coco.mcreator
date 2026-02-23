@@ -152,6 +152,45 @@
           "src/main/resources/assets/coco/models/item/block_dissapearerer.json"
         ]
       }
+    },
+    {
+      "name": "RandomDiceThingOnBlockRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "random_dice_thing_on_block_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/coco/procedures/RandomDiceThingOnBlockRightclickedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "RandomDiceThing",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "random_dice_thing",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/coco/models/item/random_dice_thing.json",
+          "src/main/java/net/mcreator/coco/block/RandomDiceThingBlock.java",
+          "src/main/resources/data/coco/loot_table/blocks/random_dice_thing.json",
+          "src/main/resources/assets/coco/items/random_dice_thing.json",
+          "src/main/resources/assets/coco/models/block/random_dice_thing.json",
+          "src/main/resources/assets/coco/blockstates/random_dice_thing.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -170,7 +209,8 @@
       "item_group.coco.coco": "Coco",
       "item.coco.quick_coco": "TOASTERMONSTER",
       "item.coco.wand": "Wand",
-      "item.coco.block_dissapearerer": "Block Dissapearerer"
+      "item.coco.block_dissapearerer": "Block Dissapearerer",
+      "item.coco.random_dice_thing": "Random Dice Thing"
     }
   },
   "metadata": {

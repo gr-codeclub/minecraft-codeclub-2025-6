@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "coco:block/random_dice_thing"
+    }
+  }
+}

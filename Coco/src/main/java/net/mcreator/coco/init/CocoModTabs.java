@@ -26,6 +26,7 @@ public class CocoModTabs {
 				tabData.accept(CocoModBlocks.QUICK_COCO.get().asItem());
 				tabData.accept(CocoModItems.WAND.get());
 				tabData.accept(CocoModItems.BLOCK_DISSAPEARERER.get());
+				tabData.accept(CocoModBlocks.RANDOM_DICE_THING.get().asItem());
 			}).build());
 
 	@SubscribeEvent

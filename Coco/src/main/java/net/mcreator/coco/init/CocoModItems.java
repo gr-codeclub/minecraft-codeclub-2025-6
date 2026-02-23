@@ -22,10 +22,12 @@ public class CocoModItems {
 	public static final DeferredItem<Item> QUICK_COCO;
 	public static final DeferredItem<Item> WAND;
 	public static final DeferredItem<Item> BLOCK_DISSAPEARERER;
+	public static final DeferredItem<Item> RANDOM_DICE_THING;
 	static {
 		QUICK_COCO = block(CocoModBlocks.QUICK_COCO);
 		WAND = register("wand", WandItem::new);
 		BLOCK_DISSAPEARERER = register("block_dissapearerer", BlockDissapearererItem::new);
+		RANDOM_DICE_THING = block(CocoModBlocks.RANDOM_DICE_THING);
 	}
 
 	// Start of user code block custom items
