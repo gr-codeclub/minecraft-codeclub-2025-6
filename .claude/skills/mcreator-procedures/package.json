@@ -1,0 +1,16 @@
+{
+  "name": "mcreator-procedures",
+  "version": "1.0.0",
+  "description": "Generate and modify MCreator procedures programmatically",
+  "type": "module",
+  "main": "skill.mjs",
+  "author": "GR Code Club",
+  "license": "MIT",
+  "keywords": [
+    "minecraft",
+    "mcreator",
+    "procedures",
+    "blockly"
+  ],
+  "dependencies": {}
+}

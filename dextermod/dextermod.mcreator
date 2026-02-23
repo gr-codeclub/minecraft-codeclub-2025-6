@@ -104,17 +104,104 @@
           "src/main/resources/assets/dextermod/items/platform_wand.json"
         ]
       }
+    },
+    {
+      "name": "VeinMinerBlockDestroyedWithTool",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vein_miner_block_destroyed_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/dextermod/procedures/VeinMinerBlockDestroyedWithToolProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "VeinMiner",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vein_miner",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/dextermod/models/item/vein_miner.json",
+          "src/main/java/net/mcreator/dextermod/item/VeinMinerItem.java",
+          "src/main/resources/assets/dextermod/items/vein_miner.json"
+        ]
+      }
+    },
+    {
+      "name": "VeinMiner3D",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vein_miner_3_d",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/dextermod/procedures/VeinMiner3DProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
-  "tag_elements": {},
+  "tag_elements": {
+    "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:VeinMiner"
+    ]
+  },
   "tab_element_order": {},
   "language_map": {
     "en_us": {
       "item_group.dextermod.dexter_mod": "Dexter Mod",
       "item.dextermod.dexter_block": "Dexter Block",
-      "item.dextermod.platform_wand": "Platform Wand"
+      "item.dextermod.platform_wand": "Platform Wand",
+      "item.dextermod.vein_miner": "Vein Miner"
     }
   },
   "metadata": {

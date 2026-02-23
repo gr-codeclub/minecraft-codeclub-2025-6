@@ -1,0 +1,625 @@
+{
+  "block_add": {
+    "type": "block_add",
+    "description": "Place a block at specified coordinates",
+    "category": "Block Actions",
+    "statement": true,
+    "inputs": {
+      "block": {
+        "type": "MCItemBlock",
+        "required": true,
+        "description": "The block type to place"
+      },
+      "x": {
+        "type": "Number",
+        "required": true,
+        "description": "X coordinate"
+      },
+      "y": {
+        "type": "Number",
+        "required": true,
+        "description": "Y coordinate"
+      },
+      "z": {
+        "type": "Number",
+        "required": true,
+        "description": "Z coordinate"
+      }
+    },
+    "examples": [
+      "Place a diamond block at player position",
+      "Place dirt at x+1 from event location"
+    ]
+  },
+  "block_remove": {
+    "type": "block_remove",
+    "description": "Remove a block at specified coordinates",
+    "category": "Block Actions",
+    "statement": true,
+    "inputs": {
+      "x": {
+        "type": "Number",
+        "required": true,
+        "description": "X coordinate"
+      },
+      "y": {
+        "type": "Number",
+        "required": true,
+        "description": "Y coordinate"
+      },
+      "z": {
+        "type": "Number",
+        "required": true,
+        "description": "Z coordinate"
+      }
+    },
+    "examples": [
+      "Remove block at current position",
+      "Break blocks in a vein miner pattern"
+    ]
+  },
+  "coord_x": {
+    "type": "coord_x",
+    "description": "Get X coordinate from event context",
+    "category": "Coordinates",
+    "output": "Number",
+    "inputs": {},
+    "examples": [
+      "Used in x+1, x-1 calculations",
+      "Get player's X position from event"
+    ]
+  },
+  "coord_y": {
+    "type": "coord_y",
+    "description": "Get Y coordinate from event context",
+    "category": "Coordinates",
+    "output": "Number",
+    "inputs": {},
+    "examples": [
+      "Get block height",
+      "Place block one level above"
+    ]
+  },
+  "coord_z": {
+    "type": "coord_z",
+    "description": "Get Z coordinate from event context",
+    "category": "Coordinates",
+    "output": "Number",
+    "inputs": {},
+    "examples": [
+      "Used in z+1, z-1 calculations",
+      "Get player's Z position from event"
+    ]
+  },
+  "math_number": {
+    "type": "math_number",
+    "description": "A number constant",
+    "category": "Math",
+    "output": "Number",
+    "fields": {
+      "NUM": {
+        "type": "number",
+        "default": 0,
+        "description": "The numeric value"
+      }
+    },
+    "examples": [
+      "The number 1 for x+1",
+      "Dice sides: 6",
+      "DC check difficulty: 15"
+    ]
+  },
+  "math_dual_ops": {
+    "type": "math_dual_ops",
+    "description": "Perform math operation on two numbers",
+    "category": "Math",
+    "output": "Number",
+    "fields": {
+      "OP": {
+        "type": "dropdown",
+        "options": ["ADD", "MINUS", "MULTIPLY", "DIVIDE", "DIVIDE_DOUBLE", "POWER", "MOD", "BAND", "BOR", "BXOR", "MIN", "MAX", "HYPOT", "ATAN2"],
+        "default": "ADD",
+        "description": "The operation to perform"
+      }
+    },
+    "inputs": {
+      "A": {
+        "type": "Number",
+        "required": true,
+        "description": "First operand"
+      },
+      "B": {
+        "type": "Number",
+        "required": true,
+        "description": "Second operand"
+      }
+    },
+    "examples": [
+      "x + 1 for offset placement",
+      "random * 10 for scaling",
+      "health - damage for combat"
+    ]
+  },
+  "math_random_int_between": {
+    "type": "math_random_int_between",
+    "description": "Generate random integer between min and max (inclusive)",
+    "category": "Math",
+    "output": "Number",
+    "inputs": {
+      "min": {
+        "type": "Number",
+        "required": true,
+        "description": "Minimum value (inclusive)"
+      },
+      "max": {
+        "type": "Number",
+        "required": true,
+        "description": "Maximum value (inclusive)"
+      }
+    },
+    "examples": [
+      "Roll 1d6: random(1, 6)",
+      "Roll 1d20: random(1, 20)",
+      "Random loot chance"
+    ]
+  },
+  "controls_if": {
+    "type": "controls_if",
+    "description": "If-then conditional statement",
+    "category": "Logic",
+    "statement": true,
+    "inputs": {
+      "IF0": {
+        "type": "Boolean",
+        "required": true,
+        "description": "Condition to test"
+      }
+    },
+    "statements": {
+      "DO0": {
+        "description": "Code to execute if condition is true"
+      }
+    },
+    "examples": [
+      "If DC check passes, give reward",
+      "If player is in creative mode, allow action",
+      "If block is ore, trigger vein miner"
+    ]
+  },
+  "compare_operators": {
+    "type": "compare_operators",
+    "description": "Compare two values",
+    "category": "Logic",
+    "output": "Boolean",
+    "fields": {
+      "OP": {
+        "type": "dropdown",
+        "options": ["EQ", "NEQ", "LT", "LTE", "GT", "GTE"],
+        "default": "EQ",
+        "description": "Comparison operator"
+      }
+    },
+    "inputs": {
+      "A": {
+        "type": "Any",
+        "required": true,
+        "description": "First value"
+      },
+      "B": {
+        "type": "Any",
+        "required": true,
+        "description": "Second value"
+      }
+    },
+    "examples": [
+      "roll >= DC for skill check",
+      "health <= 0 for death",
+      "count == 0 for empty check"
+    ]
+  },
+  "entity_send_chat": {
+    "type": "entity_send_chat",
+    "description": "Send chat message to player",
+    "category": "Player Management",
+    "statement": true,
+    "inputs": {
+      "text": {
+        "type": "String",
+        "required": true,
+        "description": "Message text to send"
+      },
+      "actbar": {
+        "type": "Boolean",
+        "required": true,
+        "description": "Show in action bar (true) or chat (false)"
+      },
+      "entity": {
+        "type": "Entity",
+        "required": true,
+        "description": "Player entity to send to"
+      }
+    },
+    "examples": [
+      "Display dice roll result",
+      "Show skill check outcome",
+      "Send feedback messages"
+    ]
+  },
+  "mcitem_allblocks": {
+    "type": "mcitem_allblocks",
+    "description": "Select a block type",
+    "category": "Block Selectors",
+    "output": "MCItemBlock",
+    "fields": {
+      "value": {
+        "type": "block_selector",
+        "default": "",
+        "description": "Block registry name (e.g., 'minecraft:stone' or 'CUSTOM:MyBlock')"
+      }
+    },
+    "examples": [
+      "CUSTOM:DexterBlock for custom blocks",
+      "Blocks:DIAMOND_BLOCK for vanilla",
+      "Blocks:STONE for basic blocks"
+    ]
+  },
+  "spawn_gem": {
+    "type": "spawn_gem",
+    "description": "Spawn an item in the world",
+    "category": "Item Management",
+    "statement": true,
+    "inputs": {
+      "gem": {
+        "type": "MCItem",
+        "required": true,
+        "description": "Item to spawn"
+      },
+      "x": {
+        "type": "Number",
+        "required": true,
+        "description": "X coordinate"
+      },
+      "y": {
+        "type": "Number",
+        "required": true,
+        "description": "Y coordinate"
+      },
+      "z": {
+        "type": "Number",
+        "required": true,
+        "description": "Z coordinate"
+      }
+    },
+    "examples": [
+      "Drop diamond as reward",
+      "Spawn custom item at location",
+      "Create loot drop"
+    ]
+  },
+  "logic_boolean": {
+    "type": "logic_boolean",
+    "description": "Boolean constant (true/false)",
+    "category": "Logic",
+    "output": "Boolean",
+    "fields": {
+      "BOOL": {
+        "type": "dropdown",
+        "options": ["TRUE", "FALSE"],
+        "default": "FALSE",
+        "description": "Boolean value"
+      }
+    },
+    "examples": [
+      "actbar: false for chat message",
+      "enabled: true for feature flags",
+      "success: false for failure state"
+    ]
+  },
+  "logic_binary_ops": {
+    "type": "logic_binary_ops",
+    "description": "Logical AND/OR operation",
+    "category": "Logic",
+    "output": "Boolean",
+    "fields": {
+      "OP": {
+        "type": "dropdown",
+        "options": ["AND", "OR"],
+        "default": "AND",
+        "description": "Logical operator"
+      }
+    },
+    "inputs": {
+      "A": {
+        "type": "Boolean",
+        "required": true,
+        "description": "First condition"
+      },
+      "B": {
+        "type": "Boolean",
+        "required": true,
+        "description": "Second condition"
+      }
+    },
+    "examples": [
+      "Check if player AND in survival mode",
+      "If item is sword OR axe",
+      "Multiple condition checks"
+    ]
+  },
+  "text": {
+    "type": "text",
+    "description": "Text string constant",
+    "category": "Text",
+    "output": "String",
+    "fields": {
+      "TEXT": {
+        "type": "string",
+        "default": "",
+        "description": "Text content"
+      }
+    },
+    "examples": [
+      "Message: 'You rolled: '",
+      "Success message: 'DC check passed!'",
+      "Item name or description"
+    ]
+  },
+  "entity_add_item": {
+    "type": "entity_add_item",
+    "description": "Give item to player inventory",
+    "category": "Player Management",
+    "statement": true,
+    "inputs": {
+      "entity": {
+        "type": "Entity",
+        "required": true,
+        "description": "Player entity"
+      },
+      "item": {
+        "type": "MCItem",
+        "required": true,
+        "description": "Item to give"
+      }
+    },
+    "examples": [
+      "Give diamond as reward",
+      "Add quest item to inventory",
+      "Grant achievement item"
+    ]
+  },
+  "entity_from_deps": {
+    "type": "entity_from_deps",
+    "description": "Get entity from event context",
+    "category": "Entity Data",
+    "output": "Entity",
+    "inputs": {},
+    "examples": [
+      "Get player who triggered event",
+      "Access entity for chat/items",
+      "Reference event source"
+    ]
+  },
+  "world_data_blockat": {
+    "type": "world_data_blockat",
+    "description": "Get block type at coordinates",
+    "category": "World Data",
+    "output": "MCItemBlock",
+    "inputs": {
+      "x": {
+        "type": "Number",
+        "required": true,
+        "description": "X coordinate"
+      },
+      "y": {
+        "type": "Number",
+        "required": true,
+        "description": "Y coordinate"
+      },
+      "z": {
+        "type": "Number",
+        "required": true,
+        "description": "Z coordinate"
+      }
+    },
+    "examples": [
+      "Check if block is ore for vein miner",
+      "Verify block type before action",
+      "Scan area for specific blocks"
+    ]
+  },
+  "controls_repeat_ext": {
+    "type": "controls_repeat_ext",
+    "description": "Repeat code N times (loop)",
+    "category": "Logic",
+    "statement": true,
+    "inputs": {
+      "TIMES": {
+        "type": "Number",
+        "required": true,
+        "description": "Number of iterations"
+      }
+    },
+    "statements": {
+      "DO": {
+        "description": "Code to repeat"
+      }
+    },
+    "examples": [
+      "Break 27 blocks in vein miner",
+      "Spawn multiple items",
+      "Iterate over area"
+    ]
+  },
+  "entity_add_xp": {
+    "type": "entity_add_xp",
+    "description": "Give experience points to player",
+    "category": "Player Management",
+    "statement": true,
+    "inputs": {
+      "amount": {
+        "type": "Number",
+        "required": true,
+        "description": "XP amount to add"
+      },
+      "entity": {
+        "type": "Entity",
+        "required": true,
+        "description": "Player entity"
+      }
+    },
+    "examples": [
+      "Reward XP for skill check success",
+      "Grant experience for quest",
+      "Mining bonus XP"
+    ]
+  },
+  "entity_checkgamemode": {
+    "type": "entity_checkgamemode",
+    "description": "Check player's game mode",
+    "category": "Entity Data",
+    "output": "Boolean",
+    "fields": {
+      "gamemode": {
+        "type": "dropdown",
+        "options": ["SURVIVAL", "CREATIVE", "ADVENTURE", "SPECTATOR"],
+        "default": "SURVIVAL",
+        "description": "Game mode to check"
+      }
+    },
+    "inputs": {
+      "entity": {
+        "type": "Entity",
+        "required": true,
+        "description": "Player entity"
+      }
+    },
+    "examples": [
+      "Only allow in survival mode",
+      "Disable in creative mode",
+      "Permission checks"
+    ]
+  },
+  "world_data_isday": {
+    "type": "world_data_isday",
+    "description": "Check if it's daytime",
+    "category": "World Data",
+    "output": "Boolean",
+    "inputs": {},
+    "examples": [
+      "Spawn mobs only at night",
+      "Time-based events",
+      "Daylight conditions"
+    ]
+  },
+  "entity_haspotioneffect": {
+    "type": "entity_haspotioneffect",
+    "description": "Check if entity has potion effect",
+    "category": "Entity Data",
+    "output": "Boolean",
+    "fields": {
+      "potion": {
+        "type": "potion_selector",
+        "default": "",
+        "description": "Potion effect to check"
+      }
+    },
+    "inputs": {
+      "entity": {
+        "type": "Entity",
+        "required": true,
+        "description": "Entity to check"
+      }
+    },
+    "examples": [
+      "Check if player has strength",
+      "Verify buff before action",
+      "Debuff detection"
+    ]
+  },
+  "logic_negate": {
+    "type": "logic_negate",
+    "description": "NOT operator (invert boolean)",
+    "category": "Logic",
+    "output": "Boolean",
+    "inputs": {
+      "BOOL": {
+        "type": "Boolean",
+        "required": true,
+        "description": "Boolean to negate"
+      }
+    },
+    "examples": [
+      "If NOT raining",
+      "If NOT has item",
+      "Inverse condition"
+    ]
+  },
+  "text_join": {
+    "type": "text_join",
+    "description": "Concatenate two text strings",
+    "category": "Text",
+    "output": "String",
+    "inputs": {
+      "A": {
+        "type": "String",
+        "required": true,
+        "description": "First text"
+      },
+      "B": {
+        "type": "String",
+        "required": true,
+        "description": "Second text"
+      }
+    },
+    "examples": [
+      "'You rolled: ' + rollValue",
+      "'DC ' + dcValue + ' check'",
+      "Combine message parts"
+    ]
+  },
+  "entity_add_potion": {
+    "type": "entity_add_potion",
+    "description": "Add potion effect to entity",
+    "category": "Entity Management",
+    "statement": true,
+    "fields": {
+      "potion": {
+        "type": "potion_selector",
+        "default": "",
+        "description": "Potion effect to add"
+      }
+    },
+    "inputs": {
+      "duration": {
+        "type": "Number",
+        "required": true,
+        "description": "Duration in ticks (20 ticks = 1 second)"
+      },
+      "amplifier": {
+        "type": "Number",
+        "required": true,
+        "description": "Effect level (0 = level 1)"
+      },
+      "ambient": {
+        "type": "Boolean",
+        "required": true,
+        "description": "Ambient particles"
+      },
+      "visible": {
+        "type": "Boolean",
+        "required": true,
+        "description": "Show particles"
+      },
+      "entity": {
+        "type": "Entity",
+        "required": true,
+        "description": "Entity to affect"
+      }
+    },
+    "examples": [
+      "Grant speed boost on skill success",
+      "Apply strength for combat",
+      "Temporary buffs/debuffs"
+    ]
+  }
+}
