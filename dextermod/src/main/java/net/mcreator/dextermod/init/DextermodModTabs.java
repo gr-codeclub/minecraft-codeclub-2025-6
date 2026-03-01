@@ -24,9 +24,10 @@ public class DextermodModTabs {
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> DEXTER_MOD = REGISTRY.register("dexter_mod",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.dextermod.dexter_mod")).icon(() -> new ItemStack(Items.LAPIS_LAZULI)).displayItems((parameters, tabData) -> {
 				tabData.accept(DextermodModBlocks.DEXTER_BLOCK.get().asItem());
-
 				tabData.accept(DextermodModItems.PLATFORM_WAND.get());
 				tabData.accept(DextermodModItems.VEIN_MINER.get());
+				tabData.accept(DextermodModItems.SKILL_STONE_TEST.get());
+				tabData.accept(DextermodModBlocks.DICE_BLOCK.get().asItem());
 			}).withSearchBar().build());
 
 	@SubscribeEvent

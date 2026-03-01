@@ -12,6 +12,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.dextermod.item.VeinMinerItem;
+import net.mcreator.dextermod.item.SkillStoneTestItem;
 import net.mcreator.dextermod.item.PlatformWandItem;
 import net.mcreator.dextermod.DextermodMod;
 
@@ -22,10 +23,14 @@ public class DextermodModItems {
 	public static final DeferredItem<Item> DEXTER_BLOCK;
 	public static final DeferredItem<Item> PLATFORM_WAND;
 	public static final DeferredItem<Item> VEIN_MINER;
+	public static final DeferredItem<Item> SKILL_STONE_TEST;
+	public static final DeferredItem<Item> DICE_BLOCK;
 	static {
 		DEXTER_BLOCK = block(DextermodModBlocks.DEXTER_BLOCK);
 		PLATFORM_WAND = register("platform_wand", PlatformWandItem::new);
 		VEIN_MINER = register("vein_miner", VeinMinerItem::new);
+		SKILL_STONE_TEST = register("skill_stone_test", SkillStoneTestItem::new);
+		DICE_BLOCK = block(DextermodModBlocks.DICE_BLOCK);
 	}
 
 	// Start of user code block custom items

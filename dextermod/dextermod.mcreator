@@ -186,6 +186,129 @@
           "src/main/java/net/mcreator/dextermod/procedures/VeinMiner3DProcedure.java"
         ]
       }
+    },
+    {
+      "name": "OnMobKilledTest",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "on_mob_killed_test",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/dextermod/procedures/OnMobKilledTestProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SkillStoneTestRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_stone_test_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/dextermod/procedures/SkillStoneTestRightclickedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SkillStoneTest",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_stone_test",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dextermod/item/SkillStoneTestItem.java",
+          "src/main/resources/assets/dextermod/items/skill_stone_test.json",
+          "src/main/resources/assets/dextermod/models/item/skill_stone_test.json"
+        ]
+      }
+    },
+    {
+      "name": "DiceBlockOnBlockRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dice_block_on_block_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/dextermod/procedures/DiceBlockOnBlockRightclickedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "DiceBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dice_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/dextermod/models/block/dice_block.json",
+          "src/main/resources/assets/dextermod/models/item/dice_block.json",
+          "src/main/resources/assets/dextermod/blockstates/dice_block.json",
+          "src/main/resources/data/dextermod/loot_table/blocks/dice_block.json",
+          "src/main/resources/assets/dextermod/items/dice_block.json",
+          "src/main/java/net/mcreator/dextermod/block/DiceBlockBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "Testlightning",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "testlightning",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/dextermod/procedures/TestlightningProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -201,17 +324,19 @@
       "item_group.dextermod.dexter_mod": "Dexter Mod",
       "item.dextermod.dexter_block": "Dexter Block",
       "item.dextermod.platform_wand": "Platform Wand",
-      "item.dextermod.vein_miner": "Vein Miner"
+      "item.dextermod.vein_miner": "Vein Miner",
+      "item.dextermod.skill_stone_test": "Skill Stone Test",
+      "item.dextermod.dice_block": "Dice Block"
     }
   },
   "metadata": {
     "files": [
       "src/main/java/net/mcreator/dextermod/init/DextermodModBlocks.java",
       "src/main/java/net/mcreator/dextermod/init/DextermodModItems.java",
-      "src/main/resources/pack.mcmeta",
-      "src/main/java/net/mcreator/dextermod/DextermodMod.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/java/net/mcreator/dextermod/init/DextermodModTabs.java"
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/dextermod/init/DextermodModTabs.java",
+      "src/main/java/net/mcreator/dextermod/DextermodMod.java"
     ]
   },
   "foldersRoot": {

@@ -9,6 +9,7 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.dextermod.block.DiceBlockBlock;
 import net.mcreator.dextermod.block.DexterBlockBlock;
 import net.mcreator.dextermod.DextermodMod;
 
@@ -17,8 +18,10 @@ import java.util.function.Function;
 public class DextermodModBlocks {
 	public static final DeferredRegister.Blocks REGISTRY = DeferredRegister.createBlocks(DextermodMod.MODID);
 	public static final DeferredBlock<Block> DEXTER_BLOCK;
+	public static final DeferredBlock<Block> DICE_BLOCK;
 	static {
 		DEXTER_BLOCK = register("dexter_block", DexterBlockBlock::new);
+		DICE_BLOCK = register("dice_block", DiceBlockBlock::new);
 	}
 
 	// Start of user code block custom blocks

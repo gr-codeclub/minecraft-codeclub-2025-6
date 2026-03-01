@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "dextermod:block/dice_block"
+    }
+  }
+}
