@@ -245,6 +245,46 @@
           "src/main/resources/assets/cheesy/models/item/dice_blox.json"
         ]
       }
+    },
+    {
+      "name": "Dies",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dies",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/cheesy/procedures/DiesProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SkillstoneRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skillstone_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/cheesy/procedures/SkillstoneRightclickedProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
