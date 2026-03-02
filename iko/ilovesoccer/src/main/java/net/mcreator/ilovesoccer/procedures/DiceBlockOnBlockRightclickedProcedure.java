@@ -1,5 +1,8 @@
 package net.mcreator.ilovesoccer.procedures;
 
+import net.minecraft.world.scores.Scoreboard;
+import net.minecraft.world.scores.ScoreHolder;
+import net.minecraft.world.scores.Objective;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.player.Player;
@@ -29,14 +32,23 @@ public class DiceBlockOnBlockRightclickedProcedure {
 		if (entity instanceof Player _player && !_player.level().isClientSide())
 			_player.displayClientMessage(Component.literal(("You rolled " + new java.text.DecimalFormat("##").format(roll) + "!")), false);
 		if (roll == 1) {
-			if (world instanceof ServerLevel _level) {
-				LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level, EntitySpawnReason.TRIGGERED);
-				entityToSpawn.snapTo(Vec3.atBottomCenterOf(BlockPos.containing(entity.getX(), entity.getY(), entity.getZ())));;
-				_level.addFreshEntity(entityToSpawn);
+			if (getEntityScore("skill_issue", entity) >= 5) {
+				if (world instanceof ServerLevel _level) {
+					LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level, EntitySpawnReason.TRIGGERED);
+					entityToSpawn.snapTo(Vec3.atBottomCenterOf(BlockPos.containing(entity.getX(), entity.getY(), entity.getZ())));
+					entityToSpawn.setVisualOnly(true);
+					_level.addFreshEntity(entityToSpawn);
+				}
+			} else {
+				if (world instanceof ServerLevel _level) {
+					LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level, EntitySpawnReason.TRIGGERED);
+					entityToSpawn.snapTo(Vec3.atBottomCenterOf(BlockPos.containing(entity.getX(), entity.getY(), entity.getZ())));;
+					_level.addFreshEntity(entityToSpawn);
+				}
 			}
 		} else if (roll == 2) {
 			if (world instanceof ServerLevel _level) {
-				Entity entityToSpawn = EntityType.GHAST.spawn(_level, BlockPos.containing(x + 2, y, z), EntitySpawnReason.MOB_SUMMONED);
+				Entity entityToSpawn = EntityType.WITHER.spawn(_level, BlockPos.containing(x + 2, y, z), EntitySpawnReason.MOB_SUMMONED);
 				if (entityToSpawn != null) {
 					entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
 				}
@@ -65,5 +77,13 @@ public class DiceBlockOnBlockRightclickedProcedure {
 					_player.giveExperienceLevels(5);
 			}
 		}
+	}
+
+	private static int getEntityScore(String score, Entity entity) {
+		Scoreboard scoreboard = entity.level().getScoreboard();
+		Objective scoreboardObjective = scoreboard.getObjective(score);
+		if (scoreboardObjective != null)
+			return scoreboard.getOrCreatePlayerScore(ScoreHolder.forNameOnly(entity.getScoreboardName()), scoreboardObjective).get();
+		return 0;
 	}
 }
