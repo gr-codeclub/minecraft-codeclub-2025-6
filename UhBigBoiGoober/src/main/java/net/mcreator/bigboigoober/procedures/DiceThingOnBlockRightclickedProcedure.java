@@ -1,5 +1,8 @@
 package net.mcreator.bigboigoober.procedures;
 
+import net.minecraft.world.scores.Scoreboard;
+import net.minecraft.world.scores.ScoreHolder;
+import net.minecraft.world.scores.Objective;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.player.Player;
@@ -22,10 +25,19 @@ public class DiceThingOnBlockRightclickedProcedure {
 		double IdidntSeeWhatThisWasMeantToBeCalled = 0;
 		IdidntSeeWhatThisWasMeantToBeCalled = Mth.nextInt(RandomSource.create(), 1, 6);
 		if (IdidntSeeWhatThisWasMeantToBeCalled == 1) {
-			if (world instanceof ServerLevel _level) {
-				LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level, EntitySpawnReason.TRIGGERED);
-				entityToSpawn.snapTo(Vec3.atBottomCenterOf(BlockPos.containing(x, y, z)));;
-				_level.addFreshEntity(entityToSpawn);
+			if (getEntityScore("idk", entity) >= 10) {
+				if (world instanceof ServerLevel _level) {
+					LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level, EntitySpawnReason.TRIGGERED);
+					entityToSpawn.snapTo(Vec3.atBottomCenterOf(BlockPos.containing(x, y, z)));
+					entityToSpawn.setVisualOnly(true);
+					_level.addFreshEntity(entityToSpawn);
+				}
+			} else {
+				if (world instanceof ServerLevel _level) {
+					LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level, EntitySpawnReason.TRIGGERED);
+					entityToSpawn.snapTo(Vec3.atBottomCenterOf(BlockPos.containing(x, y, z)));;
+					_level.addFreshEntity(entityToSpawn);
+				}
 			}
 			if (entity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal("You Got 1..."), true);
@@ -51,10 +63,22 @@ public class DiceThingOnBlockRightclickedProcedure {
 			if (entity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal("You Got 5..."), true);
 		} else if (IdidntSeeWhatThisWasMeantToBeCalled == 6) {
-			if (entity instanceof Player _player)
-				_player.getFoodData().setFoodLevel(0);
+			if (world instanceof ServerLevel _level) {
+				Entity entityToSpawn = EntityType.ZOMBIE.spawn(_level, BlockPos.containing(x, y, z), EntitySpawnReason.MOB_SUMMONED);
+				if (entityToSpawn != null) {
+					entityToSpawn.setDeltaMovement(0, 0, 0);
+				}
+			}
 			if (entity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal("You Got 6..."), true);
 		}
+	}
+
+	private static int getEntityScore(String score, Entity entity) {
+		Scoreboard scoreboard = entity.level().getScoreboard();
+		Objective scoreboardObjective = scoreboard.getObjective(score);
+		if (scoreboardObjective != null)
+			return scoreboard.getOrCreatePlayerScore(ScoreHolder.forNameOnly(entity.getScoreboardName()), scoreboardObjective).get();
+		return 0;
 	}
 }

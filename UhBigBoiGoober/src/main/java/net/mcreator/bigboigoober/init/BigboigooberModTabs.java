@@ -27,6 +27,7 @@ public class BigboigooberModTabs {
 				tabData.accept(BigboigooberModItems.FAKE_WATER_BUCKET.get());
 				tabData.accept(BigboigooberModItems.SECOND_TRY_OF_BLOCK_DISAPPEARING_THING.get());
 				tabData.accept(BigboigooberModBlocks.DICE_THING.get().asItem());
+				tabData.accept(BigboigooberModBlocks.SKILL_STONE_IDK.get().asItem());
 			}).withSearchBar().build());
 
 	@SubscribeEvent

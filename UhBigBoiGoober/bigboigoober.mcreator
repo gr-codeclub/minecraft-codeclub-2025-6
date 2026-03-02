@@ -212,6 +212,63 @@
           "src/main/java/net/mcreator/bigboigoober/procedures/DiceThingOnBlockRightclickedProcedure.java"
         ]
       }
+    },
+    {
+      "name": "EntityDies",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "entity_dies",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/bigboigoober/procedures/EntityDiesProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SkillStoneIdk",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_stone_idk",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/bigboigoober/loot_table/blocks/skill_stone_idk.json",
+          "src/main/resources/assets/bigboigoober/items/skill_stone_idk.json",
+          "src/main/resources/assets/bigboigoober/blockstates/skill_stone_idk.json",
+          "src/main/java/net/mcreator/bigboigoober/block/SkillStoneIdkBlock.java",
+          "src/main/resources/assets/bigboigoober/models/block/skill_stone_idk.json",
+          "src/main/resources/assets/bigboigoober/models/item/skill_stone_idk.json"
+        ]
+      }
+    },
+    {
+      "name": "SkillStoneIdkOnBlockRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_stone_idk_on_block_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/bigboigoober/procedures/SkillStoneIdkOnBlockRightclickedProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -250,7 +307,8 @@
       "item.bigboigoober.fake_water_bucket": "Fake Water Bucket",
       "block.bigboigoober.fake_water": "Fake Water",
       "item.bigboigoober.second_try_of_block_disappearing_thing": "Second Try Of Block Disappearing Thing",
-      "item.bigboigoober.dice_thing": "Dice Thing"
+      "item.bigboigoober.dice_thing": "Dice Thing",
+      "item.bigboigoober.skill_stone_idk": "Skill Stone Idk"
     }
   },
   "metadata": {
