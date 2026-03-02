@@ -205,6 +205,28 @@
           "src/main/resources/assets/cocomelon/models/block/cocomelonwepon_1.json"
         ]
       }
+    },
+    {
+      "name": "Cheesecocomelon",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cheesecocomelon",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/cocomelon/procedures/CheesecocomelonProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
