@@ -10,6 +10,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.Block;
 
 import net.mcreator.ilovefootball.block.FootballblockBlock;
+import net.mcreator.ilovefootball.block.DiceblockBlock;
 import net.mcreator.ilovefootball.IlovefootballMod;
 
 import java.util.function.Function;

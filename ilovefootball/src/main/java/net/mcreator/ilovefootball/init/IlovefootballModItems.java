@@ -23,11 +23,13 @@ public class IlovefootballModItems {
 	public static final DeferredItem<Item> FOOTBALLSOMETHING;
 	public static final DeferredItem<Item> FOOT;
 	public static final DeferredItem<Item> DICEBLOCK;
+	public static final DeferredItem<Item> SKILLSTONE;
 	static {
 		FOOTBALLBLOCK = block(IlovefootballModBlocks.FOOTBALLBLOCK);
 		FOOTBALLSOMETHING = register("footballsomething", FootballsomethingItem::new);
 		FOOT = register("foot", FootItem::new);
 		DICEBLOCK = block(IlovefootballModBlocks.DICEBLOCK);
+		SKILLSTONE = register("skillstone", SkillstoneItem::new);
 	}
 
 	// Start of user code block custom items

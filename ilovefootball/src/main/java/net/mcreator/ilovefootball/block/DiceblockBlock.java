@@ -33,7 +33,7 @@ public class DiceblockBlock extends Block {
 		double hitY = hit.getLocation().y;
 		double hitZ = hit.getLocation().z;
 		Direction direction = hit.getDirection();
-		DiceblockOnBlockRightclickedProcedure.execute(entity);
+		DiceblockOnBlockRightclickedProcedure.execute(world, x, y, z, entity);
 		return InteractionResult.SUCCESS;
 	}
 }

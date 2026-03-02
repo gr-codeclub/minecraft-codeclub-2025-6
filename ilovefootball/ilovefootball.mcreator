@@ -164,6 +164,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ],
         "files": [
@@ -187,6 +203,60 @@
           "src/main/resources/assets/ilovefootball/items/diceblock.json"
         ]
       }
+    },
+    {
+      "name": "EntityKILL",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "entity_kill",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/ilovefootball/procedures/EntityKILLProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SkillstoneRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skillstone_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/ilovefootball/procedures/SkillstoneRightclickedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Skillstone",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skillstone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ilovefootball/models/item/skillstone.json",
+          "src/main/java/net/mcreator/ilovefootball/item/SkillstoneItem.java",
+          "src/main/resources/assets/ilovefootball/items/skillstone.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -204,7 +274,8 @@
       "item.ilovefootball.footballblock": "Footballblock",
       "item.ilovefootball.footballsomething": "Footballsomething",
       "item.ilovefootball.foot": "Foot",
-      "item.ilovefootball.diceblock": "Diceblock"
+      "item.ilovefootball.diceblock": "Diceblock",
+      "item.ilovefootball.skillstone": "Skillstone"
     }
   },
   "metadata": {
