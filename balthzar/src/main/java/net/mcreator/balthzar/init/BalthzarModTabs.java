@@ -24,6 +24,7 @@ public class BalthzarModTabs {
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> JOEMAMA = REGISTRY.register("joemama",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.balthzar.joemama")).icon(() -> new ItemStack(Blocks.CRIMSON_STEM)).displayItems((parameters, tabData) -> {
 				tabData.accept(BalthzarModBlocks.BALTHZAR.get().asItem());
+				tabData.accept(BalthzarModItems.SKILL_STONE.get());
 			}).build());
 
 	@SubscribeEvent

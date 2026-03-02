@@ -144,6 +144,60 @@
           "src/main/java/net/mcreator/balthzar/procedures/BalthzarBlockDestroyedByPlayerProcedure.java"
         ]
       }
+    },
+    {
+      "name": "Megldon",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "megldon",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/balthzar/procedures/MegldonProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SkillStoneRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_stone_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/balthzar/procedures/SkillStoneRightclickedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SkillStone",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_stone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/balthzar/items/skill_stone.json",
+          "src/main/resources/assets/balthzar/models/item/skill_stone.json",
+          "src/main/java/net/mcreator/balthzar/item/SkillStoneItem.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -160,7 +214,8 @@
       "item_group.balthzar.joemama": "Joemama",
       "item.balthzar.balthzar": "Balthzar",
       "item.balthzar.tsb": "Tsb",
-      "item.balthzar.herman": "Herman"
+      "item.balthzar.herman": "Herman",
+      "item.balthzar.skill_stone": "Skill Stone"
     }
   },
   "metadata": {
