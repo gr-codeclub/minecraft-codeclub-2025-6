@@ -191,6 +191,60 @@
           "src/main/resources/assets/coco/blockstates/random_dice_thing.json"
         ]
       }
+    },
+    {
+      "name": "HiProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hi_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/coco/procedures/HiProcedureProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SkillStoneRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_stone_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/coco/procedures/SkillStoneRightclickedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SkillStone",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_stone",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/coco/item/SkillStoneItem.java",
+          "src/main/resources/assets/coco/items/skill_stone.json",
+          "src/main/resources/assets/coco/models/item/skill_stone.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -210,7 +264,8 @@
       "item.coco.quick_coco": "TOASTERMONSTER",
       "item.coco.wand": "Wand",
       "item.coco.block_dissapearerer": "Block Dissapearerer",
-      "item.coco.random_dice_thing": "Random Dice Thing"
+      "item.coco.random_dice_thing": "Random Dice Thing",
+      "item.coco.skill_stone": "Skill Stone"
     }
   },
   "metadata": {

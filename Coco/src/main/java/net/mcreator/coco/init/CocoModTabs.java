@@ -27,6 +27,7 @@ public class CocoModTabs {
 				tabData.accept(CocoModItems.WAND.get());
 				tabData.accept(CocoModItems.BLOCK_DISSAPEARERER.get());
 				tabData.accept(CocoModBlocks.RANDOM_DICE_THING.get().asItem());
+				tabData.accept(CocoModItems.SKILL_STONE.get());
 			}).build());
 
 	@SubscribeEvent
