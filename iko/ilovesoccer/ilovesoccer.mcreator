@@ -244,6 +244,42 @@
           "src/main/java/net/mcreator/ilovesoccer/procedures/SkillstoneRightclickedProcedure.java"
         ]
       }
+    },
+    {
+      "name": "Skillstone",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skillstone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ilovesoccer/items/skillstone.json",
+          "src/main/java/net/mcreator/ilovesoccer/item/SkillstoneItem.java",
+          "src/main/resources/assets/ilovesoccer/models/item/skillstone.json"
+        ]
+      }
+    },
+    {
+      "name": "Entitykill",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "entitykill",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/ilovesoccer/procedures/EntitykillProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -262,7 +298,8 @@
       "item.ilovesoccer.voldermolthasa_bi_gnose": "Voldermolthasa BI Gnose",
       "item.ilovesoccer.voldermoltbwoaanbd": "Voldermoltbwoaanbd",
       "item.ilovesoccer.veinminer": "Veinminer",
-      "item.ilovesoccer.dice_block": "Dice Block"
+      "item.ilovesoccer.dice_block": "Dice Block",
+      "item.ilovesoccer.skillstone": "Skillstone"
     }
   },
   "metadata": {

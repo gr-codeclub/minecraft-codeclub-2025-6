@@ -13,6 +13,7 @@ import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.ilovesoccer.item.VoldermoltbwoaanbdItem;
 import net.mcreator.ilovesoccer.item.VeinminerItem;
+import net.mcreator.ilovesoccer.item.SkillstoneItem;
 import net.mcreator.ilovesoccer.IlovesoccerMod;
 
 import java.util.function.Function;
@@ -23,11 +24,13 @@ public class IlovesoccerModItems {
 	public static final DeferredItem<Item> VOLDERMOLTBWOAANBD;
 	public static final DeferredItem<Item> VEINMINER;
 	public static final DeferredItem<Item> DICE_BLOCK;
+	public static final DeferredItem<Item> SKILLSTONE;
 	static {
 		VOLDERMOLTHASA_BI_GNOSE = block(IlovesoccerModBlocks.VOLDERMOLTHASA_BI_GNOSE);
 		VOLDERMOLTBWOAANBD = register("voldermoltbwoaanbd", VoldermoltbwoaanbdItem::new);
 		VEINMINER = register("veinminer", VeinminerItem::new);
 		DICE_BLOCK = block(IlovesoccerModBlocks.DICE_BLOCK);
+		SKILLSTONE = register("skillstone", SkillstoneItem::new);
 	}
 
 	// Start of user code block custom items
