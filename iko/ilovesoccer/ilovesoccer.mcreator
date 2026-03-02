@@ -226,6 +226,24 @@
           "src/main/resources/data/ilovesoccer/loot_table/blocks/dice_block.json"
         ]
       }
+    },
+    {
+      "name": "SkillstoneRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skillstone_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/ilovesoccer/procedures/SkillstoneRightclickedProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
