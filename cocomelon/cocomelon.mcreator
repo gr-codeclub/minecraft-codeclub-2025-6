@@ -199,6 +199,7 @@
         "files": [
           "src/main/java/net/mcreator/cocomelon/block/Cocomelonwepon1Block.java",
           "src/main/resources/assets/cocomelon/items/cocomelonwepon_1.json",
+          "src/main/java/net/mcreator/cocomelon/block/entity/Cocomelonwepon1BlockEntity.java",
           "src/main/resources/assets/cocomelon/models/item/cocomelonwepon_1.json",
           "src/main/resources/data/cocomelon/loot_table/blocks/cocomelonwepon_1.json",
           "src/main/resources/assets/cocomelon/blockstates/cocomelonwepon_1.json",
@@ -250,6 +251,7 @@
   "metadata": {
     "files": [
       "src/main/java/net/mcreator/cocomelon/init/CocomelonModBlocks.java",
+      "src/main/java/net/mcreator/cocomelon/init/CocomelonModBlockEntities.java",
       "src/main/java/net/mcreator/cocomelon/init/CocomelonModItems.java",
       "src/main/java/net/mcreator/cocomelon/CocomelonMod.java",
       "src/main/resources/META-INF/neoforge.mods.toml",

@@ -23,6 +23,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.mcreator.cocomelon.init.CocomelonModTabs;
 import net.mcreator.cocomelon.init.CocomelonModItems;
 import net.mcreator.cocomelon.init.CocomelonModBlocks;
+import net.mcreator.cocomelon.init.CocomelonModBlockEntities;
 
 import javax.annotation.Nullable;
 
@@ -48,6 +49,7 @@ public class CocomelonMod {
 		NeoForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::registerNetworking);
 		CocomelonModBlocks.REGISTRY.register(modEventBus);
+		CocomelonModBlockEntities.REGISTRY.register(modEventBus);
 		CocomelonModItems.REGISTRY.register(modEventBus);
 		CocomelonModTabs.REGISTRY.register(modEventBus);
 		// Start of user code block mod init
