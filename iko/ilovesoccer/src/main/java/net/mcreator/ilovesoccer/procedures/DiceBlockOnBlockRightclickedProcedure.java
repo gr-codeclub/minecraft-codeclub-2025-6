@@ -4,7 +4,10 @@ import net.minecraft.world.scores.Scoreboard;
 import net.minecraft.world.scores.ScoreHolder;
 import net.minecraft.world.scores.Objective;
 import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.LightningBolt;
@@ -28,9 +31,19 @@ public class DiceBlockOnBlockRightclickedProcedure {
 		if (entity == null)
 			return;
 		double roll = 0;
+		if (!world.isClientSide()) {
+			BlockPos _bp = BlockPos.containing(x, y, z);
+			BlockEntity _blockEntity = world.getBlockEntity(_bp);
+			BlockState _bs = world.getBlockState(_bp);
+			if (_blockEntity != null) {
+				_blockEntity.getPersistentData().putDouble("rolls", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "rolls") + 1));
+			}
+			if (world instanceof Level _level)
+				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+		}
 		roll = Mth.nextInt(RandomSource.create(), 1, 6);
 		if (entity instanceof Player _player && !_player.level().isClientSide())
-			_player.displayClientMessage(Component.literal(("You rolled " + new java.text.DecimalFormat("##").format(roll) + "!")), false);
+			_player.displayClientMessage(Component.literal(("You rolled " + new java.text.DecimalFormat("##").format(roll) + "!" + "rolls" + getBlockNBTNumber(world, BlockPos.containing(x, y, z), "rolls"))), true);
 		if (roll == 1) {
 			if (getEntityScore("skill_issue", entity) >= 5) {
 				if (world instanceof ServerLevel _level) {
@@ -77,6 +90,13 @@ public class DiceBlockOnBlockRightclickedProcedure {
 					_player.giveExperienceLevels(5);
 			}
 		}
+	}
+
+	private static double getBlockNBTNumber(LevelAccessor world, BlockPos pos, String tag) {
+		BlockEntity blockEntity = world.getBlockEntity(pos);
+		if (blockEntity != null)
+			return blockEntity.getPersistentData().getDoubleOr(tag, 0);
+		return -1;
 	}
 
 	private static int getEntityScore(String score, Entity entity) {
