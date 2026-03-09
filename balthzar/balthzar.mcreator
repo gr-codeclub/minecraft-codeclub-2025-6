@@ -198,6 +198,57 @@
           "src/main/java/net/mcreator/balthzar/item/SkillStoneItem.java"
         ]
       }
+    },
+    {
+      "name": "BalthazarDiceOnBlockRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "balthazar_dice_on_block_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/balthzar/procedures/BalthazarDiceOnBlockRightclickedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "BalthazarDice",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "balthazar_dice",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/balthzar/items/balthazar_dice.json",
+          "src/main/resources/assets/balthzar/models/item/balthazar_dice.json",
+          "src/main/resources/assets/balthzar/models/block/balthazar_dice.json",
+          "src/main/resources/assets/balthzar/blockstates/balthazar_dice.json",
+          "src/main/resources/data/balthzar/loot_table/blocks/balthazar_dice.json",
+          "src/main/java/net/mcreator/balthzar/block/BalthazarDiceBlock.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -215,7 +266,8 @@
       "item.balthzar.balthzar": "Balthzar",
       "item.balthzar.tsb": "Tsb",
       "item.balthzar.herman": "Herman",
-      "item.balthzar.skill_stone": "Skill Stone"
+      "item.balthzar.skill_stone": "Skill Stone",
+      "item.balthzar.balthazar_dice": "Balthazar Dice"
     }
   },
   "metadata": {

@@ -24,11 +24,13 @@ public class BalthzarModItems {
 	public static final DeferredItem<Item> TSB;
 	public static final DeferredItem<Item> HERMAN;
 	public static final DeferredItem<Item> SKILL_STONE;
+	public static final DeferredItem<Item> BALTHAZAR_DICE;
 	static {
 		BALTHZAR = block(BalthzarModBlocks.BALTHZAR);
 		TSB = register("tsb", TsbItem::new);
 		HERMAN = register("herman", HermanItem::new);
 		SKILL_STONE = register("skill_stone", SkillStoneItem::new);
+		BALTHAZAR_DICE = block(BalthzarModBlocks.BALTHAZAR_DICE);
 	}
 
 	// Start of user code block custom items

@@ -25,6 +25,7 @@ public class BalthzarModTabs {
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.balthzar.joemama")).icon(() -> new ItemStack(Blocks.CRIMSON_STEM)).displayItems((parameters, tabData) -> {
 				tabData.accept(BalthzarModBlocks.BALTHZAR.get().asItem());
 				tabData.accept(BalthzarModItems.SKILL_STONE.get());
+				tabData.accept(BalthzarModBlocks.BALTHAZAR_DICE.get().asItem());
 			}).build());
 
 	@SubscribeEvent

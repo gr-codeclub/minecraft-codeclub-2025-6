@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "minecraft:block/creaking_heart_awake",
+    "particle": "minecraft:block/creaking_heart_awake"
+  },
+  "render_type": "solid"
+}
