@@ -24,6 +24,8 @@ public class EleazarModTabs {
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ELEAZAR = REGISTRY.register("eleazar",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.eleazar.eleazar")).icon(() -> new ItemStack(Blocks.AMETHYST_BLOCK)).displayItems((parameters, tabData) -> {
 				tabData.accept(EleazarModBlocks.KPOPSUCKS.get().asItem());
+				tabData.accept(EleazarModBlocks.DICEBLOCK.get().asItem());
+				tabData.accept(EleazarModItems.SKILL_STONE.get());
 			}).build());
 
 	@SubscribeEvent

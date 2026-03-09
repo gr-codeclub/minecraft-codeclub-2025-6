@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "eleazar:block/dice",
+    "up": "eleazar:block/dice",
+    "north": "eleazar:block/dice",
+    "east": "eleazar:block/dice",
+    "south": "eleazar:block/dice",
+    "west": "eleazar:block/dice",
+    "particle": "eleazar:block/dice"
+  },
+  "render_type": "solid"
+}

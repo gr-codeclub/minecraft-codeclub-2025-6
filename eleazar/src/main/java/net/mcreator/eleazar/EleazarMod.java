@@ -23,6 +23,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.mcreator.eleazar.init.EleazarModTabs;
 import net.mcreator.eleazar.init.EleazarModItems;
 import net.mcreator.eleazar.init.EleazarModBlocks;
+import net.mcreator.eleazar.init.EleazarModBlockEntities;
 
 import javax.annotation.Nullable;
 
@@ -48,6 +49,7 @@ public class EleazarMod {
 		NeoForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::registerNetworking);
 		EleazarModBlocks.REGISTRY.register(modEventBus);
+		EleazarModBlockEntities.REGISTRY.register(modEventBus);
 		EleazarModItems.REGISTRY.register(modEventBus);
 		EleazarModTabs.REGISTRY.register(modEventBus);
 		// Start of user code block mod init

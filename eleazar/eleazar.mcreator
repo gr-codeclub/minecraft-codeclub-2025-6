@@ -114,6 +114,112 @@
           "src/main/resources/assets/eleazar/models/item/sixsevensixsevensixseven.json"
         ]
       }
+    },
+    {
+      "name": "DiceblockOnBlockRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diceblock_on_block_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/eleazar/procedures/DiceblockOnBlockRightclickedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Diceblock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diceblock",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/eleazar/models/item/diceblock.json",
+          "src/main/java/net/mcreator/eleazar/block/DiceblockBlock.java",
+          "src/main/java/net/mcreator/eleazar/block/entity/DiceblockBlockEntity.java",
+          "src/main/resources/assets/eleazar/items/diceblock.json",
+          "src/main/resources/data/eleazar/loot_table/blocks/diceblock.json",
+          "src/main/resources/assets/eleazar/blockstates/diceblock.json",
+          "src/main/resources/assets/eleazar/models/block/diceblock.json"
+        ]
+      }
+    },
+    {
+      "name": "WarriorTracker",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "warrior_tracker",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/eleazar/procedures/WarriorTrackerProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SkillStoneRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_stone_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/eleazar/procedures/SkillStoneRightclickedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SkillStone",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_stone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/eleazar/models/item/skill_stone.json",
+          "src/main/resources/assets/eleazar/items/skill_stone.json",
+          "src/main/java/net/mcreator/eleazar/item/SkillStoneItem.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -130,12 +236,15 @@
       "item_group.eleazar.eleazar": "Eleazar",
       "item.eleazar.kpopsucks": "Kpopsucks",
       "item.eleazar.sixseven": "Sixseven",
-      "item.eleazar.sixsevensixsevensixseven": "Sixsevensixsevensixseven"
+      "item.eleazar.sixsevensixsevensixseven": "Sixsevensixsevensixseven",
+      "item.eleazar.diceblock": "Diceblock",
+      "item.eleazar.skill_stone": "Skill Stone"
     }
   },
   "metadata": {
     "files": [
       "src/main/java/net/mcreator/eleazar/init/EleazarModBlocks.java",
+      "src/main/java/net/mcreator/eleazar/init/EleazarModBlockEntities.java",
       "src/main/java/net/mcreator/eleazar/init/EleazarModItems.java",
       "src/main/java/net/mcreator/eleazar/EleazarMod.java",
       "src/main/resources/pack.mcmeta",
