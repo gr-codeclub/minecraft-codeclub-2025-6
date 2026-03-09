@@ -16,6 +16,7 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.core.registries.BuiltInRegistries;
 
+import net.mcreator.dextermod.block.entity.DiceBlockBlockEntity;
 import net.mcreator.dextermod.DextermodMod;
 
 @EventBusSubscriber
