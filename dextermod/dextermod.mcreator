@@ -283,12 +283,13 @@
       "registry_name": "dice_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/dextermod/models/block/dice_block.json",
           "src/main/resources/assets/dextermod/models/item/dice_block.json",
-          "src/main/resources/assets/dextermod/blockstates/dice_block.json",
           "src/main/resources/data/dextermod/loot_table/blocks/dice_block.json",
           "src/main/resources/assets/dextermod/items/dice_block.json",
-          "src/main/java/net/mcreator/dextermod/block/DiceBlockBlock.java"
+          "src/main/resources/assets/dextermod/models/block/dice_block.json",
+          "src/main/java/net/mcreator/dextermod/block/DiceBlockBlock.java",
+          "src/main/java/net/mcreator/dextermod/block/entity/DiceBlockBlockEntity.java",
+          "src/main/resources/assets/dextermod/blockstates/dice_block.json"
         ]
       }
     },
@@ -332,6 +333,7 @@
   "metadata": {
     "files": [
       "src/main/java/net/mcreator/dextermod/init/DextermodModBlocks.java",
+      "src/main/java/net/mcreator/dextermod/init/DextermodModBlockEntities.java",
       "src/main/java/net/mcreator/dextermod/init/DextermodModItems.java",
       "src/main/resources/pack.mcmeta",
       "src/main/java/net/mcreator/dextermod/DextermodMod.java",

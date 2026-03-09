@@ -23,6 +23,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.mcreator.dextermod.init.DextermodModTabs;
 import net.mcreator.dextermod.init.DextermodModItems;
 import net.mcreator.dextermod.init.DextermodModBlocks;
+import net.mcreator.dextermod.init.DextermodModBlockEntities;
 
 import javax.annotation.Nullable;
 
@@ -48,6 +49,7 @@ public class DextermodMod {
 		NeoForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::registerNetworking);
 		DextermodModBlocks.REGISTRY.register(modEventBus);
+		DextermodModBlockEntities.REGISTRY.register(modEventBus);
 		DextermodModItems.REGISTRY.register(modEventBus);
 		DextermodModTabs.REGISTRY.register(modEventBus);
 		// Start of user code block mod init
