@@ -1,6 +1,7 @@
 package net.mcreator.coco.procedures;
 
 import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
@@ -18,13 +19,13 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
 
 public class RandomDiceThingOnBlockRightclickedProcedure {
-	public static void execute(LevelAccessor world, Entity entity) {
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
 		double roll = 0;
 		roll = Mth.nextInt(RandomSource.create(), 1, 6);
 		if (entity instanceof Player _player && !_player.level().isClientSide())
-			_player.displayClientMessage(Component.literal(("You rolled a " + new java.text.DecimalFormat("##").format(roll))), true);
+			_player.displayClientMessage(Component.literal(("You rolled a " + new java.text.DecimalFormat("##").format(roll) + " Rolls: " + getBlockNBTNumber(world, BlockPos.containing(x, y, z), "Rolls"))), true);
 		if (roll == 1) {
 			if (world instanceof ServerLevel _level) {
 				LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level, EntitySpawnReason.TRIGGERED);
@@ -58,5 +59,12 @@ public class RandomDiceThingOnBlockRightclickedProcedure {
 							new ExperienceOrb(_level, (entity.getX() + Mth.nextInt(RandomSource.create(), -3, 3)), (entity.getY() + Mth.nextInt(RandomSource.create(), 2, 5)), (entity.getZ() + Mth.nextInt(RandomSource.create(), -3, 3)), 37));
 			}
 		}
+	}
+
+	private static double getBlockNBTNumber(LevelAccessor world, BlockPos pos, String tag) {
+		BlockEntity blockEntity = world.getBlockEntity(pos);
+		if (blockEntity != null)
+			return blockEntity.getPersistentData().getDoubleOr(tag, 0);
+		return -1;
 	}
 }

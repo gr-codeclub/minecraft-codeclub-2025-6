@@ -166,6 +166,18 @@
             "type": "entity"
           },
           {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
             "name": "world",
             "type": "world"
           }
@@ -188,6 +200,7 @@
           "src/main/resources/data/coco/loot_table/blocks/random_dice_thing.json",
           "src/main/resources/assets/coco/items/random_dice_thing.json",
           "src/main/resources/assets/coco/models/block/random_dice_thing.json",
+          "src/main/java/net/mcreator/coco/block/entity/RandomDiceThingBlockEntity.java",
           "src/main/resources/assets/coco/blockstates/random_dice_thing.json"
         ]
       }
@@ -271,6 +284,7 @@
   "metadata": {
     "files": [
       "src/main/java/net/mcreator/coco/init/CocoModBlocks.java",
+      "src/main/java/net/mcreator/coco/init/CocoModBlockEntities.java",
       "src/main/java/net/mcreator/coco/init/CocoModItems.java",
       "src/main/java/net/mcreator/coco/init/CocoModTabs.java",
       "src/main/resources/META-INF/neoforge.mods.toml",

@@ -23,6 +23,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.mcreator.coco.init.CocoModTabs;
 import net.mcreator.coco.init.CocoModItems;
 import net.mcreator.coco.init.CocoModBlocks;
+import net.mcreator.coco.init.CocoModBlockEntities;
 
 import javax.annotation.Nullable;
 
@@ -48,6 +49,7 @@ public class CocoMod {
 		NeoForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::registerNetworking);
 		CocoModBlocks.REGISTRY.register(modEventBus);
+		CocoModBlockEntities.REGISTRY.register(modEventBus);
 		CocoModItems.REGISTRY.register(modEventBus);
 		CocoModTabs.REGISTRY.register(modEventBus);
 		// Start of user code block mod init
