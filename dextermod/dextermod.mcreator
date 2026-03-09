@@ -333,10 +333,10 @@
     "files": [
       "src/main/java/net/mcreator/dextermod/init/DextermodModBlocks.java",
       "src/main/java/net/mcreator/dextermod/init/DextermodModItems.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/resources/pack.mcmeta",
-      "src/main/java/net/mcreator/dextermod/init/DextermodModTabs.java",
-      "src/main/java/net/mcreator/dextermod/DextermodMod.java"
+      "src/main/java/net/mcreator/dextermod/DextermodMod.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/dextermod/init/DextermodModTabs.java"
     ]
   },
   "foldersRoot": {
