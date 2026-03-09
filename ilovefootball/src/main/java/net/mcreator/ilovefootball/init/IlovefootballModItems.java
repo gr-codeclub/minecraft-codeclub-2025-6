@@ -11,6 +11,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.ilovefootball.item.SkillstoneItem;
 import net.mcreator.ilovefootball.item.FootballsomethingItem;
 import net.mcreator.ilovefootball.item.FootItem;
 import net.mcreator.ilovefootball.IlovefootballMod;

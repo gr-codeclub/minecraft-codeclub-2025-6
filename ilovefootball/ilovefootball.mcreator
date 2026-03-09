@@ -199,6 +199,7 @@
           "src/main/resources/assets/ilovefootball/models/block/diceblock.json",
           "src/main/resources/assets/ilovefootball/models/item/diceblock.json",
           "src/main/resources/data/ilovefootball/loot_table/blocks/diceblock.json",
+          "src/main/java/net/mcreator/ilovefootball/block/entity/DiceblockBlockEntity.java",
           "src/main/resources/assets/ilovefootball/blockstates/diceblock.json",
           "src/main/resources/assets/ilovefootball/items/diceblock.json"
         ]
@@ -281,6 +282,7 @@
   "metadata": {
     "files": [
       "src/main/java/net/mcreator/ilovefootball/init/IlovefootballModBlocks.java",
+      "src/main/java/net/mcreator/ilovefootball/init/IlovefootballModBlockEntities.java",
       "src/main/java/net/mcreator/ilovefootball/init/IlovefootballModItems.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/resources/pack.mcmeta",

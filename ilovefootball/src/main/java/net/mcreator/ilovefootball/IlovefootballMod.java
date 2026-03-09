@@ -23,6 +23,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.mcreator.ilovefootball.init.IlovefootballModTabs;
 import net.mcreator.ilovefootball.init.IlovefootballModItems;
 import net.mcreator.ilovefootball.init.IlovefootballModBlocks;
+import net.mcreator.ilovefootball.init.IlovefootballModBlockEntities;
 
 import javax.annotation.Nullable;
 
@@ -48,6 +49,7 @@ public class IlovefootballMod {
 		NeoForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::registerNetworking);
 		IlovefootballModBlocks.REGISTRY.register(modEventBus);
+		IlovefootballModBlockEntities.REGISTRY.register(modEventBus);
 		IlovefootballModItems.REGISTRY.register(modEventBus);
 		IlovefootballModTabs.REGISTRY.register(modEventBus);
 		// Start of user code block mod init

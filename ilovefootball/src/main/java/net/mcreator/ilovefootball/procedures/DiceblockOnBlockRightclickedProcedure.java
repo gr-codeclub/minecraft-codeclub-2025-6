@@ -1,7 +1,13 @@
 package net.mcreator.ilovefootball.procedures;
 
+import net.minecraft.world.scores.Scoreboard;
+import net.minecraft.world.scores.ScoreHolder;
+import net.minecraft.world.scores.Objective;
 import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.LightningBolt;
@@ -25,14 +31,35 @@ public class DiceblockOnBlockRightclickedProcedure {
 		if (entity == null)
 			return;
 		double roll = 0;
+		if (!world.isClientSide()) {
+			BlockPos _bp = BlockPos.containing(x, y, z);
+			BlockEntity _blockEntity = world.getBlockEntity(_bp);
+			BlockState _bs = world.getBlockState(_bp);
+			if (_blockEntity != null) {
+				_blockEntity.getPersistentData().putDouble("rolls", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "rolls") + 1));
+			}
+			if (world instanceof Level _level)
+				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+		}
 		roll = Mth.nextInt(RandomSource.create(), 1, 5);
 		if (entity instanceof Player _player && !_player.level().isClientSide())
-			_player.displayClientMessage(Component.literal(("you rolled" + new java.text.DecimalFormat("##").format(roll) + "!")), true);
+			_player.displayClientMessage(Component.literal(("you rolled a" + new java.text.DecimalFormat("##").format(roll) + "rolls" + getBlockNBTNumber(world, BlockPos.containing(x, y, z), "rolls"))), true);
 		if (roll == 1) {
-			if (world instanceof ServerLevel _level) {
-				LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level, EntitySpawnReason.TRIGGERED);
-				entityToSpawn.snapTo(Vec3.atBottomCenterOf(BlockPos.containing(entity.getX(), entity.getY(), entity.getZ())));;
-				_level.addFreshEntity(entityToSpawn);
+			if (getEntityScore("skill_warrior", entity) >= 10) {
+				if (entity instanceof Player _player && !_player.level().isClientSide())
+					_player.displayClientMessage(Component.literal("you are a pesant"), true);
+				if (world instanceof ServerLevel _level) {
+					LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level, EntitySpawnReason.TRIGGERED);
+					entityToSpawn.snapTo(Vec3.atBottomCenterOf(BlockPos.containing(entity.getX(), entity.getY(), entity.getZ())));
+					entityToSpawn.setVisualOnly(true);
+					_level.addFreshEntity(entityToSpawn);
+				}
+			} else {
+				if (world instanceof ServerLevel _level) {
+					LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level, EntitySpawnReason.TRIGGERED);
+					entityToSpawn.snapTo(Vec3.atBottomCenterOf(BlockPos.containing(entity.getX(), entity.getY(), entity.getZ())));;
+					_level.addFreshEntity(entityToSpawn);
+				}
 			}
 		} else if (roll == 2) {
 			if (world instanceof ServerLevel _level) {
@@ -44,7 +71,7 @@ public class DiceblockOnBlockRightclickedProcedure {
 		} else if (roll == 3) {
 			for (int index0 = 0; index0 < 10; index0++) {
 				if (entity instanceof Player _player)
-					_player.giveExperiencePoints(5);
+					_player.giveExperiencePoints(100);
 			}
 		} else if (roll == 4) {
 			entity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.STARVE)), entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1);
@@ -65,5 +92,20 @@ public class DiceblockOnBlockRightclickedProcedure {
 					_player.giveExperiencePoints(5);
 			}
 		}
+	}
+
+	private static double getBlockNBTNumber(LevelAccessor world, BlockPos pos, String tag) {
+		BlockEntity blockEntity = world.getBlockEntity(pos);
+		if (blockEntity != null)
+			return blockEntity.getPersistentData().getDoubleOr(tag, 0);
+		return -1;
+	}
+
+	private static int getEntityScore(String score, Entity entity) {
+		Scoreboard scoreboard = entity.level().getScoreboard();
+		Objective scoreboardObjective = scoreboard.getObjective(score);
+		if (scoreboardObjective != null)
+			return scoreboard.getOrCreatePlayerScore(ScoreHolder.forNameOnly(entity.getScoreboardName()), scoreboardObjective).get();
+		return 0;
 	}
 }
