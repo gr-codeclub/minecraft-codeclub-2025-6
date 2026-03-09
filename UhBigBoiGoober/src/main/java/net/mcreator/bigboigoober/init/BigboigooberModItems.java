@@ -12,6 +12,7 @@ import net.neoforged.neoforge.capabilities.Capabilities;
 import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.item.SpawnEggItem;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
@@ -29,12 +30,14 @@ public class BigboigooberModItems {
 	public static final DeferredItem<Item> SECOND_TRY_OF_BLOCK_DISAPPEARING_THING;
 	public static final DeferredItem<Item> DICE_THING;
 	public static final DeferredItem<Item> SKILL_STONE_IDK;
+	public static final DeferredItem<Item> SHROOM_SPAWN_EGG;
 	static {
 		BLOCK_THINGY = block(BigboigooberModBlocks.BLOCK_THINGY, new Item.Properties().stacksTo(99).rarity(Rarity.EPIC).fireResistant());
 		FAKE_WATER_BUCKET = register("fake_water_bucket", FakeWaterItem::new);
 		SECOND_TRY_OF_BLOCK_DISAPPEARING_THING = register("second_try_of_block_disappearing_thing", SecondTryOfBlockDisappearingThingItem::new);
 		DICE_THING = block(BigboigooberModBlocks.DICE_THING);
 		SKILL_STONE_IDK = block(BigboigooberModBlocks.SKILL_STONE_IDK);
+		SHROOM_SPAWN_EGG = register("shroom_spawn_egg", properties -> new SpawnEggItem(BigboigooberModEntities.SHROOM.get(), properties));
 	}
 
 	// Start of user code block custom items

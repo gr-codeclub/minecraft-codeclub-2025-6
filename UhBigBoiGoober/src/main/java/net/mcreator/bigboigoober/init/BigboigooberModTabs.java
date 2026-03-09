@@ -36,6 +36,8 @@ public class BigboigooberModTabs {
 			tabData.accept(BigboigooberModItems.SECOND_TRY_OF_BLOCK_DISAPPEARING_THING.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.COLORED_BLOCKS) {
 			tabData.accept(BigboigooberModBlocks.DICE_THING.get().asItem());
+		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
+			tabData.accept(BigboigooberModItems.SHROOM_SPAWN_EGG.get());
 		}
 	}
 }

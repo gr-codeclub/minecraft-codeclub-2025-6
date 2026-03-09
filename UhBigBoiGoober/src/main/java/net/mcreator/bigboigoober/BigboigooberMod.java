@@ -20,11 +20,7 @@ import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.FriendlyByteBuf;
 
-import net.mcreator.bigboigoober.init.BigboigooberModTabs;
-import net.mcreator.bigboigoober.init.BigboigooberModItems;
-import net.mcreator.bigboigoober.init.BigboigooberModFluids;
-import net.mcreator.bigboigoober.init.BigboigooberModFluidTypes;
-import net.mcreator.bigboigoober.init.BigboigooberModBlocks;
+import net.mcreator.bigboigoober.init.*;
 
 import javax.annotation.Nullable;
 
@@ -50,7 +46,9 @@ public class BigboigooberMod {
 		NeoForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::registerNetworking);
 		BigboigooberModBlocks.REGISTRY.register(modEventBus);
+		BigboigooberModBlockEntities.REGISTRY.register(modEventBus);
 		BigboigooberModItems.REGISTRY.register(modEventBus);
+		BigboigooberModEntities.REGISTRY.register(modEventBus);
 		BigboigooberModTabs.REGISTRY.register(modEventBus);
 		BigboigooberModFluids.REGISTRY.register(modEventBus);
 		BigboigooberModFluidTypes.REGISTRY.register(modEventBus);

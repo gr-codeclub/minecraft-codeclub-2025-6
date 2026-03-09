@@ -23,5 +23,7 @@
   "block.bigboigoober.fake_water": "Fake Water",
   "item.bigboigoober.second_try_of_block_disappearing_thing": "Second Try Of Block Disappearing Thing",
   "item.bigboigoober.dice_thing": "Dice Thing",
-  "item.bigboigoober.skill_stone_idk": "Skill Stone Idk"
+  "item.bigboigoober.skill_stone_idk": "Skill Stone Idk",
+  "item.bigboigoober.shroom_spawn_egg": "Shroom Spawn Egg",
+  "entity.bigboigoober.shroom": "Shroom"
 }
