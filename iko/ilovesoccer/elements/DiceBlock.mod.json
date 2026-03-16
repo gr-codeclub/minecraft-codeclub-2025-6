@@ -67,9 +67,9 @@
     "requiresCorrectTool": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
-    "canRedstoneConnect": false,
+    "canRedstoneConnect": true,
     "lightOpacity": 15,
-    "tickRate": 0,
+    "tickRate": 1,
     "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
@@ -123,7 +123,7 @@
     "vibrationSensitivityRadius": {
       "fixedValue": 7.0
     },
-    "hasInventory": false,
+    "hasInventory": true,
     "openGUIOnRightClick": false,
     "inventorySize": 9,
     "inventoryStackSize": 99,
@@ -141,6 +141,9 @@
     "fluidRestrictions": [],
     "onRightClicked": {
       "name": "DiceBlockOnBlockRightclicked"
+    },
+    "onTickUpdate": {
+      "name": "DiceBlockOnTickUpdate"
     },
     "generateFeature": false,
     "restrictionBiomes": [],
