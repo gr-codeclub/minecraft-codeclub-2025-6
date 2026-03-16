@@ -1,12 +1,17 @@
 {
   "type": "neoforge:add_spawns",
-  "biomes": {
-    "type": "neoforge:any"
-  },
+  "biomes": [
+    "mushroom_fields",
+    "bamboo_jungle",
+    "cherry_grove",
+    "flower_forest",
+    "lush_caves",
+    "the_end"
+  ],
   "spawners": {
     "type": "bigboigoober:shroom",
     "weight": 20,
-    "minCount": 4,
-    "maxCount": 4
+    "minCount": 1,
+    "maxCount": 20
   }
 }

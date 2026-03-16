@@ -24,7 +24,7 @@ import net.mcreator.bigboigoober.BigboigooberMod;
 public class BigboigooberModEntities {
 	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(Registries.ENTITY_TYPE, BigboigooberMod.MODID);
 	public static final DeferredHolder<EntityType<?>, EntityType<ShroomEntity>> SHROOM = register("shroom",
-			EntityType.Builder.<ShroomEntity>of(ShroomEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+			EntityType.Builder.<ShroomEntity>of(ShroomEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
 					.sized(0.6f, 1.8f));
 

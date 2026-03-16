@@ -3,7 +3,7 @@
   "_type": "livingentity",
   "definition": {
     "mobName": "Shroom",
-    "mobLabel": "",
+    "mobLabel": "Shroom",
     "mobModelName": "ModelShroom",
     "mobModelTexture": "mushroomhead.png",
     "transparentModelCondition": {
@@ -36,14 +36,17 @@
       "value": -1,
       "falpha": 0.0
     },
-    "spawnEggTexture": "",
+    "spawnEggTexture": "shroomegg",
     "creativeTabs": [
       {
         "value": "MISC"
+      },
+      {
+        "value": "CUSTOM:Bigboigoober"
       }
     ],
-    "isBoss": false,
-    "bossBarColor": "PINK",
+    "isBoss": true,
+    "bossBarColor": "RED",
     "bossBarType": "PROGRESS",
     "equipmentMainHand": {
       "value": ""
@@ -109,24 +112,34 @@
       "value": ""
     },
     "hurtSound": {
-      "value": "entity.generic.hurt"
+      "value": "block.amethyst_block.hit"
     },
     "deathSound": {
       "value": "entity.generic.death"
     },
     "stepSound": {
-      "value": ""
+      "value": "block.amethyst_block.chime"
     },
     "raidCelebrationSound": {
       "value": ""
     },
     "entityDataEntries": [],
+    "onRightClickedOn": {
+      "name": "ShroomRightclickedOnEntity"
+    },
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></xml>",
-    "breedable": false,
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">TRUE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "breedable": true,
     "tameable": false,
-    "breedTriggerItems": [],
+    "breedTriggerItems": [
+      {
+        "value": "Blocks.RED_MUSHROOM"
+      },
+      {
+        "value": "Blocks.BROWN_MUSHROOM"
+      }
+    ],
     "ranged": false,
     "rangedAttackItem": {
       "value": ""
@@ -135,12 +148,31 @@
     "rangedAttackInterval": 20,
     "rangedAttackRadius": 10.0,
     "spawnThisMob": true,
-    "doesDespawnWhenIdle": true,
+    "doesDespawnWhenIdle": false,
     "spawningProbability": 20,
-    "mobSpawningType": "monster",
-    "minNumberOfMobsPerGroup": 4,
-    "maxNumberOfMobsPerGroup": 4,
-    "restrictionBiomes": [],
+    "mobSpawningType": "creature",
+    "minNumberOfMobsPerGroup": 1,
+    "maxNumberOfMobsPerGroup": 20,
+    "restrictionBiomes": [
+      {
+        "value": "mushroom_fields"
+      },
+      {
+        "value": "bamboo_jungle"
+      },
+      {
+        "value": "cherry_grove"
+      },
+      {
+        "value": "mutated_forest"
+      },
+      {
+        "value": "lush_caves"
+      },
+      {
+        "value": "the_end"
+      }
+    ],
     "spawnInDungeons": false,
     "raidSpawnsCount": [
       4,

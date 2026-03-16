@@ -286,6 +286,66 @@
           "src/main/resources/assets/bigboigoober/items/shroom_spawn_egg.json"
         ]
       }
+    },
+    {
+      "name": "DiceThingOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dice_thing_on_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/bigboigoober/procedures/DiceThingOnTickUpdateProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "ShroomRightclickedOnEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shroom_rightclicked_on_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/bigboigoober/procedures/ShroomRightclickedOnEntityProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],

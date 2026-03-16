@@ -28,6 +28,7 @@ public class BigboigooberModTabs {
 				tabData.accept(BigboigooberModItems.SECOND_TRY_OF_BLOCK_DISAPPEARING_THING.get());
 				tabData.accept(BigboigooberModBlocks.DICE_THING.get().asItem());
 				tabData.accept(BigboigooberModBlocks.SKILL_STONE_IDK.get().asItem());
+				tabData.accept(BigboigooberModItems.SHROOM_SPAWN_EGG.get());
 			}).withSearchBar().build());
 
 	@SubscribeEvent

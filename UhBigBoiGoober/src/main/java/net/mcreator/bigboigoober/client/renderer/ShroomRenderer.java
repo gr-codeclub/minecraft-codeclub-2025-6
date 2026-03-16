@@ -8,6 +8,8 @@ import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.mcreator.bigboigoober.entity.ShroomEntity;
 import net.mcreator.bigboigoober.client.model.ModelShroom;
 
+import com.mojang.blaze3d.vertex.PoseStack;
+
 public class ShroomRenderer extends MobRenderer<ShroomEntity, LivingEntityRenderState, ModelShroom> {
 	private ShroomEntity entity = null;
 
@@ -29,5 +31,10 @@ public class ShroomRenderer extends MobRenderer<ShroomEntity, LivingEntityRender
 	@Override
 	public ResourceLocation getTextureLocation(LivingEntityRenderState state) {
 		return ResourceLocation.parse("bigboigoober:textures/entities/mushroomhead.png");
+	}
+
+	@Override
+	protected void scale(LivingEntityRenderState state, PoseStack poseStack) {
+		poseStack.scale(entity.getAgeScale(), entity.getAgeScale(), entity.getAgeScale());
 	}
 }
