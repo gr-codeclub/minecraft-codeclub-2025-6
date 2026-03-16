@@ -283,13 +283,13 @@
       "registry_name": "dice_block",
       "metadata": {
         "files": [
+          "src/main/resources/assets/dextermod/models/block/dice_block.json",
           "src/main/resources/assets/dextermod/models/item/dice_block.json",
+          "src/main/resources/assets/dextermod/blockstates/dice_block.json",
           "src/main/resources/data/dextermod/loot_table/blocks/dice_block.json",
           "src/main/resources/assets/dextermod/items/dice_block.json",
-          "src/main/resources/assets/dextermod/models/block/dice_block.json",
-          "src/main/java/net/mcreator/dextermod/block/DiceBlockBlock.java",
           "src/main/java/net/mcreator/dextermod/block/entity/DiceBlockBlockEntity.java",
-          "src/main/resources/assets/dextermod/blockstates/dice_block.json"
+          "src/main/java/net/mcreator/dextermod/block/DiceBlockBlock.java"
         ]
       }
     },
@@ -308,6 +308,36 @@
         ],
         "files": [
           "src/main/java/net/mcreator/dextermod/procedures/TestlightningProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "DiceBlockOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dice_block_on_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/dextermod/procedures/DiceBlockOnTickUpdateProcedure.java"
         ]
       }
     }
@@ -335,10 +365,10 @@
       "src/main/java/net/mcreator/dextermod/init/DextermodModBlocks.java",
       "src/main/java/net/mcreator/dextermod/init/DextermodModBlockEntities.java",
       "src/main/java/net/mcreator/dextermod/init/DextermodModItems.java",
-      "src/main/resources/pack.mcmeta",
-      "src/main/java/net/mcreator/dextermod/DextermodMod.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/java/net/mcreator/dextermod/init/DextermodModTabs.java"
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/dextermod/init/DextermodModTabs.java",
+      "src/main/java/net/mcreator/dextermod/DextermodMod.java"
     ]
   },
   "foldersRoot": {

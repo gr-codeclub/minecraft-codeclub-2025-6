@@ -13,10 +13,12 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.Containers;
+import net.minecraft.util.RandomSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.dextermod.procedures.DiceBlockOnTickUpdateProcedure;
 import net.mcreator.dextermod.procedures.DiceBlockOnBlockRightclickedProcedure;
 import net.mcreator.dextermod.block.entity.DiceBlockBlockEntity;
 
@@ -28,6 +30,19 @@ public class DiceBlockBlock extends Block implements EntityBlock {
 	@Override
 	public int getLightBlock(BlockState state) {
 		return 15;
+	}
+
+	@Override
+	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
+		super.onPlace(blockstate, world, pos, oldState, moving);
+		world.scheduleTick(pos, this, 1);
+	}
+
+	@Override
+	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
+		super.tick(blockstate, world, pos, random);
+		DiceBlockOnTickUpdateProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+		world.scheduleTick(pos, this, 1);
 	}
 
 	@Override
