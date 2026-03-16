@@ -258,6 +258,36 @@
           "src/main/resources/assets/ilovefootball/items/skillstone.json"
         ]
       }
+    },
+    {
+      "name": "DiceblockOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diceblock_on_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/ilovefootball/procedures/DiceblockOnTickUpdateProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],

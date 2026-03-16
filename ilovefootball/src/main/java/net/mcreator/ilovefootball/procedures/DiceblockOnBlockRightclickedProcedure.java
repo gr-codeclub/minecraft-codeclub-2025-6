@@ -55,6 +55,8 @@ public class DiceblockOnBlockRightclickedProcedure {
 					_level.addFreshEntity(entityToSpawn);
 				}
 			} else {
+				if (entity instanceof Player _player && !_player.level().isClientSide())
+					_player.displayClientMessage(Component.literal("you are a warior"), true);
 				if (world instanceof ServerLevel _level) {
 					LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level, EntitySpawnReason.TRIGGERED);
 					entityToSpawn.snapTo(Vec3.atBottomCenterOf(BlockPos.containing(entity.getX(), entity.getY(), entity.getZ())));;
@@ -62,6 +64,8 @@ public class DiceblockOnBlockRightclickedProcedure {
 				}
 			}
 		} else if (roll == 2) {
+			if (entity instanceof Player _player && !_player.level().isClientSide())
+				_player.displayClientMessage(Component.literal("you are a knight"), true);
 			if (world instanceof ServerLevel _level) {
 				Entity entityToSpawn = EntityType.WARDEN.spawn(_level, BlockPos.containing(x + 2, y, z), EntitySpawnReason.MOB_SUMMONED);
 				if (entityToSpawn != null) {
