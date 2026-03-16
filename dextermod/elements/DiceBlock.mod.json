@@ -2,12 +2,12 @@
   "_fv": 79,
   "_type": "block",
   "definition": {
-    "texture": "minecraft:creaking_heart_top_awake",
-    "textureTop": "",
-    "textureLeft": "",
-    "textureFront": "",
-    "textureRight": "",
-    "textureBack": "",
+    "texture": "dice6",
+    "textureTop": "dice5",
+    "textureLeft": "dice1",
+    "textureFront": "dice2",
+    "textureRight": "dice3",
+    "textureBack": "dice4",
     "renderType": 11,
     "customModelName": "Single texture",
     "rotationMode": 0,
@@ -38,7 +38,15 @@
         "subtract": false
       }
     ],
-    "customProperties": [],
+    "customProperties": [
+      {
+        "min": 0,
+        "max": 5,
+        "name": "CUSTOM:face",
+        "type": "integer",
+        "value": 0
+      }
+    ],
     "name": "Dice Block",
     "specialInformation": {
       "fixedValue": []

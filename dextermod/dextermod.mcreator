@@ -18,11 +18,11 @@
       "registry_name": "dexter_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/dextermod/items/dexter_block.json",
-          "src/main/resources/assets/dextermod/blockstates/dexter_block.json",
-          "src/main/resources/assets/dextermod/models/block/dexter_block.json",
-          "src/main/resources/data/dextermod/loot_table/blocks/dexter_block.json",
           "src/main/resources/assets/dextermod/models/item/dexter_block.json",
+          "src/main/resources/assets/dextermod/models/block/dexter_block.json",
+          "src/main/resources/assets/dextermod/items/dexter_block.json",
+          "src/main/resources/data/dextermod/loot_table/blocks/dexter_block.json",
+          "src/main/resources/assets/dextermod/blockstates/dexter_block.json",
           "src/main/java/net/mcreator/dextermod/block/DexterBlockBlock.java"
         ]
       }
@@ -147,8 +147,8 @@
       "registry_name": "vein_miner",
       "metadata": {
         "files": [
-          "src/main/resources/assets/dextermod/models/item/vein_miner.json",
           "src/main/java/net/mcreator/dextermod/item/VeinMinerItem.java",
+          "src/main/resources/assets/dextermod/models/item/vein_miner.json",
           "src/main/resources/assets/dextermod/items/vein_miner.json"
         ]
       }
@@ -279,17 +279,17 @@
       "name": "DiceBlock",
       "type": "block",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "dice_block",
       "metadata": {
         "files": [
+          "src/main/resources/assets/dextermod/models/block/dice_block.json",
           "src/main/resources/assets/dextermod/models/item/dice_block.json",
+          "src/main/resources/assets/dextermod/blockstates/dice_block.json",
           "src/main/resources/data/dextermod/loot_table/blocks/dice_block.json",
           "src/main/resources/assets/dextermod/items/dice_block.json",
-          "src/main/resources/assets/dextermod/models/block/dice_block.json",
-          "src/main/java/net/mcreator/dextermod/block/DiceBlockBlock.java",
           "src/main/java/net/mcreator/dextermod/block/entity/DiceBlockBlockEntity.java",
-          "src/main/resources/assets/dextermod/blockstates/dice_block.json"
+          "src/main/java/net/mcreator/dextermod/block/DiceBlockBlock.java"
         ]
       }
     },
@@ -335,10 +335,10 @@
       "src/main/java/net/mcreator/dextermod/init/DextermodModBlocks.java",
       "src/main/java/net/mcreator/dextermod/init/DextermodModBlockEntities.java",
       "src/main/java/net/mcreator/dextermod/init/DextermodModItems.java",
-      "src/main/resources/pack.mcmeta",
-      "src/main/java/net/mcreator/dextermod/DextermodMod.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/java/net/mcreator/dextermod/init/DextermodModTabs.java"
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/dextermod/init/DextermodModTabs.java",
+      "src/main/java/net/mcreator/dextermod/DextermodMod.java"
     ]
   },
   "foldersRoot": {
