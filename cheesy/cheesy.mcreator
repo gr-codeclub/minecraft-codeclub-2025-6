@@ -242,6 +242,7 @@
           "src/main/resources/assets/cheesy/models/block/dice_blox.json",
           "src/main/java/net/mcreator/cheesy/block/DiceBloxBlock.java",
           "src/main/resources/assets/cheesy/items/dice_blox.json",
+          "src/main/java/net/mcreator/cheesy/block/entity/DiceBloxBlockEntity.java",
           "src/main/resources/assets/cheesy/models/item/dice_blox.json"
         ]
       }
@@ -285,6 +286,40 @@
           "src/main/java/net/mcreator/cheesy/procedures/SkillstoneRightclickedProcedure.java"
         ]
       }
+    },
+    {
+      "name": "DiceBloxOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dice_blox_on_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/cheesy/procedures/DiceBloxOnTickUpdateProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -309,6 +344,7 @@
   "metadata": {
     "files": [
       "src/main/java/net/mcreator/cheesy/init/CheesyModBlocks.java",
+      "src/main/java/net/mcreator/cheesy/init/CheesyModBlockEntities.java",
       "src/main/java/net/mcreator/cheesy/init/CheesyModItems.java",
       "src/main/java/net/mcreator/cheesy/init/CheesyModTabs.java",
       "src/main/java/net/mcreator/cheesy/CheesyMod.java",

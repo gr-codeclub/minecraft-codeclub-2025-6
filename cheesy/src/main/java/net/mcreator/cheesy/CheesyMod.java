@@ -23,6 +23,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.mcreator.cheesy.init.CheesyModTabs;
 import net.mcreator.cheesy.init.CheesyModItems;
 import net.mcreator.cheesy.init.CheesyModBlocks;
+import net.mcreator.cheesy.init.CheesyModBlockEntities;
 
 import javax.annotation.Nullable;
 
@@ -48,6 +49,7 @@ public class CheesyMod {
 		NeoForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::registerNetworking);
 		CheesyModBlocks.REGISTRY.register(modEventBus);
+		CheesyModBlockEntities.REGISTRY.register(modEventBus);
 		CheesyModItems.REGISTRY.register(modEventBus);
 		CheesyModTabs.REGISTRY.register(modEventBus);
 		// Start of user code block mod init
