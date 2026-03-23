@@ -43,7 +43,7 @@ public class DiceBlockOnBlockRightclickedProcedure {
 		}
 		roll = Mth.nextInt(RandomSource.create(), 1, 6);
 		if (entity instanceof Player _player && !_player.level().isClientSide())
-			_player.displayClientMessage(Component.literal(("You rolled " + new java.text.DecimalFormat("##").format(roll) + "!" + "rolls" + getBlockNBTNumber(world, BlockPos.containing(x, y, z), "rolls"))), true);
+			_player.displayClientMessage(Component.literal(("You rolled " + new java.text.DecimalFormat("##").format(roll) + "!" + "rolls" + (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "rolls") + 1))), true);
 		if (roll == 1) {
 			if (getEntityScore("skill_issue", entity) >= 5) {
 				if (world instanceof ServerLevel _level) {
@@ -61,7 +61,7 @@ public class DiceBlockOnBlockRightclickedProcedure {
 			}
 		} else if (roll == 2) {
 			if (world instanceof ServerLevel _level) {
-				Entity entityToSpawn = EntityType.WITHER.spawn(_level, BlockPos.containing(x + 2, y, z), EntitySpawnReason.MOB_SUMMONED);
+				Entity entityToSpawn = EntityType.ZOMBIE.spawn(_level, BlockPos.containing(x + 2, y, z), EntitySpawnReason.MOB_SUMMONED);
 				if (entityToSpawn != null) {
 					entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
 				}
