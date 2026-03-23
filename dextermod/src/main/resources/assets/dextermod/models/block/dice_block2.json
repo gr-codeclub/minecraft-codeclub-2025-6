@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "dextermod:block/dice_two",
+    "particle": "dextermod:block/dice_two"
+  },
+  "render_type": "solid"
+}

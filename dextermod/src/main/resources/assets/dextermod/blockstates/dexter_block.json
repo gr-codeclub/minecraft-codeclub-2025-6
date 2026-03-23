@@ -2,6 +2,21 @@
   "variants": {
     "": {
       "model": "dextermod:block/dexter_block"
-    }
+    },
+    "face=0": {
+      "model": "dextermod:block/dexter_block1"
+    },
+    "face=1": {
+      "model": "dextermod:block/dexter_block2"
+    },
+    "face=2": {
+      "model": "dextermod:block/dexter_block3"
+    },
+    "face=3": {
+      "model": "dextermod:block/dexter_block4"
+    },
+    "face=4": {
+      "model": "dextermod:block/dexter_block5"
+    },
   }
 }
