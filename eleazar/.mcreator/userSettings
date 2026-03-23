@@ -2,10 +2,8 @@
   "workspacePanelIconSize": "TILES",
   "workspacePanelSortType": "CREATED",
   "workspacePanelSortAscending": true,
-  "projectBrowserSplitPos": 0,
+  "projectBrowserSplitPos": 1531,
   "projectBrowserState": {
-    "expandedPaths": [
-      "[, eleazar]"
-    ]
+    "expandedPaths": []
   }
 }

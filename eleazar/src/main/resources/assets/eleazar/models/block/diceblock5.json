@@ -1,8 +1,8 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "eleazar:block/dice",
-    "particle": "eleazar:block/dice"
+    "all": "eleazar:block/dice5",
+    "particle": "eleazar:block/dice5"
   },
   "render_type": "solid"
 }

@@ -2,6 +2,24 @@
   "variants": {
     "": {
       "model": "eleazar:block/diceblock"
+    },
+    "face=0": {
+      "model": "eleazar:block/diceblock1"
+    },
+    "face=1": {
+      "model": "eleazar:block/diceblock2"
+    },
+    "face=2": {
+      "model": "eleazar:block/diceblock3"
+    },
+    "face=3": {
+      "model": "eleazar:block/diceblock4"
+    },
+    "face=4": {
+      "model": "eleazar:block/diceblock5"
+    },
+    "face=5": {
+      "model": "eleazar:block/diceblock6"
     }
   }
 }

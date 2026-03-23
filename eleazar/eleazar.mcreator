@@ -153,7 +153,7 @@
       "name": "Diceblock",
       "type": "block",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "diceblock",
       "metadata": {
         "files": [
