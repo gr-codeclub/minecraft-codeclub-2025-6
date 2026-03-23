@@ -228,6 +228,23 @@
           "src/main/java/net/mcreator/cocomelon/procedures/CheesecocomelonProcedure.java"
         ]
       }
+    },
+    {
+      "name": "Hicocomelon",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hicocomelon",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cocomelon/block/HicocomelonBlock.java",
+          "src/main/resources/assets/cocomelon/models/item/hicocomelon.json",
+          "src/main/resources/data/cocomelon/loot_table/blocks/hicocomelon.json",
+          "src/main/resources/assets/cocomelon/models/block/hicocomelon.json",
+          "src/main/resources/assets/cocomelon/blockstates/hicocomelon.json",
+          "src/main/resources/assets/cocomelon/items/hicocomelon.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -245,7 +262,8 @@
       "item.cocomelon.cocomelon_2": "Cocomelon 2",
       "item.cocomelon.cocomelon_3": "COCOMELON 3",
       "item.cocomelon.cocomelon_676676767": "COCOMELON 6 7 6 6 7 6 7 6 7",
-      "item.cocomelon.cocomelonwepon_1": "Cocomelonwepon 1"
+      "item.cocomelon.cocomelonwepon_1": "Cocomelonwepon 1",
+      "item.cocomelon.hicocomelon": "Hicocomelon"
     }
   },
   "metadata": {

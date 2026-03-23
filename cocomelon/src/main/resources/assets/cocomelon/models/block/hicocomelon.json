@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "cocomelon:block/1",
+    "up": "cocomelon:block/2",
+    "north": "cocomelon:block/6",
+    "east": "cocomelon:block/5",
+    "south": "cocomelon:block/3",
+    "west": "cocomelon:block/4",
+    "particle": "cocomelon:block/1"
+  },
+  "render_type": "solid"
+}
