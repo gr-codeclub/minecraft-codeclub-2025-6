@@ -1,8 +1,8 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "ilovesoccer:block/diceone",
-    "particle": "ilovesoccer:block/diceone"
+    "all": "ilovesoccer:block/dice5",
+    "particle": "ilovesoccer:block/dice5"
   },
   "render_type": "solid"
 }

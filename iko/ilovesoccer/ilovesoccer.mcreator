@@ -214,7 +214,7 @@
       "name": "DiceBlock",
       "type": "block",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "dice_block",
       "metadata": {
         "files": [
