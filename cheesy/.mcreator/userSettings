@@ -2,10 +2,17 @@
   "workspacePanelIconSize": "TILES",
   "workspacePanelSortType": "CREATED",
   "workspacePanelSortAscending": true,
-  "projectBrowserSplitPos": 18,
+  "projectBrowserSplitPos": 0,
   "projectBrowserState": {
     "expandedPaths": [
-      "[, cheesy]"
+      "[, cheesy]",
+      "[, cheesy, Source (Gradle)]",
+      "[, cheesy, Resources (Gradle)]",
+      "[, cheesy, Resources (Gradle), C:\\minecraft-codeclub-2025-6\\cheesy\\src\\main\\resources\\assets]",
+      "[, cheesy, Resources (Gradle), C:\\minecraft-codeclub-2025-6\\cheesy\\src\\main\\resources\\assets, C:\\minecraft-codeclub-2025-6\\cheesy\\src\\main\\resources\\assets\\cheesy]",
+      "[, cheesy, Resources (Gradle), C:\\minecraft-codeclub-2025-6\\cheesy\\src\\main\\resources\\assets, C:\\minecraft-codeclub-2025-6\\cheesy\\src\\main\\resources\\assets\\cheesy, C:\\minecraft-codeclub-2025-6\\cheesy\\src\\main\\resources\\assets\\cheesy\\blockstates]",
+      "[, cheesy, Resources (Gradle), C:\\minecraft-codeclub-2025-6\\cheesy\\src\\main\\resources\\data]",
+      "[, cheesy, Resources (Gradle), C:\\minecraft-codeclub-2025-6\\cheesy\\src\\main\\resources\\data, C:\\minecraft-codeclub-2025-6\\cheesy\\src\\main\\resources\\data\\minecraft]"
     ]
   }
 }
