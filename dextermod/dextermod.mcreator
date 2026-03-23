@@ -235,9 +235,9 @@
       "registry_name": "skill_stone_test",
       "metadata": {
         "files": [
+          "src/main/resources/assets/dextermod/models/item/skill_stone_test.json",
           "src/main/java/net/mcreator/dextermod/item/SkillStoneTestItem.java",
-          "src/main/resources/assets/dextermod/items/skill_stone_test.json",
-          "src/main/resources/assets/dextermod/models/item/skill_stone_test.json"
+          "src/main/resources/assets/dextermod/items/skill_stone_test.json"
         ]
       }
     },

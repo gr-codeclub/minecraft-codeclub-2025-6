@@ -4,6 +4,7 @@ import net.minecraft.world.scores.Scoreboard;
 import net.minecraft.world.scores.ScoreHolder;
 import net.minecraft.world.scores.Objective;
 import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.LevelAccessor;
@@ -32,6 +33,13 @@ public class DiceBlockOnBlockRightclickedProcedure {
 				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 		}
 		roll = Mth.nextInt(RandomSource.create(), 1, 6);
+		{
+			int _value = (int) roll;
+			BlockPos _pos = BlockPos.containing(x, y, z);
+			BlockState _bs = world.getBlockState(_pos);
+			if (_bs.getBlock().getStateDefinition().getProperty("face") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
+				world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
+		}
 		if (entity instanceof Player _player && !_player.level().isClientSide())
 			_player.displayClientMessage(Component.literal(("You rolled a" + new java.text.DecimalFormat("##").format(roll) + " Rolls: " + getBlockNBTNumber(world, BlockPos.containing(x, y, z), "rolls"))), true);
 		if (roll == 1) {
