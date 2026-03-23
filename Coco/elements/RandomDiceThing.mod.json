@@ -2,7 +2,7 @@
   "_fv": 79,
   "_type": "block",
   "definition": {
-    "texture": "minecraft:structure_block_data",
+    "texture": "dice_one",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -38,7 +38,15 @@
         "subtract": false
       }
     ],
-    "customProperties": [],
+    "customProperties": [
+      {
+        "min": 0,
+        "max": 5,
+        "name": "CUSTOM:face",
+        "type": "integer",
+        "value": 0
+      }
+    ],
     "name": "Random Dice Thing",
     "specialInformation": {
       "fixedValue": []

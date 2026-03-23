@@ -191,7 +191,7 @@
       "name": "RandomDiceThing",
       "type": "block",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "random_dice_thing",
       "metadata": {
         "files": [

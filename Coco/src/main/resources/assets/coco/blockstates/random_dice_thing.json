@@ -2,6 +2,24 @@
   "variants": {
     "": {
       "model": "coco:block/random_dice_thing"
+    },
+    "face=0": {
+      "model": "coco:block/random_dice_thing1"
+    },
+    "face=1": {
+      "model": "coco:block/random_dice_thing2"
+    },
+    "face=2": {
+      "model": "coco:block/random_dice_thing3"
+      },
+    "face=3": {
+      "model": "coco:block/random_dice_thing4"
+      },
+    "face=4": {
+      "model": "coco:block/random_dice_thing5"
+      },
+    "face=5": {
+      "model": "coco:block/random_dice_thing6"
     }
   }
 }
