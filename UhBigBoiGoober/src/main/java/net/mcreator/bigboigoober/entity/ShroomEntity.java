@@ -123,7 +123,7 @@ public class ShroomEntity extends Animal {
 		Entity entity = this;
 		Level world = this.level();
 
-		ShroomRightclickedOnEntityProcedure.execute(world, x, y, z);
+		ShroomRightclickedOnEntityProcedure.execute(world, x, y, z, entity);
 		return retval;
 	}
 
