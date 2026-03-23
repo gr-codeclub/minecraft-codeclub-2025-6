@@ -3,5 +3,28 @@
     "": {
       "model": "bigboigoober:block/dice_thing"
     }
+     "face=0": {
+    "": {
+      "model": "bigboigoober:block/dice_thing1"
+    }
+     "face=1": {
+    "": {
+      "model": "bigboigoober:block/dice_thing2"
+    }
+     "face=2": {
+    "": {
+      "model": "bigboigoober:block/dice_thing3"
+    }
+     "face=3": {
+    "": {
+      "model": "bigboigoober:block/dice_thing4"
+    }
+     "face=4": {
+    "": {
+      "model": "bigboigoober:block/dice_thing5"
+    }
+     "face=5": {
+    "": {
+      "model": "bigboigoober:block/dice_thing6"
   }
 }

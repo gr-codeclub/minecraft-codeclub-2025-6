@@ -1,7 +1,7 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "bigboigoober:block/dice1",
+    "all": "bigboigoober:block/dice3",
     "particle": "bigboigoober:block/dice1"
   },
   "render_type": "solid"
