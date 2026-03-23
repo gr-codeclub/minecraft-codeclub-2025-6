@@ -223,7 +223,6 @@
           "src/main/resources/assets/ilovesoccer/blockstates/dice_block.json",
           "src/main/resources/assets/ilovesoccer/models/block/dice_block.json",
           "src/main/java/net/mcreator/ilovesoccer/block/DiceBlockBlock.java",
-          "src/main/java/net/mcreator/ilovesoccer/block/entity/DiceBlockBlockEntity.java",
           "src/main/resources/data/ilovesoccer/loot_table/blocks/dice_block.json"
         ]
       }
@@ -281,36 +280,6 @@
           "src/main/java/net/mcreator/ilovesoccer/procedures/EntitykillProcedure.java"
         ]
       }
-    },
-    {
-      "name": "DiceBlockOnTickUpdate",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dice_block_on_tick_update",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/ilovesoccer/procedures/DiceBlockOnTickUpdateProcedure.java"
-        ]
-      }
     }
   ],
   "variable_elements": [],
@@ -336,7 +305,6 @@
   "metadata": {
     "files": [
       "src/main/java/net/mcreator/ilovesoccer/init/IlovesoccerModBlocks.java",
-      "src/main/java/net/mcreator/ilovesoccer/init/IlovesoccerModBlockEntities.java",
       "src/main/java/net/mcreator/ilovesoccer/init/IlovesoccerModItems.java",
       "src/main/java/net/mcreator/ilovesoccer/IlovesoccerMod.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
