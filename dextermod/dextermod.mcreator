@@ -14,7 +14,7 @@
       "name": "DexterBlock",
       "type": "block",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "dexter_block",
       "metadata": {
         "files": [
@@ -279,7 +279,7 @@
       "name": "DiceBlock",
       "type": "block",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "dice_block",
       "metadata": {
         "files": [
