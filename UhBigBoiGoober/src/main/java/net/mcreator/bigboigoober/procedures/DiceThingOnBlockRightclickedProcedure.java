@@ -42,7 +42,7 @@ public class DiceThingOnBlockRightclickedProcedure {
 			int _value = (int) (IdidntSeeWhatThisWasMeantToBeCalled - 1);
 			BlockPos _pos = BlockPos.containing(x, y, z);
 			BlockState _bs = world.getBlockState(_pos);
-			if (_bs.getBlock().getStateDefinition().getProperty("facething") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
+			if (_bs.getBlock().getStateDefinition().getProperty("face") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 				world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 		}
 		if (entity instanceof Player _player && !_player.level().isClientSide())
