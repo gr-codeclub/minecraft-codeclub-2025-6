@@ -2,14 +2,14 @@
   "_fv": 79,
   "_type": "block",
   "definition": {
-    "texture": "dice6",
+    "texture": "dice1",
     "textureTop": "dice5",
     "textureLeft": "dice4",
     "textureFront": "dice1",
     "textureRight": "dice2",
     "textureBack": "dice3",
-    "renderType": 10,
-    "customModelName": "Normal",
+    "renderType": 11,
+    "customModelName": "Single texture",
     "rotationMode": 0,
     "enablePitch": false,
     "emissiveRendering": false,
@@ -38,7 +38,15 @@
         "subtract": false
       }
     ],
-    "customProperties": [],
+    "customProperties": [
+      {
+        "min": 0,
+        "max": 5,
+        "name": "CUSTOM:face",
+        "type": "integer",
+        "value": 0
+      }
+    ],
     "name": "Dice Thing",
     "specialInformation": {
       "fixedValue": []
