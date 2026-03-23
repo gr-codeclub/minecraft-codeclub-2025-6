@@ -2,7 +2,7 @@
   "_fv": 79,
   "_type": "block",
   "definition": {
-    "texture": "minecraft:comparator_on",
+    "texture": "diceone",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -38,7 +38,15 @@
         "subtract": false
       }
     ],
-    "customProperties": [],
+    "customProperties": [
+      {
+        "min": 0,
+        "max": 5,
+        "name": "CUSTOM:face",
+        "type": "integer",
+        "value": 0
+      }
+    ],
     "name": "Dice Block",
     "specialInformation": {
       "fixedValue": []
@@ -67,9 +75,9 @@
     "requiresCorrectTool": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
-    "canRedstoneConnect": true,
+    "canRedstoneConnect": false,
     "lightOpacity": 15,
-    "tickRate": 1,
+    "tickRate": 0,
     "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
@@ -123,7 +131,7 @@
     "vibrationSensitivityRadius": {
       "fixedValue": 7.0
     },
-    "hasInventory": true,
+    "hasInventory": false,
     "openGUIOnRightClick": false,
     "inventorySize": 9,
     "inventoryStackSize": 99,
@@ -141,9 +149,6 @@
     "fluidRestrictions": [],
     "onRightClicked": {
       "name": "DiceBlockOnBlockRightclicked"
-    },
-    "onTickUpdate": {
-      "name": "DiceBlockOnTickUpdate"
     },
     "generateFeature": false,
     "restrictionBiomes": [],
