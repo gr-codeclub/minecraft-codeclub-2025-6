@@ -2,8 +2,18 @@
   "workspacePanelIconSize": "TILES",
   "workspacePanelSortType": "CREATED",
   "workspacePanelSortAscending": true,
-  "projectBrowserSplitPos": 1531,
+  "projectBrowserSplitPos": 386,
   "projectBrowserState": {
-    "expandedPaths": []
+    "expandedPaths": [
+      "[, ilovesoccer]",
+      "[, ilovesoccer, Resources (Gradle)]",
+      "[, ilovesoccer, Resources (Gradle), C:\\minecraft-codeclub-2025-6\\iko\\ilovesoccer\\src\\main\\resources\\assets]",
+      "[, ilovesoccer, Resources (Gradle), C:\\minecraft-codeclub-2025-6\\iko\\ilovesoccer\\src\\main\\resources\\assets, C:\\minecraft-codeclub-2025-6\\iko\\ilovesoccer\\src\\main\\resources\\assets\\ilovesoccer]",
+      "[, ilovesoccer, Resources (Gradle), C:\\minecraft-codeclub-2025-6\\iko\\ilovesoccer\\src\\main\\resources\\assets, C:\\minecraft-codeclub-2025-6\\iko\\ilovesoccer\\src\\main\\resources\\assets\\ilovesoccer, C:\\minecraft-codeclub-2025-6\\iko\\ilovesoccer\\src\\main\\resources\\assets\\ilovesoccer\\blockstates]",
+      "[, ilovesoccer, Resources (Gradle), C:\\minecraft-codeclub-2025-6\\iko\\ilovesoccer\\src\\main\\resources\\assets, C:\\minecraft-codeclub-2025-6\\iko\\ilovesoccer\\src\\main\\resources\\assets\\ilovesoccer, C:\\minecraft-codeclub-2025-6\\iko\\ilovesoccer\\src\\main\\resources\\assets\\ilovesoccer\\models]",
+      "[, ilovesoccer, Resources (Gradle), C:\\minecraft-codeclub-2025-6\\iko\\ilovesoccer\\src\\main\\resources\\assets, C:\\minecraft-codeclub-2025-6\\iko\\ilovesoccer\\src\\main\\resources\\assets\\ilovesoccer, C:\\minecraft-codeclub-2025-6\\iko\\ilovesoccer\\src\\main\\resources\\assets\\ilovesoccer\\models, C:\\minecraft-codeclub-2025-6\\iko\\ilovesoccer\\src\\main\\resources\\assets\\ilovesoccer\\models\\block]",
+      "[, ilovesoccer, Resources (Gradle), C:\\minecraft-codeclub-2025-6\\iko\\ilovesoccer\\src\\main\\resources\\assets, C:\\minecraft-codeclub-2025-6\\iko\\ilovesoccer\\src\\main\\resources\\assets\\ilovesoccer, C:\\minecraft-codeclub-2025-6\\iko\\ilovesoccer\\src\\main\\resources\\assets\\ilovesoccer\\textures]",
+      "[, ilovesoccer, Resources (Gradle), C:\\minecraft-codeclub-2025-6\\iko\\ilovesoccer\\src\\main\\resources\\assets, C:\\minecraft-codeclub-2025-6\\iko\\ilovesoccer\\src\\main\\resources\\assets\\ilovesoccer, C:\\minecraft-codeclub-2025-6\\iko\\ilovesoccer\\src\\main\\resources\\assets\\ilovesoccer\\textures, C:\\minecraft-codeclub-2025-6\\iko\\ilovesoccer\\src\\main\\resources\\assets\\ilovesoccer\\textures\\block]"
+    ]
   }
 }
