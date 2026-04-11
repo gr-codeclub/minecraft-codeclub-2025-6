@@ -237,16 +237,16 @@
       "name": "BalthazarDice",
       "type": "block",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "balthazar_dice",
       "metadata": {
         "files": [
-          "src/main/resources/assets/balthzar/items/balthazar_dice.json",
-          "src/main/resources/assets/balthzar/models/item/balthazar_dice.json",
           "src/main/resources/assets/balthzar/models/block/balthazar_dice.json",
-          "src/main/resources/assets/balthzar/blockstates/balthazar_dice.json",
+          "src/main/java/net/mcreator/balthzar/block/BalthazarDiceBlock.java",
           "src/main/resources/data/balthzar/loot_table/blocks/balthazar_dice.json",
-          "src/main/java/net/mcreator/balthzar/block/BalthazarDiceBlock.java"
+          "src/main/resources/assets/balthzar/models/item/balthazar_dice.json",
+          "src/main/resources/assets/balthzar/blockstates/balthazar_dice.json",
+          "src/main/resources/assets/balthzar/items/balthazar_dice.json"
         ]
       }
     }
@@ -274,10 +274,10 @@
     "files": [
       "src/main/java/net/mcreator/balthzar/init/BalthzarModBlocks.java",
       "src/main/java/net/mcreator/balthzar/init/BalthzarModItems.java",
-      "src/main/java/net/mcreator/balthzar/BalthzarMod.java",
       "src/main/java/net/mcreator/balthzar/init/BalthzarModTabs.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/resources/pack.mcmeta"
+      "src/main/java/net/mcreator/balthzar/BalthzarMod.java",
+      "src/main/resources/pack.mcmeta",
+      "src/main/resources/META-INF/neoforge.mods.toml"
     ]
   },
   "foldersRoot": {
