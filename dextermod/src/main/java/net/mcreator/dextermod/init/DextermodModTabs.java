@@ -28,6 +28,7 @@ public class DextermodModTabs {
 				tabData.accept(DextermodModItems.VEIN_MINER.get());
 				tabData.accept(DextermodModItems.SKILL_STONE_TEST.get());
 				tabData.accept(DextermodModBlocks.DICE_BLOCK.get().asItem());
+				tabData.accept(DextermodModItems.SPELLBOOK.get());
 			}).withSearchBar().build());
 
 	@SubscribeEvent

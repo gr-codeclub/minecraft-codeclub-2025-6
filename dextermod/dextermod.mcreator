@@ -310,6 +310,38 @@
           "src/main/java/net/mcreator/dextermod/procedures/TestlightningProcedure.java"
         ]
       }
+    },
+    {
+      "name": "SpellbookRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spellbook_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/dextermod/procedures/SpellbookRightclickedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Spellbook",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spellbook",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/dextermod/models/item/spellbook.json",
+          "src/main/java/net/mcreator/dextermod/item/SpellbookItem.java",
+          "src/main/resources/assets/dextermod/items/spellbook.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -327,7 +359,8 @@
       "item.dextermod.platform_wand": "Platform Wand",
       "item.dextermod.vein_miner": "Vein Miner",
       "item.dextermod.skill_stone_test": "Skill Stone Test",
-      "item.dextermod.dice_block": "Dice Block"
+      "item.dextermod.dice_block": "Dice Block",
+      "item.dextermod.spellbook": "Spellbook"
     }
   },
   "metadata": {

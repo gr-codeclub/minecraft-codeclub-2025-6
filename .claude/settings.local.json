@@ -15,7 +15,11 @@
       "Bash(./gradlew tasks:*)",
       "WebFetch(domain:mcreator.net)",
       "WebFetch(domain:github.com)",
-      "WebFetch(domain:raw.githubusercontent.com)"
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(cp lesson11.md lesson12.md)",
+      "Bash(cp lesson10.md lesson11.md)",
+      "Bash(cp lesson9.md lesson10.md)",
+      "Bash(cp lesson8.md lesson9.md)"
     ]
   }
 }
