@@ -19,11 +19,6 @@ public class QuickCocoBlock extends Block {
 	}
 
 	@Override
-	public int getLightBlock(BlockState state) {
-		return 15;
-	}
-
-	@Override
 	public TriState canSustainPlant(BlockState state, BlockGetter world, BlockPos pos, Direction direction, BlockState plant) {
 		return TriState.TRUE;
 	}
