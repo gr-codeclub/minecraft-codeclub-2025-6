@@ -12,6 +12,7 @@ import com.mojang.blaze3d.vertex.PoseStack;
 
 public class ShroomRenderer extends MobRenderer<ShroomEntity, LivingEntityRenderState, ModelShroom> {
 	private ShroomEntity entity = null;
+	private final ResourceLocation entityTexture = ResourceLocation.parse("bigboigoober:textures/entities/mushroomhead.png");
 
 	public ShroomRenderer(EntityRendererProvider.Context context) {
 		super(context, new ModelShroom(context.bakeLayer(ModelShroom.LAYER_LOCATION)), 0.5f);
@@ -30,7 +31,7 @@ public class ShroomRenderer extends MobRenderer<ShroomEntity, LivingEntityRender
 
 	@Override
 	public ResourceLocation getTextureLocation(LivingEntityRenderState state) {
-		return ResourceLocation.parse("bigboigoober:textures/entities/mushroomhead.png");
+		return entityTexture;
 	}
 
 	@Override

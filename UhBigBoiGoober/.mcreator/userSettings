@@ -2,7 +2,6 @@
   "workspacePanelIconSize": "TILES",
   "workspacePanelSortType": "CREATED",
   "workspacePanelSortAscending": true,
-  "projectBrowserSplitPos": 495,
   "projectBrowserState": {
     "expandedPaths": [
       "[, bigboigoober]",
@@ -21,5 +20,17 @@
       "[, bigboigoober, Resources (Gradle), C:\\minecraft-codeclub-2025-6\\UhBigBoiGoober\\src\\main\\resources\\assets, C:\\minecraft-codeclub-2025-6\\UhBigBoiGoober\\src\\main\\resources\\assets\\bigboigoober, C:\\minecraft-codeclub-2025-6\\UhBigBoiGoober\\src\\main\\resources\\assets\\bigboigoober\\textures]",
       "[, bigboigoober, Resources (Gradle), C:\\minecraft-codeclub-2025-6\\UhBigBoiGoober\\src\\main\\resources\\assets, C:\\minecraft-codeclub-2025-6\\UhBigBoiGoober\\src\\main\\resources\\assets\\bigboigoober, C:\\minecraft-codeclub-2025-6\\UhBigBoiGoober\\src\\main\\resources\\assets\\bigboigoober\\textures, C:\\minecraft-codeclub-2025-6\\UhBigBoiGoober\\src\\main\\resources\\assets\\bigboigoober\\textures\\block]"
     ]
+  },
+  "leftDockState": {
+    "dockSizes": {
+      "project_browser": 280
+    }
+  },
+  "bottomDockState": {
+    "dockSizes": {
+      "console": 300,
+      "code_viewer": 300,
+      "debugger": 300
+    }
   }
 }
