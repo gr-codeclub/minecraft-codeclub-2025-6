@@ -2,7 +2,6 @@
   "workspacePanelIconSize": "TILES",
   "workspacePanelSortType": "CREATED",
   "workspacePanelSortAscending": true,
-  "projectBrowserSplitPos": 284,
   "projectBrowserState": {
     "expandedPaths": [
       "[, eleazar]",
@@ -21,5 +20,17 @@
       "[, eleazar, Resources (Gradle), C:\\minecraft-codeclub-2025-6\\eleazar\\src\\main\\resources\\assets, C:\\minecraft-codeclub-2025-6\\eleazar\\src\\main\\resources\\assets\\eleazar, C:\\minecraft-codeclub-2025-6\\eleazar\\src\\main\\resources\\assets\\eleazar\\textures, C:\\minecraft-codeclub-2025-6\\eleazar\\src\\main\\resources\\assets\\eleazar\\textures\\block]",
       "[, eleazar, Resources (Gradle), C:\\minecraft-codeclub-2025-6\\eleazar\\src\\main\\resources\\META-INF]"
     ]
+  },
+  "leftDockState": {
+    "dockSizes": {
+      "project_browser": 280
+    }
+  },
+  "bottomDockState": {
+    "dockSizes": {
+      "console": 300,
+      "code_viewer": 300,
+      "debugger": 300
+    }
   }
 }
