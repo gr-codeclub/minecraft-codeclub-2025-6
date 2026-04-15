@@ -4,6 +4,8 @@ import net.minecraft.world.scores.Scoreboard;
 import net.minecraft.world.scores.ScoreHolder;
 import net.minecraft.world.scores.Objective;
 import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.level.block.state.properties.IntegerProperty;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.*;
@@ -19,6 +21,15 @@ public class BalthazarDiceOnBlockRightclickedProcedure {
 			return;
 		double roll = 0;
 		roll = Mth.nextInt(RandomSource.create(), 1, 6);
+		if (entity instanceof Player _player && !_player.level().isClientSide())
+			_player.displayClientMessage(Component.literal(("Rolled " + new java.text.DecimalFormat("##").format(roll))), true);
+		{
+			int _value = (int) (roll - 1);
+			BlockPos _pos = BlockPos.containing(x, y, z);
+			BlockState _bs = world.getBlockState(_pos);
+			if (_bs.getBlock().getStateDefinition().getProperty("face") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
+				world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
+		}
 		if (roll == 1) {
 			if (getEntityScore("skill_warrior", entity) >= 10) {
 				if (world instanceof ServerLevel _level) {
@@ -29,6 +40,12 @@ public class BalthazarDiceOnBlockRightclickedProcedure {
 				}
 				if (entity instanceof Player _player && !_player.level().isClientSide())
 					_player.displayClientMessage(Component.literal("Woah did you see that, what a dodge"), true);
+			} else {
+				if (world instanceof ServerLevel _level) {
+					LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level, EntitySpawnReason.TRIGGERED);
+					entityToSpawn.snapTo(Vec3.atBottomCenterOf(BlockPos.containing(entity.getX(), entity.getY(), entity.getZ())));;
+					_level.addFreshEntity(entityToSpawn);
+				}
 			}
 		} else if (roll == 2) {
 			if (world instanceof ServerLevel _level) {

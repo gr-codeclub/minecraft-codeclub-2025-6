@@ -1,7 +1,11 @@
 {
   "variants": {
-    "": {
-      "model": "balthzar:block/balthazar_dice"
-    }
+  	"": { "model": "balthzar:block/balthazar_dice1" },
+    "face=0": { "model": "balthzar:block/balthazar_dice1" },
+    "face=1": { "model": "balthzar:block/balthazar_dice2" },
+    "face=2": { "model": "balthzar:block/balthazar_dice3" },
+    "face=3": { "model": "balthzar:block/balthazar_dice4" },
+    "face=4": { "model": "balthzar:block/balthazar_dice5" },
+    "face=5": { "model": "balthzar:block/balthazar_dice6" }
   }
 }
