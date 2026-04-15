@@ -2,10 +2,29 @@
   "workspacePanelIconSize": "TILES",
   "workspacePanelSortType": "CREATED",
   "workspacePanelSortAscending": true,
-  "projectBrowserSplitPos": 0,
   "projectBrowserState": {
     "expandedPaths": [
-      "[, ilovefootball]"
+      "[, ilovefootball]",
+      "[, ilovefootball, Source (Gradle)]",
+      "[, ilovefootball, Source (Gradle), C:\\minecraft-codeclub-2025-6\\ilovefootball\\src\\main\\java\\net]",
+      "[, ilovefootball, Resources (Gradle)]",
+      "[, ilovefootball, Resources (Gradle), C:\\minecraft-codeclub-2025-6\\ilovefootball\\src\\main\\resources\\assets]",
+      "[, ilovefootball, Resources (Gradle), C:\\minecraft-codeclub-2025-6\\ilovefootball\\src\\main\\resources\\assets, C:\\minecraft-codeclub-2025-6\\ilovefootball\\src\\main\\resources\\assets\\ilovefootball]",
+      "[, ilovefootball, Resources (Gradle), C:\\minecraft-codeclub-2025-6\\ilovefootball\\src\\main\\resources\\assets, C:\\minecraft-codeclub-2025-6\\ilovefootball\\src\\main\\resources\\assets\\ilovefootball, C:\\minecraft-codeclub-2025-6\\ilovefootball\\src\\main\\resources\\assets\\ilovefootball\\blockstates]",
+      "[, ilovefootball, Resources (Gradle), C:\\minecraft-codeclub-2025-6\\ilovefootball\\src\\main\\resources\\assets, C:\\minecraft-codeclub-2025-6\\ilovefootball\\src\\main\\resources\\assets\\ilovefootball, C:\\minecraft-codeclub-2025-6\\ilovefootball\\src\\main\\resources\\assets\\ilovefootball\\models]",
+      "[, ilovefootball, Resources (Gradle), C:\\minecraft-codeclub-2025-6\\ilovefootball\\src\\main\\resources\\assets, C:\\minecraft-codeclub-2025-6\\ilovefootball\\src\\main\\resources\\assets\\ilovefootball, C:\\minecraft-codeclub-2025-6\\ilovefootball\\src\\main\\resources\\assets\\ilovefootball\\models, C:\\minecraft-codeclub-2025-6\\ilovefootball\\src\\main\\resources\\assets\\ilovefootball\\models\\block]"
     ]
+  },
+  "leftDockState": {
+    "dockSizes": {
+      "project_browser": 280
+    }
+  },
+  "bottomDockState": {
+    "dockSizes": {
+      "console": 300,
+      "code_viewer": 300,
+      "debugger": 300
+    }
   }
 }
