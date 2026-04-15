@@ -10,6 +10,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.Block;
 
 import net.mcreator.balthzar.block.BalthzarBlock;
+import net.mcreator.balthzar.block.BalthazarDiceBlock;
 import net.mcreator.balthzar.BalthzarMod;
 
 import java.util.function.Function;
