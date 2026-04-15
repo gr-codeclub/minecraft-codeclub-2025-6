@@ -2,7 +2,6 @@
   "workspacePanelIconSize": "TILES",
   "workspacePanelSortType": "CREATED",
   "workspacePanelSortAscending": true,
-  "projectBrowserSplitPos": 0,
   "projectBrowserState": {
     "expandedPaths": [
       "[, cheesy]",
@@ -10,9 +9,20 @@
       "[, cheesy, Resources (Gradle)]",
       "[, cheesy, Resources (Gradle), C:\\minecraft-codeclub-2025-6\\cheesy\\src\\main\\resources\\assets]",
       "[, cheesy, Resources (Gradle), C:\\minecraft-codeclub-2025-6\\cheesy\\src\\main\\resources\\assets, C:\\minecraft-codeclub-2025-6\\cheesy\\src\\main\\resources\\assets\\cheesy]",
-      "[, cheesy, Resources (Gradle), C:\\minecraft-codeclub-2025-6\\cheesy\\src\\main\\resources\\assets, C:\\minecraft-codeclub-2025-6\\cheesy\\src\\main\\resources\\assets\\cheesy, C:\\minecraft-codeclub-2025-6\\cheesy\\src\\main\\resources\\assets\\cheesy\\blockstates]",
       "[, cheesy, Resources (Gradle), C:\\minecraft-codeclub-2025-6\\cheesy\\src\\main\\resources\\data]",
       "[, cheesy, Resources (Gradle), C:\\minecraft-codeclub-2025-6\\cheesy\\src\\main\\resources\\data, C:\\minecraft-codeclub-2025-6\\cheesy\\src\\main\\resources\\data\\minecraft]"
     ]
+  },
+  "leftDockState": {
+    "dockSizes": {
+      "project_browser": 280
+    }
+  },
+  "bottomDockState": {
+    "dockSizes": {
+      "console": 300,
+      "code_viewer": 300,
+      "debugger": 300
+    }
   }
 }

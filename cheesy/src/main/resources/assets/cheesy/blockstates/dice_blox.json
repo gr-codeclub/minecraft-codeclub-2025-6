@@ -2,9 +2,6 @@
   "variants": {
     "": {
       "model": "cheesy:block/dice_blox"
-    },
-    face=0
-  } "model": "cheesy:block/dice_blox1
-  "
-}face=1
- "model": "cheesy:block/dice_blox"
+    }
+  }
+}
