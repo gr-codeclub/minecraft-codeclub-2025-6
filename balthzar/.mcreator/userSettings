@@ -2,21 +2,22 @@
   "workspacePanelIconSize": "TILES",
   "workspacePanelSortType": "CREATED",
   "workspacePanelSortAscending": true,
-  "projectBrowserSplitPos": 280,
   "projectBrowserState": {
     "expandedPaths": [
       "[, balthzar]",
-      "[, balthzar, Resources (Gradle)]",
-      "[, balthzar, Resources (Gradle), E:\\Code\\minecraft-codeclub-2025-6\\balthzar\\src\\main\\resources\\assets]",
-      "[, balthzar, Resources (Gradle), E:\\Code\\minecraft-codeclub-2025-6\\balthzar\\src\\main\\resources\\assets, E:\\Code\\minecraft-codeclub-2025-6\\balthzar\\src\\main\\resources\\assets\\balthzar]",
-      "[, balthzar, Resources (Gradle), E:\\Code\\minecraft-codeclub-2025-6\\balthzar\\src\\main\\resources\\assets, E:\\Code\\minecraft-codeclub-2025-6\\balthzar\\src\\main\\resources\\assets\\balthzar, E:\\Code\\minecraft-codeclub-2025-6\\balthzar\\src\\main\\resources\\assets\\balthzar\\blockstates]",
-      "[, balthzar, Resources (Gradle), E:\\Code\\minecraft-codeclub-2025-6\\balthzar\\src\\main\\resources\\assets, E:\\Code\\minecraft-codeclub-2025-6\\balthzar\\src\\main\\resources\\assets\\balthzar, E:\\Code\\minecraft-codeclub-2025-6\\balthzar\\src\\main\\resources\\assets\\balthzar\\models]",
-      "[, balthzar, Resources (Gradle), E:\\Code\\minecraft-codeclub-2025-6\\balthzar\\src\\main\\resources\\assets, E:\\Code\\minecraft-codeclub-2025-6\\balthzar\\src\\main\\resources\\assets\\balthzar, E:\\Code\\minecraft-codeclub-2025-6\\balthzar\\src\\main\\resources\\assets\\balthzar\\models, E:\\Code\\minecraft-codeclub-2025-6\\balthzar\\src\\main\\resources\\assets\\balthzar\\models\\block]",
-      "[, balthzar, Resources (Gradle), E:\\Code\\minecraft-codeclub-2025-6\\balthzar\\src\\main\\resources\\assets, E:\\Code\\minecraft-codeclub-2025-6\\balthzar\\src\\main\\resources\\assets\\balthzar, E:\\Code\\minecraft-codeclub-2025-6\\balthzar\\src\\main\\resources\\assets\\balthzar\\textures]",
-      "[, balthzar, Resources (Gradle), E:\\Code\\minecraft-codeclub-2025-6\\balthzar\\src\\main\\resources\\assets, E:\\Code\\minecraft-codeclub-2025-6\\balthzar\\src\\main\\resources\\assets\\balthzar, E:\\Code\\minecraft-codeclub-2025-6\\balthzar\\src\\main\\resources\\assets\\balthzar\\textures, E:\\Code\\minecraft-codeclub-2025-6\\balthzar\\src\\main\\resources\\assets\\balthzar\\textures\\block]",
-      "[, balthzar, Resources (Gradle), E:\\Code\\minecraft-codeclub-2025-6\\balthzar\\src\\main\\resources\\data]",
-      "[, balthzar, Resources (Gradle), E:\\Code\\minecraft-codeclub-2025-6\\balthzar\\src\\main\\resources\\data, E:\\Code\\minecraft-codeclub-2025-6\\balthzar\\src\\main\\resources\\data\\balthzar]",
-      "[, balthzar, Resources (Gradle), E:\\Code\\minecraft-codeclub-2025-6\\balthzar\\src\\main\\resources\\data, E:\\Code\\minecraft-codeclub-2025-6\\balthzar\\src\\main\\resources\\data\\minecraft]"
+      "[, balthzar, Resources (Gradle)]"
     ]
+  },
+  "leftDockState": {
+    "dockSizes": {
+      "project_browser": 280
+    }
+  },
+  "bottomDockState": {
+    "dockSizes": {
+      "console": 300,
+      "code_viewer": 300,
+      "debugger": 300
+    }
   }
 }

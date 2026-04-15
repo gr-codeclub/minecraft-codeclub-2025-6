@@ -274,10 +274,10 @@
     "files": [
       "src/main/java/net/mcreator/balthzar/init/BalthzarModBlocks.java",
       "src/main/java/net/mcreator/balthzar/init/BalthzarModItems.java",
-      "src/main/java/net/mcreator/balthzar/init/BalthzarModTabs.java",
       "src/main/java/net/mcreator/balthzar/BalthzarMod.java",
-      "src/main/resources/pack.mcmeta",
-      "src/main/resources/META-INF/neoforge.mods.toml"
+      "src/main/java/net/mcreator/balthzar/init/BalthzarModTabs.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/resources/pack.mcmeta"
     ]
   },
   "foldersRoot": {
@@ -299,5 +299,5 @@
     "currentGenerator": "neoforge-1.21.8",
     "modElementsPackage": "net.mcreator.balthzar"
   },
-  "mcreatorVersion": 202500345720
+  "mcreatorVersion": 202600114619
 }
