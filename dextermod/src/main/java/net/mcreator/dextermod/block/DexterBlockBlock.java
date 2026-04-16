@@ -25,11 +25,6 @@ public class DexterBlockBlock extends Block {
 	}
 
 	@Override
-	public int getLightBlock(BlockState state) {
-		return 15;
-	}
-
-	@Override
 	public int getFlammability(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
 		return 5;
 	}

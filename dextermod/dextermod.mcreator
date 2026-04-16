@@ -18,11 +18,11 @@
       "registry_name": "dexter_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/dextermod/models/item/dexter_block.json",
-          "src/main/resources/assets/dextermod/models/block/dexter_block.json",
           "src/main/resources/assets/dextermod/items/dexter_block.json",
-          "src/main/resources/data/dextermod/loot_table/blocks/dexter_block.json",
           "src/main/resources/assets/dextermod/blockstates/dexter_block.json",
+          "src/main/resources/assets/dextermod/models/block/dexter_block.json",
+          "src/main/resources/data/dextermod/loot_table/blocks/dexter_block.json",
+          "src/main/resources/assets/dextermod/models/item/dexter_block.json",
           "src/main/java/net/mcreator/dextermod/block/DexterBlockBlock.java"
         ]
       }
@@ -147,8 +147,8 @@
       "registry_name": "vein_miner",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/dextermod/item/VeinMinerItem.java",
           "src/main/resources/assets/dextermod/models/item/vein_miner.json",
+          "src/main/java/net/mcreator/dextermod/item/VeinMinerItem.java",
           "src/main/resources/assets/dextermod/items/vein_miner.json"
         ]
       }
@@ -235,9 +235,9 @@
       "registry_name": "skill_stone_test",
       "metadata": {
         "files": [
+          "src/main/resources/assets/dextermod/models/item/skill_stone_test.json",
           "src/main/java/net/mcreator/dextermod/item/SkillStoneTestItem.java",
-          "src/main/resources/assets/dextermod/items/skill_stone_test.json",
-          "src/main/resources/assets/dextermod/models/item/skill_stone_test.json"
+          "src/main/resources/assets/dextermod/items/skill_stone_test.json"
         ]
       }
     },
@@ -368,10 +368,10 @@
       "src/main/java/net/mcreator/dextermod/init/DextermodModBlocks.java",
       "src/main/java/net/mcreator/dextermod/init/DextermodModBlockEntities.java",
       "src/main/java/net/mcreator/dextermod/init/DextermodModItems.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/resources/pack.mcmeta",
-      "src/main/java/net/mcreator/dextermod/init/DextermodModTabs.java",
-      "src/main/java/net/mcreator/dextermod/DextermodMod.java"
+      "src/main/java/net/mcreator/dextermod/DextermodMod.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/dextermod/init/DextermodModTabs.java"
     ]
   },
   "foldersRoot": {
@@ -393,5 +393,5 @@
     "currentGenerator": "neoforge-1.21.8",
     "modElementsPackage": "net.mcreator.dextermod"
   },
-  "mcreatorVersion": 202500345720
+  "mcreatorVersion": 202600114619
 }
