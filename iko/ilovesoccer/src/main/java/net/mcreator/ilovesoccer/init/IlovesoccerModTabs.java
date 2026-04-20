@@ -20,7 +20,7 @@ public class IlovesoccerModTabs {
 				tabData.accept(IlovesoccerModBlocks.VOLDERMOLTHASA_BI_GNOSE.get().asItem());
 				tabData.accept(IlovesoccerModItems.VOLDERMOLTBWOAANBD.get());
 				tabData.accept(IlovesoccerModItems.VEINMINER.get());
-				tabData.accept(IlovesoccerModBlocks.DICE_BLOCK.get().asItem());
 				tabData.accept(IlovesoccerModItems.SKILLSTONE.get());
+				tabData.accept(IlovesoccerModItems.SPELLBOOK.get());
 			}).withSearchBar().build());
 }
