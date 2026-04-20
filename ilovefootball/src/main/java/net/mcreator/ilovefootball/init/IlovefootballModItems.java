@@ -11,6 +11,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.ilovefootball.item.SpellbookItem;
 import net.mcreator.ilovefootball.item.SkillstoneItem;
 import net.mcreator.ilovefootball.item.FootballsomethingItem;
 import net.mcreator.ilovefootball.item.FootItem;
@@ -25,12 +26,14 @@ public class IlovefootballModItems {
 	public static final DeferredItem<Item> FOOT;
 	public static final DeferredItem<Item> DICEBLOCK;
 	public static final DeferredItem<Item> SKILLSTONE;
+	public static final DeferredItem<Item> SPELLBOOK;
 	static {
 		FOOTBALLBLOCK = block(IlovefootballModBlocks.FOOTBALLBLOCK);
 		FOOTBALLSOMETHING = register("footballsomething", FootballsomethingItem::new);
 		FOOT = register("foot", FootItem::new);
 		DICEBLOCK = block(IlovefootballModBlocks.DICEBLOCK);
 		SKILLSTONE = register("skillstone", SkillstoneItem::new);
+		SPELLBOOK = register("spellbook", SpellbookItem::new);
 	}
 
 	// Start of user code block custom items

@@ -28,6 +28,7 @@ public class IlovefootballModTabs {
 				tabData.accept(IlovefootballModItems.FOOT.get());
 				tabData.accept(IlovefootballModBlocks.DICEBLOCK.get().asItem());
 				tabData.accept(IlovefootballModItems.SKILLSTONE.get());
+				tabData.accept(IlovefootballModItems.SPELLBOOK.get());
 			}).withSearchBar().build());
 
 	@SubscribeEvent

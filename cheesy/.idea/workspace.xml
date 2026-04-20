@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="581c9d0b-cef1-4f85-9549-30bfad5832f5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mcreator/userSettings" beforeDir="false" afterPath="$PROJECT_DIR$/.mcreator/userSettings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cheesy.mcreator" beforeDir="false" afterPath="$PROJECT_DIR$/cheesy.mcreator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/Cheese.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/Cheese.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/CheeseHunk.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/CheeseHunk.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/Chez.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/Chez.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/ChezBlockDestroyedByPlayer.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/ChezBlockDestroyedByPlayer.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/ChezEntityWalksOnTheBlock.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/ChezEntityWalksOnTheBlock.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/Da.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/Da.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/DaRightclicked.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/DaRightclicked.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/DiceBlox.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/DiceBlox.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/DiceBloxOnBlockRightclicked.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/DiceBloxOnBlockRightclicked.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/DiceBloxOnTickUpdate.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/DiceBloxOnTickUpdate.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/Dies.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/Dies.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/Rightchez.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/Rightchez.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/Shhh.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/Shhh.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/SkillstoneRightclicked.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/SkillstoneRightclicked.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/mcreator/cheesy/CheesyMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/mcreator/cheesy/CheesyMod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/mcreator/cheesy/block/ChezBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/mcreator/cheesy/block/ChezBlock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/mcreator/cheesy/block/DiceBloxBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/mcreator/cheesy/block/DiceBloxBlock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/mcreator/cheesy/init/CheesyModBlockEntities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/mcreator/cheesy/init/CheesyModBlockEntities.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/mcreator/cheesy/init/CheesyModBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/mcreator/cheesy/init/CheesyModBlocks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/mcreator/cheesy/init/CheesyModItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/mcreator/cheesy/init/CheesyModItems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/mcreator/cheesy/init/CheesyModTabs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/mcreator/cheesy/init/CheesyModTabs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/neoforge.mods.toml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/neoforge.mods.toml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="cheesy" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="cheesy" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="cheesy" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="mod development" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3CR3Xfge5sPA93DGrQhn1iO2P5i" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.cheesy [runClient].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "cheese",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/minecraft-codeclub-2025-6/cheesy/build.gradle",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Gradle.cheesy [runClient]">
+    <configuration name="Client" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="net.neoforged.devlaunch.Main" />
+      <module name="cheesy.main" />
+      <option name="PROGRAM_PARAMETERS" value="@C:\\minecraft-codeclub-2025-6\\cheesy\\build\\moddev\\clientRunProgramArgs.txt" />
+      <option name="VM_PARAMETERS" value="@C:\\minecraft-codeclub-2025-6\\cheesy\\build\\moddev\\clientRunVmArgs.txt -Dfml.modFolders=mcreator%%C:\\minecraft-codeclub-2025-6\\cheesy\\build\\classes\\java\\main;mcreator%%C:\\minecraft-codeclub-2025-6\\cheesy\\build\\resources\\main" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Server" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="net.neoforged.devlaunch.Main" />
+      <module name="cheesy.main" />
+      <option name="PROGRAM_PARAMETERS" value="@C:\\minecraft-codeclub-2025-6\\cheesy\\build\\moddev\\serverRunProgramArgs.txt" />
+      <option name="VM_PARAMETERS" value="@C:\\minecraft-codeclub-2025-6\\cheesy\\build\\moddev\\serverRunVmArgs.txt -Dfml.modFolders=mcreator%%C:\\minecraft-codeclub-2025-6\\cheesy\\build\\classes\\java\\main;mcreator%%C:\\minecraft-codeclub-2025-6\\cheesy\\build\\resources\\main" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="cheesy [runClient]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="runClient" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <ExternalSystemDebugDisabled>false</ExternalSystemDebugDisabled>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <GradleProfilingDisabled>false</GradleProfilingDisabled>
+      <GradleCoverageDisabled>false</GradleCoverageDisabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.cheesy [runClient]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="581c9d0b-cef1-4f85-9549-30bfad5832f5" name="Changes" comment="" />
+      <created>1776334598388</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1776334598388</updated>
+      <workItem from="1776334615137" duration="299000" />
+      <workItem from="1776334929661" duration="1873000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

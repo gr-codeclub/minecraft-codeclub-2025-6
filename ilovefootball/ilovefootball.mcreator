@@ -288,6 +288,38 @@
           "src/main/java/net/mcreator/ilovefootball/procedures/DiceblockOnTickUpdateProcedure.java"
         ]
       }
+    },
+    {
+      "name": "SpellbookRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spellbook_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/ilovefootball/procedures/SpellbookRightclickedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Spellbook",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spellbook",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ilovefootball/items/spellbook.json",
+          "src/main/resources/assets/ilovefootball/models/item/spellbook.json",
+          "src/main/java/net/mcreator/ilovefootball/item/SpellbookItem.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -306,7 +338,8 @@
       "item.ilovefootball.footballsomething": "Footballsomething",
       "item.ilovefootball.foot": "Foot",
       "item.ilovefootball.diceblock": "Diceblock",
-      "item.ilovefootball.skillstone": "Skillstone"
+      "item.ilovefootball.skillstone": "Skillstone",
+      "item.ilovefootball.spellbook": "Spellbook"
     }
   },
   "metadata": {
