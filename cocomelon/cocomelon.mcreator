@@ -245,6 +245,38 @@
           "src/main/resources/assets/cocomelon/items/hicocomelon.json"
         ]
       }
+    },
+    {
+      "name": "CheeseRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cheese_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/cocomelon/procedures/CheeseRightclickedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Cheese",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cheese",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cocomelon/item/CheeseItem.java",
+          "src/main/resources/assets/cocomelon/items/cheese.json",
+          "src/main/resources/assets/cocomelon/models/item/cheese.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -263,7 +295,8 @@
       "item.cocomelon.cocomelon_3": "COCOMELON 3",
       "item.cocomelon.cocomelon_676676767": "COCOMELON 6 7 6 6 7 6 7 6 7",
       "item.cocomelon.cocomelonwepon_1": "Cocomelonwepon 1",
-      "item.cocomelon.hicocomelon": "Hicocomelon"
+      "item.cocomelon.hicocomelon": "Hicocomelon",
+      "item.cocomelon.cheese": "Cheese"
     }
   },
   "metadata": {
