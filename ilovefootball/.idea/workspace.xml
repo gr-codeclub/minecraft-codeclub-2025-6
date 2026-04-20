@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b2de90a-b605-4770-8957-0404a1005338" name="Changes" comment="" />
+    <list default="true" id="0b2de90a-b605-4770-8957-0404a1005338" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,11 +63,12 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Gradle.ilovefootball [runClient].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "ilovefootball",
+    "git-widget-placeholder": "Ilovesoccer",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/minecraft-codeclub-2025-6/ilovefootball/build.gradle",
     "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
@@ -133,6 +136,7 @@
       <updated>1776338106031</updated>
       <workItem from="1776338130721" duration="287000" />
       <workItem from="1776338434511" duration="2387000" />
+      <workItem from="1776700305370" duration="266000" />
     </task>
     <servers />
   </component>
