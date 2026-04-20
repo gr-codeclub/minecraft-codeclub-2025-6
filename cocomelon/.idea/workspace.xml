@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="24d0989a-5167-4ffe-842d-7e9b2afda9c8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Coco/.eclipse/configurations/Client.launch" beforeDir="false" afterPath="$PROJECT_DIR$/../Coco/.eclipse/configurations/Client.launch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coco/.eclipse/configurations/Server.launch" beforeDir="false" afterPath="$PROJECT_DIR$/../Coco/.eclipse/configurations/Server.launch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coco/coco.mcreator" beforeDir="false" afterPath="$PROJECT_DIR$/../Coco/coco.mcreator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coco/elements/BlockDissapearerer.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Coco/elements/BlockDissapearerer.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coco/elements/BlockDissapearererRightclicked.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Coco/elements/BlockDissapearererRightclicked.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coco/elements/Coco.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Coco/elements/Coco.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coco/elements/HiProcedure.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Coco/elements/HiProcedure.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coco/elements/QuickCoco.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Coco/elements/QuickCoco.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coco/elements/QuickCocoEntityWalksOnTheBlock.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Coco/elements/QuickCocoEntityWalksOnTheBlock.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coco/elements/RandomDiceThing.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Coco/elements/RandomDiceThing.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coco/elements/RandomDiceThingOnBlockRightclicked.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Coco/elements/RandomDiceThingOnBlockRightclicked.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coco/elements/RandomDiceThingOnTickUpdate.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Coco/elements/RandomDiceThingOnTickUpdate.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coco/elements/SkillStone.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Coco/elements/SkillStone.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coco/elements/SkillStoneRightclicked.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Coco/elements/SkillStoneRightclicked.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coco/elements/Wand.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Coco/elements/Wand.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coco/elements/WandRightclicked.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Coco/elements/WandRightclicked.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coco/src/main/java/net/mcreator/coco/init/CocoModItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Coco/src/main/java/net/mcreator/coco/init/CocoModItems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coco/src/main/java/net/mcreator/coco/init/CocoModTabs.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Coco/src/main/java/net/mcreator/coco/init/CocoModTabs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coco/src/main/resources/assets/coco/blockstates/quick_coco.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Coco/src/main/resources/assets/coco/blockstates/quick_coco.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coco/src/main/resources/assets/coco/items/block_dissapearerer.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Coco/src/main/resources/assets/coco/items/block_dissapearerer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coco/src/main/resources/assets/coco/items/quick_coco.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Coco/src/main/resources/assets/coco/items/quick_coco.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coco/src/main/resources/assets/coco/items/skill_stone.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Coco/src/main/resources/assets/coco/items/skill_stone.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coco/src/main/resources/assets/coco/items/wand.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Coco/src/main/resources/assets/coco/items/wand.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coco/src/main/resources/assets/coco/lang/en_us.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Coco/src/main/resources/assets/coco/lang/en_us.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coco/src/main/resources/assets/coco/models/block/quick_coco.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Coco/src/main/resources/assets/coco/models/block/quick_coco.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coco/src/main/resources/assets/coco/models/item/block_dissapearerer.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Coco/src/main/resources/assets/coco/models/item/block_dissapearerer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coco/src/main/resources/assets/coco/models/item/quick_coco.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Coco/src/main/resources/assets/coco/models/item/quick_coco.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coco/src/main/resources/assets/coco/models/item/skill_stone.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Coco/src/main/resources/assets/coco/models/item/skill_stone.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coco/src/main/resources/assets/coco/models/item/wand.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Coco/src/main/resources/assets/coco/models/item/wand.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coco/src/main/resources/data/coco/loot_table/blocks/quick_coco.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Coco/src/main/resources/data/coco/loot_table/blocks/quick_coco.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coco/src/main/resources/data/minecraft/tags/item/pickaxes.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Coco/src/main/resources/data/minecraft/tags/item/pickaxes.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coco/src/main/resources/data/minecraft/tags/item/shovels.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Coco/src/main/resources/data/minecraft/tags/item/shovels.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coco/src/main/resources/pack.mcmeta" beforeDir="false" afterPath="$PROJECT_DIR$/../Coco/src/main/resources/pack.mcmeta" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="3CcywAw5FS9wLvnhERxbT7pTbME" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "Coco",
+    "kotlin-language-version-configured": "true",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="24d0989a-5167-4ffe-842d-7e9b2afda9c8" name="Changes" comment="" />
+      <created>1776699399542</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1776699399542</updated>
+      <workItem from="1776699416751" duration="646000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

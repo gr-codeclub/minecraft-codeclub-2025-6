@@ -288,6 +288,38 @@
           "src/main/java/net/mcreator/coco/procedures/RandomDiceThingOnTickUpdateProcedure.java"
         ]
       }
+    },
+    {
+      "name": "SpellbookRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spellbook_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/coco/procedures/SpellbookRightclickedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Spellbook",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spellbook",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/coco/items/spellbook.json",
+          "src/main/java/net/mcreator/coco/item/SpellbookItem.java",
+          "src/main/resources/assets/coco/models/item/spellbook.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -308,7 +340,8 @@
       "item.coco.wand": "Wand",
       "item.coco.block_dissapearerer": "Block Dissapearerer",
       "item.coco.random_dice_thing": "Random Dice Thing",
-      "item.coco.skill_stone": "Skill Stone"
+      "item.coco.skill_stone": "Skill Stone",
+      "item.coco.spellbook": "Spellbook"
     }
   },
   "metadata": {
