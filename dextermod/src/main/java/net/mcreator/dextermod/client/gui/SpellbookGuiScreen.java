@@ -13,7 +13,7 @@ import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.dextermod.world.inventory.SpellbookGuiMenu;
-import net.mcreator.dextermod.procedures.SpellNameProcedure;
+import net.mcreator.dextermod.procedures.FProcedure;
 import net.mcreator.dextermod.network.SpellbookGuiButtonMessage;
 import net.mcreator.dextermod.init.DextermodModScreens;
 
@@ -24,7 +24,6 @@ public class SpellbookGuiScreen extends AbstractContainerScreen<SpellbookGuiMenu
 	private boolean menuStateUpdateActive = false;
 	private Button button_greeting;
 	private Button button_glow;
-	private Button button_x;
 	private static final ResourceLocation BACKGROUND = ResourceLocation.parse("dextermod:textures/screens/spellbook_gui.png");
 
 	public SpellbookGuiScreen(SpellbookGuiMenu container, Inventory inventory, Component text) {
@@ -66,8 +65,8 @@ public class SpellbookGuiScreen extends AbstractContainerScreen<SpellbookGuiMenu
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, Component.translatable("gui.dextermod.spellbook_gui.label_spells"), 69, 9, -12829636, true);
-		guiGraphics.drawString(this.font, SpellNameProcedure.execute(entity), 15, 25, -16724737, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.dextermod.spellbook_gui.label_spelllss"), 57, 10, -12829636, false);
+		guiGraphics.drawString(this.font, FProcedure.execute(entity), 23, 28, -6736897, false);
 	}
 
 	@Override
@@ -80,7 +79,7 @@ public class SpellbookGuiScreen extends AbstractContainerScreen<SpellbookGuiMenu
 				ClientPacketDistributor.sendToServer(new SpellbookGuiButtonMessage(0, x, y, z));
 				SpellbookGuiButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}).bounds(this.leftPos + 15, this.topPos + 52, 65, 20).build();
+		}).bounds(this.leftPos + 14, this.topPos + 53, 65, 20).build();
 		this.addRenderableWidget(button_greeting);
 		button_glow = Button.builder(Component.translatable("gui.dextermod.spellbook_gui.button_glow"), e -> {
 			int x = SpellbookGuiScreen.this.x;
@@ -89,16 +88,7 @@ public class SpellbookGuiScreen extends AbstractContainerScreen<SpellbookGuiMenu
 				ClientPacketDistributor.sendToServer(new SpellbookGuiButtonMessage(1, x, y, z));
 				SpellbookGuiButtonMessage.handleButtonAction(entity, 1, x, y, z);
 			}
-		}).bounds(this.leftPos + 15, this.topPos + 79, 45, 20).build();
+		}).bounds(this.leftPos + 21, this.topPos + 85, 45, 20).build();
 		this.addRenderableWidget(button_glow);
-		button_x = Button.builder(Component.translatable("gui.dextermod.spellbook_gui.button_x"), e -> {
-			int x = SpellbookGuiScreen.this.x;
-			int y = SpellbookGuiScreen.this.y;
-			if (true) {
-				ClientPacketDistributor.sendToServer(new SpellbookGuiButtonMessage(2, x, y, z));
-				SpellbookGuiButtonMessage.handleButtonAction(entity, 2, x, y, z);
-			}
-		}).bounds(this.leftPos + 141, this.topPos + 7, 30, 20).build();
-		this.addRenderableWidget(button_x);
 	}
 }

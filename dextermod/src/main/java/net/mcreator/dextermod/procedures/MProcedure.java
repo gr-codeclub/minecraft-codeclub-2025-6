@@ -7,17 +7,17 @@ import net.minecraft.world.scores.Objective;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.network.chat.Component;
 
-public class SelectGreetingSpellProcedure {
+public class MProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
 		{
 			Entity _ent = entity;
 			Scoreboard _sc = _ent.level().getScoreboard();
-			Objective _so = _sc.getObjective("current_spell");
+			Objective _so = _sc.getObjective("b");
 			if (_so == null)
-				_so = _sc.addObjective("current_spell", ObjectiveCriteria.DUMMY, Component.literal("current_spell"), ObjectiveCriteria.RenderType.INTEGER, true, null);
-			_sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).set(0);
+				_so = _sc.addObjective("b", ObjectiveCriteria.DUMMY, Component.literal("b"), ObjectiveCriteria.RenderType.INTEGER, true, null);
+			_sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).set(1);
 		}
 	}
 }

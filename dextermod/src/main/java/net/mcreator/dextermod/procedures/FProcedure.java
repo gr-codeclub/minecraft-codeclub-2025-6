@@ -5,21 +5,19 @@ import net.minecraft.world.scores.ScoreHolder;
 import net.minecraft.world.scores.Objective;
 import net.minecraft.world.entity.Entity;
 
-public class SpellNameProcedure {
+public class FProcedure {
 	public static String execute(Entity entity) {
 		if (entity == null)
 			return "";
-		double spell = 0;
-		String spell_name = "";
-		spell = getEntityScore("current_spell", entity);
-		if (spell == 0) {
-			spell_name = "Greeting";
-		} else if (spell == 1) {
-			spell_name = "Glow";
+		String tesxt = "";
+		if (getEntityScore("b", entity) == 1) {
+			tesxt = "Greet";
+		} else if (getEntityScore("b", entity) == 27) {
+			tesxt = "Glow";
 		} else {
-			spell_name = "Unknown Spell";
+			tesxt = "Unknown spell";
 		}
-		return "Current Spell: " + spell_name;
+		return tesxt;
 	}
 
 	private static int getEntityScore(String score, Entity entity) {

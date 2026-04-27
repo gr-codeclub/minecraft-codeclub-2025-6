@@ -15,9 +15,8 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.core.SectionPos;
 
-import net.mcreator.dextermod.procedures.SelectGreetingSpellProcedure;
-import net.mcreator.dextermod.procedures.SelectGlowSpellProcedure;
-import net.mcreator.dextermod.procedures.CloseProcedure;
+import net.mcreator.dextermod.procedures.MProcedure;
+import net.mcreator.dextermod.procedures.JProcedure;
 import net.mcreator.dextermod.DextermodMod;
 
 @EventBusSubscriber
@@ -51,15 +50,11 @@ public record SpellbookGuiButtonMessage(int buttonID, int x, int y, int z) imple
 			return;
 		if (buttonID == 0) {
 
-			SelectGreetingSpellProcedure.execute(entity);
+			MProcedure.execute(entity);
 		}
 		if (buttonID == 1) {
 
-			SelectGlowSpellProcedure.execute(entity);
-		}
-		if (buttonID == 2) {
-
-			CloseProcedure.execute(entity);
+			JProcedure.execute(entity);
 		}
 	}
 
