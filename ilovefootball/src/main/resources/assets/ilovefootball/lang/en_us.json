@@ -5,5 +5,12 @@
   "item.ilovefootball.foot": "Foot",
   "item.ilovefootball.diceblock": "Diceblock",
   "item.ilovefootball.skillstone": "Skillstone",
-  "item.ilovefootball.spellbook": "Spellbook"
+  "item.ilovefootball.spellbook": "Spellbook",
+  "gui.ilovefootball.gu_ifootball.label_empty": "",
+  "gui.ilovefootball.gu_ifootball.label_spell": "SPELL",
+  "gui.ilovefootball.gu_ifootball.label_crouch_to_open_spell": "crouch to open spell",
+  "gui.ilovefootball.gu_ifootball.button_greeting": "Greeting",
+  "gui.ilovefootball.gu_ifootball.button_glow": "Glow",
+  "gui.ilovefootball.gu_ifootball.label_spellname": "spellname",
+  "gui.ilovefootball.gu_ifootball.button_x": "x"
 }

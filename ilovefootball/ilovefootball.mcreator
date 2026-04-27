@@ -300,6 +300,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ],
         "files": [
@@ -318,6 +334,56 @@
           "src/main/resources/assets/ilovefootball/items/spellbook.json",
           "src/main/resources/assets/ilovefootball/models/item/spellbook.json",
           "src/main/java/net/mcreator/ilovefootball/item/SpellbookItem.java"
+        ]
+      }
+    },
+    {
+      "name": "GUIfootball",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gu_ifootball",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ilovefootball/client/gui/GUIfootballScreen.java",
+          "src/main/java/net/mcreator/ilovefootball/network/GUIfootballButtonMessage.java",
+          "src/main/java/net/mcreator/ilovefootball/world/inventory/GUIfootballMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "Selectgreetingprocedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "selectgreetingprocedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/ilovefootball/procedures/SelectgreetingprocedureProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Selectglowproceduce",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "selectglowproceduce",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/ilovefootball/procedures/SelectglowproceduceProcedure.java"
         ]
       }
     }
@@ -339,11 +405,21 @@
       "item.ilovefootball.foot": "Foot",
       "item.ilovefootball.diceblock": "Diceblock",
       "item.ilovefootball.skillstone": "Skillstone",
-      "item.ilovefootball.spellbook": "Spellbook"
+      "item.ilovefootball.spellbook": "Spellbook",
+      "gui.ilovefootball.gu_ifootball.label_empty": "",
+      "gui.ilovefootball.gu_ifootball.label_spell": "SPELL",
+      "gui.ilovefootball.gu_ifootball.label_crouch_to_open_spell": "crouch to open spell",
+      "gui.ilovefootball.gu_ifootball.button_greeting": "Greeting",
+      "gui.ilovefootball.gu_ifootball.button_glow": "Glow",
+      "gui.ilovefootball.gu_ifootball.label_spellname": "spellname",
+      "gui.ilovefootball.gu_ifootball.button_x": "x"
     }
   },
   "metadata": {
     "files": [
+      "src/main/java/net/mcreator/ilovefootball/init/IlovefootballModScreens.java",
+      "src/main/java/net/mcreator/ilovefootball/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/ilovefootball/init/IlovefootballModMenus.java",
       "src/main/java/net/mcreator/ilovefootball/init/IlovefootballModBlocks.java",
       "src/main/java/net/mcreator/ilovefootball/init/IlovefootballModBlockEntities.java",
       "src/main/java/net/mcreator/ilovefootball/init/IlovefootballModItems.java",

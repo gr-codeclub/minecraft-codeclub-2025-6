@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="46d6638b-3b70-4c2f-aee1-9e23f754cb95" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.eclipse/configurations/Client.launch" beforeDir="false" afterPath="$PROJECT_DIR$/.eclipse/configurations/Client.launch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eclipse/configurations/Server.launch" beforeDir="false" afterPath="$PROJECT_DIR$/.eclipse/configurations/Server.launch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mcreator/generatorGradleCache" beforeDir="false" afterPath="$PROJECT_DIR$/.mcreator/generatorGradleCache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mcreator/userSettings" beforeDir="false" afterPath="$PROJECT_DIR$/.mcreator/userSettings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dextermod.mcreator" beforeDir="false" afterPath="$PROJECT_DIR$/dextermod.mcreator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/DexterBlock.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/DexterBlock.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/DexterBlockEntityWalksOnTheBlock.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/DexterBlockEntityWalksOnTheBlock.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/DexterMod.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/DexterMod.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/DiceBlock.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/DiceBlock.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/DiceBlockOnBlockRightclicked.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/DiceBlockOnBlockRightclicked.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/OnMobKilledTest.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/OnMobKilledTest.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/PlatformWand.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/PlatformWand.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/PlatformWandRightclicked.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/PlatformWandRightclicked.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/SkillStoneTest.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/SkillStoneTest.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/SkillStoneTestRightclicked.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/SkillStoneTestRightclicked.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/Spellbook.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/Spellbook.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/SpellbookRightclicked.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/SpellbookRightclicked.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/Testlightning.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/Testlightning.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/VeinMiner.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/VeinMiner.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/VeinMiner3D.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/VeinMiner3D.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/VeinMinerBlockDestroyedWithTool.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/VeinMinerBlockDestroyedWithTool.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/mcreator/dextermod/DextermodMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/mcreator/dextermod/DextermodMod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/mcreator/dextermod/block/DexterBlockBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/mcreator/dextermod/block/DexterBlockBlock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/dextermod/blockstates/dexter_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/dextermod/blockstates/dexter_block.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/dextermod/items/dexter_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/dextermod/items/dexter_block.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/dextermod/items/platform_wand.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/dextermod/items/platform_wand.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/dextermod/items/skill_stone_test.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/dextermod/items/skill_stone_test.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/dextermod/items/spellbook.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/dextermod/items/spellbook.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/dextermod/items/vein_miner.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/dextermod/items/vein_miner.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/dextermod/lang/en_us.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/dextermod/lang/en_us.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/dextermod/models/block/dexter_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/dextermod/models/block/dexter_block.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/dextermod/models/item/dexter_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/dextermod/models/item/dexter_block.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/dextermod/models/item/platform_wand.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/dextermod/models/item/platform_wand.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/dextermod/models/item/skill_stone_test.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/dextermod/models/item/skill_stone_test.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/dextermod/models/item/spellbook.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/dextermod/models/item/spellbook.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/dextermod/models/item/vein_miner.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/dextermod/models/item/vein_miner.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/dextermod/loot_table/blocks/dexter_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/dextermod/loot_table/blocks/dexter_block.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/item/pickaxes.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/item/pickaxes.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/pack.mcmeta" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pack.mcmeta" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="dextermod" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="dextermod" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="dextermod" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="mod development" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6,
+  "fromUser": false
+}]]></component>
+  <component name="ProjectId" id="3CQzAiYwhphXJfR2o4IXXGCDh23" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.dextermod [runClient].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "teacher",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/minecraft-codeclub-2025-6/dextermod/build.gradle"
+  }
+}]]></component>
+  <component name="RunManager" selected="Gradle.dextermod [runClient]">
+    <configuration name="Client" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="net.neoforged.devlaunch.Main" />
+      <module name="dextermod.main" />
+      <option name="PROGRAM_PARAMETERS" value="@C:\\minecraft-codeclub-2025-6\\dextermod\\build\\moddev\\clientRunProgramArgs.txt" />
+      <option name="VM_PARAMETERS" value="@C:\\minecraft-codeclub-2025-6\\dextermod\\build\\moddev\\clientRunVmArgs.txt -Dfml.modFolders=mcreator%%C:\\minecraft-codeclub-2025-6\\dextermod\\build\\classes\\java\\main;mcreator%%C:\\minecraft-codeclub-2025-6\\dextermod\\build\\resources\\main" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Server" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="net.neoforged.devlaunch.Main" />
+      <module name="dextermod.main" />
+      <option name="PROGRAM_PARAMETERS" value="@C:\\minecraft-codeclub-2025-6\\dextermod\\build\\moddev\\serverRunProgramArgs.txt" />
+      <option name="VM_PARAMETERS" value="@C:\\minecraft-codeclub-2025-6\\dextermod\\build\\moddev\\serverRunVmArgs.txt -Dfml.modFolders=mcreator%%C:\\minecraft-codeclub-2025-6\\dextermod\\build\\classes\\java\\main;mcreator%%C:\\minecraft-codeclub-2025-6\\dextermod\\build\\resources\\main" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="dextermod [runClient]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="runClient" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <ExternalSystemDebugDisabled>false</ExternalSystemDebugDisabled>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <GradleProfilingDisabled>false</GradleProfilingDisabled>
+      <GradleCoverageDisabled>false</GradleCoverageDisabled>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.dextermod [runClient]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="46d6638b-3b70-4c2f-aee1-9e23f754cb95" name="Changes" comment="" />
+      <created>1776332441697</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1776332441697</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

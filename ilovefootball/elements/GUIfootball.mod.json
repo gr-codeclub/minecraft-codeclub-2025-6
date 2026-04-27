@@ -1,0 +1,118 @@
+{
+  "_fv": 85,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_spell",
+          "text": {
+            "fixedValue": "SPELL"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 188,
+          "y": 43,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty",
+          "text": {
+            "fixedValue": ""
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 243,
+          "y": 92,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_glow",
+          "text": "Glow",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "Selectglowproceduce"
+          },
+          "width": 45,
+          "height": 20,
+          "x": 139,
+          "y": 109,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_greeting",
+          "text": "Greeting",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "Selectgreetingprocedure"
+          },
+          "width": 65,
+          "height": 20,
+          "x": 134,
+          "y": 75,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_spellname",
+          "text": {
+            "fixedValue": "spellname"
+          },
+          "color": {
+            "value": -13369345,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 143,
+          "y": 56,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_x",
+          "text": "x",
+          "isUndecorated": false,
+          "width": 30,
+          "height": 20,
+          "x": 267,
+          "y": 41,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}
