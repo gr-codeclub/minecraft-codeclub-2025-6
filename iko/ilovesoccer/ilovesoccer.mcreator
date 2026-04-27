@@ -275,6 +275,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ],
         "files": [
@@ -293,6 +309,56 @@
           "src/main/resources/assets/ilovesoccer/items/spellbook.json",
           "src/main/resources/assets/ilovesoccer/models/item/spellbook.json",
           "src/main/java/net/mcreator/ilovesoccer/item/SpellbookItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Jrt6aGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jrt_6a_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ilovesoccer/world/inventory/Jrt6aGUIMenu.java",
+          "src/main/java/net/mcreator/ilovesoccer/network/Jrt6aGUIButtonMessage.java",
+          "src/main/java/net/mcreator/ilovesoccer/client/gui/Jrt6aGUIScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "SelectGlowspell",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "select_glowspell",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/ilovesoccer/procedures/SelectGlowspellProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Setgreetingspell",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "setgreetingspell",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/ilovesoccer/procedures/SetgreetingspellProcedure.java"
         ]
       }
     }
@@ -314,11 +380,20 @@
       "item.ilovesoccer.voldermoltbwoaanbd": "Voldermoltbwoaanbd",
       "item.ilovesoccer.veinminer": "Veinminer",
       "item.ilovesoccer.skillstone": "Skillstone",
-      "item.ilovesoccer.spellbook": "Spellbook"
+      "item.ilovesoccer.spellbook": "Spellbook",
+      "gui.ilovesoccer.jrt_6a_gui.label_spell1": "spell",
+      "gui.ilovesoccer.jrt_6a_gui.label_spellname": "spellname",
+      "gui.ilovesoccer.jrt_6a_gui.button_glow": "Glow",
+      "gui.ilovesoccer.jrt_6a_gui.label_spell": "",
+      "gui.ilovesoccer.jrt_6a_gui.button_greeting": "greeting",
+      "gui.ilovesoccer.jrt_6a_gui.button_x": "X"
     }
   },
   "metadata": {
     "files": [
+      "src/main/java/net/mcreator/ilovesoccer/init/IlovesoccerModScreens.java",
+      "src/main/java/net/mcreator/ilovesoccer/init/IlovesoccerModMenus.java",
+      "src/main/java/net/mcreator/ilovesoccer/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/ilovesoccer/init/IlovesoccerModBlocks.java",
       "src/main/java/net/mcreator/ilovesoccer/init/IlovesoccerModItems.java",
       "src/main/java/net/mcreator/ilovesoccer/IlovesoccerMod.java",

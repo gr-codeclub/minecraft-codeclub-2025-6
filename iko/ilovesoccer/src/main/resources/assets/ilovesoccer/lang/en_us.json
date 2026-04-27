@@ -5,5 +5,11 @@
   "item.ilovesoccer.voldermoltbwoaanbd": "Voldermoltbwoaanbd",
   "item.ilovesoccer.veinminer": "Veinminer",
   "item.ilovesoccer.skillstone": "Skillstone",
-  "item.ilovesoccer.spellbook": "Spellbook"
+  "item.ilovesoccer.spellbook": "Spellbook",
+  "gui.ilovesoccer.jrt_6a_gui.label_spell1": "spell",
+  "gui.ilovesoccer.jrt_6a_gui.label_spellname": "spellname",
+  "gui.ilovesoccer.jrt_6a_gui.button_glow": "Glow",
+  "gui.ilovesoccer.jrt_6a_gui.label_spell": "",
+  "gui.ilovesoccer.jrt_6a_gui.button_greeting": "greeting",
+  "gui.ilovesoccer.jrt_6a_gui.button_x": "X"
 }
