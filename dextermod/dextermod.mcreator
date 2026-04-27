@@ -466,7 +466,8 @@
       "item.dextermod.spellbook": "Spellbook",
       "gui.dextermod.spellbook_gui.label_spells": "Spells",
       "gui.dextermod.spellbook_gui.button_glow": "Glow",
-      "gui.dextermod.spellbook_gui.button_greeting": "Greeting"
+      "gui.dextermod.spellbook_gui.button_greeting": "Greeting",
+      "gui.dextermod.spellbook_gui.button_x": "X"
     }
   },
   "metadata": {
