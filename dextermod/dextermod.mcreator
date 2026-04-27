@@ -322,6 +322,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ],
         "files": [
@@ -342,6 +358,93 @@
           "src/main/resources/assets/dextermod/items/spellbook.json"
         ]
       }
+    },
+    {
+      "name": "SelectGreetingSpell",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "select_greeting_spell",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/dextermod/procedures/SelectGreetingSpellProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SelectGlowSpell",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "select_glow_spell",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/dextermod/procedures/SelectGlowSpellProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SpellName",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spell_name",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/dextermod/procedures/SpellNameProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SpellbookGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spellbook_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dextermod/world/inventory/SpellbookGuiMenu.java",
+          "src/main/java/net/mcreator/dextermod/client/gui/SpellbookGuiScreen.java",
+          "src/main/java/net/mcreator/dextermod/network/SpellbookGuiButtonMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "Close",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "close",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/dextermod/procedures/CloseProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -360,18 +463,24 @@
       "item.dextermod.vein_miner": "Vein Miner",
       "item.dextermod.skill_stone_test": "Skill Stone Test",
       "item.dextermod.dice_block": "Dice Block",
-      "item.dextermod.spellbook": "Spellbook"
+      "item.dextermod.spellbook": "Spellbook",
+      "gui.dextermod.spellbook_gui.label_spells": "Spells",
+      "gui.dextermod.spellbook_gui.button_glow": "Glow",
+      "gui.dextermod.spellbook_gui.button_greeting": "Greeting"
     }
   },
   "metadata": {
     "files": [
+      "src/main/java/net/mcreator/dextermod/init/DextermodModScreens.java",
+      "src/main/java/net/mcreator/dextermod/init/DextermodModMenus.java",
+      "src/main/java/net/mcreator/dextermod/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/dextermod/init/DextermodModBlocks.java",
       "src/main/java/net/mcreator/dextermod/init/DextermodModBlockEntities.java",
       "src/main/java/net/mcreator/dextermod/init/DextermodModItems.java",
-      "src/main/resources/pack.mcmeta",
-      "src/main/java/net/mcreator/dextermod/DextermodMod.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/java/net/mcreator/dextermod/init/DextermodModTabs.java"
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/dextermod/init/DextermodModTabs.java",
+      "src/main/java/net/mcreator/dextermod/DextermodMod.java"
     ]
   },
   "foldersRoot": {

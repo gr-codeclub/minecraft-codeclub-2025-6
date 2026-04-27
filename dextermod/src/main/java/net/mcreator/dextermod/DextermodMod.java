@@ -21,6 +21,7 @@ import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.dextermod.init.DextermodModTabs;
+import net.mcreator.dextermod.init.DextermodModMenus;
 import net.mcreator.dextermod.init.DextermodModItems;
 import net.mcreator.dextermod.init.DextermodModBlocks;
 import net.mcreator.dextermod.init.DextermodModBlockEntities;
@@ -55,6 +56,7 @@ public class DextermodMod {
 		DextermodModBlockEntities.REGISTRY.register(modEventBus);
 		DextermodModItems.REGISTRY.register(modEventBus);
 		DextermodModTabs.REGISTRY.register(modEventBus);
+		DextermodModMenus.REGISTRY.register(modEventBus);
 		// Start of user code block mod init
 		// End of user code block mod init
 	}

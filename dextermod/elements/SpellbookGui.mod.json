@@ -1,0 +1,105 @@
+{
+  "_fv": 85,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_spells",
+          "text": {
+            "fixedValue": "Spells"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "hasShadow": true,
+          "x": 195,
+          "y": 46,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_greeting",
+          "text": "Greeting",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SelectGreetingSpell"
+          },
+          "width": 65,
+          "height": 20,
+          "x": 141,
+          "y": 89,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_glow",
+          "text": "Glow",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SelectGlowSpell"
+          },
+          "width": 45,
+          "height": 20,
+          "x": 141,
+          "y": 116,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_spell_name",
+          "text": {
+            "fixedValue": "",
+            "name": "SpellName"
+          },
+          "color": {
+            "value": -16724737,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 141,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_x",
+          "text": "X",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "Close"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 267,
+          "y": 44,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

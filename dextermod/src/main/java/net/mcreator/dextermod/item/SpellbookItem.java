@@ -22,7 +22,7 @@ public class SpellbookItem extends Item {
 	@Override
 	public InteractionResult use(Level world, Player entity, InteractionHand hand) {
 		InteractionResult ar = super.use(world, entity, hand);
-		SpellbookRightclickedProcedure.execute(entity);
+		SpellbookRightclickedProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity);
 		return ar;
 	}
 }
