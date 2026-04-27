@@ -245,6 +245,36 @@
           "src/main/resources/assets/cocomelon/items/hicocomelon.json"
         ]
       }
+    },
+    {
+      "name": "Coco",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coco",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/cocomelon/procedures/CocoProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -296,5 +326,5 @@
     "currentGenerator": "neoforge-1.21.8",
     "modElementsPackage": "net.mcreator.cocomelon"
   },
-  "mcreatorVersion": 202500345720
+  "mcreatorVersion": 202600114619
 }
