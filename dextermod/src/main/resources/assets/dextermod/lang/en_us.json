@@ -6,8 +6,7 @@
   "item.dextermod.skill_stone_test": "Skill Stone Test",
   "item.dextermod.dice_block": "Dice Block",
   "item.dextermod.spellbook": "Spellbook",
-  "gui.dextermod.spellbook_gui.label_spells": "Spells",
-  "gui.dextermod.spellbook_gui.button_glow": "Glow",
-  "gui.dextermod.spellbook_gui.button_greeting": "Greeting",
-  "gui.dextermod.spellbook_gui.button_x": "X"
+  "gui.dextermod.anikaaaa.button_glow": "glow",
+  "gui.dextermod.anikaaaa.button_greetin": "greetin",
+  "gui.dextermod.anikaaaa.label_spells_yay": "spells yay"
 }

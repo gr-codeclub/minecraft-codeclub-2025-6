@@ -8,13 +8,13 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.Dist;
 
-import net.mcreator.dextermod.client.gui.SpellbookGuiScreen;
+import net.mcreator.dextermod.client.gui.AnikaaaaScreen;
 
 @EventBusSubscriber(Dist.CLIENT)
 public class DextermodModScreens {
 	@SubscribeEvent
 	public static void clientLoad(RegisterMenuScreensEvent event) {
-		event.register(DextermodModMenus.SPELLBOOK_GUI.get(), SpellbookGuiScreen::new);
+		event.register(DextermodModMenus.ANIKAAAA.get(), AnikaaaaScreen::new);
 	}
 
 	public interface ScreenAccessor {

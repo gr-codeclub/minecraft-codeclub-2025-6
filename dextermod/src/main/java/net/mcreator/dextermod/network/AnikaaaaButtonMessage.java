@@ -15,27 +15,26 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.core.SectionPos;
 
-import net.mcreator.dextermod.procedures.SelectGreetingSpellProcedure;
-import net.mcreator.dextermod.procedures.SelectGlowSpellProcedure;
-import net.mcreator.dextermod.procedures.CloseProcedure;
+import net.mcreator.dextermod.procedures.AnikaaProcedure;
+import net.mcreator.dextermod.procedures.AnikaProcedure;
 import net.mcreator.dextermod.DextermodMod;
 
 @EventBusSubscriber
-public record SpellbookGuiButtonMessage(int buttonID, int x, int y, int z) implements CustomPacketPayload {
-	public static final Type<SpellbookGuiButtonMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(DextermodMod.MODID, "spellbook_gui_buttons"));
-	public static final StreamCodec<RegistryFriendlyByteBuf, SpellbookGuiButtonMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, SpellbookGuiButtonMessage message) -> {
+public record AnikaaaaButtonMessage(int buttonID, int x, int y, int z) implements CustomPacketPayload {
+	public static final Type<AnikaaaaButtonMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(DextermodMod.MODID, "anikaaaa_buttons"));
+	public static final StreamCodec<RegistryFriendlyByteBuf, AnikaaaaButtonMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, AnikaaaaButtonMessage message) -> {
 		buffer.writeInt(message.buttonID);
 		buffer.writeInt(message.x);
 		buffer.writeInt(message.y);
 		buffer.writeInt(message.z);
-	}, (RegistryFriendlyByteBuf buffer) -> new SpellbookGuiButtonMessage(buffer.readInt(), buffer.readInt(), buffer.readInt(), buffer.readInt()));
+	}, (RegistryFriendlyByteBuf buffer) -> new AnikaaaaButtonMessage(buffer.readInt(), buffer.readInt(), buffer.readInt(), buffer.readInt()));
 
 	@Override
-	public Type<SpellbookGuiButtonMessage> type() {
+	public Type<AnikaaaaButtonMessage> type() {
 		return TYPE;
 	}
 
-	public static void handleData(final SpellbookGuiButtonMessage message, final IPayloadContext context) {
+	public static void handleData(final AnikaaaaButtonMessage message, final IPayloadContext context) {
 		if (context.flow() == PacketFlow.SERVERBOUND) {
 			context.enqueueWork(() -> handleButtonAction(context.player(), message.buttonID, message.x, message.y, message.z)).exceptionally(e -> {
 				context.connection().disconnect(Component.literal(e.getMessage()));
@@ -51,20 +50,16 @@ public record SpellbookGuiButtonMessage(int buttonID, int x, int y, int z) imple
 			return;
 		if (buttonID == 0) {
 
-			SelectGreetingSpellProcedure.execute(entity);
+			AnikaProcedure.execute(entity);
 		}
 		if (buttonID == 1) {
 
-			SelectGlowSpellProcedure.execute(entity);
-		}
-		if (buttonID == 2) {
-
-			CloseProcedure.execute(entity);
+			AnikaaProcedure.execute(entity);
 		}
 	}
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		DextermodMod.addNetworkMessage(SpellbookGuiButtonMessage.TYPE, SpellbookGuiButtonMessage.STREAM_CODEC, SpellbookGuiButtonMessage::handleData);
+		DextermodMod.addNetworkMessage(AnikaaaaButtonMessage.TYPE, AnikaaaaButtonMessage.STREAM_CODEC, AnikaaaaButtonMessage::handleData);
 	}
 }

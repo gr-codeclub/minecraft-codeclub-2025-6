@@ -360,11 +360,11 @@
       }
     },
     {
-      "name": "SelectGreetingSpell",
+      "name": "Anika",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "select_greeting_spell",
+      "registry_name": "anika",
       "metadata": {
         "dependencies": [
           {
@@ -373,16 +373,16 @@
           }
         ],
         "files": [
-          "src/main/java/net/mcreator/dextermod/procedures/SelectGreetingSpellProcedure.java"
+          "src/main/java/net/mcreator/dextermod/procedures/AnikaProcedure.java"
         ]
       }
     },
     {
-      "name": "SelectGlowSpell",
+      "name": "Anikaa",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "select_glow_spell",
+      "registry_name": "anikaa",
       "metadata": {
         "dependencies": [
           {
@@ -391,16 +391,16 @@
           }
         ],
         "files": [
-          "src/main/java/net/mcreator/dextermod/procedures/SelectGlowSpellProcedure.java"
+          "src/main/java/net/mcreator/dextermod/procedures/AnikaaProcedure.java"
         ]
       }
     },
     {
-      "name": "SpellName",
+      "name": "Anikaaa",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "spell_name",
+      "registry_name": "anikaaa",
       "metadata": {
         "dependencies": [
           {
@@ -410,39 +410,21 @@
         ],
         "return_type": "string",
         "files": [
-          "src/main/java/net/mcreator/dextermod/procedures/SpellNameProcedure.java"
+          "src/main/java/net/mcreator/dextermod/procedures/AnikaaaProcedure.java"
         ]
       }
     },
     {
-      "name": "SpellbookGui",
+      "name": "Anikaaaa",
       "type": "gui",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "spellbook_gui",
+      "registry_name": "anikaaaa",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/dextermod/world/inventory/SpellbookGuiMenu.java",
-          "src/main/java/net/mcreator/dextermod/client/gui/SpellbookGuiScreen.java",
-          "src/main/java/net/mcreator/dextermod/network/SpellbookGuiButtonMessage.java"
-        ]
-      }
-    },
-    {
-      "name": "Close",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "close",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/dextermod/procedures/CloseProcedure.java"
+          "src/main/java/net/mcreator/dextermod/client/gui/AnikaaaaScreen.java",
+          "src/main/java/net/mcreator/dextermod/network/AnikaaaaButtonMessage.java",
+          "src/main/java/net/mcreator/dextermod/world/inventory/AnikaaaaMenu.java"
         ]
       }
     }
@@ -464,10 +446,9 @@
       "item.dextermod.skill_stone_test": "Skill Stone Test",
       "item.dextermod.dice_block": "Dice Block",
       "item.dextermod.spellbook": "Spellbook",
-      "gui.dextermod.spellbook_gui.label_spells": "Spells",
-      "gui.dextermod.spellbook_gui.button_glow": "Glow",
-      "gui.dextermod.spellbook_gui.button_greeting": "Greeting",
-      "gui.dextermod.spellbook_gui.button_x": "X"
+      "gui.dextermod.anikaaaa.button_glow": "glow",
+      "gui.dextermod.anikaaaa.button_greetin": "greetin",
+      "gui.dextermod.anikaaaa.label_spells_yay": "spells yay"
     }
   },
   "metadata": {
@@ -478,10 +459,10 @@
       "src/main/java/net/mcreator/dextermod/init/DextermodModBlocks.java",
       "src/main/java/net/mcreator/dextermod/init/DextermodModBlockEntities.java",
       "src/main/java/net/mcreator/dextermod/init/DextermodModItems.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/resources/pack.mcmeta",
-      "src/main/java/net/mcreator/dextermod/init/DextermodModTabs.java",
-      "src/main/java/net/mcreator/dextermod/DextermodMod.java"
+      "src/main/java/net/mcreator/dextermod/DextermodMod.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/dextermod/init/DextermodModTabs.java"
     ]
   },
   "foldersRoot": {

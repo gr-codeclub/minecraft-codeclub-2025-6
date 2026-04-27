@@ -22,11 +22,11 @@ import java.util.Map;
 import java.util.HashMap;
 import java.util.Collections;
 
-public class SpellbookGuiMenu extends AbstractContainerMenu implements DextermodModMenus.MenuAccessor {
+public class AnikaaaaMenu extends AbstractContainerMenu implements DextermodModMenus.MenuAccessor {
 	public final Map<String, Object> menuState = new HashMap<>() {
 		@Override
 		public Object put(String key, Object value) {
-			if (!this.containsKey(key) && this.size() >= 5)
+			if (!this.containsKey(key) && this.size() >= 4)
 				return null;
 			return super.put(key, value);
 		}
@@ -42,8 +42,8 @@ public class SpellbookGuiMenu extends AbstractContainerMenu implements Dextermod
 	private Entity boundEntity = null;
 	private BlockEntity boundBlockEntity = null;
 
-	public SpellbookGuiMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
-		super(DextermodModMenus.SPELLBOOK_GUI.get(), id);
+	public AnikaaaaMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
+		super(DextermodModMenus.ANIKAAAA.get(), id);
 		this.entity = inv.player;
 		this.world = inv.player.level();
 		this.internal = new ItemStackHandler(0);

@@ -14,7 +14,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.dextermod.world.inventory.SpellbookGuiMenu;
+import net.mcreator.dextermod.world.inventory.AnikaaaaMenu;
 
 import io.netty.buffer.Unpooled;
 
@@ -31,7 +31,7 @@ public class SpellbookRightclickedProcedure {
 				_ent.openMenu(new MenuProvider() {
 					@Override
 					public Component getDisplayName() {
-						return Component.literal("SpellbookGui");
+						return Component.literal("Anikaaaa");
 					}
 
 					@Override
@@ -41,16 +41,16 @@ public class SpellbookRightclickedProcedure {
 
 					@Override
 					public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-						return new SpellbookGuiMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+						return new AnikaaaaMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
 					}
 				}, _bpos);
 			}
 		} else {
-			spell = getEntityScore("current_spell", entity);
-			if (spell == 0) {
+			spell = getEntityScore("currant_spell", entity);
+			if (spell == 1) {
 				if (entity instanceof Player _player && !_player.level().isClientSide())
 					_player.displayClientMessage(Component.literal("Hi From MCreator"), false);
-			} else if (spell == 1) {
+			} else if (spell == 2) {
 				if (entity instanceof Player _player) {
 					_player.displayClientMessage(Component.literal("Hello World").withStyle(net.minecraft.ChatFormatting.RED, net.minecraft.ChatFormatting.BOLD), true);
 					entity.setGlowingTag(true);

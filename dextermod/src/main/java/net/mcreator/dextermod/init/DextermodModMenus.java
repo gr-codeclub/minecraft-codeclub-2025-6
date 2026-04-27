@@ -16,7 +16,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.client.Minecraft;
 
-import net.mcreator.dextermod.world.inventory.SpellbookGuiMenu;
+import net.mcreator.dextermod.world.inventory.AnikaaaaMenu;
 import net.mcreator.dextermod.network.MenuStateUpdateMessage;
 import net.mcreator.dextermod.DextermodMod;
 
@@ -24,7 +24,7 @@ import java.util.Map;
 
 public class DextermodModMenus {
 	public static final DeferredRegister<MenuType<?>> REGISTRY = DeferredRegister.create(Registries.MENU, DextermodMod.MODID);
-	public static final DeferredHolder<MenuType<?>, MenuType<SpellbookGuiMenu>> SPELLBOOK_GUI = REGISTRY.register("spellbook_gui", () -> IMenuTypeExtension.create(SpellbookGuiMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<AnikaaaaMenu>> ANIKAAAA = REGISTRY.register("anikaaaa", () -> IMenuTypeExtension.create(AnikaaaaMenu::new));
 
 	public interface MenuAccessor {
 		Map<String, Object> getMenuState();
