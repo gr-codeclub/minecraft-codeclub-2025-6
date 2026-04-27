@@ -300,6 +300,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ],
         "files": [
@@ -318,6 +334,93 @@
           "src/main/resources/assets/coco/items/spellbook.json",
           "src/main/java/net/mcreator/coco/item/SpellbookItem.java",
           "src/main/resources/assets/coco/models/item/spellbook.json"
+        ]
+      }
+    },
+    {
+      "name": "SelectAdvertisementSpell",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "select_advertisement_spell",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/coco/procedures/SelectAdvertisementSpellProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SpellbookGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spellbook_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/coco/world/inventory/SpellbookGUIMenu.java",
+          "src/main/java/net/mcreator/coco/network/SpellbookGUIButtonMessage.java",
+          "src/main/java/net/mcreator/coco/client/gui/SpellbookGUIScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "SelectGlowSpell",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "select_glow_spell",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/coco/procedures/SelectGlowSpellProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SpellName",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spell_name",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/coco/procedures/SpellNameProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "CloseButton",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "close_button",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/coco/procedures/CloseButtonProcedure.java"
         ]
       }
     }
@@ -341,11 +444,19 @@
       "item.coco.block_dissapearerer": "Block Dissapearerer",
       "item.coco.random_dice_thing": "Random Dice Thing",
       "item.coco.skill_stone": "Skill Stone",
-      "item.coco.spellbook": "Spellbook"
+      "item.coco.spellbook": "Spellbook",
+      "gui.coco.spellbook_gui.button_x": "X",
+      "gui.coco.spellbook_gui.button_glow": "Glow",
+      "gui.coco.spellbook_gui.label_spells": "Spells",
+      "gui.coco.spellbook_gui.label_welcome_to_the_spellbook": "Welcome to the Spellbook",
+      "gui.coco.spellbook_gui.button_advertisement": "Advertisement"
     }
   },
   "metadata": {
     "files": [
+      "src/main/java/net/mcreator/coco/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/coco/init/CocoModScreens.java",
+      "src/main/java/net/mcreator/coco/init/CocoModMenus.java",
       "src/main/java/net/mcreator/coco/init/CocoModBlocks.java",
       "src/main/java/net/mcreator/coco/init/CocoModBlockEntities.java",
       "src/main/java/net/mcreator/coco/init/CocoModItems.java",

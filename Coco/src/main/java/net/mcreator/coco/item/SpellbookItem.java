@@ -10,13 +10,13 @@ import net.mcreator.coco.procedures.SpellbookRightclickedProcedure;
 
 public class SpellbookItem extends Item {
 	public SpellbookItem(Item.Properties properties) {
-		super(properties);
+		super(properties.stacksTo(1).fireResistant());
 	}
 
 	@Override
 	public InteractionResult use(Level world, Player entity, InteractionHand hand) {
 		InteractionResult ar = super.use(world, entity, hand);
-		SpellbookRightclickedProcedure.execute(entity);
+		SpellbookRightclickedProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity);
 		return ar;
 	}
 }

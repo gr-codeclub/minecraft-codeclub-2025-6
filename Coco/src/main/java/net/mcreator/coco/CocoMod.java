@@ -21,6 +21,7 @@ import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.coco.init.CocoModTabs;
+import net.mcreator.coco.init.CocoModMenus;
 import net.mcreator.coco.init.CocoModItems;
 import net.mcreator.coco.init.CocoModBlocks;
 import net.mcreator.coco.init.CocoModBlockEntities;
@@ -55,6 +56,7 @@ public class CocoMod {
 		CocoModBlockEntities.REGISTRY.register(modEventBus);
 		CocoModItems.REGISTRY.register(modEventBus);
 		CocoModTabs.REGISTRY.register(modEventBus);
+		CocoModMenus.REGISTRY.register(modEventBus);
 		// Start of user code block mod init
 		// End of user code block mod init
 	}

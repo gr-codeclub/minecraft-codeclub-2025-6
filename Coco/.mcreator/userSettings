@@ -2,7 +2,6 @@
   "workspacePanelIconSize": "TILES",
   "workspacePanelSortType": "CREATED",
   "workspacePanelSortAscending": true,
-  "projectBrowserSplitPos": 299,
   "projectBrowserState": {
     "expandedPaths": [
       "[, coco]",
@@ -21,5 +20,18 @@
       "[, coco, Resources (Gradle), C:\\minecraft-codeclub-2025-6\\Coco\\src\\main\\resources\\assets, C:\\minecraft-codeclub-2025-6\\Coco\\src\\main\\resources\\assets\\coco, C:\\minecraft-codeclub-2025-6\\Coco\\src\\main\\resources\\assets\\coco\\textures]",
       "[, coco, Resources (Gradle), C:\\minecraft-codeclub-2025-6\\Coco\\src\\main\\resources\\assets, C:\\minecraft-codeclub-2025-6\\Coco\\src\\main\\resources\\assets\\coco, C:\\minecraft-codeclub-2025-6\\Coco\\src\\main\\resources\\assets\\coco\\textures, C:\\minecraft-codeclub-2025-6\\Coco\\src\\main\\resources\\assets\\coco\\textures\\block]"
     ]
+  },
+  "leftDockState": {
+    "dockSizes": {
+      "project_browser": 280
+    }
+  },
+  "bottomDockState": {
+    "expandedDock": "code_viewer",
+    "dockSizes": {
+      "console": 300,
+      "code_viewer": 300,
+      "debugger": 300
+    }
   }
 }

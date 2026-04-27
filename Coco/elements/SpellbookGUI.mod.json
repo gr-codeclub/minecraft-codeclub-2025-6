@@ -1,0 +1,105 @@
+{
+  "_fv": 85,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "name": "button_advertisement",
+          "text": "Advertisement",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SelectAdvertisementSpell"
+          },
+          "width": 90,
+          "height": 20,
+          "x": 132,
+          "y": 91,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_glow",
+          "text": "Glow",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SelectGlowSpell"
+          },
+          "width": 45,
+          "height": 20,
+          "x": 132,
+          "y": 120,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_welcome_to_the_spellbook",
+          "text": {
+            "fixedValue": "Welcome to the Spellbook"
+          },
+          "color": {
+            "value": -16751002,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 133,
+          "y": 43,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_x",
+          "text": "X",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "CloseButton"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 268,
+          "y": 40,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_spells",
+          "text": {
+            "fixedValue": "Spells",
+            "name": "SpellName"
+          },
+          "color": {
+            "value": -16777165,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 132,
+          "y": 71,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}
