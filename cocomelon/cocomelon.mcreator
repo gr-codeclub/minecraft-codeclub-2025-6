@@ -19,11 +19,11 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/cocomelon/block/Cocomelon2Block.java",
-          "src/main/resources/assets/cocomelon/blockstates/cocomelon_2.json",
-          "src/main/resources/assets/cocomelon/items/cocomelon_2.json",
           "src/main/resources/assets/cocomelon/models/block/cocomelon_2.json",
+          "src/main/resources/assets/cocomelon/blockstates/cocomelon_2.json",
+          "src/main/resources/assets/cocomelon/models/item/cocomelon_2.json",
           "src/main/resources/data/cocomelon/loot_table/blocks/cocomelon_2.json",
-          "src/main/resources/assets/cocomelon/models/item/cocomelon_2.json"
+          "src/main/resources/assets/cocomelon/items/cocomelon_2.json"
         ]
       }
     },
@@ -69,10 +69,10 @@
       "registry_name": "cocomelon_3",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cocomelon/item/COCOMELON3Item.java",
-          "src/main/resources/assets/cocomelon/models/item/cocomelon_3.json",
           "src/main/resources/assets/cocomelon/models/item/cocomelon_3_gui.json",
-          "src/main/resources/assets/cocomelon/items/cocomelon_3.json"
+          "src/main/resources/assets/cocomelon/models/item/cocomelon_3.json",
+          "src/main/resources/assets/cocomelon/items/cocomelon_3.json",
+          "src/main/java/net/mcreator/cocomelon/item/COCOMELON3Item.java"
         ]
       }
     },
@@ -84,10 +84,10 @@
       "registry_name": "cocomelon_676676767",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cocomelon/models/item/cocomelon_676676767_gui.json",
-          "src/main/java/net/mcreator/cocomelon/item/COCOMELON676676767Item.java",
           "src/main/resources/assets/cocomelon/models/item/cocomelon_676676767.json",
-          "src/main/resources/assets/cocomelon/items/cocomelon_676676767.json"
+          "src/main/resources/assets/cocomelon/items/cocomelon_676676767.json",
+          "src/main/resources/assets/cocomelon/models/item/cocomelon_676676767_gui.json",
+          "src/main/java/net/mcreator/cocomelon/item/COCOMELON676676767Item.java"
         ]
       }
     },
@@ -198,10 +198,10 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/cocomelon/block/Cocomelonwepon1Block.java",
-          "src/main/resources/assets/cocomelon/items/cocomelonwepon_1.json",
-          "src/main/java/net/mcreator/cocomelon/block/entity/Cocomelonwepon1BlockEntity.java",
-          "src/main/resources/assets/cocomelon/models/item/cocomelonwepon_1.json",
           "src/main/resources/data/cocomelon/loot_table/blocks/cocomelonwepon_1.json",
+          "src/main/java/net/mcreator/cocomelon/block/entity/Cocomelonwepon1BlockEntity.java",
+          "src/main/resources/assets/cocomelon/items/cocomelonwepon_1.json",
+          "src/main/resources/assets/cocomelon/models/item/cocomelonwepon_1.json",
           "src/main/resources/assets/cocomelon/blockstates/cocomelonwepon_1.json",
           "src/main/resources/assets/cocomelon/models/block/cocomelonwepon_1.json"
         ]
@@ -237,12 +237,12 @@
       "registry_name": "hicocomelon",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cocomelon/block/HicocomelonBlock.java",
-          "src/main/resources/assets/cocomelon/models/item/hicocomelon.json",
           "src/main/resources/data/cocomelon/loot_table/blocks/hicocomelon.json",
           "src/main/resources/assets/cocomelon/models/block/hicocomelon.json",
-          "src/main/resources/assets/cocomelon/blockstates/hicocomelon.json",
-          "src/main/resources/assets/cocomelon/items/hicocomelon.json"
+          "src/main/resources/assets/cocomelon/items/hicocomelon.json",
+          "src/main/resources/assets/cocomelon/models/item/hicocomelon.json",
+          "src/main/java/net/mcreator/cocomelon/block/HicocomelonBlock.java",
+          "src/main/resources/assets/cocomelon/blockstates/hicocomelon.json"
         ]
       }
     },
@@ -275,6 +275,38 @@
           "src/main/java/net/mcreator/cocomelon/procedures/CocoProcedure.java"
         ]
       }
+    },
+    {
+      "name": "CheeseRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cheese_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/cocomelon/procedures/CheeseRightclickedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Cheese",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cheese",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cocomelon/item/CheeseItem.java",
+          "src/main/resources/assets/cocomelon/models/item/cheese.json",
+          "src/main/resources/assets/cocomelon/items/cheese.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -293,7 +325,8 @@
       "item.cocomelon.cocomelon_3": "COCOMELON 3",
       "item.cocomelon.cocomelon_676676767": "COCOMELON 6 7 6 6 7 6 7 6 7",
       "item.cocomelon.cocomelonwepon_1": "Cocomelonwepon 1",
-      "item.cocomelon.hicocomelon": "Hicocomelon"
+      "item.cocomelon.hicocomelon": "Hicocomelon",
+      "item.cocomelon.cheese": "Cheese"
     }
   },
   "metadata": {
@@ -301,10 +334,10 @@
       "src/main/java/net/mcreator/cocomelon/init/CocomelonModBlocks.java",
       "src/main/java/net/mcreator/cocomelon/init/CocomelonModBlockEntities.java",
       "src/main/java/net/mcreator/cocomelon/init/CocomelonModItems.java",
+      "src/main/java/net/mcreator/cocomelon/init/CocomelonModTabs.java",
       "src/main/java/net/mcreator/cocomelon/CocomelonMod.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/resources/pack.mcmeta",
-      "src/main/java/net/mcreator/cocomelon/init/CocomelonModTabs.java"
+      "src/main/resources/META-INF/neoforge.mods.toml"
     ]
   },
   "foldersRoot": {

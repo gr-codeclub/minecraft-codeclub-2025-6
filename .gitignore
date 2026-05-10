@@ -7,6 +7,12 @@ run/
 **/.mcreator/workspaceBackups
 */runs/client/saves/
 
+### Python / uv ###
+.venv/
+__pycache__/
+*.pyc
+.merge_backup/
+
 ### Java ###
 # Compiled class file
 *.class

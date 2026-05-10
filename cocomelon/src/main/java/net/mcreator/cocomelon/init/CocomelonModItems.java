@@ -11,6 +11,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.cocomelon.item.CheeseItem;
 import net.mcreator.cocomelon.item.COCOMELON676676767Item;
 import net.mcreator.cocomelon.item.COCOMELON3Item;
 import net.mcreator.cocomelon.CocomelonMod;
@@ -24,12 +25,14 @@ public class CocomelonModItems {
 	public static final DeferredItem<Item> COCOMELON_676676767;
 	public static final DeferredItem<Item> COCOMELONWEPON_1;
 	public static final DeferredItem<Item> HICOCOMELON;
+	public static final DeferredItem<Item> CHEESE;
 	static {
 		COCOMELON_2 = block(CocomelonModBlocks.COCOMELON_2);
 		COCOMELON_3 = register("cocomelon_3", COCOMELON3Item::new);
 		COCOMELON_676676767 = register("cocomelon_676676767", COCOMELON676676767Item::new);
 		COCOMELONWEPON_1 = block(CocomelonModBlocks.COCOMELONWEPON_1);
 		HICOCOMELON = block(CocomelonModBlocks.HICOCOMELON);
+		CHEESE = register("cheese", CheeseItem::new);
 	}
 
 	// Start of user code block custom items

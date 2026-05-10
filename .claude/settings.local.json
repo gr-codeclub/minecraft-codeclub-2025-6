@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python tools/merge_mcreator.py --dry-run --theirs origin/cocomelon --yes)",
+      "Bash(python tools/merge_mcreator.py --theirs origin/cocomelon --yes)",
+      "Bash(uv --version)",
+      "Bash(uv python *)",
+      "Bash(uv sync *)",
+      "Bash(uv run *)",
+      "Bash(mv /e/Code/minecraft-codeclub-2025-6/tools/merge_mcreator.py /e/Code/mcreator-merger/merge_mcreator.py)",
+      "Bash(mv /e/Code/minecraft-codeclub-2025-6/.python-version /e/Code/mcreator-merger/.python-version)",
+      "Bash(mv /e/Code/minecraft-codeclub-2025-6/uv.lock /e/Code/mcreator-merger/uv.lock)",
+      "Bash(mv /e/Code/minecraft-codeclub-2025-6/pyproject.toml /e/Code/mcreator-merger/pyproject.toml)"
+    ]
+  }
+}
