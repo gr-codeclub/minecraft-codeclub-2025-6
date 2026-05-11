@@ -25,7 +25,7 @@ public class SpellSelectedProcedure {
 		X = X_Coord;
 		Y = Y_Coord;
 		Z = Z_Coord;
-		Spell = getEntityScore("custom_score", entity);
+		Spell = getEntityScore("current_spell", entity);
 		entity.setGlowingTag(false);
 
 		if (Spell == 0) {
