@@ -10,7 +10,6 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.Block;
 
 import net.mcreator.ilovesoccer.block.VoldermolthasaBIGnoseBlock;
-import net.mcreator.ilovesoccer.block.DiceBlockBlock;
 import net.mcreator.ilovesoccer.IlovesoccerMod;
 
 import java.util.function.Function;
@@ -18,10 +17,8 @@ import java.util.function.Function;
 public class IlovesoccerModBlocks {
 	public static final DeferredRegister.Blocks REGISTRY = DeferredRegister.createBlocks(IlovesoccerMod.MODID);
 	public static final DeferredBlock<Block> VOLDERMOLTHASA_BI_GNOSE;
-	public static final DeferredBlock<Block> DICE_BLOCK;
 	static {
 		VOLDERMOLTHASA_BI_GNOSE = register("voldermolthasa_bi_gnose", VoldermolthasaBIGnoseBlock::new);
-		DICE_BLOCK = register("dice_block", DiceBlockBlock::new);
 	}
 
 	// Start of user code block custom blocks

@@ -1,0 +1,118 @@
+{
+  "_fv": 85,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_spell",
+          "text": {
+            "fixedValue": ""
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 189,
+          "y": 91,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_spell1",
+          "text": {
+            "fixedValue": "spell"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 204,
+          "y": 48,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_spellname",
+          "text": {
+            "fixedValue": "spellname"
+          },
+          "color": {
+            "value": -16737895,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 145,
+          "y": 77,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_greeting",
+          "text": "greeting",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "Setgreetingspell"
+          },
+          "width": 65,
+          "height": 20,
+          "x": 141,
+          "y": 97,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_glow",
+          "text": "Glow",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SelectGlowspell"
+          },
+          "width": 45,
+          "height": 20,
+          "x": 148,
+          "y": 128,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_x",
+          "text": "X",
+          "isUndecorated": false,
+          "width": 30,
+          "height": 20,
+          "x": 268,
+          "y": 41,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}
