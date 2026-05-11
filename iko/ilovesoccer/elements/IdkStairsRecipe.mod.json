@@ -1,0 +1,53 @@
+{
+  "_fv": 85,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 4,
+    "group": "wooden_stairs",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:IdkPlanks"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "BUILDING",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:IdkPlanks"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:IdkPlanks"
+      },
+      {
+        "value": "CUSTOM:IdkPlanks"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:IdkPlanks"
+      },
+      {
+        "value": "CUSTOM:IdkPlanks"
+      },
+      {
+        "value": "CUSTOM:IdkPlanks"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:IdkStairs"
+    },
+    "name": "idk_stairs_recipe",
+    "namespace": "mod"
+  }
+}

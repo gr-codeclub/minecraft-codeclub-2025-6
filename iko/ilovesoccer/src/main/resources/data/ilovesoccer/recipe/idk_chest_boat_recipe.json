@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "chest_boat",
+  "category": "misc",
+  "ingredients": [
+    "ilovesoccer:idk_boat",
+    "minecraft:chest"
+  ],
+  "result": {
+    "id": "ilovesoccer:idk_chest_boat",
+    "count": 1
+  }
+}

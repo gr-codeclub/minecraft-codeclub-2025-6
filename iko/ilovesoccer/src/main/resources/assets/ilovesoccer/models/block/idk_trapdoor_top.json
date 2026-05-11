@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_orientable_trapdoor_top",
+  "textures": {
+    "texture": "ilovesoccer:block/idk_trapdoor",
+    "particle": "ilovesoccer:block/idk_trapdoor"
+  },
+  "render_type": "cutout"
+}

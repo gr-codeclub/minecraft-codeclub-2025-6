@@ -1,0 +1,53 @@
+{
+  "_fv": 85,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 6,
+    "group": "wooden_slab",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:IdkPlanks"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "BUILDING",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:IdkPlanks"
+      },
+      {
+        "value": "CUSTOM:IdkPlanks"
+      },
+      {
+        "value": "CUSTOM:IdkPlanks"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:IdkSlab"
+    },
+    "name": "idk_slab_recipe",
+    "namespace": "mod"
+  }
+}

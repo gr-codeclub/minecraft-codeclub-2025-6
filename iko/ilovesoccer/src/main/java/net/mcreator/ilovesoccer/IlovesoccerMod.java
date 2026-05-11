@@ -22,6 +22,7 @@ import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.ilovesoccer.init.IlovesoccerModTabs;
 import net.mcreator.ilovesoccer.init.IlovesoccerModItems;
+import net.mcreator.ilovesoccer.init.IlovesoccerModEntities;
 import net.mcreator.ilovesoccer.init.IlovesoccerModBlocks;
 
 import javax.annotation.Nullable;
@@ -52,6 +53,7 @@ public class IlovesoccerMod {
 		modEventBus.addListener(this::registerNetworking);
 		IlovesoccerModBlocks.REGISTRY.register(modEventBus);
 		IlovesoccerModItems.REGISTRY.register(modEventBus);
+		IlovesoccerModEntities.REGISTRY.register(modEventBus);
 		IlovesoccerModTabs.REGISTRY.register(modEventBus);
 		// Start of user code block mod init
 		// End of user code block mod init

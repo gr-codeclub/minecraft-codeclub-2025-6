@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bark",
+  "category": "building",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": "ilovesoccer:idk_log"
+  },
+  "result": {
+    "id": "ilovesoccer:idk_wood",
+    "count": 3
+  }
+}

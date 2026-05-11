@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_fence_gate",
+  "textures": {
+    "texture": "ilovesoccer:block/idk_planks",
+    "particle": "ilovesoccer:block/idk_planks"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,53 @@
+{
+  "_fv": 85,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "boat",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:IdkPlanks"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:IdkPlanks"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:IdkPlanks"
+      },
+      {
+        "value": "CUSTOM:IdkPlanks"
+      },
+      {
+        "value": "CUSTOM:IdkPlanks"
+      },
+      {
+        "value": "CUSTOM:IdkPlanks"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:IdkBoat"
+    },
+    "name": "idk_boat_recipe",
+    "namespace": "mod"
+  }
+}

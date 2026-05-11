@@ -1,0 +1,10 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "particle": "ilovesoccer:block/idk_planks",
+    "bottom": "ilovesoccer:block/idk_planks",
+    "top": "ilovesoccer:block/idk_planks",
+    "side": "ilovesoccer:block/idk_planks"
+  },
+  "render_type": "solid"
+}

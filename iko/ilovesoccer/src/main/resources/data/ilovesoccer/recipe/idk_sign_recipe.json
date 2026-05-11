@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_sign",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa",
+    " b "
+  ],
+  "key": {
+    "a": "ilovesoccer:idk_planks",
+    "b": "minecraft:stick"
+  },
+  "result": {
+    "id": "ilovesoccer:idk_sign",
+    "count": 3
+  }
+}

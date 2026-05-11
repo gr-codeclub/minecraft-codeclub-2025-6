@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "ilovesoccer:block/idk_log",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "ilovesoccer:block/idk_log"
+    },
+    "axis=z": {
+      "model": "ilovesoccer:block/idk_log",
+      "x": 90
+    }
+  }
+}

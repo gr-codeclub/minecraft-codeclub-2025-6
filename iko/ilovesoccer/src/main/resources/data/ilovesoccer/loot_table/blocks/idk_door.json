@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "ilovesoccer:blocks/idk_door",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "ilovesoccer:idk_door",
+          "conditions": [
+            {
+              "block": "ilovesoccer:idk_door",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "half": "lower"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

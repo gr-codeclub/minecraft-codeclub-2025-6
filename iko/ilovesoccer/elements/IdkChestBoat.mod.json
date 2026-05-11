@@ -1,0 +1,15 @@
+{
+  "_fv": 85,
+  "_type": "specialentity",
+  "definition": {
+    "entityType": "ChestBoat",
+    "name": "Idk Boat with Chest",
+    "creativeTabs": [
+      {
+        "value": "TOOLS"
+      }
+    ],
+    "entityTexture": "idk_chest_boat",
+    "itemTexture": "idk_chest_boat"
+  }
+}
