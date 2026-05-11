@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "ilovesoccer:item/spellbook"
+    "model": "ilovesoccer:item/dice_block"
   }
 }

@@ -1,0 +1,25 @@
+{
+  "variants": {
+    "": {
+      "model": "ilovesoccer:block/dice_block"
+    },
+    "face=0": {
+      "model": "ilovesoccer:block/dice_block1"
+    },
+    "face=1": {
+      "model": "ilovesoccer:block/dice_block2"
+    },
+    "face=2": {
+      "model": "ilovesoccer:block/dice_block3"
+    },
+    "face=3": {
+      "model": "ilovesoccer:block/dice_block4"
+    },
+    "face=4": {
+      "model": "ilovesoccer:block/dice_block5"
+    },
+    "face=5": {
+      "model": "ilovesoccer:block/dice_block6"
+    }
+  }
+}

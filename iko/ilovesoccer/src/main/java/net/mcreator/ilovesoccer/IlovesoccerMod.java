@@ -21,7 +21,6 @@ import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.ilovesoccer.init.IlovesoccerModTabs;
-import net.mcreator.ilovesoccer.init.IlovesoccerModMenus;
 import net.mcreator.ilovesoccer.init.IlovesoccerModItems;
 import net.mcreator.ilovesoccer.init.IlovesoccerModBlocks;
 
@@ -54,7 +53,6 @@ public class IlovesoccerMod {
 		IlovesoccerModBlocks.REGISTRY.register(modEventBus);
 		IlovesoccerModItems.REGISTRY.register(modEventBus);
 		IlovesoccerModTabs.REGISTRY.register(modEventBus);
-		IlovesoccerModMenus.REGISTRY.register(modEventBus);
 		// Start of user code block mod init
 		// End of user code block mod init
 	}
