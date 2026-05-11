@@ -1,9 +1,0 @@
-{
-  "parent": "block/door_bottom_right",
-  "textures": {
-    "particle": "ilovesoccer:block/idk_door_bottom",
-    "bottom": "ilovesoccer:block/idk_door_bottom",
-    "top": "ilovesoccer:block/idk_door_top"
-  },
-  "render_type": "cutout"
-}

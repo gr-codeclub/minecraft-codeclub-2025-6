@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "ilovesoccer:block/idk_log",
-    "particle": "ilovesoccer:block/idk_log"
-  },
-  "render_type": "solid"
-}

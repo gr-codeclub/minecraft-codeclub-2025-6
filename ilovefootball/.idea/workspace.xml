@@ -4,9 +4,44 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32c3ac94-7e2a-4790-8a8b-5689a69b8e37" name="Changes" comment="yjmjtd">
-      <change beforePath="$PROJECT_DIR$/../iko/ilovesoccer/ilovesoccer.mcreator" beforeDir="false" afterPath="$PROJECT_DIR$/../iko/ilovesoccer/ilovesoccer.mcreator" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="32c3ac94-7e2a-4790-8a8b-5689a69b8e37" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../cocomelon/.mcreator/userSettings" beforeDir="false" afterPath="$PROJECT_DIR$/../cocomelon/.mcreator/userSettings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cocomelon/cocomelon.mcreator" beforeDir="false" afterPath="$PROJECT_DIR$/../cocomelon/cocomelon.mcreator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mcreator/generatorGradleCache" beforeDir="false" afterPath="$PROJECT_DIR$/.mcreator/generatorGradleCache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mcreator/userSettings" beforeDir="false" afterPath="$PROJECT_DIR$/.mcreator/userSettings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/Diceblock.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/Diceblock.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/DiceblockOnBlockRightclicked.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/DiceblockOnBlockRightclicked.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/DiceblockOnTickUpdate.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/DiceblockOnTickUpdate.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/EntityKILL.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/EntityKILL.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/Foot.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/Foot.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/FootRightclickedOnBlock.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/FootRightclickedOnBlock.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/Footballblock.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/Footballblock.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/FootballblockEntityWalksOnTheBlock.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/FootballblockEntityWalksOnTheBlock.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/FootballblockOnBlockRightclicked.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/FootballblockOnBlockRightclicked.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/Footballsomething.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/Footballsomething.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/Ilovefootball.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/Ilovefootball.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/Skillstone.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/Skillstone.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/SkillstoneRightclicked.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/SkillstoneRightclicked.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ilovefootball.mcreator" beforeDir="false" afterPath="$PROJECT_DIR$/ilovefootball.mcreator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/mcreator/ilovefootball/IlovefootballMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/mcreator/ilovefootball/IlovefootballMod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/mcreator/ilovefootball/block/DiceblockBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/mcreator/ilovefootball/block/DiceblockBlock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/mcreator/ilovefootball/block/FootballblockBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/mcreator/ilovefootball/block/FootballblockBlock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ilovefootball/blockstates/footballblock.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ilovefootball/blockstates/footballblock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ilovefootball/items/foot.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ilovefootball/items/foot.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ilovefootball/items/footballblock.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ilovefootball/items/footballblock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ilovefootball/items/footballsomething.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ilovefootball/items/footballsomething.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ilovefootball/items/skillstone.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ilovefootball/items/skillstone.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ilovefootball/models/block/footballblock.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ilovefootball/models/block/footballblock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ilovefootball/models/item/foot.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ilovefootball/models/item/foot.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ilovefootball/models/item/footballblock.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ilovefootball/models/item/footballblock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ilovefootball/models/item/footballsomething.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ilovefootball/models/item/footballsomething.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ilovefootball/models/item/skillstone.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ilovefootball/models/item/skillstone.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/ilovefootball/loot_table/blocks/footballblock.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/ilovefootball/loot_table/blocks/footballblock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,10 +93,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 5,
-  &quot;fromUser&quot;: false
-}</component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5,
+  "fromUser": false
+}]]></component>
   <component name="ProjectId" id="3COshTGll52a4B6ic7aGWIbxIjx" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -72,10 +107,9 @@
     "Gradle.ilovefootball [runClient].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "Ilovesoccer",
+    "git-widget-placeholder": "ilovefootball",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/minecraft-codeclub-2025-6/ilovefootball/build.gradle"
   }
@@ -140,22 +174,9 @@
       <option name="presentableId" value="Default" />
       <updated>1776268070442</updated>
     </task>
-    <task id="LOCAL-00001" summary="yj">
-      <option name="closed" value="true" />
-      <created>1778507212506</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1778507212506</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="yj" />
-    <option name="LAST_COMMIT_MESSAGE" value="yj" />
   </component>
 </project>
