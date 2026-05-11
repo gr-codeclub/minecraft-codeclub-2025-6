@@ -361,6 +361,36 @@
           "src/main/java/net/mcreator/ilovesoccer/procedures/SetgreetingspellProcedure.java"
         ]
       }
+    },
+    {
+      "name": "Cast",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "cast",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x_coord",
+            "type": "number"
+          },
+          {
+            "name": "y_coord",
+            "type": "number"
+          },
+          {
+            "name": "z_coord",
+            "type": "number"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/ilovesoccer/procedures/CastProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
