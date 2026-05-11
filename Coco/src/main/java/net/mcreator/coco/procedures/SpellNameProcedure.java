@@ -14,6 +14,8 @@ public class SpellNameProcedure {
 			return "Advert";
 		} else if (getEntityScore("current_spell", entity) == 1) {
 			return "Glow";
+		} else if (getEntityScore("current_spell", entity) == 2) {
+			return "Petals";
 		}
 		return "Unknown";
 	}

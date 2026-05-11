@@ -25,6 +25,7 @@ public class SpellbookGUIScreen extends AbstractContainerScreen<SpellbookGUIMenu
 	private Button button_advertisement;
 	private Button button_glow;
 	private Button button_x;
+	private Button button_a_feel_of_japan;
 	private static final ResourceLocation BACKGROUND = ResourceLocation.parse("coco:textures/screens/spellbook_gui.png");
 
 	public SpellbookGUIScreen(SpellbookGUIMenu container, Inventory inventory, Component text) {
@@ -100,5 +101,14 @@ public class SpellbookGUIScreen extends AbstractContainerScreen<SpellbookGUIMenu
 			}
 		}).bounds(this.leftPos + 142, this.topPos + 3, 30, 20).build();
 		this.addRenderableWidget(button_x);
+		button_a_feel_of_japan = Button.builder(Component.translatable("gui.coco.spellbook_gui.button_a_feel_of_japan"), e -> {
+			int x = SpellbookGUIScreen.this.x;
+			int y = SpellbookGUIScreen.this.y;
+			if (true) {
+				ClientPacketDistributor.sendToServer(new SpellbookGUIButtonMessage(3, x, y, z));
+				SpellbookGUIButtonMessage.handleButtonAction(entity, 3, x, y, z);
+			}
+		}).bounds(this.leftPos + 6, this.topPos + 111, 100, 20).build();
+		this.addRenderableWidget(button_a_feel_of_japan);
 	}
 }

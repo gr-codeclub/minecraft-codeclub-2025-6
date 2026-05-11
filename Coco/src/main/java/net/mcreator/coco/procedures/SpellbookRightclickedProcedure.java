@@ -47,16 +47,7 @@ public class SpellbookRightclickedProcedure {
 			}
 		} else {
 			Spell = getEntityScore("current_spell", entity);
-			if (Spell == 0) {
-				if (entity instanceof Player _player && !_player.level().isClientSide())
-					_player.displayClientMessage(Component.literal("Team c00lkidd. Join today!"), false);
-			} else if (Spell == 1) {
-				if (entity instanceof Player _player && !_player.level().isClientSide())
-					_player.displayClientMessage(Component.literal("Tem bluudud. Get inn noww!"), true);
-			} else {
-				if (entity instanceof Player _player && !_player.level().isClientSide())
-					_player.displayClientMessage(Component.literal("Unknown spell. Please sneak to choose a spell."), false);
-			}
+			SpellSelectedProcedure.execute(entity, x, y, z);
 		}
 	}
 

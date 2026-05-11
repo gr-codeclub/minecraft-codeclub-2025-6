@@ -92,6 +92,22 @@
           "y": 71,
           "locked": false
         }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_a_feel_of_japan",
+          "text": "A Feel of Japan",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SelectPetalSpell"
+          },
+          "width": 100,
+          "height": 20,
+          "x": 132,
+          "y": 148,
+          "locked": false
+        }
       }
     ],
     "gridSettings": {
