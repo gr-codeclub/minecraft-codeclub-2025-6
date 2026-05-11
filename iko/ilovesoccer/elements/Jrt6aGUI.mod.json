@@ -105,6 +105,22 @@
           "y": 41,
           "locked": false
         }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty",
+          "text": "firework",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "Setfireworkspell"
+          },
+          "width": 25,
+          "height": 20,
+          "x": 152,
+          "y": 157,
+          "locked": false
+        }
       }
     ],
     "gridSettings": {

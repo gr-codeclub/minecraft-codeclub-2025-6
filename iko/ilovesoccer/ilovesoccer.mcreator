@@ -391,6 +391,24 @@
           "src/main/java/net/mcreator/ilovesoccer/procedures/CastProcedure.java"
         ]
       }
+    },
+    {
+      "name": "Setfireworkspell",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "setfireworkspell",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/ilovesoccer/procedures/SetfireworkspellProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -416,7 +434,8 @@
       "gui.ilovesoccer.jrt_6a_gui.button_glow": "Glow",
       "gui.ilovesoccer.jrt_6a_gui.label_spell": "",
       "gui.ilovesoccer.jrt_6a_gui.button_greeting": "greeting",
-      "gui.ilovesoccer.jrt_6a_gui.button_x": "X"
+      "gui.ilovesoccer.jrt_6a_gui.button_x": "X",
+      "gui.ilovesoccer.jrt_6a_gui.button_empty": "firework"
     }
   },
   "metadata": {

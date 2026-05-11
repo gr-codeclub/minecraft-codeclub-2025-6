@@ -24,6 +24,7 @@ public class Jrt6aGUIScreen extends AbstractContainerScreen<Jrt6aGUIMenu> implem
 	private Button button_greeting;
 	private Button button_glow;
 	private Button button_x;
+	private Button button_empty;
 	private static final ResourceLocation BACKGROUND = ResourceLocation.parse("ilovesoccer:textures/screens/jrt_6a_gui.png");
 
 	public Jrt6aGUIScreen(Jrt6aGUIMenu container, Inventory inventory, Component text) {
@@ -94,5 +95,14 @@ public class Jrt6aGUIScreen extends AbstractContainerScreen<Jrt6aGUIMenu> implem
 		button_x = Button.builder(Component.translatable("gui.ilovesoccer.jrt_6a_gui.button_x"), e -> {
 		}).bounds(this.leftPos + 142, this.topPos + 4, 30, 20).build();
 		this.addRenderableWidget(button_x);
+		button_empty = Button.builder(Component.translatable("gui.ilovesoccer.jrt_6a_gui.button_empty"), e -> {
+			int x = Jrt6aGUIScreen.this.x;
+			int y = Jrt6aGUIScreen.this.y;
+			if (true) {
+				ClientPacketDistributor.sendToServer(new Jrt6aGUIButtonMessage(3, x, y, z));
+				Jrt6aGUIButtonMessage.handleButtonAction(entity, 3, x, y, z);
+			}
+		}).bounds(this.leftPos + 26, this.topPos + 120, 25, 20).build();
+		this.addRenderableWidget(button_empty);
 	}
 }

@@ -1,6 +1,8 @@
 package net.mcreator.ilovesoccer.procedures;
 
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.network.chat.Component;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.scores.Scoreboard;
 import net.minecraft.world.scores.ScoreHolder;
@@ -27,6 +29,11 @@ public class CastProcedure {
 			if (entity instanceof Player _player && !_player.level().isClientSide()) {
 				_player.displayClientMessage(Component.literal("Hi From Java").withStyle(net.minecraft.ChatFormatting.GOLD, net.minecraft.ChatFormatting.BOLD), false);
 			}
+		}else if (spell == 2) {
+			if (entity instanceof Player _player && _player.level() instanceof ServerLevel _level)
+				_level.sendParticles(ParticleTypes.FIREWORK, x, y, z, 5, 3, 3, 3, 1);
+
+
 		} else {
 			if (entity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal("crouch right now"), false);

@@ -16,6 +16,7 @@ import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.core.SectionPos;
 
 import net.mcreator.ilovesoccer.procedures.SetgreetingspellProcedure;
+import net.mcreator.ilovesoccer.procedures.SetfireworkspellProcedure;
 import net.mcreator.ilovesoccer.procedures.SelectGlowspellProcedure;
 import net.mcreator.ilovesoccer.IlovesoccerMod;
 
@@ -55,6 +56,10 @@ public record Jrt6aGUIButtonMessage(int buttonID, int x, int y, int z) implement
 		if (buttonID == 1) {
 
 			SelectGlowspellProcedure.execute(entity);
+		}
+		if (buttonID == 3) {
+
+			SetfireworkspellProcedure.execute(entity);
 		}
 	}
 
