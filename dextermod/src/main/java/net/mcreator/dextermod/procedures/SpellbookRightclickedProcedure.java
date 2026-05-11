@@ -47,18 +47,7 @@ public class SpellbookRightclickedProcedure {
 			}
 		} else {
 			spell = getEntityScore("current_spell", entity);
-			if (spell == 0) {
-				if (entity instanceof Player _player && !_player.level().isClientSide())
-					_player.displayClientMessage(Component.literal("Hi From MCreator"), false);
-			} else if (spell == 1) {
-				if (entity instanceof Player _player) {
-					_player.displayClientMessage(Component.literal("Hello World").withStyle(net.minecraft.ChatFormatting.RED, net.minecraft.ChatFormatting.BOLD), true);
-					entity.setGlowingTag(true);
-				}
-			} else {
-				if (entity instanceof Player _player && !_player.level().isClientSide())
-					_player.displayClientMessage(Component.literal("Unknown spell, please sneak to pick a spell"), true);
-			}
+			CastSpellProcedure.execute(entity, x, y, z);
 		}
 	}
 

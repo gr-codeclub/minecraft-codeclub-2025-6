@@ -16,6 +16,8 @@ public class SpellNameProcedure {
 			spell_name = "Greeting";
 		} else if (spell == 1) {
 			spell_name = "Glow";
+		} else if (spell == 2) {
+			spell_name = "Firework";
 		} else {
 			spell_name = "Unknown Spell";
 		}

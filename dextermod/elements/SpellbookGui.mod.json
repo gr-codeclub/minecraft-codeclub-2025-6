@@ -92,6 +92,22 @@
           "y": 44,
           "locked": false
         }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_firework",
+          "text": "Firework",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SelectParticlesSpell"
+          },
+          "width": 65,
+          "height": 20,
+          "x": 141,
+          "y": 143,
+          "locked": false
+        }
       }
     ],
     "gridSettings": {

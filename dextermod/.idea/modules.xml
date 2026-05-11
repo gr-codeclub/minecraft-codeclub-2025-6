@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/dextermod.main.iml" filepath="$PROJECT_DIR$/.idea/modules/dextermod.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/minecraft-codeclub-2025-6.dextermod.main.iml" filepath="$PROJECT_DIR$/.idea/modules/minecraft-codeclub-2025-6.dextermod.main.iml" />
     </modules>
   </component>
 </project>

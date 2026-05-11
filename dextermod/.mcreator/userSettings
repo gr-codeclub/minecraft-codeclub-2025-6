@@ -4,10 +4,16 @@
   "workspacePanelSortAscending": true,
   "projectBrowserState": {
     "expandedPaths": [
-      "[, dextermod]"
+      "[, dextermod]",
+      "[, dextermod, Source (Gradle)]",
+      "[, dextermod, Source (Gradle), E:\\Code\\minecraft-codeclub-2025-6\\dextermod\\src\\main\\java\\net]",
+      "[, dextermod, Source (Gradle), E:\\Code\\minecraft-codeclub-2025-6\\dextermod\\src\\main\\java\\net, E:\\Code\\minecraft-codeclub-2025-6\\dextermod\\src\\main\\java\\net\\mcreator]",
+      "[, dextermod, Source (Gradle), E:\\Code\\minecraft-codeclub-2025-6\\dextermod\\src\\main\\java\\net, E:\\Code\\minecraft-codeclub-2025-6\\dextermod\\src\\main\\java\\net\\mcreator, E:\\Code\\minecraft-codeclub-2025-6\\dextermod\\src\\main\\java\\net\\mcreator\\dextermod]",
+      "[, dextermod, Source (Gradle), E:\\Code\\minecraft-codeclub-2025-6\\dextermod\\src\\main\\java\\net, E:\\Code\\minecraft-codeclub-2025-6\\dextermod\\src\\main\\java\\net\\mcreator, E:\\Code\\minecraft-codeclub-2025-6\\dextermod\\src\\main\\java\\net\\mcreator\\dextermod, E:\\Code\\minecraft-codeclub-2025-6\\dextermod\\src\\main\\java\\net\\mcreator\\dextermod\\procedures]"
     ]
   },
   "leftDockState": {
+    "expandedDock": "project_browser",
     "dockSizes": {
       "project_browser": 280
     }

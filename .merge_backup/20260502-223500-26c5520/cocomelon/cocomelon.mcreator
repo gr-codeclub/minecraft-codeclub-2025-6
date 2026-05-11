@@ -1,0 +1,330 @@
+{
+  "mod_elements": [
+    {
+      "name": "Cocomelon1",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cocomelon_1",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "Cocomelon2",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cocomelon_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cocomelon/block/Cocomelon2Block.java",
+          "src/main/resources/assets/cocomelon/blockstates/cocomelon_2.json",
+          "src/main/resources/assets/cocomelon/items/cocomelon_2.json",
+          "src/main/resources/assets/cocomelon/models/block/cocomelon_2.json",
+          "src/main/resources/data/cocomelon/loot_table/blocks/cocomelon_2.json",
+          "src/main/resources/assets/cocomelon/models/item/cocomelon_2.json"
+        ]
+      }
+    },
+    {
+      "name": "Cocomelon2BlockDestroyedByPlayer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cocomelon_2_block_destroyed_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/cocomelon/procedures/Cocomelon2BlockDestroyedByPlayerProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "COCOMELON3",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cocomelon_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cocomelon/item/COCOMELON3Item.java",
+          "src/main/resources/assets/cocomelon/models/item/cocomelon_3.json",
+          "src/main/resources/assets/cocomelon/models/item/cocomelon_3_gui.json",
+          "src/main/resources/assets/cocomelon/items/cocomelon_3.json"
+        ]
+      }
+    },
+    {
+      "name": "COCOMELON676676767",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cocomelon_676676767",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cocomelon/models/item/cocomelon_676676767_gui.json",
+          "src/main/java/net/mcreator/cocomelon/item/COCOMELON676676767Item.java",
+          "src/main/resources/assets/cocomelon/models/item/cocomelon_676676767.json",
+          "src/main/resources/assets/cocomelon/items/cocomelon_676676767.json"
+        ]
+      }
+    },
+    {
+      "name": "COCOMELON676676767Rightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cocomelon_676676767_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/cocomelon/procedures/COCOMELON676676767RightclickedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "COCOMELON676676767BlockDestroyedWithTool",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cocomelon_676676767_block_destroyed_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/cocomelon/procedures/COCOMELON676676767BlockDestroyedWithToolProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Cocomelonwepon1OnBlockRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cocomelonwepon_1_on_block_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/cocomelon/procedures/Cocomelonwepon1OnBlockRightclickedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Cocomelonwepon1",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cocomelonwepon_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cocomelon/block/Cocomelonwepon1Block.java",
+          "src/main/resources/assets/cocomelon/items/cocomelonwepon_1.json",
+          "src/main/java/net/mcreator/cocomelon/block/entity/Cocomelonwepon1BlockEntity.java",
+          "src/main/resources/assets/cocomelon/models/item/cocomelonwepon_1.json",
+          "src/main/resources/data/cocomelon/loot_table/blocks/cocomelonwepon_1.json",
+          "src/main/resources/assets/cocomelon/blockstates/cocomelonwepon_1.json",
+          "src/main/resources/assets/cocomelon/models/block/cocomelonwepon_1.json"
+        ]
+      }
+    },
+    {
+      "name": "Cheesecocomelon",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cheesecocomelon",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/cocomelon/procedures/CheesecocomelonProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Hicocomelon",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hicocomelon",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cocomelon/block/HicocomelonBlock.java",
+          "src/main/resources/assets/cocomelon/models/item/hicocomelon.json",
+          "src/main/resources/data/cocomelon/loot_table/blocks/hicocomelon.json",
+          "src/main/resources/assets/cocomelon/models/block/hicocomelon.json",
+          "src/main/resources/assets/cocomelon/blockstates/hicocomelon.json",
+          "src/main/resources/assets/cocomelon/items/hicocomelon.json"
+        ]
+      }
+    },
+    {
+      "name": "Coco",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coco",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/cocomelon/procedures/CocoProcedure.java"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {
+    "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:COCOMELON676676767",
+      "~CUSTOM:COCOMELON3"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "item_group.cocomelon.cocomelon_1": "Cocomelon 1",
+      "item.cocomelon.cocomelon_2": "Cocomelon 2",
+      "item.cocomelon.cocomelon_3": "COCOMELON 3",
+      "item.cocomelon.cocomelon_676676767": "COCOMELON 6 7 6 6 7 6 7 6 7",
+      "item.cocomelon.cocomelonwepon_1": "Cocomelonwepon 1",
+      "item.cocomelon.hicocomelon": "Hicocomelon"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/net/mcreator/cocomelon/init/CocomelonModBlocks.java",
+      "src/main/java/net/mcreator/cocomelon/init/CocomelonModBlockEntities.java",
+      "src/main/java/net/mcreator/cocomelon/init/CocomelonModItems.java",
+      "src/main/java/net/mcreator/cocomelon/CocomelonMod.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/cocomelon/init/CocomelonModTabs.java"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "cocomelon",
+    "modName": "cocomelon",
+    "version": "1.0.0",
+    "author": "MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.21.8",
+    "modElementsPackage": "net.mcreator.cocomelon"
+  },
+  "mcreatorVersion": 202600114619
+}
