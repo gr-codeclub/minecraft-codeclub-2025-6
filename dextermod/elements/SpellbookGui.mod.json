@@ -108,6 +108,22 @@
           "y": 143,
           "locked": false
         }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_storm",
+          "text": "Storm",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SelectStormSpell"
+          },
+          "width": 50,
+          "height": 20,
+          "x": 141,
+          "y": 170,
+          "locked": false
+        }
       }
     ],
     "gridSettings": {

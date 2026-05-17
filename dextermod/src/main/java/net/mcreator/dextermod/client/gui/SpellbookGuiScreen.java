@@ -26,6 +26,7 @@ public class SpellbookGuiScreen extends AbstractContainerScreen<SpellbookGuiMenu
 	private Button button_glow;
 	private Button button_x;
 	private Button button_firework;
+	private Button button_storm;
 	private static final ResourceLocation BACKGROUND = ResourceLocation.parse("dextermod:textures/screens/spellbook_gui.png");
 
 	public SpellbookGuiScreen(SpellbookGuiMenu container, Inventory inventory, Component text) {
@@ -110,5 +111,14 @@ public class SpellbookGuiScreen extends AbstractContainerScreen<SpellbookGuiMenu
 			}
 		}).bounds(this.leftPos + 15, this.topPos + 106, 65, 20).build();
 		this.addRenderableWidget(button_firework);
+		button_storm = Button.builder(Component.translatable("gui.dextermod.spellbook_gui.button_storm"), e -> {
+			int x = SpellbookGuiScreen.this.x;
+			int y = SpellbookGuiScreen.this.y;
+			if (true) {
+				ClientPacketDistributor.sendToServer(new SpellbookGuiButtonMessage(4, x, y, z));
+				SpellbookGuiButtonMessage.handleButtonAction(entity, 4, x, y, z);
+			}
+		}).bounds(this.leftPos + 15, this.topPos + 133, 50, 20).build();
+		this.addRenderableWidget(button_storm);
 	}
 }

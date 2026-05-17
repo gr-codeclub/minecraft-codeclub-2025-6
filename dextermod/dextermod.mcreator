@@ -481,6 +481,24 @@
           "src/main/java/net/mcreator/dextermod/procedures/SelectParticlesSpellProcedure.java"
         ]
       }
+    },
+    {
+      "name": "SelectStormSpell",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "select_storm_spell",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/dextermod/procedures/SelectStormSpellProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -504,7 +522,8 @@
       "gui.dextermod.spellbook_gui.button_glow": "Glow",
       "gui.dextermod.spellbook_gui.button_greeting": "Greeting",
       "gui.dextermod.spellbook_gui.button_x": "X",
-      "gui.dextermod.spellbook_gui.button_firework": "Firework"
+      "gui.dextermod.spellbook_gui.button_firework": "Firework",
+      "gui.dextermod.spellbook_gui.button_storm": "Storm"
     }
   },
   "metadata": {

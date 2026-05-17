@@ -15,6 +15,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.core.SectionPos;
 
+import net.mcreator.dextermod.procedures.SelectStormSpellProcedure;
 import net.mcreator.dextermod.procedures.SelectParticlesSpellProcedure;
 import net.mcreator.dextermod.procedures.SelectGreetingSpellProcedure;
 import net.mcreator.dextermod.procedures.SelectGlowSpellProcedure;
@@ -65,6 +66,10 @@ public record SpellbookGuiButtonMessage(int buttonID, int x, int y, int z) imple
 		if (buttonID == 3) {
 
 			SelectParticlesSpellProcedure.execute(entity);
+		}
+		if (buttonID == 4) {
+
+			SelectStormSpellProcedure.execute(entity);
 		}
 	}
 
