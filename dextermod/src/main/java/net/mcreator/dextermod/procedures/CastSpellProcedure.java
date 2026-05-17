@@ -67,9 +67,9 @@ public class CastSpellProcedure {
 						if (r.nextBoolean()) {
 							LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_world, EntitySpawnReason.TRIGGERED);
 
-							// Pick a shape - swap which line is active to try each one!
-							// In game use the command "/scoreboard players set @s spell_mode <number>" to change the shape (1-5, anything else defaults to straightLineBolt)
-							// To add the new scoreboard objective: "/scoreboard objectives add spell_mode dummy"
+							// Pick a shape based on the spell_mode scoreboard.
+							// In game, type "/spellmode <0-5>" to switch shapes (registered in SpellModeCommand.java).
+							// Anything outside 1-5 falls through to straightLineBolt via the default case.
 							Vec3 target = switch (spellMode) {
 								case 1 -> smoothDirectionBolt(entity, x, y, z, i, r);
 								case 2 -> ringBolt(entity, x, y, z, i, r);
