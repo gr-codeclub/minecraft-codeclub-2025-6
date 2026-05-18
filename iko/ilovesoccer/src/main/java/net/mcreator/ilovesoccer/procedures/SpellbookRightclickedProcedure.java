@@ -43,7 +43,7 @@ public class SpellbookRightclickedProcedure {
 				}, _bpos);
 			}
 		} else {
-			CastProcedure(entity, x, y, z);
+			CastProcedure.execute(entity, x, y, z);
 		}
 	}
 }
