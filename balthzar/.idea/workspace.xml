@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9ad66c99-a7f7-4b19-aff3-2baf84adee69" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../ilovefootball/.eclipse/configurations/Client.launch" beforeDir="false" afterPath="$PROJECT_DIR$/../ilovefootball/.eclipse/configurations/Client.launch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ilovefootball/.eclipse/configurations/Server.launch" beforeDir="false" afterPath="$PROJECT_DIR$/../ilovefootball/.eclipse/configurations/Server.launch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ilovefootball/.mcreator/generatorGradleCache" beforeDir="false" afterPath="$PROJECT_DIR$/../ilovefootball/.mcreator/generatorGradleCache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ilovefootball/elements/GUIfootball.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ilovefootball/elements/GUIfootball.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ilovefootball/elements/Selectglowproceduce.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ilovefootball/elements/Selectglowproceduce.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ilovefootball/elements/Spellbook.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ilovefootball/elements/Spellbook.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ilovefootball/elements/SpellbookRightclicked.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ilovefootball/elements/SpellbookRightclicked.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ilovefootball/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../ilovefootball/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ilovefootball/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../ilovefootball/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ilovefootball/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/../ilovefootball/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ilovefootball/ilovefootball.mcreator" beforeDir="false" afterPath="$PROJECT_DIR$/../ilovefootball/ilovefootball.mcreator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ilovefootball/src/main/java/net/mcreator/ilovefootball/procedures/SpellbookRightclickedProcedure.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ilovefootball/src/main/java/net/mcreator/ilovefootball/procedures/SpellbookRightclickedProcedure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ilovefootball/src/main/resources/assets/ilovefootball/items/spellbook.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ilovefootball/src/main/resources/assets/ilovefootball/items/spellbook.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ilovefootball/src/main/resources/assets/ilovefootball/lang/en_us.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ilovefootball/src/main/resources/assets/ilovefootball/lang/en_us.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ilovefootball/src/main/resources/assets/ilovefootball/models/item/spellbook.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ilovefootball/src/main/resources/assets/ilovefootball/models/item/spellbook.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ilovefootball/src/main/resources/data/minecraft/tags/item/pickaxes.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ilovefootball/src/main/resources/data/minecraft/tags/item/pickaxes.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ilovefootball/src/main/resources/pack.mcmeta" beforeDir="false" afterPath="$PROJECT_DIR$/../ilovefootball/src/main/resources/pack.mcmeta" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="balthzar" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="balthzar" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="balthzar" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="mod development" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3COqMkhekixITibOdvqU1nPbBgf" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.balthzar [runClient].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "ilovefootball",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/minecraft-codeclub-2025-6/balthzar",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.Client">
+    <configuration name="Client" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="net.neoforged.devlaunch.Main" />
+      <module name="balthzar.main" />
+      <option name="PROGRAM_PARAMETERS" value="@C:\\minecraft-codeclub-2025-6\\balthzar\\build\\moddev\\clientRunProgramArgs.txt" />
+      <option name="VM_PARAMETERS" value="@C:\\minecraft-codeclub-2025-6\\balthzar\\build\\moddev\\clientRunVmArgs.txt -Dfml.modFolders=mcreator%%C:\\minecraft-codeclub-2025-6\\balthzar\\build\\classes\\java\\main;mcreator%%C:\\minecraft-codeclub-2025-6\\balthzar\\build\\resources\\main" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Server" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="net.neoforged.devlaunch.Main" />
+      <module name="balthzar.main" />
+      <option name="PROGRAM_PARAMETERS" value="@C:\\minecraft-codeclub-2025-6\\balthzar\\build\\moddev\\serverRunProgramArgs.txt" />
+      <option name="VM_PARAMETERS" value="@C:\\minecraft-codeclub-2025-6\\balthzar\\build\\moddev\\serverRunVmArgs.txt -Dfml.modFolders=mcreator%%C:\\minecraft-codeclub-2025-6\\balthzar\\build\\classes\\java\\main;mcreator%%C:\\minecraft-codeclub-2025-6\\balthzar\\build\\resources\\main" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9ad66c99-a7f7-4b19-aff3-2baf84adee69" name="Changes" comment="" />
+      <created>1776266921483</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1776266921483</updated>
+      <workItem from="1776266940645" duration="76000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

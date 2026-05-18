@@ -386,6 +386,40 @@
           "src/main/java/net/mcreator/ilovefootball/procedures/SelectglowproceduceProcedure.java"
         ]
       }
+    },
+    {
+      "name": "Cast",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "cast",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/ilovefootball/procedures/CastProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],

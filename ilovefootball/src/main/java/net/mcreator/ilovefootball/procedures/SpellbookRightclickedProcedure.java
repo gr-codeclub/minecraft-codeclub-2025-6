@@ -47,15 +47,7 @@ public class SpellbookRightclickedProcedure {
 			}
 		} else {
 			spell = getEntityScore("current_spell", entity);
-			if (spell == 0) {
-				if (entity instanceof Player _player && !_player.level().isClientSide())
-					_player.displayClientMessage(Component.literal("Hi from MCreater"), false);
-			} else if (spell == 1) {
-				if (entity instanceof Player _player && !_player.level().isClientSide())
-					_player.displayClientMessage(Component.literal("Hi from Java"), false);
-				if (entity instanceof Player _player && !_player.level().isClientSide())
-					_player.displayClientMessage(Component.literal("bow to me now"), false);
-			}
+			CastProcedure.execute(world, x, y, z, entity);
 		}
 	}
 
