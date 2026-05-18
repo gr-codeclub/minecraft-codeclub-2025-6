@@ -26,6 +26,7 @@ public class SpellbookGUIScreen extends AbstractContainerScreen<SpellbookGUIMenu
 	private Button button_glow;
 	private Button button_x;
 	private Button button_a_feel_of_japan;
+	private Button button_storm;
 	private static final ResourceLocation BACKGROUND = ResourceLocation.parse("coco:textures/screens/spellbook_gui.png");
 
 	public SpellbookGUIScreen(SpellbookGUIMenu container, Inventory inventory, Component text) {
@@ -67,7 +68,7 @@ public class SpellbookGUIScreen extends AbstractContainerScreen<SpellbookGUIMenu
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, Component.translatable("gui.coco.spellbook_gui.label_welcome_to_the_spellbook"), 7, 6, -16751002, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.coco.spellbook_gui.label_welcome_to_the_spellbook"), 5, 4, -16751002, false);
 		guiGraphics.drawString(this.font, SpellNameProcedure.execute(entity), 6, 34, -16777165, false);
 	}
 
@@ -99,7 +100,7 @@ public class SpellbookGUIScreen extends AbstractContainerScreen<SpellbookGUIMenu
 				ClientPacketDistributor.sendToServer(new SpellbookGUIButtonMessage(2, x, y, z));
 				SpellbookGUIButtonMessage.handleButtonAction(entity, 2, x, y, z);
 			}
-		}).bounds(this.leftPos + 142, this.topPos + 3, 30, 20).build();
+		}).bounds(this.leftPos + 143, this.topPos + 3, 30, 20).build();
 		this.addRenderableWidget(button_x);
 		button_a_feel_of_japan = Button.builder(Component.translatable("gui.coco.spellbook_gui.button_a_feel_of_japan"), e -> {
 			int x = SpellbookGUIScreen.this.x;
@@ -110,5 +111,14 @@ public class SpellbookGUIScreen extends AbstractContainerScreen<SpellbookGUIMenu
 			}
 		}).bounds(this.leftPos + 6, this.topPos + 111, 100, 20).build();
 		this.addRenderableWidget(button_a_feel_of_japan);
+		button_storm = Button.builder(Component.translatable("gui.coco.spellbook_gui.button_storm"), e -> {
+			int x = SpellbookGUIScreen.this.x;
+			int y = SpellbookGUIScreen.this.y;
+			if (true) {
+				ClientPacketDistributor.sendToServer(new SpellbookGUIButtonMessage(4, x, y, z));
+				SpellbookGUIButtonMessage.handleButtonAction(entity, 4, x, y, z);
+			}
+		}).bounds(this.leftPos + 6, this.topPos + 138, 50, 20).build();
+		this.addRenderableWidget(button_storm);
 	}
 }

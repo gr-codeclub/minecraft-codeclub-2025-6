@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2954078f-b8f4-4291-a72d-97d2765ffde8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Coco/coco.mcreator" beforeDir="false" afterPath="$PROJECT_DIR$/../../Coco/coco.mcreator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Coco/src/main/resources/assets/coco/lang/en_us.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Coco/src/main/resources/assets/coco/lang/en_us.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Coco/src/main/resources/data/minecraft/tags/item/pickaxes.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Coco/src/main/resources/data/minecraft/tags/item/pickaxes.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Coco/src/main/resources/data/minecraft/tags/item/shovels.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Coco/src/main/resources/data/minecraft/tags/item/shovels.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Coco/src/main/resources/pack.mcmeta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Coco/src/main/resources/pack.mcmeta" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="3Dtqvqhm4SXJ3dC7MNwL6wBNJ3T" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "Coco",
+    "kotlin-language-version-configured": "true",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2954078f-b8f4-4291-a72d-97d2765ffde8" name="Changes" comment="" />
+      <created>1779111951820</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1779111951820</updated>
+      <workItem from="1779111955261" duration="10000" />
+    </task>
+    <servers />
+  </component>
+</project>

@@ -1,14 +1,21 @@
 package net.mcreator.coco.procedures;
 
 import net.minecraft.ChatFormatting;
+import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.world.entity.EntitySpawnReason;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.LightningBolt;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.scores.Scoreboard;
 import net.minecraft.world.scores.ScoreHolder;
 import net.minecraft.world.scores.Objective;
 import net.minecraft.world.entity.Entity;
+
+import java.util.Random;
 
 import static com.ibm.icu.impl.ValidIdentifiers.Datatype.x;
 
@@ -36,10 +43,26 @@ public class SpellSelectedProcedure {
 				_player.displayClientMessage(Component.literal("Tem bluudud. Get inn noww!"), true);
 		} else if (Spell == 2) {
 			if (entity instanceof Player _player && _player.level() instanceof ServerLevel _world) {
-				_world.sendParticles(ParticleTypes.CHERRY_LEAVES, X, Y ,Z , 50, 3, 3, 3, 1);
+				_world.sendParticles(ParticleTypes.CHERRY_LEAVES, X, Y, Z, 50, 3, 3, 3, 1);
 				_player.displayClientMessage(Component.literal("Flowers").withStyle(ChatFormatting.LIGHT_PURPLE,
-						ChatFormatting.ITALIC),	true);
+						ChatFormatting.ITALIC), true);
 				entity.setGlowingTag(true);
+
+			}
+		} else if (Spell == 3) {
+			if (entity instanceof Player _player && _player.level() instanceof ServerLevel _level) {
+            	int spellMode = SpellSelectedProcedure.getEntityScore("spell_mode" , entity);
+				Random r = new Random();
+				for (int i = 0; i < 50; i++) {
+					_level. sendParticles(ParticleTypes.ELECTRIC_SPARK, X, Y + i, Z, 5, 0.2, 0, 0.2, 0);
+					if (r.nextBoolean()) {
+						LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level, EntitySpawnReason.TRIGGERED);
+						entityToSpawn.snapTo(Vec3.atBottomCenterOf(BlockPos.containing(X_Coord + entity.getLookAngle().normalize().x * i + 2, Y_Coord, Z_Coord + entity.getLookAngle().normalize().z * i + 2)));
+//						entityToSpawn.snapTo(Vec3.atBottomCenterOf(BlockPos.containing(entity.getDirection().getStepX() * i + 2, entity.getY(),entity.getDirection().getStepZ() * i + 2)));
+						_level.addFreshEntity(entityToSpawn);
+
+					}
+				}
 			}
 		} else {
 			if (entity instanceof Player _player && !_player.level().isClientSide())

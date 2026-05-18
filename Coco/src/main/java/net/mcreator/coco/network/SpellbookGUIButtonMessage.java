@@ -15,6 +15,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.core.SectionPos;
 
+import net.mcreator.coco.procedures.SelectStormSpellProcedure;
 import net.mcreator.coco.procedures.SelectPetalSpellProcedure;
 import net.mcreator.coco.procedures.SelectGlowSpellProcedure;
 import net.mcreator.coco.procedures.SelectAdvertisementSpellProcedure;
@@ -65,6 +66,10 @@ public record SpellbookGUIButtonMessage(int buttonID, int x, int y, int z) imple
 		if (buttonID == 3) {
 
 			SelectPetalSpellProcedure.execute(entity);
+		}
+		if (buttonID == 4) {
+
+			SelectStormSpellProcedure.execute(entity);
 		}
 	}
 
