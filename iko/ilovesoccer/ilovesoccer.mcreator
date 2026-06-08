@@ -409,6 +409,44 @@
           "src/main/java/net/mcreator/ilovesoccer/procedures/SetfireworkspellProcedure.java"
         ]
       }
+    },
+    {
+      "name": "Lavacreeper",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lavacreeper",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ilovesoccer/items/lavacreeper_spawn_egg.json",
+          "src/main/java/net/mcreator/ilovesoccer/client/renderer/LavacreeperRenderer.java",
+          "src/main/java/net/mcreator/ilovesoccer/entity/LavacreeperEntity.java",
+          "src/main/resources/data/ilovesoccer/neoforge/biome_modifier/lavacreeper_biome_modifier.json",
+          "src/main/resources/assets/ilovesoccer/models/item/lavacreeper_spawn_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "LavacreeperPlayerCollidesWithThisEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lavacreeper_player_collides_with_this_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/ilovesoccer/procedures/LavacreeperPlayerCollidesWithThisEntityProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -435,7 +473,9 @@
       "gui.ilovesoccer.jrt_6a_gui.label_spell": "",
       "gui.ilovesoccer.jrt_6a_gui.button_greeting": "greeting",
       "gui.ilovesoccer.jrt_6a_gui.button_x": "X",
-      "gui.ilovesoccer.jrt_6a_gui.button_empty": "firework"
+      "gui.ilovesoccer.jrt_6a_gui.button_empty": "firework",
+      "entity.ilovesoccer.lavacreeper": "Lavacreeper",
+      "item.ilovesoccer.lavacreeper_spawn_egg": "Lavacreeper Spawn Egg"
     }
   },
   "metadata": {
@@ -445,6 +485,8 @@
       "src/main/java/net/mcreator/ilovesoccer/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/ilovesoccer/init/IlovesoccerModBlocks.java",
       "src/main/java/net/mcreator/ilovesoccer/init/IlovesoccerModItems.java",
+      "src/main/java/net/mcreator/ilovesoccer/init/IlovesoccerModEntities.java",
+      "src/main/java/net/mcreator/ilovesoccer/init/IlovesoccerModEntityRenderers.java",
       "src/main/java/net/mcreator/ilovesoccer/IlovesoccerMod.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/java/net/mcreator/ilovesoccer/init/IlovesoccerModTabs.java",

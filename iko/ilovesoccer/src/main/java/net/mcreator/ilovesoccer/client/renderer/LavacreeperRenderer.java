@@ -1,0 +1,42 @@
+package net.mcreator.ilovesoccer.client.renderer;
+
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.client.renderer.entity.state.CreeperRenderState;
+import net.minecraft.client.renderer.entity.MobRenderer;
+import net.minecraft.client.renderer.entity.EntityRendererProvider;
+import net.minecraft.client.model.geom.ModelLayers;
+import net.minecraft.client.model.CreeperModel;
+
+import net.mcreator.ilovesoccer.entity.LavacreeperEntity;
+
+import com.mojang.blaze3d.vertex.PoseStack;
+
+public class LavacreeperRenderer extends MobRenderer<LavacreeperEntity, CreeperRenderState, CreeperModel> {
+	private LavacreeperEntity entity = null;
+	private final ResourceLocation entityTexture = ResourceLocation.parse("ilovesoccer:textures/entities/img.png");
+
+	public LavacreeperRenderer(EntityRendererProvider.Context context) {
+		super(context, new CreeperModel(context.bakeLayer(ModelLayers.CREEPER)), 0.5f);
+	}
+
+	@Override
+	public CreeperRenderState createRenderState() {
+		return new CreeperRenderState();
+	}
+
+	@Override
+	public void extractRenderState(LavacreeperEntity entity, CreeperRenderState state, float partialTicks) {
+		super.extractRenderState(entity, state, partialTicks);
+		this.entity = entity;
+	}
+
+	@Override
+	public ResourceLocation getTextureLocation(CreeperRenderState state) {
+		return entityTexture;
+	}
+
+	@Override
+	protected void scale(CreeperRenderState state, PoseStack poseStack) {
+		poseStack.scale(entity.getAgeScale(), entity.getAgeScale(), entity.getAgeScale());
+	}
+}

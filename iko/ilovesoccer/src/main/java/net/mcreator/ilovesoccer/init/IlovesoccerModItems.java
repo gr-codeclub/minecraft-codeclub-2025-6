@@ -8,6 +8,7 @@ import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredHolder;
 
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.item.SpawnEggItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
@@ -26,12 +27,14 @@ public class IlovesoccerModItems {
 	public static final DeferredItem<Item> VEINMINER;
 	public static final DeferredItem<Item> SKILLSTONE;
 	public static final DeferredItem<Item> SPELLBOOK;
+	public static final DeferredItem<Item> LAVACREEPER_SPAWN_EGG;
 	static {
 		VOLDERMOLTHASA_BI_GNOSE = block(IlovesoccerModBlocks.VOLDERMOLTHASA_BI_GNOSE);
 		VOLDERMOLTBWOAANBD = register("voldermoltbwoaanbd", VoldermoltbwoaanbdItem::new);
 		VEINMINER = register("veinminer", VeinminerItem::new);
 		SKILLSTONE = register("skillstone", SkillstoneItem::new);
 		SPELLBOOK = register("spellbook", SpellbookItem::new);
+		LAVACREEPER_SPAWN_EGG = register("lavacreeper_spawn_egg", properties -> new SpawnEggItem(IlovesoccerModEntities.LAVACREEPER.get(), properties));
 	}
 
 	// Start of user code block custom items
