@@ -1,0 +1,37 @@
+{
+  "workspacePanelIconSize": "TILES",
+  "workspacePanelSortType": "CREATED",
+  "workspacePanelSortAscending": true,
+  "projectBrowserState": {
+    "expandedPaths": [
+      "[, coco]",
+      "[, coco, Source (Gradle)]",
+      "[, coco, Source (Gradle), C:\\minecraft-codeclub-2025-6\\Coco\\src\\main\\java\\net]",
+      "[, coco, Source (Gradle), C:\\minecraft-codeclub-2025-6\\Coco\\src\\main\\java\\net, C:\\minecraft-codeclub-2025-6\\Coco\\src\\main\\java\\net\\mcreator]",
+      "[, coco, Source (Gradle), C:\\minecraft-codeclub-2025-6\\Coco\\src\\main\\java\\net, C:\\minecraft-codeclub-2025-6\\Coco\\src\\main\\java\\net\\mcreator, C:\\minecraft-codeclub-2025-6\\Coco\\src\\main\\java\\net\\mcreator\\coco]",
+      "[, coco, Source (Gradle), C:\\minecraft-codeclub-2025-6\\Coco\\src\\main\\java\\net, C:\\minecraft-codeclub-2025-6\\Coco\\src\\main\\java\\net\\mcreator, C:\\minecraft-codeclub-2025-6\\Coco\\src\\main\\java\\net\\mcreator\\coco, C:\\minecraft-codeclub-2025-6\\Coco\\src\\main\\java\\net\\mcreator\\coco\\block]",
+      "[, coco, Source (Gradle), C:\\minecraft-codeclub-2025-6\\Coco\\src\\main\\java\\net, C:\\minecraft-codeclub-2025-6\\Coco\\src\\main\\java\\net\\mcreator, C:\\minecraft-codeclub-2025-6\\Coco\\src\\main\\java\\net\\mcreator\\coco, C:\\minecraft-codeclub-2025-6\\Coco\\src\\main\\java\\net\\mcreator\\coco\\procedures]",
+      "[, coco, Resources (Gradle)]",
+      "[, coco, Resources (Gradle), C:\\minecraft-codeclub-2025-6\\Coco\\src\\main\\resources\\assets]",
+      "[, coco, Resources (Gradle), C:\\minecraft-codeclub-2025-6\\Coco\\src\\main\\resources\\assets, C:\\minecraft-codeclub-2025-6\\Coco\\src\\main\\resources\\assets\\coco]",
+      "[, coco, Resources (Gradle), C:\\minecraft-codeclub-2025-6\\Coco\\src\\main\\resources\\assets, C:\\minecraft-codeclub-2025-6\\Coco\\src\\main\\resources\\assets\\coco, C:\\minecraft-codeclub-2025-6\\Coco\\src\\main\\resources\\assets\\coco\\blockstates]",
+      "[, coco, Resources (Gradle), C:\\minecraft-codeclub-2025-6\\Coco\\src\\main\\resources\\assets, C:\\minecraft-codeclub-2025-6\\Coco\\src\\main\\resources\\assets\\coco, C:\\minecraft-codeclub-2025-6\\Coco\\src\\main\\resources\\assets\\coco\\models]",
+      "[, coco, Resources (Gradle), C:\\minecraft-codeclub-2025-6\\Coco\\src\\main\\resources\\assets, C:\\minecraft-codeclub-2025-6\\Coco\\src\\main\\resources\\assets\\coco, C:\\minecraft-codeclub-2025-6\\Coco\\src\\main\\resources\\assets\\coco\\models, C:\\minecraft-codeclub-2025-6\\Coco\\src\\main\\resources\\assets\\coco\\models\\block]",
+      "[, coco, Resources (Gradle), C:\\minecraft-codeclub-2025-6\\Coco\\src\\main\\resources\\assets, C:\\minecraft-codeclub-2025-6\\Coco\\src\\main\\resources\\assets\\coco, C:\\minecraft-codeclub-2025-6\\Coco\\src\\main\\resources\\assets\\coco\\textures]",
+      "[, coco, Resources (Gradle), C:\\minecraft-codeclub-2025-6\\Coco\\src\\main\\resources\\assets, C:\\minecraft-codeclub-2025-6\\Coco\\src\\main\\resources\\assets\\coco, C:\\minecraft-codeclub-2025-6\\Coco\\src\\main\\resources\\assets\\coco\\textures, C:\\minecraft-codeclub-2025-6\\Coco\\src\\main\\resources\\assets\\coco\\textures\\block]"
+    ]
+  },
+  "leftDockState": {
+    "dockSizes": {
+      "project_browser": 280
+    }
+  },
+  "bottomDockState": {
+    "expandedDock": "console",
+    "dockSizes": {
+      "console": 300,
+      "code_viewer": 300,
+      "debugger": 300
+    }
+  }
+}

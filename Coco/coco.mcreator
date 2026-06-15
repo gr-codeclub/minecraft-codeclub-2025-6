@@ -1,0 +1,595 @@
+{
+  "mod_elements": [
+    {
+      "name": "Coco",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coco",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "QuickCoco",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quick_coco",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/coco/block/QuickCocoBlock.java",
+          "src/main/resources/assets/coco/models/block/quick_coco.json",
+          "src/main/resources/assets/coco/blockstates/quick_coco.json",
+          "src/main/resources/assets/coco/models/item/quick_coco.json",
+          "src/main/resources/data/coco/loot_table/blocks/quick_coco.json",
+          "src/main/resources/assets/coco/items/quick_coco.json"
+        ]
+      }
+    },
+    {
+      "name": "QuickCocoEntityWalksOnTheBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quick_coco_entity_walks_on_the_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/coco/procedures/QuickCocoEntityWalksOnTheBlockProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "WandRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wand_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/coco/procedures/WandRightclickedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Wand",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wand",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/coco/item/WandItem.java",
+          "src/main/resources/assets/coco/items/wand.json",
+          "src/main/resources/assets/coco/models/item/wand.json"
+        ]
+      }
+    },
+    {
+      "name": "BlockDissapearererRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "block_dissapearerer_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/coco/procedures/BlockDissapearererRightclickedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "BlockDissapearerer",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "block_dissapearerer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/coco/item/BlockDissapearererItem.java",
+          "src/main/resources/assets/coco/items/block_dissapearerer.json",
+          "src/main/resources/assets/coco/models/item/block_dissapearerer.json"
+        ]
+      }
+    },
+    {
+      "name": "RandomDiceThingOnBlockRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "random_dice_thing_on_block_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/coco/procedures/RandomDiceThingOnBlockRightclickedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "RandomDiceThing",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "random_dice_thing",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/coco/models/item/random_dice_thing.json",
+          "src/main/java/net/mcreator/coco/block/RandomDiceThingBlock.java",
+          "src/main/resources/data/coco/loot_table/blocks/random_dice_thing.json",
+          "src/main/resources/assets/coco/items/random_dice_thing.json",
+          "src/main/resources/assets/coco/models/block/random_dice_thing.json",
+          "src/main/java/net/mcreator/coco/block/entity/RandomDiceThingBlockEntity.java",
+          "src/main/resources/assets/coco/blockstates/random_dice_thing.json"
+        ]
+      }
+    },
+    {
+      "name": "HiProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hi_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/coco/procedures/HiProcedureProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SkillStoneRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_stone_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/coco/procedures/SkillStoneRightclickedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SkillStone",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_stone",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/coco/item/SkillStoneItem.java",
+          "src/main/resources/assets/coco/items/skill_stone.json",
+          "src/main/resources/assets/coco/models/item/skill_stone.json"
+        ]
+      }
+    },
+    {
+      "name": "RandomDiceThingOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "random_dice_thing_on_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/coco/procedures/RandomDiceThingOnTickUpdateProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SpellbookRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spellbook_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/coco/procedures/SpellbookRightclickedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Spellbook",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spellbook",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/coco/items/spellbook.json",
+          "src/main/java/net/mcreator/coco/item/SpellbookItem.java",
+          "src/main/resources/assets/coco/models/item/spellbook.json"
+        ]
+      }
+    },
+    {
+      "name": "SelectAdvertisementSpell",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "select_advertisement_spell",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/coco/procedures/SelectAdvertisementSpellProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SpellbookGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spellbook_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/coco/world/inventory/SpellbookGUIMenu.java",
+          "src/main/java/net/mcreator/coco/network/SpellbookGUIButtonMessage.java",
+          "src/main/java/net/mcreator/coco/client/gui/SpellbookGUIScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "SelectGlowSpell",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "select_glow_spell",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/coco/procedures/SelectGlowSpellProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SpellName",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spell_name",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/coco/procedures/SpellNameProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "CloseButton",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "close_button",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/coco/procedures/CloseButtonProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SpellSelected",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spell_selected",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "Casting_Player",
+            "type": "entity"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "X_Coord",
+            "type": "number"
+          },
+          {
+            "name": "Y_Coord",
+            "type": "number"
+          },
+          {
+            "name": "Z_Coord",
+            "type": "number"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/coco/procedures/SpellSelectedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SelectPetalSpell",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "select_petal_spell",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/coco/procedures/SelectPetalSpellProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SelectStormSpell",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "select_storm_spell",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/coco/procedures/SelectStormSpellProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "BluuCatOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bluu_cat_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/coco/procedures/BluuCatOnEntityTickUpdateProcedure.java"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {
+    "ITEMS:minecraft:shovels": [
+      "~CUSTOM:Wand"
+    ],
+    "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:BlockDissapearerer"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "item_group.coco.coco": "Coco",
+      "item.coco.quick_coco": "TOASTERMONSTER",
+      "item.coco.wand": "Wand",
+      "item.coco.block_dissapearerer": "Block Dissapearerer",
+      "item.coco.random_dice_thing": "Random Dice Thing",
+      "item.coco.skill_stone": "Skill Stone",
+      "item.coco.spellbook": "Spellbook",
+      "gui.coco.spellbook_gui.button_x": "X",
+      "gui.coco.spellbook_gui.button_glow": "Glow",
+      "gui.coco.spellbook_gui.label_spells": "Spells",
+      "gui.coco.spellbook_gui.label_welcome_to_the_spellbook": "Welcome to the Spellbook",
+      "gui.coco.spellbook_gui.button_advertisement": "Advertisement",
+      "gui.coco.spellbook_gui.button_a_feel_of_japan": "A Feel of Japan",
+      "gui.coco.spellbook_gui.button_storm": "Storm"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/net/mcreator/coco/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/coco/init/CocoModScreens.java",
+      "src/main/java/net/mcreator/coco/init/CocoModMenus.java",
+      "src/main/java/net/mcreator/coco/init/CocoModBlocks.java",
+      "src/main/java/net/mcreator/coco/init/CocoModBlockEntities.java",
+      "src/main/java/net/mcreator/coco/init/CocoModItems.java",
+      "src/main/java/net/mcreator/coco/init/CocoModTabs.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/coco/CocoMod.java",
+      "src/main/resources/pack.mcmeta"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "coco",
+    "modName": "coco",
+    "version": "1.0.0",
+    "author": "MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.21.8",
+    "modElementsPackage": "net.mcreator.coco"
+  },
+  "mcreatorVersion": 202600114619
+}
