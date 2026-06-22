@@ -1,4 +1,4 @@
-# GR Code Club
+# My own copy of GR Code Club
 
 Please work on a branch
 
