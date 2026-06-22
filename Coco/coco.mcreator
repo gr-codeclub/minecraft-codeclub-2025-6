@@ -527,6 +527,20 @@
           "src/main/java/net/mcreator/coco/procedures/BluuCatOnEntityTickUpdateProcedure.java"
         ]
       }
+    },
+    {
+      "name": "Burger",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "burger",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/coco/item/BurgerItem.java",
+          "src/main/resources/assets/coco/models/item/burger.json",
+          "src/main/resources/assets/coco/items/burger.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -537,6 +551,9 @@
     ],
     "ITEMS:minecraft:pickaxes": [
       "~CUSTOM:BlockDissapearerer"
+    ],
+    "ITEMS:minecraft:meat": [
+      "~CUSTOM:Burger"
     ]
   },
   "tab_element_order": {},
@@ -555,7 +572,8 @@
       "gui.coco.spellbook_gui.label_welcome_to_the_spellbook": "Welcome to the Spellbook",
       "gui.coco.spellbook_gui.button_advertisement": "Advertisement",
       "gui.coco.spellbook_gui.button_a_feel_of_japan": "A Feel of Japan",
-      "gui.coco.spellbook_gui.button_storm": "Storm"
+      "gui.coco.spellbook_gui.button_storm": "Storm",
+      "item.coco.burger": "Burger"
     }
   },
   "metadata": {

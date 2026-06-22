@@ -1,0 +1,7 @@
+{
+  "parent": "coco:custom/burger",
+  "textures": {
+    "0": "coco:block/texture",
+    "particle": "coco:item/texture"
+  }
+}

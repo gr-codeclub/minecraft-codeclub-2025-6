@@ -29,6 +29,7 @@ public class CocoModTabs {
 				tabData.accept(CocoModBlocks.RANDOM_DICE_THING.get().asItem());
 				tabData.accept(CocoModItems.SKILL_STONE.get());
 				tabData.accept(CocoModItems.SPELLBOOK.get());
+				tabData.accept(CocoModItems.BURGER.get());
 			}).build());
 
 	@SubscribeEvent
