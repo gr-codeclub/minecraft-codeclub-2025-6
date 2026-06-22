@@ -29,12 +29,25 @@ public class IlovefootballModTabs {
 				tabData.accept(IlovefootballModBlocks.DICEBLOCK.get().asItem());
 				tabData.accept(IlovefootballModItems.SKILLSTONE.get());
 				tabData.accept(IlovefootballModItems.SPELLBOOK.get());
+				tabData.accept(IlovefootballModItems.ERIKSARMOR_HELMET.get());
+				tabData.accept(IlovefootballModItems.ERIKSARMOR_CHESTPLATE.get());
+				tabData.accept(IlovefootballModItems.ERIKSARMOR_LEGGINGS.get());
+				tabData.accept(IlovefootballModItems.ERIKSARMOR_BOOTS.get());
 			}).withSearchBar().build());
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 		if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(IlovefootballModItems.FOOT.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
+			tabData.accept(IlovefootballModItems.ERIKSARMOR_HELMET.get());
+			tabData.accept(IlovefootballModItems.ERIKSARMOR_CHESTPLATE.get());
+			tabData.accept(IlovefootballModItems.ERIKSARMOR_LEGGINGS.get());
+			tabData.accept(IlovefootballModItems.ERIKSARMOR_BOOTS.get());
+			tabData.accept(IlovefootballModItems.AMOURISTHEBEST_HELMET.get());
+			tabData.accept(IlovefootballModItems.AMOURISTHEBEST_CHESTPLATE.get());
+			tabData.accept(IlovefootballModItems.AMOURISTHEBEST_LEGGINGS.get());
+			tabData.accept(IlovefootballModItems.AMOURISTHEBEST_BOOTS.get());
 		}
 	}
 }

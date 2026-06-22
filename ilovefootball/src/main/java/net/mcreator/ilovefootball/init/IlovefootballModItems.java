@@ -11,10 +11,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
-import net.mcreator.ilovefootball.item.SpellbookItem;
-import net.mcreator.ilovefootball.item.SkillstoneItem;
-import net.mcreator.ilovefootball.item.FootballsomethingItem;
-import net.mcreator.ilovefootball.item.FootItem;
+import net.mcreator.ilovefootball.item.*;
 import net.mcreator.ilovefootball.IlovefootballMod;
 
 import java.util.function.Function;
@@ -27,6 +24,14 @@ public class IlovefootballModItems {
 	public static final DeferredItem<Item> DICEBLOCK;
 	public static final DeferredItem<Item> SKILLSTONE;
 	public static final DeferredItem<Item> SPELLBOOK;
+	public static final DeferredItem<Item> ERIKSARMOR_HELMET;
+	public static final DeferredItem<Item> ERIKSARMOR_CHESTPLATE;
+	public static final DeferredItem<Item> ERIKSARMOR_LEGGINGS;
+	public static final DeferredItem<Item> ERIKSARMOR_BOOTS;
+	public static final DeferredItem<Item> AMOURISTHEBEST_HELMET;
+	public static final DeferredItem<Item> AMOURISTHEBEST_CHESTPLATE;
+	public static final DeferredItem<Item> AMOURISTHEBEST_LEGGINGS;
+	public static final DeferredItem<Item> AMOURISTHEBEST_BOOTS;
 	static {
 		FOOTBALLBLOCK = block(IlovefootballModBlocks.FOOTBALLBLOCK);
 		FOOTBALLSOMETHING = register("footballsomething", FootballsomethingItem::new);
@@ -34,6 +39,14 @@ public class IlovefootballModItems {
 		DICEBLOCK = block(IlovefootballModBlocks.DICEBLOCK);
 		SKILLSTONE = register("skillstone", SkillstoneItem::new);
 		SPELLBOOK = register("spellbook", SpellbookItem::new);
+		ERIKSARMOR_HELMET = register("eriksarmor_helmet", EriksarmorItem.Helmet::new);
+		ERIKSARMOR_CHESTPLATE = register("eriksarmor_chestplate", EriksarmorItem.Chestplate::new);
+		ERIKSARMOR_LEGGINGS = register("eriksarmor_leggings", EriksarmorItem.Leggings::new);
+		ERIKSARMOR_BOOTS = register("eriksarmor_boots", EriksarmorItem.Boots::new);
+		AMOURISTHEBEST_HELMET = register("amouristhebest_helmet", AmouristhebestItem.Helmet::new);
+		AMOURISTHEBEST_CHESTPLATE = register("amouristhebest_chestplate", AmouristhebestItem.Chestplate::new);
+		AMOURISTHEBEST_LEGGINGS = register("amouristhebest_leggings", AmouristhebestItem.Leggings::new);
+		AMOURISTHEBEST_BOOTS = register("amouristhebest_boots", AmouristhebestItem.Boots::new);
 	}
 
 	// Start of user code block custom items

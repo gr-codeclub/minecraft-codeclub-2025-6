@@ -12,5 +12,13 @@
   "gui.ilovefootball.gu_ifootball.button_greeting": "Greeting",
   "gui.ilovefootball.gu_ifootball.button_glow": "Glow",
   "gui.ilovefootball.gu_ifootball.label_spellname": "spellname",
-  "gui.ilovefootball.gu_ifootball.button_x": "x"
+  "gui.ilovefootball.gu_ifootball.button_x": "x",
+  "item.ilovefootball.eriksarmor_helmet": "Eriksarmor Helmet",
+  "item.ilovefootball.eriksarmor_boots": "Eriksarmor Boots",
+  "item.ilovefootball.eriksarmor_leggings": "Eriksarmor Leggings",
+  "item.ilovefootball.eriksarmor_chestplate": "Eriksarmor Chestplate",
+  "item.ilovefootball.amouristhebest_helmet": "Amouristhebest Helmet",
+  "item.ilovefootball.amouristhebest_chestplate": "Amouristhebest Chestplate",
+  "item.ilovefootball.amouristhebest_leggings": "Amouristhebest Leggings",
+  "item.ilovefootball.amouristhebest_boots": "Amouristhebest Boots"
 }

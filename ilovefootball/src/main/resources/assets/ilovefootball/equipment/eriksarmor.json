@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "ilovefootball:eriksarmor"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "ilovefootball:eriksarmor"
+      }
+    ]
+  }
+}

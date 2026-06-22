@@ -420,6 +420,50 @@
           "src/main/java/net/mcreator/ilovefootball/procedures/CastProcedure.java"
         ]
       }
+    },
+    {
+      "name": "Eriksarmor",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eriksarmor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ilovefootball/items/eriksarmor_leggings.json",
+          "src/main/resources/assets/ilovefootball/models/item/eriksarmor_helmet.json",
+          "src/main/resources/assets/ilovefootball/items/eriksarmor_chestplate.json",
+          "src/main/resources/assets/ilovefootball/models/item/eriksarmor_chestplate.json",
+          "src/main/java/net/mcreator/ilovefootball/item/EriksarmorItem.java",
+          "src/main/resources/assets/ilovefootball/equipment/eriksarmor.json",
+          "src/main/resources/assets/ilovefootball/models/item/eriksarmor_leggings.json",
+          "src/main/java/net/mcreator/ilovefootball/client/renderer/item/EriksarmorArmor.java",
+          "src/main/resources/assets/ilovefootball/items/eriksarmor_helmet.json",
+          "src/main/resources/assets/ilovefootball/models/item/eriksarmor_boots.json",
+          "src/main/resources/assets/ilovefootball/items/eriksarmor_boots.json"
+        ]
+      }
+    },
+    {
+      "name": "Amouristhebest",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amouristhebest",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ilovefootball/models/item/amouristhebest_leggings.json",
+          "src/main/java/net/mcreator/ilovefootball/client/renderer/item/AmouristhebestArmor.java",
+          "src/main/resources/assets/ilovefootball/equipment/amouristhebest.json",
+          "src/main/resources/assets/ilovefootball/items/amouristhebest_leggings.json",
+          "src/main/resources/assets/ilovefootball/items/amouristhebest_chestplate.json",
+          "src/main/resources/assets/ilovefootball/models/item/amouristhebest_boots.json",
+          "src/main/resources/assets/ilovefootball/models/item/amouristhebest_chestplate.json",
+          "src/main/resources/assets/ilovefootball/models/item/amouristhebest_helmet.json",
+          "src/main/resources/assets/ilovefootball/items/amouristhebest_boots.json",
+          "src/main/java/net/mcreator/ilovefootball/item/AmouristhebestItem.java",
+          "src/main/resources/assets/ilovefootball/items/amouristhebest_helmet.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -428,6 +472,22 @@
     "ITEMS:minecraft:pickaxes": [
       "~CUSTOM:Foot",
       "~CUSTOM:Footballsomething"
+    ],
+    "ITEMS:minecraft:head_armor": [
+      "~CUSTOM:Amouristhebest.helmet",
+      "~CUSTOM:Eriksarmor.helmet"
+    ],
+    "ITEMS:minecraft:chest_armor": [
+      "~CUSTOM:Amouristhebest.body",
+      "~CUSTOM:Eriksarmor.body"
+    ],
+    "ITEMS:minecraft:leg_armor": [
+      "~CUSTOM:Amouristhebest.legs",
+      "~CUSTOM:Eriksarmor.legs"
+    ],
+    "ITEMS:minecraft:foot_armor": [
+      "~CUSTOM:Amouristhebest.boots",
+      "~CUSTOM:Eriksarmor.boots"
     ]
   },
   "tab_element_order": {},
@@ -446,7 +506,15 @@
       "gui.ilovefootball.gu_ifootball.button_greeting": "Greeting",
       "gui.ilovefootball.gu_ifootball.button_glow": "Glow",
       "gui.ilovefootball.gu_ifootball.label_spellname": "spellname",
-      "gui.ilovefootball.gu_ifootball.button_x": "x"
+      "gui.ilovefootball.gu_ifootball.button_x": "x",
+      "item.ilovefootball.eriksarmor_helmet": "Eriksarmor Helmet",
+      "item.ilovefootball.eriksarmor_boots": "Eriksarmor Boots",
+      "item.ilovefootball.eriksarmor_leggings": "Eriksarmor Leggings",
+      "item.ilovefootball.eriksarmor_chestplate": "Eriksarmor Chestplate",
+      "item.ilovefootball.amouristhebest_helmet": "Amouristhebest Helmet",
+      "item.ilovefootball.amouristhebest_chestplate": "Amouristhebest Chestplate",
+      "item.ilovefootball.amouristhebest_leggings": "Amouristhebest Leggings",
+      "item.ilovefootball.amouristhebest_boots": "Amouristhebest Boots"
     }
   },
   "metadata": {
@@ -459,6 +527,7 @@
       "src/main/java/net/mcreator/ilovefootball/init/IlovefootballModItems.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/resources/pack.mcmeta",
+      "src/main/resources/META-INF/accesstransformer.cfg",
       "src/main/java/net/mcreator/ilovefootball/IlovefootballMod.java",
       "src/main/java/net/mcreator/ilovefootball/init/IlovefootballModTabs.java"
     ]
