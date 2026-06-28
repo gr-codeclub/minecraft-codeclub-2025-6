@@ -346,10 +346,10 @@
       "src/main/java/net/mcreator/cheesy/init/CheesyModBlocks.java",
       "src/main/java/net/mcreator/cheesy/init/CheesyModBlockEntities.java",
       "src/main/java/net/mcreator/cheesy/init/CheesyModItems.java",
-      "src/main/java/net/mcreator/cheesy/init/CheesyModTabs.java",
-      "src/main/java/net/mcreator/cheesy/CheesyMod.java",
+      "src/main/resources/pack.mcmeta",
       "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/resources/pack.mcmeta"
+      "src/main/java/net/mcreator/cheesy/init/CheesyModTabs.java",
+      "src/main/java/net/mcreator/cheesy/CheesyMod.java"
     ]
   },
   "foldersRoot": {
