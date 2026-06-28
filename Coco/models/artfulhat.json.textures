@@ -3,9 +3,7 @@
     "default": {
       "name": "default",
       "map": {
-        "0": "hattop",
-        "1": "hatmiddle",
-        "2": "hat"
+        "3": "artfulhat"
       }
     }
   }

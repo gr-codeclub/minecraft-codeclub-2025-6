@@ -20,7 +20,7 @@ import java.util.Random;
 import static com.ibm.icu.impl.ValidIdentifiers.Datatype.x;
 
 public class SpellSelectedProcedure {
-	public static void execute(Entity entity, double X_Coord, double Y_Coord, double Z_Coord) {
+	public static void execute(Entity Casting_Player, Entity entity, double X_Coord, double Y_Coord, double Z_Coord) {
 		if ( entity == null)
 			return;
 		Entity Caster = null;
@@ -79,3 +79,7 @@ public class SpellSelectedProcedure {
 		return 0;
 	}
 }
+
+
+
+

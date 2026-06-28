@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "coco:artful"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "coco:artful"
+      }
+    ]
+  }
+}

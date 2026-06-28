@@ -1,0 +1,7 @@
+{
+  "parent": "coco:custom/artfulhat",
+  "textures": {
+    "3": "coco:block/artfulhat",
+    "particle": "coco:item/artfulhelmet"
+  }
+}

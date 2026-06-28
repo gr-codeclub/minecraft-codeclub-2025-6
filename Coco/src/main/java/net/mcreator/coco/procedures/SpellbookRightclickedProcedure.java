@@ -47,7 +47,7 @@ public class SpellbookRightclickedProcedure {
 			}
 		} else {
 			Spell = getEntityScore("current_spell", entity);
-			SpellSelectedProcedure.execute(entity, x, y, z);
+			SpellSelectedProcedure.execute(entity, entity, x, y, z);
 		}
 	}
 

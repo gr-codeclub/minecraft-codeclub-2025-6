@@ -15,6 +15,7 @@ import net.mcreator.coco.item.WandItem;
 import net.mcreator.coco.item.SpellbookItem;
 import net.mcreator.coco.item.SkillStoneItem;
 import net.mcreator.coco.item.BlockDissapearererItem;
+import net.mcreator.coco.item.ArtfulItem;
 import net.mcreator.coco.CocoMod;
 
 import java.util.function.Function;
@@ -27,6 +28,7 @@ public class CocoModItems {
 	public static final DeferredItem<Item> RANDOM_DICE_THING;
 	public static final DeferredItem<Item> SKILL_STONE;
 	public static final DeferredItem<Item> SPELLBOOK;
+	public static final DeferredItem<Item> ARTFUL_HELMET;
 	static {
 		QUICK_COCO = block(CocoModBlocks.QUICK_COCO);
 		WAND = register("wand", WandItem::new);
@@ -34,6 +36,7 @@ public class CocoModItems {
 		RANDOM_DICE_THING = block(CocoModBlocks.RANDOM_DICE_THING);
 		SKILL_STONE = register("skill_stone", SkillStoneItem::new);
 		SPELLBOOK = register("spellbook", SpellbookItem::new);
+		ARTFUL_HELMET = register("artful_helmet", ArtfulItem.Helmet::new);
 	}
 
 	// Start of user code block custom items
