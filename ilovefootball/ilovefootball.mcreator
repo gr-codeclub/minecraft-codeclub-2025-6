@@ -519,17 +519,17 @@
   },
   "metadata": {
     "files": [
+      "src/main/java/net/mcreator/ilovefootball/init/IlovefootballModMenus.java",
       "src/main/java/net/mcreator/ilovefootball/init/IlovefootballModScreens.java",
       "src/main/java/net/mcreator/ilovefootball/network/MenuStateUpdateMessage.java",
-      "src/main/java/net/mcreator/ilovefootball/init/IlovefootballModMenus.java",
       "src/main/java/net/mcreator/ilovefootball/init/IlovefootballModBlocks.java",
       "src/main/java/net/mcreator/ilovefootball/init/IlovefootballModBlockEntities.java",
       "src/main/java/net/mcreator/ilovefootball/init/IlovefootballModItems.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/resources/pack.mcmeta",
       "src/main/resources/META-INF/accesstransformer.cfg",
       "src/main/java/net/mcreator/ilovefootball/IlovefootballMod.java",
-      "src/main/java/net/mcreator/ilovefootball/init/IlovefootballModTabs.java"
+      "src/main/java/net/mcreator/ilovefootball/init/IlovefootballModTabs.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/resources/pack.mcmeta"
     ]
   },
   "foldersRoot": {

@@ -3,39 +3,7 @@
   "workspacePanelSortType": "CREATED",
   "workspacePanelSortAscending": true,
   "projectBrowserState": {
-    "expandedPaths": [
-      "[, External libraries]",
-      "[, External libraries, \u003cJava SDK 21.0.10\u003e]",
-      "[, External libraries, \u003cJava SDK 21.0.10\u003e, java.base]",
-      "[, External libraries, \u003cJava SDK 21.0.10\u003e, java.base, com]",
-      "[, External libraries, \u003cJava SDK 21.0.10\u003e, java.base, com, sun]",
-      "[, External libraries, \u003cJava SDK 21.0.10\u003e, java.base, com, sun, crypto]",
-      "[, External libraries, \u003cJava SDK 21.0.10\u003e, java.base, com, sun, crypto, provider]",
-      "[, External libraries, \u003cJava SDK 21.0.10\u003e, java.desktop]",
-      "[, External libraries, \u003cJava SDK 21.0.10\u003e, java.desktop, com]",
-      "[, External libraries, \u003cJava SDK 21.0.10\u003e, java.desktop, com, sun]",
-      "[, External libraries, \u003cJava SDK 21.0.10\u003e, java.desktop, com, sun, imageio]",
-      "[, External libraries, \u003cJava SDK 21.0.10\u003e, java.desktop, com, sun, imageio, plugins]",
-      "[, External libraries, \u003cJava SDK 21.0.10\u003e, java.desktop, com, sun, imageio, plugins, tiff]",
-      "[, External libraries, \u003cJava SDK 21.0.10\u003e, java.security.jgss]",
-      "[, External libraries, \u003cJava SDK 21.0.10\u003e, java.security.jgss, sun]",
-      "[, External libraries, \u003cJava SDK 21.0.10\u003e, java.security.jgss, sun, security]",
-      "[, External libraries, \u003cJava SDK 21.0.10\u003e, java.security.jgss, sun, security, krb5]",
-      "[, External libraries, \u003cJava SDK 21.0.10\u003e, java.security.jgss, sun, security, krb5, internal]",
-      "[, External libraries, \u003cJava SDK 21.0.10\u003e, java.security.jgss, sun, security, krb5, internal, crypto]",
-      "[, External libraries, Gradle: nimbus-jose-jwt-9.40]",
-      "[, External libraries, Gradle: nimbus-jose-jwt-9.40, com]",
-      "[, External libraries, Gradle: nimbus-jose-jwt-9.40, com, nimbusds]",
-      "[, External libraries, Gradle: nimbus-jose-jwt-9.40, com, nimbusds, jose]",
-      "[, External libraries, Gradle: nimbus-jose-jwt-9.40, com, nimbusds, jose, crypto]",
-      "[, External libraries, Gradle: nimbus-jose-jwt-9.40, com, nimbusds, jose, crypto, impl]",
-      "[, External libraries, Gradle: jna-platform-5.15.0]",
-      "[, External libraries, Gradle: jna-platform-5.15.0, com]",
-      "[, External libraries, Gradle: jna-platform-5.15.0, com, sun]",
-      "[, External libraries, Gradle: jna-platform-5.15.0, com, sun, jna]",
-      "[, External libraries, Gradle: jna-platform-5.15.0, com, sun, jna, platform]",
-      "[, External libraries, Gradle: jna-platform-5.15.0, com, sun, jna, platform, win32]"
-    ]
+    "expandedPaths": []
   },
   "leftDockState": {
     "dockSizes": {
@@ -43,6 +11,7 @@
     }
   },
   "bottomDockState": {
+    "expandedDock": "console",
     "dockSizes": {
       "console": 300,
       "code_viewer": 300,
