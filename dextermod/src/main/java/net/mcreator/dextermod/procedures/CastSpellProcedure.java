@@ -1,8 +1,12 @@
 package net.mcreator.dextermod.procedures;
 
+import net.mcreator.dextermod.util.VeinMiner;
+
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.world.phys.BlockHitResult;
+import net.minecraft.world.phys.HitResult;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.EntitySpawnReason;
@@ -68,7 +72,8 @@ public class CastSpellProcedure {
 							LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_world, EntitySpawnReason.TRIGGERED);
 
 							// Pick a shape based on the spell_mode scoreboard.
-							// In game, type "/spellmode <0-5>" to switch shapes (registered in SpellModeCommand.java).
+							// In game: "/scoreboard players set @s spell_mode <0-5>" to switch shapes.
+							// (Lesson 14 adds a shorter "/spellmode <0-5>" command — see SpellModeCommand.java.)
 							// Anything outside 1-5 falls through to straightLineBolt via the default case.
 							Vec3 target = switch (spellMode) {
 								case 1 -> smoothDirectionBolt(entity, x, y, z, i, r);
@@ -86,6 +91,24 @@ public class CastSpellProcedure {
 							_world.addFreshEntity(entityToSpawn);
 
 						}
+					}
+				}
+				break;
+
+			case 4:
+				if (entity instanceof Player _player && _player.level() instanceof ServerLevel _world) {
+					// Ray-trace from the player's eyes along their look direction.
+					// 8.0 is the max reach in blocks; 0.0f is the partial-tick (server-side so we use 0).
+					HitResult hit = _player.pick(8.0, 0.0f, false);
+					if (hit instanceof BlockHitResult bhr && bhr.getType() != HitResult.Type.MISS) {
+						int mined = VeinMiner.mineVein(_world, bhr.getBlockPos(), VeinMiner.DEFAULT_MAX_BLOCKS, true);
+						_player.displayClientMessage(
+								Component.literal("Vein Miner: " + mined + " block" + (mined == 1 ? "" : "s")).withStyle(net.minecraft.ChatFormatting.GREEN),
+								true);
+					} else {
+						_player.displayClientMessage(
+								Component.literal("Vein Miner: aim at a block first!").withStyle(net.minecraft.ChatFormatting.YELLOW),
+								true);
 					}
 				}
 				break;

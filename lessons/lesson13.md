@@ -227,125 +227,28 @@ Vec3 target = switch (spellMode) {
 
 ---
 
-### Step 5 — Stepping Outside MCreator: A Custom Command (10 min)
+### Step 5 — Test It! (10 min)
 
-So far every Java file we've touched was something **MCreator generated for us** — `CastSpellProcedure.java` was made from a Blockly procedure. We typed Java *inside* what MCreator already wrote.
-
-This time we're going to make a **brand new file** that MCreator knows nothing about. Why? Because we want our own custom command (`/spellmode`) and MCreator doesn't have a "command" element in this workspace. So we're writing pure Java the way professional mod developers do.
-
-> **Will MCreator wipe my file?** No. Open any file in `init/` — the first line says `// MCreator note: This file will be REGENERATED on each build`. **Only files with that marker get regenerated.** Our new file won't have it, so MCreator leaves it alone. But Gradle still compiles every `.java` file under `src/main/java/`, so our class works in the build.
-
-**Open IntelliJ** (not MCreator) and create a new file at this path:
+Build and run. In-game, open chat and type (one-time setup, only needed once per world):
 
 ```
-src/main/java/net/mcreator/dextermod/commands/SpellModeCommand.java
+/scoreboard objectives add spell_mode dummy
 ```
 
-(In IntelliJ: right-click the `net.mcreator.dextermod` package → New → Package → name it `commands` → right-click that → New → Java Class → name it `SpellModeCommand`.)
-
-**Paste this in:**
-
-```java
-package net.mcreator.dextermod.commands;
-
-import com.mojang.brigadier.arguments.IntegerArgumentType;
-import com.mojang.brigadier.context.CommandContext;
-import com.mojang.brigadier.exceptions.CommandSyntaxException;
-
-import net.minecraft.commands.CommandSourceStack;
-import net.minecraft.commands.Commands;
-import net.minecraft.network.chat.Component;
-import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.world.scores.Objective;
-import net.minecraft.world.scores.ScoreHolder;
-import net.minecraft.world.scores.Scoreboard;
-import net.minecraft.world.scores.criteria.ObjectiveCriteria;
-
-import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.neoforge.event.RegisterCommandsEvent;
-
-import net.mcreator.dextermod.DextermodMod;
-
-@EventBusSubscriber(modid = DextermodMod.MODID)
-public class SpellModeCommand {
-
-	@SubscribeEvent
-	public static void register(RegisterCommandsEvent event) {
-		event.getDispatcher().register(
-				Commands.literal("spellmode")
-						.then(Commands.argument("mode", IntegerArgumentType.integer(0, 5))
-								.executes(SpellModeCommand::setMode)));
-	}
-
-	private static int setMode(CommandContext<CommandSourceStack> ctx) throws CommandSyntaxException {
-		int mode = IntegerArgumentType.getInteger(ctx, "mode");
-		ServerPlayer player = ctx.getSource().getPlayerOrException();
-
-		Scoreboard scoreboard = player.level().getScoreboard();
-		Objective obj = scoreboard.getObjective("spell_mode");
-		if (obj == null) {
-			obj = scoreboard.addObjective(
-					"spell_mode",
-					ObjectiveCriteria.DUMMY,
-					Component.literal("Spell Mode"),
-					ObjectiveCriteria.RenderType.INTEGER,
-					false,
-					null);
-		}
-		scoreboard.getOrCreatePlayerScore(
-				ScoreHolder.forNameOnly(player.getScoreboardName()), obj).set(mode);
-
-		String shapeName = switch (mode) {
-			case 1 -> "Smooth Direction";
-			case 2 -> "Ring";
-			case 3 -> "Cone";
-			case 4 -> "Square";
-			case 5 -> "Smooth Square";
-			default -> "Straight Line";
-		};
-		ctx.getSource().sendSuccess(
-				() -> Component.literal("Spell mode set to: " + shapeName),
-				false);
-		return 1;
-	}
-}
-```
-
-**What's actually going on:**
-
-| Bit | What it does |
-|-----|--------------|
-| `@EventBusSubscriber(modid = ...)` | Tells NeoForge: "look at this class for event handlers" |
-| `@SubscribeEvent` on `register` | Hooks into the moment commands are being set up |
-| `Commands.literal("spellmode")` | The command name — what you type after the slash |
-| `.then(Commands.argument("mode", IntegerArgumentType.integer(0, 5)))` | An integer 0–5 argument. Brigadier auto-rejects anything outside that range! |
-| `.executes(SpellModeCommand::setMode)` | When the command runs, call our `setMode` method |
-| Inside `setMode` | Get the number, find or create the scoreboard, set it, send a confirmation |
-| The `switch` near the bottom | **Same pattern as our helpers** — but this time it returns a `String` (the label), not a `Vec3` |
-
-> **Don't worry about memorising the syntax.** Most of this is **boilerplate** — code you copy-paste whenever you make a command. The interesting bit is at the bottom: that switch is the *same idea* as the one in the Storm spell, just returning a different type. Once you see that, you've seen the pattern.
-
-**One more cool thing:** `setMode` is `static` and uses `SpellModeCommand::setMode` as a method reference. That's another way to point at a method without calling it — Brigadier will call it whenever someone types the command.
-
----
-
-### Step 6 — Test It! (10 min)
-
-Build and run. In chat:
+Now cycle through the shapes:
 
 ```
-/spellmode 0   ← straight line (default)
-/spellmode 1   ← straight line, follows your look
-/spellmode 2   ← 360° ring
-/spellmode 3   ← cone in front
-/spellmode 4   ← square in front (N/S/E/W)
-/spellmode 5   ← square in front, follows your look
+/scoreboard players set @s spell_mode 0   ← straight line (default)
+/scoreboard players set @s spell_mode 1   ← straight line, follows your look
+/scoreboard players set @s spell_mode 2   ← 360° ring
+/scoreboard players set @s spell_mode 3   ← cone in front
+/scoreboard players set @s spell_mode 4   ← square in front (N/S/E/W)
+/scoreboard players set @s spell_mode 5   ← square in front, follows your look
 ```
 
 Right-click your spellbook between each. The lightning changes shape **without rebuilding the mod**. Run around, stand on a hill, try mode 2 in a village (sorry villagers).
 
-> **The old `/scoreboard players set @s spell_mode 3` command still works** — `/spellmode 3` is just shorter to type *and* auto-creates the scoreboard objective if it doesn't exist yet.
+> **Typing those long `/scoreboard` commands every time is annoying** — in Lesson 14 we'll make our own shortcut `/spellmode <0-5>` command. For now, get the storm shapes feeling right.
 
 ---
 
@@ -358,7 +261,7 @@ Right-click your spellbook between each. The lightning changes shape **without r
 | `cannot find symbol: Vec3` | Missing import | `import net.minecraft.world.phys.Vec3;` at the top |
 | `cannot find symbol: Direction` | Missing import | `import net.minecraft.core.Direction;` at the top |
 | Lightning still always straight | Forgot to read `spellMode`, or set the wrong scoreboard | Check `int spellMode = getEntityScore("spell_mode", entity);` and the `/scoreboard` command name |
-| `Unknown command: spellmode` | Build didn't pick up the new command class | Hit the build hammer, then restart the client |
+| `Unknown scoreboard objective` in chat | Forgot the one-time `add` command | Run `/scoreboard objectives add spell_mode dummy` once |
 | All modes look the same | Build didn't take | Hit the build hammer again, or quit and rerun the client |
 
 ---
