@@ -6,19 +6,7 @@
     "expandedPaths": [
       "[, eleazar]",
       "[, eleazar, Source (Gradle)]",
-      "[, eleazar, Source (Gradle), C:\\minecraft-codeclub-2025-6\\eleazar\\src\\main\\java\\net]",
-      "[, eleazar, Source (Gradle), C:\\minecraft-codeclub-2025-6\\eleazar\\src\\main\\java\\net, C:\\minecraft-codeclub-2025-6\\eleazar\\src\\main\\java\\net\\mcreator]",
-      "[, eleazar, Source (Gradle), C:\\minecraft-codeclub-2025-6\\eleazar\\src\\main\\java\\net, C:\\minecraft-codeclub-2025-6\\eleazar\\src\\main\\java\\net\\mcreator, C:\\minecraft-codeclub-2025-6\\eleazar\\src\\main\\java\\net\\mcreator\\eleazar]",
-      "[, eleazar, Source (Gradle), C:\\minecraft-codeclub-2025-6\\eleazar\\src\\main\\java\\net, C:\\minecraft-codeclub-2025-6\\eleazar\\src\\main\\java\\net\\mcreator, C:\\minecraft-codeclub-2025-6\\eleazar\\src\\main\\java\\net\\mcreator\\eleazar, C:\\minecraft-codeclub-2025-6\\eleazar\\src\\main\\java\\net\\mcreator\\eleazar\\block]",
-      "[, eleazar, Resources (Gradle)]",
-      "[, eleazar, Resources (Gradle), C:\\minecraft-codeclub-2025-6\\eleazar\\src\\main\\resources\\assets]",
-      "[, eleazar, Resources (Gradle), C:\\minecraft-codeclub-2025-6\\eleazar\\src\\main\\resources\\assets, C:\\minecraft-codeclub-2025-6\\eleazar\\src\\main\\resources\\assets\\eleazar]",
-      "[, eleazar, Resources (Gradle), C:\\minecraft-codeclub-2025-6\\eleazar\\src\\main\\resources\\assets, C:\\minecraft-codeclub-2025-6\\eleazar\\src\\main\\resources\\assets\\eleazar, C:\\minecraft-codeclub-2025-6\\eleazar\\src\\main\\resources\\assets\\eleazar\\blockstates]",
-      "[, eleazar, Resources (Gradle), C:\\minecraft-codeclub-2025-6\\eleazar\\src\\main\\resources\\assets, C:\\minecraft-codeclub-2025-6\\eleazar\\src\\main\\resources\\assets\\eleazar, C:\\minecraft-codeclub-2025-6\\eleazar\\src\\main\\resources\\assets\\eleazar\\models]",
-      "[, eleazar, Resources (Gradle), C:\\minecraft-codeclub-2025-6\\eleazar\\src\\main\\resources\\assets, C:\\minecraft-codeclub-2025-6\\eleazar\\src\\main\\resources\\assets\\eleazar, C:\\minecraft-codeclub-2025-6\\eleazar\\src\\main\\resources\\assets\\eleazar\\models, C:\\minecraft-codeclub-2025-6\\eleazar\\src\\main\\resources\\assets\\eleazar\\models\\block]",
-      "[, eleazar, Resources (Gradle), C:\\minecraft-codeclub-2025-6\\eleazar\\src\\main\\resources\\assets, C:\\minecraft-codeclub-2025-6\\eleazar\\src\\main\\resources\\assets\\eleazar, C:\\minecraft-codeclub-2025-6\\eleazar\\src\\main\\resources\\assets\\eleazar\\textures]",
-      "[, eleazar, Resources (Gradle), C:\\minecraft-codeclub-2025-6\\eleazar\\src\\main\\resources\\assets, C:\\minecraft-codeclub-2025-6\\eleazar\\src\\main\\resources\\assets\\eleazar, C:\\minecraft-codeclub-2025-6\\eleazar\\src\\main\\resources\\assets\\eleazar\\textures, C:\\minecraft-codeclub-2025-6\\eleazar\\src\\main\\resources\\assets\\eleazar\\textures\\block]",
-      "[, eleazar, Resources (Gradle), C:\\minecraft-codeclub-2025-6\\eleazar\\src\\main\\resources\\META-INF]"
+      "[, eleazar, Resources (Gradle)]"
     ]
   },
   "leftDockState": {
@@ -27,6 +15,7 @@
     }
   },
   "bottomDockState": {
+    "expandedDock": "console",
     "dockSizes": {
       "console": 300,
       "code_viewer": 300,
