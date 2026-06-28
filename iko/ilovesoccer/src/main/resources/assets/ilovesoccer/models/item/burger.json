@@ -1,0 +1,7 @@
+{
+  "parent": "ilovesoccer:custom/burger_helmet",
+  "textures": {
+    "5": "ilovesoccer:block/burgerhelmet",
+    "particle": "ilovesoccer:item/burger"
+  }
+}

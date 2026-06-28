@@ -3,12 +3,7 @@
     "default": {
       "name": "default",
       "map": {
-        "0": "texture1",
-        "1": "text2",
-        "2": "te3",
-        "3": "tex4",
-        "4": "textu5",
-        "missing": ""
+        "5": "burgerhelmet"
       }
     }
   }

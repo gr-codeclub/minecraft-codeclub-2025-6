@@ -447,6 +447,20 @@
           "src/main/java/net/mcreator/ilovesoccer/procedures/LavacreeperPlayerCollidesWithThisEntityProcedure.java"
         ]
       }
+    },
+    {
+      "name": "Burger",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "burger",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ilovesoccer/item/BurgerItem.java",
+          "src/main/resources/assets/ilovesoccer/items/burger.json",
+          "src/main/resources/assets/ilovesoccer/models/item/burger.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -455,6 +469,9 @@
     "ITEMS:minecraft:pickaxes": [
       "~CUSTOM:Veinminer",
       "~CUSTOM:Voldermoltbwoaanbd"
+    ],
+    "ITEMS:minecraft:meat": [
+      "~CUSTOM:Burger"
     ]
   },
   "tab_element_order": {},
@@ -475,21 +492,22 @@
       "gui.ilovesoccer.jrt_6a_gui.button_x": "X",
       "gui.ilovesoccer.jrt_6a_gui.button_empty": "firework",
       "entity.ilovesoccer.lavacreeper": "Lavacreeper",
-      "item.ilovesoccer.lavacreeper_spawn_egg": "Lavacreeper Spawn Egg"
+      "item.ilovesoccer.lavacreeper_spawn_egg": "Lavacreeper Spawn Egg",
+      "item.ilovesoccer.burger": "Burger"
     }
   },
   "metadata": {
     "files": [
-      "src/main/java/net/mcreator/ilovesoccer/init/IlovesoccerModScreens.java",
-      "src/main/java/net/mcreator/ilovesoccer/init/IlovesoccerModMenus.java",
       "src/main/java/net/mcreator/ilovesoccer/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/ilovesoccer/init/IlovesoccerModMenus.java",
+      "src/main/java/net/mcreator/ilovesoccer/init/IlovesoccerModScreens.java",
       "src/main/java/net/mcreator/ilovesoccer/init/IlovesoccerModBlocks.java",
       "src/main/java/net/mcreator/ilovesoccer/init/IlovesoccerModItems.java",
       "src/main/java/net/mcreator/ilovesoccer/init/IlovesoccerModEntities.java",
       "src/main/java/net/mcreator/ilovesoccer/init/IlovesoccerModEntityRenderers.java",
       "src/main/java/net/mcreator/ilovesoccer/IlovesoccerMod.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/java/net/mcreator/ilovesoccer/init/IlovesoccerModTabs.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/resources/pack.mcmeta"
     ]
   },

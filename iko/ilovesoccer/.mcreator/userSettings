@@ -6,22 +6,11 @@
     "expandedPaths": [
       "[, ilovesoccer]",
       "[, ilovesoccer, Source (Gradle)]",
-      "[, ilovesoccer, Source (Gradle), C:\\minecraft-codeclub-2025-6\\iko\\ilovesoccer\\src\\main\\java\\net]",
-      "[, ilovesoccer, Source (Gradle), C:\\minecraft-codeclub-2025-6\\iko\\ilovesoccer\\src\\main\\java\\net, C:\\minecraft-codeclub-2025-6\\iko\\ilovesoccer\\src\\main\\java\\net\\mcreator]",
-      "[, ilovesoccer, Source (Gradle), C:\\minecraft-codeclub-2025-6\\iko\\ilovesoccer\\src\\main\\java\\net, C:\\minecraft-codeclub-2025-6\\iko\\ilovesoccer\\src\\main\\java\\net\\mcreator, C:\\minecraft-codeclub-2025-6\\iko\\ilovesoccer\\src\\main\\java\\net\\mcreator\\ilovesoccer]",
-      "[, ilovesoccer, Source (Gradle), C:\\minecraft-codeclub-2025-6\\iko\\ilovesoccer\\src\\main\\java\\net, C:\\minecraft-codeclub-2025-6\\iko\\ilovesoccer\\src\\main\\java\\net\\mcreator, C:\\minecraft-codeclub-2025-6\\iko\\ilovesoccer\\src\\main\\java\\net\\mcreator\\ilovesoccer, C:\\minecraft-codeclub-2025-6\\iko\\ilovesoccer\\src\\main\\java\\net\\mcreator\\ilovesoccer\\block]",
-      "[, ilovesoccer, Source (Gradle), C:\\minecraft-codeclub-2025-6\\iko\\ilovesoccer\\src\\main\\java\\net, C:\\minecraft-codeclub-2025-6\\iko\\ilovesoccer\\src\\main\\java\\net\\mcreator, C:\\minecraft-codeclub-2025-6\\iko\\ilovesoccer\\src\\main\\java\\net\\mcreator\\ilovesoccer, C:\\minecraft-codeclub-2025-6\\iko\\ilovesoccer\\src\\main\\java\\net\\mcreator\\ilovesoccer\\procedures]",
-      "[, ilovesoccer, Resources (Gradle)]",
-      "[, ilovesoccer, Resources (Gradle), C:\\minecraft-codeclub-2025-6\\iko\\ilovesoccer\\src\\main\\resources\\assets]",
-      "[, ilovesoccer, Resources (Gradle), C:\\minecraft-codeclub-2025-6\\iko\\ilovesoccer\\src\\main\\resources\\assets, C:\\minecraft-codeclub-2025-6\\iko\\ilovesoccer\\src\\main\\resources\\assets\\ilovesoccer]",
-      "[, ilovesoccer, Resources (Gradle), C:\\minecraft-codeclub-2025-6\\iko\\ilovesoccer\\src\\main\\resources\\assets, C:\\minecraft-codeclub-2025-6\\iko\\ilovesoccer\\src\\main\\resources\\assets\\ilovesoccer, C:\\minecraft-codeclub-2025-6\\iko\\ilovesoccer\\src\\main\\resources\\assets\\ilovesoccer\\blockstates]",
-      "[, ilovesoccer, Resources (Gradle), C:\\minecraft-codeclub-2025-6\\iko\\ilovesoccer\\src\\main\\resources\\assets, C:\\minecraft-codeclub-2025-6\\iko\\ilovesoccer\\src\\main\\resources\\assets\\ilovesoccer, C:\\minecraft-codeclub-2025-6\\iko\\ilovesoccer\\src\\main\\resources\\assets\\ilovesoccer\\models]",
-      "[, ilovesoccer, Resources (Gradle), C:\\minecraft-codeclub-2025-6\\iko\\ilovesoccer\\src\\main\\resources\\assets, C:\\minecraft-codeclub-2025-6\\iko\\ilovesoccer\\src\\main\\resources\\assets\\ilovesoccer, C:\\minecraft-codeclub-2025-6\\iko\\ilovesoccer\\src\\main\\resources\\assets\\ilovesoccer\\models, C:\\minecraft-codeclub-2025-6\\iko\\ilovesoccer\\src\\main\\resources\\assets\\ilovesoccer\\models\\block]",
-      "[, ilovesoccer, Resources (Gradle), C:\\minecraft-codeclub-2025-6\\iko\\ilovesoccer\\src\\main\\resources\\assets, C:\\minecraft-codeclub-2025-6\\iko\\ilovesoccer\\src\\main\\resources\\assets\\ilovesoccer, C:\\minecraft-codeclub-2025-6\\iko\\ilovesoccer\\src\\main\\resources\\assets\\ilovesoccer\\textures]",
-      "[, ilovesoccer, Resources (Gradle), C:\\minecraft-codeclub-2025-6\\iko\\ilovesoccer\\src\\main\\resources\\assets, C:\\minecraft-codeclub-2025-6\\iko\\ilovesoccer\\src\\main\\resources\\assets\\ilovesoccer, C:\\minecraft-codeclub-2025-6\\iko\\ilovesoccer\\src\\main\\resources\\assets\\ilovesoccer\\textures, C:\\minecraft-codeclub-2025-6\\iko\\ilovesoccer\\src\\main\\resources\\assets\\ilovesoccer\\textures\\block]"
+      "[, ilovesoccer, Resources (Gradle)]"
     ]
   },
   "leftDockState": {
+    "expandedDock": "project_browser",
     "dockSizes": {
       "project_browser": 280
     }

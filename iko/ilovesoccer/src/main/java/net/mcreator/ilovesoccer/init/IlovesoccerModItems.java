@@ -16,6 +16,7 @@ import net.mcreator.ilovesoccer.item.VoldermoltbwoaanbdItem;
 import net.mcreator.ilovesoccer.item.VeinminerItem;
 import net.mcreator.ilovesoccer.item.SpellbookItem;
 import net.mcreator.ilovesoccer.item.SkillstoneItem;
+import net.mcreator.ilovesoccer.item.BurgerItem;
 import net.mcreator.ilovesoccer.IlovesoccerMod;
 
 import java.util.function.Function;
@@ -28,6 +29,7 @@ public class IlovesoccerModItems {
 	public static final DeferredItem<Item> SKILLSTONE;
 	public static final DeferredItem<Item> SPELLBOOK;
 	public static final DeferredItem<Item> LAVACREEPER_SPAWN_EGG;
+	public static final DeferredItem<Item> BURGER;
 	static {
 		VOLDERMOLTHASA_BI_GNOSE = block(IlovesoccerModBlocks.VOLDERMOLTHASA_BI_GNOSE);
 		VOLDERMOLTBWOAANBD = register("voldermoltbwoaanbd", VoldermoltbwoaanbdItem::new);
@@ -35,6 +37,7 @@ public class IlovesoccerModItems {
 		SKILLSTONE = register("skillstone", SkillstoneItem::new);
 		SPELLBOOK = register("spellbook", SpellbookItem::new);
 		LAVACREEPER_SPAWN_EGG = register("lavacreeper_spawn_egg", properties -> new SpawnEggItem(IlovesoccerModEntities.LAVACREEPER.get(), properties));
+		BURGER = register("burger", BurgerItem::new);
 	}
 
 	// Start of user code block custom items

@@ -9,6 +9,7 @@ import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.CreativeModeTab;
@@ -27,12 +28,19 @@ public class IlovesoccerModTabs {
 				tabData.accept(IlovesoccerModItems.VEINMINER.get());
 				tabData.accept(IlovesoccerModItems.SKILLSTONE.get());
 				tabData.accept(IlovesoccerModItems.SPELLBOOK.get());
+				tabData.accept(IlovesoccerModItems.BURGER.get());
 			}).withSearchBar().build());
+	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> VOLDERMOLTSTOLEMYSHAMPO = REGISTRY.register("voldermoltstolemyshampo",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.ilovesoccer.voldermoltstolemyshampo")).icon(() -> new ItemStack(Items.TORCH)).displayItems((parameters, tabData) -> {
+				tabData.accept(IlovesoccerModItems.BURGER.get());
+			}).withSearchBar().withTabsBefore(VOLDERMOLTSTOLEMYSHAMPOO.getId()).build());
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 		if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(IlovesoccerModItems.LAVACREEPER_SPAWN_EGG.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
+			tabData.accept(IlovesoccerModItems.BURGER.get());
 		}
 	}
 }
