@@ -6,19 +6,7 @@
     "expandedPaths": [
       "[, bigboigoober]",
       "[, bigboigoober, Source (Gradle)]",
-      "[, bigboigoober, Source (Gradle), C:\\minecraft-codeclub-2025-6\\UhBigBoiGoober\\src\\main\\java\\net]",
-      "[, bigboigoober, Source (Gradle), C:\\minecraft-codeclub-2025-6\\UhBigBoiGoober\\src\\main\\java\\net, C:\\minecraft-codeclub-2025-6\\UhBigBoiGoober\\src\\main\\java\\net\\mcreator]",
-      "[, bigboigoober, Source (Gradle), C:\\minecraft-codeclub-2025-6\\UhBigBoiGoober\\src\\main\\java\\net, C:\\minecraft-codeclub-2025-6\\UhBigBoiGoober\\src\\main\\java\\net\\mcreator, C:\\minecraft-codeclub-2025-6\\UhBigBoiGoober\\src\\main\\java\\net\\mcreator\\bigboigoober]",
-      "[, bigboigoober, Source (Gradle), C:\\minecraft-codeclub-2025-6\\UhBigBoiGoober\\src\\main\\java\\net, C:\\minecraft-codeclub-2025-6\\UhBigBoiGoober\\src\\main\\java\\net\\mcreator, C:\\minecraft-codeclub-2025-6\\UhBigBoiGoober\\src\\main\\java\\net\\mcreator\\bigboigoober, C:\\minecraft-codeclub-2025-6\\UhBigBoiGoober\\src\\main\\java\\net\\mcreator\\bigboigoober\\block]",
-      "[, bigboigoober, Source (Gradle), C:\\minecraft-codeclub-2025-6\\UhBigBoiGoober\\src\\main\\java\\net, C:\\minecraft-codeclub-2025-6\\UhBigBoiGoober\\src\\main\\java\\net\\mcreator, C:\\minecraft-codeclub-2025-6\\UhBigBoiGoober\\src\\main\\java\\net\\mcreator\\bigboigoober, C:\\minecraft-codeclub-2025-6\\UhBigBoiGoober\\src\\main\\java\\net\\mcreator\\bigboigoober\\procedures]",
-      "[, bigboigoober, Resources (Gradle)]",
-      "[, bigboigoober, Resources (Gradle), C:\\minecraft-codeclub-2025-6\\UhBigBoiGoober\\src\\main\\resources\\assets]",
-      "[, bigboigoober, Resources (Gradle), C:\\minecraft-codeclub-2025-6\\UhBigBoiGoober\\src\\main\\resources\\assets, C:\\minecraft-codeclub-2025-6\\UhBigBoiGoober\\src\\main\\resources\\assets\\bigboigoober]",
-      "[, bigboigoober, Resources (Gradle), C:\\minecraft-codeclub-2025-6\\UhBigBoiGoober\\src\\main\\resources\\assets, C:\\minecraft-codeclub-2025-6\\UhBigBoiGoober\\src\\main\\resources\\assets\\bigboigoober, C:\\minecraft-codeclub-2025-6\\UhBigBoiGoober\\src\\main\\resources\\assets\\bigboigoober\\blockstates]",
-      "[, bigboigoober, Resources (Gradle), C:\\minecraft-codeclub-2025-6\\UhBigBoiGoober\\src\\main\\resources\\assets, C:\\minecraft-codeclub-2025-6\\UhBigBoiGoober\\src\\main\\resources\\assets\\bigboigoober, C:\\minecraft-codeclub-2025-6\\UhBigBoiGoober\\src\\main\\resources\\assets\\bigboigoober\\models]",
-      "[, bigboigoober, Resources (Gradle), C:\\minecraft-codeclub-2025-6\\UhBigBoiGoober\\src\\main\\resources\\assets, C:\\minecraft-codeclub-2025-6\\UhBigBoiGoober\\src\\main\\resources\\assets\\bigboigoober, C:\\minecraft-codeclub-2025-6\\UhBigBoiGoober\\src\\main\\resources\\assets\\bigboigoober\\models, C:\\minecraft-codeclub-2025-6\\UhBigBoiGoober\\src\\main\\resources\\assets\\bigboigoober\\models\\block]",
-      "[, bigboigoober, Resources (Gradle), C:\\minecraft-codeclub-2025-6\\UhBigBoiGoober\\src\\main\\resources\\assets, C:\\minecraft-codeclub-2025-6\\UhBigBoiGoober\\src\\main\\resources\\assets\\bigboigoober, C:\\minecraft-codeclub-2025-6\\UhBigBoiGoober\\src\\main\\resources\\assets\\bigboigoober\\textures]",
-      "[, bigboigoober, Resources (Gradle), C:\\minecraft-codeclub-2025-6\\UhBigBoiGoober\\src\\main\\resources\\assets, C:\\minecraft-codeclub-2025-6\\UhBigBoiGoober\\src\\main\\resources\\assets\\bigboigoober, C:\\minecraft-codeclub-2025-6\\UhBigBoiGoober\\src\\main\\resources\\assets\\bigboigoober\\textures, C:\\minecraft-codeclub-2025-6\\UhBigBoiGoober\\src\\main\\resources\\assets\\bigboigoober\\textures\\block]"
+      "[, bigboigoober, Resources (Gradle)]"
     ]
   },
   "leftDockState": {
@@ -27,6 +15,7 @@
     }
   },
   "bottomDockState": {
+    "expandedDock": "console",
     "dockSizes": {
       "console": 300,
       "code_viewer": 300,

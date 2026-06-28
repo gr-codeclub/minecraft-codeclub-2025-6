@@ -397,18 +397,18 @@
   "metadata": {
     "files": [
       "src/main/resources/data/minecraft/tags/banner_pattern/no_item_required.json",
-      "src/main/java/net/mcreator/bigboigoober/init/BigboigooberModFluids.java",
       "src/main/java/net/mcreator/bigboigoober/init/BigboigooberModFluidTypes.java",
+      "src/main/java/net/mcreator/bigboigoober/init/BigboigooberModFluids.java",
       "src/main/java/net/mcreator/bigboigoober/init/BigboigooberModBlocks.java",
       "src/main/java/net/mcreator/bigboigoober/init/BigboigooberModBlockEntities.java",
       "src/main/java/net/mcreator/bigboigoober/init/BigboigooberModItems.java",
-      "src/main/java/net/mcreator/bigboigoober/init/BigboigooberModEntityRenderers.java",
       "src/main/java/net/mcreator/bigboigoober/init/BigboigooberModEntities.java",
+      "src/main/java/net/mcreator/bigboigoober/init/BigboigooberModEntityRenderers.java",
+      "src/main/java/net/mcreator/bigboigoober/BigboigooberMod.java",
       "src/main/java/net/mcreator/bigboigoober/init/BigboigooberModTabs.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/java/net/mcreator/bigboigoober/init/BigboigooberModModels.java",
-      "src/main/resources/pack.mcmeta",
-      "src/main/java/net/mcreator/bigboigoober/BigboigooberMod.java"
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/resources/pack.mcmeta"
     ]
   },
   "foldersRoot": {
